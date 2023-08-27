@@ -3,6 +3,10 @@ body {
   font-family: Arial, sans-serif;
 }
 
+.nav-container {
+  background-color: #5d6975;
+  position: relative;
+}
 .navbar {
   position: sticky;
   top: 0;
@@ -10,8 +14,10 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #d6f8ff;
-  color: black;
+  /* background-color: #d6f8ff; */
+}
+.navbar a {
+  color: white;
 }
 
 .logo {
@@ -20,6 +26,7 @@ body {
   padding-left: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
+  margin-right: 20px;
 }
 
 .menu-toggle {
@@ -52,10 +59,10 @@ body {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 60px;
+    top: 100%;
     left: 0;
     width: 100%;
-    background-color: #d6f8ff;
+    /* background-color: #d6f8ff; */
     padding: 10px;
   }
 
@@ -123,4 +130,28 @@ body {
 }
 .Navbarright_list {
   list-style-type: none;
+}
+
+/* media queries */
+/* logo media query */
+
+@media screen and (max-width: 960px) {
+  .logo {
+    margin: auto;
+    padding-left: 0px;
+  }
+  .menu {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 963px) {
+  .menu {
+    margin: auto;
+  }
+}
+@media screen and (max-width: 425px) {
+  .logo img {
+    width: 230px;
+  }
 }
