@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .select-box {
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+    margin-left: 20px;
+  }
+  
+  .search-button {
+    background-color: #2C3A90;
+    border-radius: 30px;
+    color: white;
+    padding: 20px;
+    font-size: 16px;
+    border: none;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+  
+  .country-flag {
+    margin-right: 5px;
+  }
+  
+  .country-label {
+    vertical-align:Left;
+  }
+  
+  @media (max-width: 768px) {
+    .search-container {
+      flex-direction: column;
+    }
+  }
+  

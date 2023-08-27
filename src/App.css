@@ -1,0 +1,7 @@
+.app{
+  background-image: url("../public/assets/banner1.png");
+  background-size: cover; /* Adjust as needed */
+  background-position: center center; /* Adjust as needed */
+  /* Other styles for header */
+  height: auto;
+}
