@@ -11,7 +11,10 @@ function Navbar() {
   };
 
   return (
-    <div className="Navbar_page">
+    <div
+      className="Navbar_page"
+      style={{ position: "sticky", top: 0, zIndex: 10000 }}
+    >
       <nav className={`navbar ${menuOpen ? "open" : ""}`}>
         <div className="Logo">
           <img src="assets/logo.png" alt="logo" width="300px"></img>

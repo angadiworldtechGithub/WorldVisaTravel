@@ -4,11 +4,13 @@ body {
 }
 
 .navbar {
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #D6F8FF;
+  background-color: #d6f8ff;
   color: black;
 }
 
@@ -53,7 +55,7 @@ body {
     top: 60px;
     left: 0;
     width: 100%;
-    background-color: #D6F8FF;
+    background-color: #d6f8ff;
     padding: 10px;
   }
 
@@ -66,63 +68,59 @@ body {
     margin-bottom: 10px;
   }
 }
-.Navbar_right1{
+.Navbar_right1 {
   display: flex;
   align-items: center;
   padding-top: 10px;
   padding-left: 100px;
 }
 
-.Navbarright_icon{
+.Navbarright_icon {
   display: flex;
   float: right;
-  padding-left:10px;
+  padding-left: 10px;
   font-size: 40px;
   padding-bottom: 20px;
 }
-.Navbarright_list{
+.Navbarright_list {
   list-style-type: none;
- 
 }
-.Navbar_right1{
+.Navbar_right1 {
   display: flex;
   align-items: center;
   padding-top: 10px;
   padding-left: 100px;
 }
 
-.Navbarright_icon{
+.Navbarright_icon {
   display: flex;
   float: right;
-  padding-left:10px;
+  padding-left: 10px;
   font-size: 40px;
   padding-bottom: 20px;
 }
-.Navbarright_list{
+.Navbarright_list {
   list-style-type: none;
- 
 }
 
-.Navbar_right{
+.Navbar_right {
   display: flex;
   align-items: center;
-
 }
-.Navbar_right1{
+.Navbar_right1 {
   display: flex;
   align-items: center;
   padding-top: 10px;
   padding-left: 100px;
 }
 
-.Navbarright_icon{
+.Navbarright_icon {
   display: flex;
   float: right;
-  padding-left:10px;
+  padding-left: 10px;
   font-size: 40px;
   padding-bottom: 20px;
 }
-.Navbarright_list{
+.Navbarright_list {
   list-style-type: none;
- 
 }
