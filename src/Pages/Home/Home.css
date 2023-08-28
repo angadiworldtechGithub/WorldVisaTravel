@@ -227,6 +227,7 @@ body {
     -webkit-flex: 1;
     flex: 1;
     background: none;
+    width: 100%;
   }
 }
 @media (max-width: 709px) {
@@ -292,34 +293,46 @@ body {
 }
 
 .under_card_silder {
-  position: absolute;
-  top: 2400px;
-  left: 250px;
+  position: relative;
+  margin-inline: auto;
+
+  /* top: 2400px; */
+  /* left: 250px; */
+  max-width: 700px;
+  bottom: 80px;
   border-radius: 10px;
   display: flex;
+  flex-wrap: wrap;
   background-color: #fff;
-  width: 60%;
-  margin: 30px 30px 30px 30px;
+  /* width: 60%;
+  margin: 30px 30px 30px 30px; */
   border: 1px solid #ccc;
+  max-height: fit-content;
+  overflow: hidden;
   align-items: center;
+  /* margin-inline: 20px; */
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, 90%); */
 }
 
 .under_card_silder_item1 {
   flex: 1; /* Equal width for both items */
-  width: 80%;
+  min-width: 250px;
+  /* width: 80%;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 20px; */
 }
 
 .under_card_silder_item2 {
   flex: 1; /* Equal width for both items */
-  width: 80%;
+  /* width: 80%;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 40px;
-  padding-bottom: 20px;
+  padding-bottom: 20px; */
 }
 .under_card_silder_button {
   width: 200px;
@@ -334,16 +347,16 @@ body {
 
 /* Flexbox5 Container for flexboxes */
 .flexbox5 {
-  padding-top: 40px;
+  /* padding-top: 40px; */
   padding-bottom: 20px;
-  margin-top: 240px;
+  /* margin-top: 240px; */
 }
 
 .Home-flexbox5 {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 40px;
-  padding-right: 60px;
+  /* padding-left: 40px;
+  padding-right: 60px; */
 }
 
 /* Create four equal columns */

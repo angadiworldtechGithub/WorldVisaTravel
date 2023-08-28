@@ -164,11 +164,8 @@ function Home() {
         </div>
       </div>
  */}
-      <div className="Home-top-flexbox2 px-5">
-        <div
-          className="Home-top-flexbox2-leftside"
-          style={{ paddingLeft: "100px" }}
-        >
+      <div className="Home-top-flexbox2 px-sm-2 px-lg-5">
+        <div className="Home-top-flexbox2-leftside">
           <h6>WHO WE ARE</h6>
           <h2>
             We are professional Expert<br></br> in Immigration Visa
@@ -189,10 +186,10 @@ function Home() {
         className="Home-top-flexbox3"
         style={{
           backgroundColor: "#ffffff",
-          paddingLeft: "60px",
-          paddingRight: "50px",
-          paddingTop: "30px",
-          paddingBottom: "40px",
+          // paddingLeft: "60px",
+          // paddingRight: "50px",
+          // paddingTop: "30px",
+          // paddingBottom: "40px",
         }}
       >
         <div className="Home-top-flexbox3-leftside">
@@ -253,179 +250,183 @@ function Home() {
         </div>
       </div>
 
-      <div className="Home-flexbox4" style={{ marginBottom: "40px" }}>
-        <div
-          className="Home-top-flexbox4"
-          style={{ paddingBottom: "40px", paddingTop: "60px" }}
-        >
+      <div className="position-relative">
+        <div className="Home-flexbox4" style={{ position: "relative" }}>
           <div
-            className="Home-top-flexbox4-leftside"
-            style={{ paddingLeft: "120px", paddingBottom: "40px" }}
+            className="Home-top-flexbox4"
+            style={{ paddingBottom: "40px", paddingTop: "60px" }}
           >
-            <h6>WHO WE ARE</h6>
-            <h2>
-              We are professional Expert<br></br> in Immigration Visa
-            </h2>
+            <div
+              className="Home-top-flexbox4-leftside"
+              style={{ paddingLeft: "120px", paddingBottom: "40px" }}
+            >
+              <h6>WHO WE ARE</h6>
+              <h2>
+                We are professional Expert<br></br> in Immigration Visa
+              </h2>
+            </div>
+            <div className="Home-top-flexbox4-rightside">
+              <p>
+                We provide expert team to create great value for immigration.
+                Our certified & reliable Immigration Consultant professionals
+                can help you get a positive decision on your case. We provide
+                immigration services in all different areas of countries.
+              </p>
+            </div>
           </div>
-          <div className="Home-top-flexbox4-rightside">
-            <p>
-              We provide expert team to create great value for immigration. Our
-              certified & reliable Immigration Consultant professionals can help
-              you get a positive decision on your case. We provide immigration
-              services in all different areas of countries.
-            </p>
+
+          <div
+            id="carouselExampleControls"
+            class="carousel carousel-dark slide"
+            data-bs-ride="carousel"
+            style={{ paddingBottom: "140px" }}
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card-wrapper container-sm d-flex  justify-content-around">
+                  <div class="card  " style={{ width: "18rem" }}>
+                    <img
+                      src="https://source.unsplash.com/collection/190727/1600x900"
+                      class="card-img-top"
+                      alt="country_img"
+                    ></img>
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                    </div>
+                  </div>
+                  <div class="card" style={{ width: "18rem" }}>
+                    <img
+                      src="https://source.unsplash.com/collection/190727/1600x900"
+                      class="card-img-top"
+                      alt="country_img"
+                    ></img>
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                    </div>
+                  </div>
+                  <div class="card" style={{ width: "18rem" }}>
+                    <img
+                      src="https://source.unsplash.com/collection/190727/1600x900"
+                      class="card-img-top"
+                      alt="country_img"
+                    ></img>
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card-wrapper container-sm d-flex   justify-content-around">
+                  <div class="card  " style={{ width: "18rem" }}>
+                    <img
+                      src="https://source.unsplash.com/collection/190727/1600x900"
+                      class="card-img-top"
+                      alt="..."
+                    ></img>
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                    </div>
+                  </div>
+                  <div class="card" style={{ width: "18rem" }}>
+                    <img
+                      src="https://source.unsplash.com/collection/190727/1600x900"
+                      class="card-img-top"
+                      alt="..."
+                    ></img>
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                    </div>
+                  </div>
+                  <div class="card" style={{ width: "18rem" }}>
+                    <img
+                      src="https://source.unsplash.com/collection/190727/1600x900"
+                      class="card-img-top"
+                      alt="..."
+                    ></img>
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card-wrapper container-sm d-flex  justify-content-around">
+                  <div class="card " style={{ width: "18rem" }}>
+                    <img
+                      src="https://source.unsplash.com/collection/190727/1600x900"
+                      class="card-img-top"
+                      alt="..."
+                    ></img>
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                    </div>
+                  </div>
+                  <div class="card" style={{ width: "18rem" }}>
+                    <img
+                      src="https://source.unsplash.com/collection/190727/1600x900"
+                      class="card-img-top"
+                      alt="..."
+                    ></img>
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                    </div>
+                  </div>
+                  <div class="card" style={{ width: "18rem" }}>
+                    <img
+                      src="https://source.unsplash.com/collection/190727/1600x900"
+                      class="card-img-top"
+                      alt="..."
+                    ></img>
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
           </div>
         </div>
 
-        <div
-          id="carouselExampleControls"
-          class="carousel carousel-dark slide"
-          data-bs-ride="carousel"
-          style={{ paddingBottom: "140px" }}
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="card-wrapper container-sm d-flex  justify-content-around">
-                <div class="card  " style={{ width: "18rem" }}>
-                  <img
-                    src="https://source.unsplash.com/collection/190727/1600x900"
-                    class="card-img-top"
-                    alt="country_img"
-                  ></img>
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                  </div>
-                </div>
-                <div class="card" style={{ width: "18rem" }}>
-                  <img
-                    src="https://source.unsplash.com/collection/190727/1600x900"
-                    class="card-img-top"
-                    alt="country_img"
-                  ></img>
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                  </div>
-                </div>
-                <div class="card" style={{ width: "18rem" }}>
-                  <img
-                    src="https://source.unsplash.com/collection/190727/1600x900"
-                    class="card-img-top"
-                    alt="country_img"
-                  ></img>
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="card-wrapper container-sm d-flex   justify-content-around">
-                <div class="card  " style={{ width: "18rem" }}>
-                  <img
-                    src="https://source.unsplash.com/collection/190727/1600x900"
-                    class="card-img-top"
-                    alt="..."
-                  ></img>
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                  </div>
-                </div>
-                <div class="card" style={{ width: "18rem" }}>
-                  <img
-                    src="https://source.unsplash.com/collection/190727/1600x900"
-                    class="card-img-top"
-                    alt="..."
-                  ></img>
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                  </div>
-                </div>
-                <div class="card" style={{ width: "18rem" }}>
-                  <img
-                    src="https://source.unsplash.com/collection/190727/1600x900"
-                    class="card-img-top"
-                    alt="..."
-                  ></img>
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="card-wrapper container-sm d-flex  justify-content-around">
-                <div class="card " style={{ width: "18rem" }}>
-                  <img
-                    src="https://source.unsplash.com/collection/190727/1600x900"
-                    class="card-img-top"
-                    alt="..."
-                  ></img>
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                  </div>
-                </div>
-                <div class="card" style={{ width: "18rem" }}>
-                  <img
-                    src="https://source.unsplash.com/collection/190727/1600x900"
-                    class="card-img-top"
-                    alt="..."
-                  ></img>
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                  </div>
-                </div>
-                <div class="card" style={{ width: "18rem" }}>
-                  <img
-                    src="https://source.unsplash.com/collection/190727/1600x900"
-                    class="card-img-top"
-                    alt="..."
-                  ></img>
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleControls"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleControls"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <center>
         <div className="under_card_silder">
           <div className="under_card_silder_item1">
-            <img src="/assets/country/1.png" alt="img" />
+            <img
+              src="/assets/country/1.png"
+              alt="img"
+              style={{ width: "100%", minWidth: "250pd" }}
+            />
           </div>
-          <div className="under_card_silder_item2">
+          <div className="under_card_silder_item2 p-2 text-center">
             <h3>Free Online Visa Assessment</h3>
             <p>
               Contact us today by fill up free online visa assessment and we
               will contact you
             </p>
-            <button className="under_card_silder_button">
+            <button className="under_card_silder_button text-center">
               Discover More
               <i className="under_card_silder_icon">
                 <HiArrowNarrowRight />
@@ -433,7 +434,7 @@ function Home() {
             </button>
           </div>
         </div>
-      </center>
+      </div>
 
       <div className="flexbox5">
         <center style={{ paddingBottom: "20px" }}>
