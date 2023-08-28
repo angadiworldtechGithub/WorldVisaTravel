@@ -11,109 +11,111 @@ import Carousel from "react-bootstrap/Carousel";
 function Home() {
   return (
     <>
-      <div id="carousel-container">
-        <Carousel data-bs-theme="dark">
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src="assets/banners/10.png"
-              alt="First slide"
-            />
-            <Carousel.Caption className="carousel-caption">
-              <h1 style={{ marginTop: "0" }} className="silder_on_text">
-                Our Trusted Visa and Passport Specialists are How the Globe Gets
-                Moving
-              </h1>
-              <h2
-                style={{ marginTop: "0", paddingTop: "40px" }}
-                className="silder_on_text"
-              >
-                Apply for a Travel Visa:
-              </h2>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src="assets/banners/6.png"
-              alt="Second slide"
-            />
-            <Carousel.Caption>
-              <h1 style={{ marginTop: "0" }}>
-                Our Trusted Visa and Passport Specialists are How the Globe Gets
-                Moving
-              </h1>
-              <h2 style={{ marginTop: "0", paddingTop: "40px" }}>
-                Apply for a Travel Visa:
-              </h2>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src="assets/banners/7.png"
-              alt="Third slide"
-            />
-            <Carousel.Caption>
-              <h1 style={{ marginTop: "0" }}>
-                Our Trusted Visa and Passport Specialists are How the Globe Gets
-                Moving
-              </h1>
-              <h2 style={{ marginTop: "0", paddingTop: "40px" }}>
-                Apply for a Travel Visa:
-              </h2>
-            </Carousel.Caption>
-          </Carousel.Item>
-        </Carousel>
-        <Search />
-      </div>
-
-      <div className="Home-container" id="Home-top">
-        <div className="Home-box">
-          <div className="Home-top-flex1">
-            <h4 className="Home-header-text">
-              <i className="Home-header-icon">
-                <GiOpenBook />
-              </i>
-              Apply Online Visa
-            </h4>
-            <hr></hr>
-            <p>
-              We are trustworthy immigration consultants who can manage your
-              case.
-            </p>
-          </div>
-        </div>
-        <div className="Home-box">
-          <div className="Home-top-flex2">
-            <h4 className="Home-header-text">
-              <i className="Home-header-icon">
-                <FaAddressBook />
-              </i>
-              Book an Appointment
-            </h4>
-            <hr></hr>
-            <p>
-              To manage your visa application through our knowledgeable
-              certified agents.
-            </p>
-          </div>
+      <div className="position-relative">
+        <div id="carousel-container">
+          <Carousel data-bs-theme="dark">
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="assets/banners/10.png"
+                alt="First slide"
+              />
+              <Carousel.Caption className="carousel-caption">
+                <h1 style={{ marginTop: "0" }} className="silder_on_text">
+                  Our Trusted Visa and Passport Specialists are How the Globe
+                  Gets Moving
+                </h1>
+                <h2
+                  style={{ marginTop: "0", paddingTop: "40px" }}
+                  className="silder_on_text"
+                >
+                  Apply for a Travel Visa:
+                </h2>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="assets/banners/6.png"
+                alt="Second slide"
+              />
+              <Carousel.Caption>
+                <h1 style={{ marginTop: "0" }}>
+                  Our Trusted Visa and Passport Specialists are How the Globe
+                  Gets Moving
+                </h1>
+                <h2 style={{ marginTop: "0", paddingTop: "40px" }}>
+                  Apply for a Travel Visa:
+                </h2>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="assets/banners/7.png"
+                alt="Third slide"
+              />
+              <Carousel.Caption>
+                <h1 style={{ marginTop: "0" }}>
+                  Our Trusted Visa and Passport Specialists are How the Globe
+                  Gets Moving
+                </h1>
+                <h2 style={{ marginTop: "0", paddingTop: "40px" }}>
+                  Apply for a Travel Visa:
+                </h2>
+              </Carousel.Caption>
+            </Carousel.Item>
+          </Carousel>
+          <Search />
         </div>
 
-        <div className="Home-box">
-          {" "}
-          <div className="Home-top-flex3">
-            <h4 className="Home-header-text">
-              <i className="Home-header-icon">
-                <FaUserGraduate />
-              </i>
-              Immigration Experts
-            </h4>
-            <hr></hr>
-            <p>
-              Our goal has been provide immigration in all over country and
-              universities.
-            </p>
+        <div className="Home-container" id="Home-top">
+          <div className="Home-box">
+            <div className="Home-top-flex1">
+              <h4 className="Home-header-text">
+                <i className="Home-header-icon">
+                  <GiOpenBook />
+                </i>
+                Apply Online Visa
+              </h4>
+              <hr></hr>
+              <p>
+                We are trustworthy immigration consultants who can manage your
+                case.
+              </p>
+            </div>
+          </div>
+          <div className="Home-box">
+            <div className="Home-top-flex2">
+              <h4 className="Home-header-text">
+                <i className="Home-header-icon">
+                  <FaAddressBook />
+                </i>
+                Book an Appointment
+              </h4>
+              <hr></hr>
+              <p>
+                To manage your visa application through our knowledgeable
+                certified agents.
+              </p>
+            </div>
+          </div>
+
+          <div className="Home-box">
+            {" "}
+            <div className="Home-top-flex3">
+              <h4 className="Home-header-text">
+                <i className="Home-header-icon">
+                  <FaUserGraduate />
+                </i>
+                Immigration Experts
+              </h4>
+              <hr></hr>
+              <p>
+                Our goal has been provide immigration in all over country and
+                universities.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -162,7 +164,7 @@ function Home() {
         </div>
       </div>
  */}
-      <div className="Home-top-flexbox2">
+      <div className="Home-top-flexbox2 px-5">
         <div
           className="Home-top-flexbox2-leftside"
           style={{ paddingLeft: "100px" }}
