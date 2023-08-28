@@ -4,7 +4,7 @@ body {
 }
 
 .nav-container {
-  background-color: #5d6975;
+  background-color: #D6F8FF;
   position: relative;
 }
 .navbar {
@@ -17,7 +17,7 @@ body {
   /* background-color: #d6f8ff; */
 }
 .navbar a {
-  color: white;
+  color: #D6F8FF;
 }
 
 .logo {

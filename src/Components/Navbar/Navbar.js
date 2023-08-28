@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { LuMessagesSquare } from "react-icons/lu";
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
 import BurgerIcon from "../icons/BurgerIcon";
-import { within } from "@testing-library/react";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -36,7 +34,7 @@ function Navbar() {
               style={({ isActive, isPending }) => {
                 return {
                   fontWeight: isActive ? "900" : "",
-                  color: isActive ? "#2c3a90" : "white",
+                  color: isActive ? "#2c3a90" : "Black" ,
                   textDecoration: isActive ? "underline" : "",
                 };
               }}
@@ -45,12 +43,11 @@ function Navbar() {
             </NavLink>
           </li>
           <li>
-            <NavLink
-              to={"/about"}
+            <NavLink to={"/about"}
               style={({ isActive, isPending }) => {
                 return {
                   fontWeight: isActive ? "900" : "",
-                  color: isActive ? "#2c3a90" : "white",
+                  color: isActive ? "#2c3a90" : "Black",
                   textDecoration: isActive ? "underline" : "",
                 };
               }}
@@ -59,13 +56,42 @@ function Navbar() {
             </NavLink>
           </li>
           <li>
-            <NavLink>PASSPORT</NavLink>
+            <NavLink to={"/passport"}
+            style={({ isActive, isPending }) => {
+              return {
+                fontWeight: isActive ? "900" : "",
+                color: isActive ? "#2c3a90" : "Black",
+                textDecoration: isActive ? "underline" : "",
+              };
+            }}
+          >
+          PASSPORT</NavLink>
           </li>
           <li>
-            <NavLink>VISA</NavLink>
-          </li>
+          <NavLink to={"/visas"}
+          style={({ isActive, isPending }) => {
+            return {
+              fontWeight: isActive ? "900" : "",
+              color: isActive ? "#2c3a90" : "Black",
+              textDecoration: isActive ? "underline" : "",
+            };
+          }}
+        >
+        VISAS</NavLink>
+        </li>
           <li>
-            <NavLink>LEGALIZATIONS</NavLink>
+            <NavLink
+              to={"/legalizations"}
+            style={({ isActive, isPending }) => {
+              return {
+                fontWeight: isActive ? "900" : "",
+                color: isActive ? "#2c3a90" : "Black",
+                textDecoration: isActive ? "underline" : "",
+              };
+            }}
+          >
+          LEGALIZATIONS
+          </NavLink>
           </li>
           <li>
             <NavLink
@@ -73,7 +99,7 @@ function Navbar() {
               style={({ isActive, isPending }) => {
                 return {
                   fontWeight: isActive ? "900" : "",
-                  color: isActive ? "#2c3a90" : "white",
+                  color: isActive ? "#2c3a90" : "Black",
                   textDecoration: isActive ? "underline" : "",
                 };
               }}
@@ -81,20 +107,20 @@ function Navbar() {
               CONTACT US
             </NavLink>
           </li>
-          <li>
-            <NavLink
+          {/*<li>
+           <NavLink
               to="/feedback"
               style={({ isActive, isPending }) => {
                 return {
                   fontWeight: isActive ? "900" : "",
-                  color: isActive ? "#2c3a90" : "white",
+                  color: isActive ? "#2c3a90" : "Black",
                   textDecoration: isActive ? "underline" : "",
                 };
               }}
             >
               FEEDBACK
             </NavLink>
-          </li>
+            </li>*/}
         </ul>
 
         {/* <div className="Navbar_right">
