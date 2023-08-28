@@ -12,10 +12,6 @@ function Navbar() {
     setMenuOpen(!menuOpen);
   };
 
-  // const pathName =
-  useEffect(() => {
-    console.log(window.location.pathname);
-  }, []);
   return (
     <div
       className="nav-container"
@@ -83,6 +79,20 @@ function Navbar() {
               }}
             >
               CONTACT US
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/feedback"
+              style={({ isActive, isPending }) => {
+                return {
+                  fontWeight: isActive ? "900" : "",
+                  color: isActive ? "#2c3a90" : "white",
+                  textDecoration: isActive ? "underline" : "",
+                };
+              }}
+            >
+              FEEDBACK
             </NavLink>
           </li>
         </ul>
