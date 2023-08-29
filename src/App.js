@@ -7,6 +7,7 @@ import Contact from "./Pages/Contact/Contact";
 import Feedback from "./Pages/Feedback.js";
 import { Routes, Route } from "react-router-dom";
 import Legalizations from "./Pages/Legalizations/Legalizations";
+import Passport from "./Pages/Passport/Passport";
 function App() {
   return (
     <>
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/passport" element={<Passport/>}/>
           <Route path="/legalizations" element={<Legalizations/>}/>
           <Route path="/contact" element={<Contact />} />
           <Route path="/feedback" element={<Feedback />} />

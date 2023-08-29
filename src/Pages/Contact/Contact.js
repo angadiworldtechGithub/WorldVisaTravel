@@ -9,6 +9,7 @@ import EmailIcon from "../../Components/icons/EmailIcon";
 function Contact() {
   return (
     <div>
+
       <div
         className={`${styles["contact-container"]} d-flex position-relative align-items-center`}
       >
@@ -32,6 +33,7 @@ function Contact() {
                 <div className={`${styles["icon-wrapper"]}`}>
                   <LocationIcon />
                 </div>
+
                 <div
                   className={`d-flex justify-content-center align-items-center flex-column ${styles["info-text"]}`}
                 >
@@ -72,6 +74,8 @@ function Contact() {
           </div>
         </div>
       </section>
+
+      
       <section>
         <div className={`container ${styles["contact-us-section"]}`}>
           <div className="row">

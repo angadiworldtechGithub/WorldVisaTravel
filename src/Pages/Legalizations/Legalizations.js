@@ -45,7 +45,7 @@ const Legalizations = () => {
 
       <div className="legal-main-content1">
         <div className="legal-flex-section-img">
-          <img src="assets/legal/3.png" alt="Banner"></img>
+          <img className="legal-image" src="assets/legal/3.png" alt="Banner"></img>
         </div>
         <div className="legal-flex-section">
           <h3 className="legal-header">DOCUMENT LEGALIZATION AND AUTHENTICATION</h3>
@@ -134,13 +134,13 @@ const Legalizations = () => {
           </h6>
         </div>
         <div className="legal-flex-section-img">
-          <img src="assets/legal/4.png" alt="Banner"></img>
+          <img className="legal-image" src="assets/legal/4.png" alt="Banner"></img>
         </div>
       </div>
 
       <div className="legal-main-content5">
         <div className="legal-flex-section-img">
-          <img src="assets/legal/5.png" alt="Banner"></img>
+          <img className="legal-image" src="assets/legal/5.png" alt="Banner"></img>
         </div>
         <div className="legal-flex-section">
           <h3  className="legal-header">MAIL YOUR DOCUMENTS</h3>
