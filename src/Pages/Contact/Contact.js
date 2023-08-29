@@ -5,6 +5,7 @@ import LocationIcon from "../../Components/icons/LocationIcon";
 import HomeIcon from "../../Components/icons/HomeIcon";
 import TelephoneIcon from "../../Components/icons/TelephoneIcon";
 import EmailIcon from "../../Components/icons/EmailIcon";
+import Feedback from "../Feedback/Feedback";
 
 function Contact() {
   return (
@@ -75,7 +76,7 @@ function Contact() {
         </div>
       </section>
 
-      
+
       <section>
         <div className={`container ${styles["contact-us-section"]}`}>
           <div className="row">
@@ -168,6 +169,7 @@ function Contact() {
           </div>
         </div>
       </section>
+      <Feedback/>
     </div>
   );
 }
