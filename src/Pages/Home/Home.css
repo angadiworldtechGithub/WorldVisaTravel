@@ -261,12 +261,12 @@ body {
 
 /*flex box4*/
 
-.Home-top-flexbox4-leftside {
+/* .Home-top-flexbox4-leftside {
   background: #f5f8fb;
 }
 .Home-top-flexbox4-rightside {
   background: #f5f8fb;
-}
+} */
 .Home-top-flexbox4-leftside,
 .Home-top-flexbox4-rightside {
   color: #fff;

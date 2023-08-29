@@ -7,8 +7,45 @@ import { GiOpenBook } from "react-icons/gi";
 import "./Home.css";
 import Search from "./../../Components/SearchCountry/Search";
 import Carousel from "react-bootstrap/Carousel";
+import Slider from "react-slick";
 
+import "../../../node_modules/slick-carousel/slick/slick.css";
+import "../../../node_modules/slick-carousel/slick/slick-theme.css";
 function Home() {
+  var settings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
   return (
     <>
       <div className="position-relative">
@@ -276,139 +313,86 @@ function Home() {
           </div>
 
           <div
-            id="carouselExampleControls"
-            class="carousel carousel-dark slide"
-            data-bs-ride="carousel"
-            style={{ paddingBottom: "140px" }}
+            style={{
+              paddingBottom: "120px",
+              width: "80%",
+              marginInline: "auto",
+            }}
           >
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="card-wrapper container-sm d-flex  justify-content-around">
-                  <div class="card  " style={{ width: "18rem" }}>
-                    <img
-                      src="https://source.unsplash.com/collection/190727/1600x900"
-                      class="card-img-top"
-                      alt="country_img"
-                    ></img>
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                    </div>
-                  </div>
-                  <div class="card" style={{ width: "18rem" }}>
-                    <img
-                      src="https://source.unsplash.com/collection/190727/1600x900"
-                      class="card-img-top"
-                      alt="country_img"
-                    ></img>
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                    </div>
-                  </div>
-                  <div class="card" style={{ width: "18rem" }}>
-                    <img
-                      src="https://source.unsplash.com/collection/190727/1600x900"
-                      class="card-img-top"
-                      alt="country_img"
-                    ></img>
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                    </div>
+            <Slider {...settings}>
+              <div class="card-wrapper container-sm d-flex  justify-content-around">
+                <div class="card" style={{ flex: 1 }}>
+                  <img
+                    src="https://source.unsplash.com/collection/190727/1600x900"
+                    class="card-img-top"
+                    alt="country_img"
+                  ></img>
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
                   </div>
                 </div>
               </div>
-              <div class="carousel-item">
-                <div class="card-wrapper container-sm d-flex   justify-content-around">
-                  <div class="card  " style={{ width: "18rem" }}>
-                    <img
-                      src="https://source.unsplash.com/collection/190727/1600x900"
-                      class="card-img-top"
-                      alt="..."
-                    ></img>
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                    </div>
+              <div class="card-wrapper container-sm d-flex  justify-content-around">
+                <div class="card" style={{ flex: 1 }}>
+                  <img
+                    src="https://source.unsplash.com/collection/190727/1600x900"
+                    class="card-img-top"
+                    alt="country_img"
+                  ></img>
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
                   </div>
-                  <div class="card" style={{ width: "18rem" }}>
-                    <img
-                      src="https://source.unsplash.com/collection/190727/1600x900"
-                      class="card-img-top"
-                      alt="..."
-                    ></img>
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                    </div>
+                </div>
+              </div>{" "}
+              <div class="card-wrapper container-sm d-flex  justify-content-around">
+                <div class="card" style={{ flex: 1 }}>
+                  <img
+                    src="https://source.unsplash.com/collection/190727/1600x900"
+                    class="card-img-top"
+                    alt="country_img"
+                  ></img>
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
                   </div>
-                  <div class="card" style={{ width: "18rem" }}>
-                    <img
-                      src="https://source.unsplash.com/collection/190727/1600x900"
-                      class="card-img-top"
-                      alt="..."
-                    ></img>
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                    </div>
+                </div>
+              </div>{" "}
+              <div class="card-wrapper container-sm d-flex  justify-content-around">
+                <div class="card" style={{ flex: 1 }}>
+                  <img
+                    src="https://source.unsplash.com/collection/190727/1600x900"
+                    class="card-img-top"
+                    alt="country_img"
+                  ></img>
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                  </div>
+                </div>
+              </div>{" "}
+              <div class="card-wrapper container-sm d-flex  justify-content-around">
+                <div class="card" style={{ flex: 1 }}>
+                  <img
+                    src="https://source.unsplash.com/collection/190727/1600x900"
+                    class="card-img-top"
+                    alt="country_img"
+                  ></img>
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                  </div>
+                </div>
+              </div>{" "}
+              <div class="card-wrapper container-sm d-flex  justify-content-around">
+                <div class="card" style={{ flex: 1 }}>
+                  <img
+                    src="https://source.unsplash.com/collection/190727/1600x900"
+                    class="card-img-top"
+                    alt="country_img"
+                  ></img>
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
                   </div>
                 </div>
               </div>
-              <div class="carousel-item">
-                <div class="card-wrapper container-sm d-flex  justify-content-around">
-                  <div class="card " style={{ width: "18rem" }}>
-                    <img
-                      src="https://source.unsplash.com/collection/190727/1600x900"
-                      class="card-img-top"
-                      alt="..."
-                    ></img>
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                    </div>
-                  </div>
-                  <div class="card" style={{ width: "18rem" }}>
-                    <img
-                      src="https://source.unsplash.com/collection/190727/1600x900"
-                      class="card-img-top"
-                      alt="..."
-                    ></img>
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                    </div>
-                  </div>
-                  <div class="card" style={{ width: "18rem" }}>
-                    <img
-                      src="https://source.unsplash.com/collection/190727/1600x900"
-                      class="card-img-top"
-                      alt="..."
-                    ></img>
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselExampleControls"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselExampleControls"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
+            </Slider>
           </div>
         </div>
 

@@ -29,7 +29,15 @@ function Search() {
 
   return (
     <div className="search-container">
-      <div className="search1">
+      <div
+        className="search1"
+        style={{
+          display: "flex",
+          gap: "10px",
+          flexWrap: "wrap",
+          justifyContent: "center",
+        }}
+      >
         <Select
           className="select-box"
           placeholder="Select Source Country"
@@ -38,23 +46,23 @@ function Search() {
           value={sourceCountry}
           onChange={setSourceCountry}
         />
+        <Select
+          className="select-box"
+          placeholder="Select Destination Country"
+          options={countryOptions}
+          components={{ Option: CustomOption }}
+          value={destinationCountry}
+          onChange={setDestinationCountry}
+        />
       </div>
 
-      <Select
-        className="select-box"
-        placeholder="Select Destination Country"
-        options={countryOptions}
-        components={{ Option: CustomOption }}
-        value={destinationCountry}
-        onChange={setDestinationCountry}
-      />
-      <Select
+      {/* <Select
         className="select-box"
         placeholder="Select Residing State"
         options={stateOptions}
         value={residingState}
         onChange={setResidingState}
-      />
+      /> */}
       <button className="search-button" onClick={handleSearch}>
         Go
       </button>

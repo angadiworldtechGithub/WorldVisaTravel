@@ -4,16 +4,24 @@ body {
 }
 
 .search-container {
-  position: absolute;
+  /* position: absolute; */
+  width: 100%;
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  left: 50%;
+  /* left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
 }
 
+/* @media screen and(max-width:320px) {
+  .search-container {
+    position: relative;
+    margin-top: 20px;
+  }
+} */
 .select-box {
   width: 250px;
   /* height: 30px;
@@ -28,7 +36,7 @@ body {
   padding: 20px;
   font-size: 16px;
   border: none;
-  margin-left: 20px;
+  /* margin-left: 20px; */
   cursor: pointer;
 }
 
@@ -42,10 +50,33 @@ body {
 
 @media (max-width: 768px) {
   .search-container {
-    flex-direction: column;
+    /* flex-direction: column; */
+    position: relative;
+    margin-top: 20px;
   }
 }
 
+@media (min-width: 629px) {
+  .search-container {
+    /* flex-direction: column; */
+    position: absolute;
+    left: 50%;
+    top: 77%;
+    transform: translate(-50%, -50%);
+    /* margin-top: 20px; */
+  }
+}
+
+@media (min-width: 901px) {
+  .search-container {
+    /* flex-direction: column; */
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    /* margin-top: 20px; */
+  }
+}
 .css-1nmdiq5-menu {
   max-height: 250px;
   overflow: hidden;
