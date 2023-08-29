@@ -1,76 +1,77 @@
 .About-container {
-    display: flex;
-    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
-    padding-left: 60px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+  padding-left: 60px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
 
-  }
-  
-  .About-item {
-    flex: 1; /* Equal width for both items */
-    padding: 10px;
-    margin: 10px;
-    min-width: 200px; /* Set a minimum width for the items */
-  }
-  .Aboutus_flex_img{
-    border-radius: 20px;
-  }
-  
-  .About-container1 {
-    display: flex;
-    background-color: #2D3845;
-    padding-top: 80px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 10px;
-    color:#fff;
-    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
-  }
+.About-item {
+  flex: 1; /* Equal width for both items */
+  padding: 10px;
+  margin: 10px;
+  min-width: 200px; /* Set a minimum width for the items */
+}
+.Aboutus_flex_img {
+  border-radius: 20px;
+}
 
-  .About_icon_container {
-    display: flex;
-    flex-wrap: wrap; /* Wrap items to the next line on smaller screens */
-    justify-content: space-between; /* Distribute items evenly */
-  }
-  
-  .About-container2 {
-    display: flex;
-    background-color: #2D3845;
-    color:#fff;
-    border: 1px solid #7E909F;
-    border-left: none; /* Remove left border */
-    border-right: none; /* Remove right border */
-    border-bottom: none; /* Remove bottom border */
-    padding-left: 120px;
-    padding-bottom: 40px;
-    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
-  }
+.About-container1 {
+  display: flex;
+  background-color: #2d3845;
+  padding-top: 80px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 10px;
+  color: #fff;
+  flex-wrap: wrap-reverse; /* Allow items to wrap to the next line on smaller screens */
+}
 
-  .About_icon {
-    flex-basis: calc(15% - 10px); /* Equal width for each item, accounting for spacing */
-    font-size: 50px;
-    color:#7E909F;
-    padding: 30px 30px 30px 30px;
-    margin-left: 40px;
-    box-sizing: border-box; /* Include padding and border in item width */
-  }
-  
-  .About-button{
-    height: 50px;
-    width: 200px;
-    border-radius:10px;
-    color: #fff;
-    border: none;
-    background-color: #0067DA;
-  }
-  
-  .About-arrow-icon{
-    padding-left: 20px;
-  }
+.About_icon_container {
+  display: flex;
+  flex-wrap: wrap; /* Wrap items to the next line on smaller screens */
+  justify-content: space-around; /* Distribute items evenly */
+}
 
-  /*About-cilent-container Container for flexboxes */
-.About-cilent-container{
+.About-container2 {
+  display: flex;
+  background-color: #2d3845;
+  color: #fff;
+  border: 1px solid #7e909f;
+  border-left: none; /* Remove left border */
+  border-right: none; /* Remove right border */
+  border-bottom: none; /* Remove bottom border */
+  padding-inline: 10px;
+  padding-bottom: 40px;
+  flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+}
+
+.About_icon {
+  flex-basis: calc(
+    15% - 10px
+  ); /* Equal width for each item, accounting for spacing */
+  font-size: 50px;
+  color: #7e909f;
+  padding: 15px;
+  /* margin-left: 40px; */
+  box-sizing: border-box; /* Include padding and border in item width */
+}
+
+.About-button {
+  height: 50px;
+  width: 200px;
+  border-radius: 10px;
+  color: #fff;
+  border: none;
+  background-color: #0067da;
+}
+
+.About-arrow-icon {
+  padding-left: 20px;
+}
+
+/*About-cilent-container Container for flexboxes */
+.About-cilent-container {
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -85,11 +86,11 @@
 /* Create four equal columns */
 .About-cilent-item {
   flex: 20%;
-  margin-left:10px;
+  margin-left: 10px;
   text-align: center;
 }
-.About-cilent-header{
-font-weight: 600;
+.About-cilent-header {
+  font-weight: 600;
 }
 /* On screens that are 992px wide or less, go from four columns to two columns */
 @media screen and (max-width: 992px) {
