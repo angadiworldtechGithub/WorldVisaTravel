@@ -25,6 +25,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/feedback" element={<Feedback />} />
           <Route path="/visas" element={<Visas />} />
+          <Route path="/visas/:countryId/:visaType" element={<Visas />} />
         </Routes>
 
         <Footer />
