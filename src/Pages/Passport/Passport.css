@@ -1,50 +1,66 @@
-.passport{
-  margin: 40px 40px 40px 40px;
-}
-.passport-cards{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: -10px; /* To offset column gaps */
-  }
-
 .passport-header{
-    font-weight: 700;
-    padding-left:40px ;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right:40px;
+  font-weight: 700;
+  padding-left:40px ;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right:40px;
 }
 
 .passport-sub-header{
-    font-weight: 500;
-    padding-left:40px ;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right:40px;
+  font-weight: 500;
+  padding-left:40px ;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right:40px;
 }
-  
-  .card {
-    flex-basis: calc(33.33% - 20px); /* Adjust for 3 columns with gaps */
-    padding: 10px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    margin: 10px; /* Create gaps between cards */
+
+.passport {
+  text-align: center;
+}
+
+.passport-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 30px; 
+}
+
+
+.passport-card {
+  width: calc(30% - 20px); /* 3 cards in a row */
+  margin:20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-header {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.card-passage {
+  margin: 10px 0;
+}
+
+.card-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 767px) {
+  .passport-card {
+    width: 100%; /* 1 card in a column */
+    margin: 10px 0; /* Remove horizontal margin */
   }
-  
-  .card img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .card h2 {
-    font-size: 1.2rem;
-    margin-top: 10px;
-  }
-  
-  .card p {
-    font-size: 0.9rem;
-    margin-top: 5px;
-  }
-  
+}

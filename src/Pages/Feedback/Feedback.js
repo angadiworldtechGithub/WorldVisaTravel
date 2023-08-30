@@ -7,8 +7,6 @@ const services = ['Passports', 'Visas', 'Documents', 'Travel Tickets'];
 const TwoFlexContainers = () => {
   return (
     <div className="main-container">
-   
-  
     <p>We sincerely value your partnership with World Visa Travel,and it has been an absolute delight assisting you!</p>
     <div className="flex-container"> 
     <div className="box"> 

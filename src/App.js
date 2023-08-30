@@ -8,6 +8,8 @@ import Feedback from "./Pages/Feedback/Feedback.js";
 import { Routes, Route } from "react-router-dom";
 import Legalizations from "./Pages/Legalizations/Legalizations";
 import Passport from "./Pages/Passport/Passport";
+import Reqdouments from "./Components/Reqdouments/Reqdouments";
+
 function App() {
   return (
     <>
@@ -18,6 +20,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/passport" element={<Passport/>}/>
+          <Route path="/reqdouments" element={<Reqdouments/>}/>
           <Route path="/legalizations" element={<Legalizations/>}/>
           <Route path="/contact" element={<Contact />} />
           <Route path="/feedback" element={<Feedback />} />
