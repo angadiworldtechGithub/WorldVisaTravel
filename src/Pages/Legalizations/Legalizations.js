@@ -1,4 +1,3 @@
-// App.js
 import React from "react";
 import "./Legalizations.css"; // Import your CSS file for styling
 
@@ -92,11 +91,13 @@ const Legalizations = () => {
           </table>
         </section>
 
-        <div>
-          <h6>Fees are subject to change without notice.</h6>
-          <h6>WVT Fees only cover our processing fees.</h6>
-          <h6>Different legalization services fees are not included.</h6>
-          <h6>If there is any uncertainty, please give us a call to verify.</h6>
+        <div className="legal-lists">
+        <ul>
+          <li>Fees are subject to change without notice.</li>
+          <li>WVT Fees only cover our processing fees.</li>
+          <li>Different legalization services fees are not included.</li>
+          <li>If there is any uncertainty, please give us a call to verify.</li>
+        </ul>
         </div>
 
         <div className="legal-main-content3">
@@ -125,10 +126,14 @@ const Legalizations = () => {
           </table>
         </section>
 
-        <h6>Fees are subject to change without notice.</h6>
-        <h6>WVT Fees only cover our processing fees.</h6>
-        <h6>Different legalization services fees are not included.</h6>
-        <h6>If there is any uncertainty, please give us a call to verify.</h6>
+        <div className="legal-lists">
+        <ul>
+        <li>Fees are subject to change without notice.</li>
+        <li>WVT Fees only cover our processing fees.</li>
+        <li>Different legalization services fees are not included.</li>
+        <li>If there is any uncertainty, please give us a call to verify.</li>
+        </ul>
+        </div>
 
         <div className="legal-main-content4">
           <div className="legal-flex-section">
@@ -249,9 +254,12 @@ const Legalizations = () => {
         </section>
 
         <div>
-          <h6>Fees are subject to change without notice.</h6>
-          <h6>If there is any uncertainty, please give us a call to verify.</h6>
-
+        <div className="legal-lists">
+        <ul>
+          <li>Fees are subject to change without notice.</li>
+          <li>If there is any uncertainty, please give us a call to verify.</li>
+        </ul>
+        </div>
           <h5>
             <b>Note: </b>To meet Embassy requirements, please include a full
             copy (including originals) of all documents to be authenticated.

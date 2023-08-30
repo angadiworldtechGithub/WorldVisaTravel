@@ -16,12 +16,12 @@ const Card = ({ img, header, passage, buttonLabel }) => {
 const CardContainer = ({ cards }) => {
   return (
     <div className="passport-container">
-     <h3 className='passport-header'> <center>U.S. PASSPORT SERVICES</center></h3>
-      <h5 className='passport-sub-header'>World Visa Travel is specialized in expediting new U.S. passports, renewals, reissue, children/minors, and more. Please choose the right service for your travel needs.</h5>
+    <center><h3 className='passport-header'>U.S. PASSPORT SERVICES</h3>
+      <h5 className='passport-sub-header'>World Visa Travel is specialized in expediting new U.S. passports, renewals, reissue, children/minors, and more. Please choose the right service for your travel needs.</h5></center>
       {cards.map((card, index) => (
         <Card
           key={index}
-          img={card.img}
+          img={card.image}
           header={card.header}
           passage={card.passage}
           buttonLabel={card.buttonLabel}
@@ -33,52 +33,52 @@ const CardContainer = ({ cards }) => {
 
 const cardsData = [
   {
-    image: '/assets/flex2_image.png',
+    image: 'assets/passport/passport1.png',
     header: 'APPLY FOR A NEW OR FIRST TIME U.S. PASSPORT',
     passage:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod ligula ut...',
+      ' Ready to explore the world? Begin your travel story by applying for your new or first-time U.S. passport today, and let your international experiences unfold.',
     buttonLabel: 'Apply Now'
   },
   {
-    image: 'assets/flex2_image.png',
+    image: 'assets/passport/passport2.png',
     header: 'RENEW YOUR U.S. PASSPORT',
     passage:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod ligula ut...',
+       ' Ensure your travel plans stay on track – renew your U.S. passport hassle-free and explore the world with confidence.',
     buttonLabel: 'Apply Now'
   },
   {
-    image: 'assets/flex2_image.png',
+    image: 'assets/passport/passport6.png',
     header: 'REPLACE A MUTILATED OR DAMAGED U.S. PASSPORT',
     passage:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod ligula ut...',
+      'To replace a mutilated or damaged U.S. passport, individuals can apply for a new passport by following the official procedure, ensuring smooth travel and identification.',
     buttonLabel: 'Apply Now'
   },
   {
-    image: 'assets/flex2_image.png',
+    image: 'assets/passport/passport4.png',
     header: 'APPLY FOR A CHILD/MINOR U.S. PASSPORT',
     passage:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod ligula ut...',
+      'To apply for a child/minor U.S. passport, gather required documents and visit a passport acceptance facility with your child, completing the application process in person.',
     buttonLabel: 'Apply Now'
   },
   {
-    image: 'assets/flex2_image.png',
+    image: 'assets/passport/passport5.png',
     header: 'APPLY FOR A SECOND VALID U.S. PASSPORT',
     passage:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod ligula ut...',
+      'Explore Dual Travel Convenience: Secure Your Second Valid U.S. Passport Today!',
     buttonLabel: 'Apply Now'
   },
   {
-    image: 'assets/flex2_image.png',
+    image: 'assets/passport/passport7.png',
     header: 'RE-ISSUE A U.S. PASSPORT',
     passage:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod ligula ut...',
+      'Requesting a re-issue of a U.S. passport involves renewing an existing passport with updated information, ensuring continued hassle-free international travel.',
     buttonLabel: 'Apply Now'
   },
   {
-    image: 'assets/flex2_image.png',
+    image: 'assets/passport/passport6.png',
     header: 'REPLACE A LOST OR STOLEN U.S. PASSPORT',
     passage:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod ligula ut...',
+      'If your U.S. passport is lost or stolen, promptly report it to the authorities and apply for a replacement to ensure seamless travel and identification.',
     buttonLabel: 'Apply Now'
   },
  
