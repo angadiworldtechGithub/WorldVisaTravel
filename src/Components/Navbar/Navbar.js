@@ -58,7 +58,7 @@ function Navbar() {
           </li>
           <li>
             <NavLink
-              to={"/passport"}
+              to={"/passports"}
               style={({ isActive, isPending }) => {
                 return {
                   fontWeight: isActive ? "900" : "",

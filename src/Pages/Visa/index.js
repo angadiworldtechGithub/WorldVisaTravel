@@ -1,7 +1,7 @@
 import React from "react";
 
-function Visas() {
-  return <div>Visass</div>;
+function Visa() {
+  return <div>Visas</div>;
 }
 
-export default Visas;
+export default Visa;

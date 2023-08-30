@@ -10,6 +10,8 @@ import Legalizations from "./Pages/Legalizations/Legalizations";
 import Passport from "./Pages/Passport/Passport";
 import Reqdouments from "./Components/Reqdouments/Reqdouments";
 import Visas from "./Pages/Visa";
+import VisaRequirements from "./Pages/VisaRequirements";
+
 function App() {
   return (
     <>
@@ -19,13 +21,17 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/passport" element={<Passport />} />
-          <Route path="/reqdouments" element={<Reqdouments />} />
+          <Route path="/passports" element={<Passport />} />
+          <Route path="/passports/:serviceType" element={<Reqdouments />} />
           <Route path="/legalizations" element={<Legalizations />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/feedback" element={<Feedback />} />
+          {/* visas */}
           <Route path="/visas" element={<Visas />} />
-          <Route path="/visas/:countryId/:visaType" element={<Visas />} />
+          <Route
+            path="/visas/:countryId/:visaType"
+            element={<VisaRequirements />}
+          />
         </Routes>
 
         <Footer />
