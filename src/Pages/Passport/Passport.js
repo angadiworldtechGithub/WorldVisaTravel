@@ -33,7 +33,7 @@ const CardContainer = ({ cards }) => {
 
 const cardsData = [
   {
-    image: 'assets/flex2_image.png',
+    image: '/assets/flex2_image.png',
     header: 'APPLY FOR A NEW OR FIRST TIME U.S. PASSPORT',
     passage:
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod ligula ut...',
