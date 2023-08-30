@@ -16,7 +16,7 @@ const ReqdoumentsTable = () => {
       },
     },
     {
-        id: 1,
+        id: 2,
         column1: 'Photo',
         column2: {
           text: [
@@ -26,25 +26,100 @@ const ReqdoumentsTable = () => {
           lists: [],
         },
       },
+
       {
-        id: 1,
-        column1: 'Row 1',
+        id: 3,
+        column1: 'Proof of Identity',
         column2: {
           text: [
-            'A certified Birth Certificate is required.',
-            'Otherwise, see Secondary Evidence of U.S. Citizenship.',
-          ],
+            'Previously issued, undamaged U.S. Passport',
+            'Naturalization Certificate',
+            'Valid Driver’s License',
+            'Current Government ID (city, state or federal)',
+            'Current Military ID (military and dependents)'
+        ],
           lists: [
             Array(5)
-              .fill('List 1 Item')
-              .map((item, index) => `${item} ${index + 1}`),
-            Array(5)
-              .fill('List 2 Item')
-              .map((item, index) => `${item} ${index + 1}`),
-            Array(5)
-              .fill('List 3 Item')
+              .fill('Previously issued, undamaged U.S. Passport',
+              'Naturalization Certificate',
+              'Valid Driver’s License',
+              'Current Government ID (city, state or federal)',
+              'Current Military ID (military and dependents)')
               .map((item, index) => `${item} ${index + 1}`),
           ],
+        },
+      },
+
+      {
+        id: 4,
+        column1: 'Letter of Authorization',
+        column2: {
+          text: [
+            'Download Authorization Letter',
+            'Two completed and signed Letter of Authorization.',
+          ],
+          lists: [],
+        },
+      },
+
+      {
+        id: 5,
+        column1: 'Minors (under 16 years old)',
+        column2: {
+          text: [
+            'Both parents or child’s legal guardian must:',
+            'Present evidence of child’s U.S. citizenship (One of the following):',
+            '',
+          '1)Previously issued, undamaged US Passport.',
+          '2)Certified Birth Certificate issued by the city, county or state.',
+          '3)Consular Report of Birth Abroad or Certification of Birth.',
+          '4)Naturalization Certificate.',
+          '5)Certificate of Citizenship.',
+          'and:',
+          'Present evidence they are the child’s parents or guardian (One of the following):',
+          'Minors certified US Birth Certificate with BOTH parents’ names.',
+          'Minors certified Foreign Birth Certificate with BOTH parents’ names.',
+          'Minors Report of Birth Abroad with BOTH parents’ names.',
+          'Adoption Decree with adopting parents’ names.',
+          'Court Order establishing custody.',
+          'Court Order establishing guardianship.',
+          'and:',
+          'Show valid personal identification, and',
+          'Sign and take oath before an authorized passport acceptance agent.'
+          ],
+          lists: [],
+        },
+      },
+      
+      {
+        id: 6,
+        column1: 'Proof of Departure',
+        column2: {
+          text: [
+            'A copy of your round trip airline tickets, or itinerary, or letter for employer (for Rush processing within 14 days).',
+          ],
+          lists: [],
+        },
+      },
+
+      {
+        id: 6,
+        column1: 'Proof of Departure',
+        column2: {
+          text: [
+            'A copy of your round trip airline tickets, or itinerary, or letter for employer (for Rush processing within 14 days).',
+          ],
+          lists: [],
+        },
+      },
+      {
+        id: 7,
+        column1: 'DS-11 Application Form',
+        column2: {
+          text: [
+            'A copy of yosin',
+          ],
+          lists: [],
         },
       },
   ];
