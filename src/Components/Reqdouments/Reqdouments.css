@@ -1,3 +1,7 @@
+.reqdouments{
+  margin: 40px;
+  border: 2px solid #000;
+}
   .table-container{
     margin: 30px 30px 30px 30px;
   }
@@ -50,4 +54,42 @@
     padding: 30px;
 }
   
-  
+.table-container {
+  overflow-x: auto;
+}
+
+.responsive-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.responsive-table th,
+.responsive-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .responsive-table {
+    display: block;
+  }
+
+  .responsive-table thead {
+    display: none;
+  }
+
+  .responsive-table tbody tr {
+    margin-bottom: 15px;
+    display: block;
+    border: 1px solid #ccc;
+  }
+
+  .responsive-table td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border: none;
+  }
+}

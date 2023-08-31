@@ -9,6 +9,7 @@ import { Routes, Route } from "react-router-dom";
 import Legalizations from "./Pages/Legalizations/Legalizations";
 import Passport from "./Pages/Passport/Passport";
 import Reqdouments from "./Components/Reqdouments/Reqdouments";
+import Costing from "./Components/Costingtable/Costing"
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/passport" element={<Passport/>}/>
           <Route path="/reqdouments" element={<Reqdouments/>}/>
+          <Route path="/costing" element={<Costing/>}/>
           <Route path="/legalizations" element={<Legalizations/>}/>
           <Route path="/contact" element={<Contact />} />
           <Route path="/feedback" element={<Feedback />} />
