@@ -11,6 +11,7 @@ import Passport from "./Pages/Passport/Passport";
 import Reqdouments from "./Components/Reqdouments/Reqdouments";
 import Visas from "./Pages/Visa";
 import VisaRequirements from "./Pages/VisaRequirements";
+import Costing from "./Components/Costingtable/Costing";
 
 function App() {
   return (
@@ -23,6 +24,10 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/passports" element={<Passport />} />
           <Route path="/passports/:serviceType" element={<Reqdouments />} />
+          <Route path="/legalizations" element={<Legalizations />} />
+          {/* <Route path="/passport" element={<Passport/>}/>
+          <Route path="/reqdouments" element={<Reqdouments/>}/> */}
+          <Route path="/costing" element={<Costing />} />
           <Route path="/legalizations" element={<Legalizations />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/feedback" element={<Feedback />} />

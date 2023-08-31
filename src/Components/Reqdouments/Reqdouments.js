@@ -1,5 +1,6 @@
 import React from "react";
 import "./Reqdouments.css"; // Create a CSS file for styling
+import Costing from "./../Costingtable/Costing";
 
 const ReqdoumentsTable = () => {
   const tableData = [
@@ -155,7 +156,6 @@ const ReqdoumentsTable = () => {
 };
 
 const Reqdouments = () => {
-  console.log("pathname", window.location.pathname);
   return (
     <div className="reqdouments">
       <center className="reqdouments-header">
@@ -164,135 +164,173 @@ const Reqdouments = () => {
       </center>
       <ReqdoumentsTable />
       <div className="reqdouments-passage-list">
-        <h3>APPLICATION GUIDE</h3>
-        <h5>
-          Issue is determined by the U.S. Passport Agency based on the urgency
-          of your departure.
-        </h5>
-        <h5>
-          PLEASE FOLLOW THESE INSTRUCTIONS CAREFULLY. MISSING OR INCORRECT
-          INFORMATION MAY RESULT IN SIGNIFICANT DELAYS.
-        </h5>
+        <center>
+          <h3>APPLICATION GUIDE</h3>
+          <h5>
+            Issue is determined by the U.S. Passport Agency based on the urgency
+            of your departure.
+          </h5>
+          <h5>
+            PLEASE FOLLOW THESE INSTRUCTIONS CAREFULLY. MISSING OR INCORRECT
+            INFORMATION MAY RESULT IN SIGNIFICANT DELAYS.
+          </h5>
+        </center>
         <ol>
-          1) Go to U.S. Passport Applications and Forms
+          <h5>
+            <b>Go to U.S. Passport Applications and Forms</b>
+          </h5>
           <li>
-            Check the Privacy and Computer Fraud and Abuse Acts Notices and
-            Disclaimers and Click “Submit”.
+            Check the{" "}
+            <b>
+              Privacy and Computer Fraud and Abuse Acts Notices and Disclaimers
+            </b>{" "}
+            and Click “Submit”.
           </li>
           <li>Choose “Complete Form Online” and Click “Submit”.</li>
-          <li>In the About the Applicant page,</li>
+          <li>
+            In the <b>About the Applicant</b> page,
+          </li>
           <ul>
             <li>
-              Check the Privacy Act and Paperwork Reduction Act statements and
-              Fill Out the necessary fields
+              Check the{" "}
+              <b>Privacy Act and Paperwork Reduction Act statements</b> and Fill
+              Out the necessary fields
             </li>
-            Click “Next” when done
+            <li>Click “Next” when done</li>
           </ul>
-          <li>In the Contact Information page,</li>
+          <li>
+            In the <b>Contact Information</b> page,
+          </li>
           <ul>
-            Fill Out the necessary fields
-            <li>Choose “Yes” for Permanent Address</li>
-            <li>Choose “Mail” for Preferred Method of Communication</li>
+            <li>Fill Out the necessary fields</li>
+            <li>
+              Choose “Yes” for <b>Permanent Address</b>
+            </li>
+            <li>
+              Choose “Mail” for <b>Preferred Method of Communication</b>
+            </li>
             <p>
-              Note: We will deliver your Passport to your desired address. The
-              information here is only for application purpose.
+              <b>Note : </b>We will deliver your Passport to your desired
+              address. The information here is only for application purpose.
             </p>
             <li>Click “Next” when done</li>
           </ul>
-        </ol>
-        <ol>
-          <li>In the Travel Plans page,</li>
-          <ul>
-            <li>
-              If you need the Passport to be back immediately, you MUST enter
-              the travel dates in TWO WEEKS time.
-            </li>
-            <li>
-              For example: Current Date: August 7, 2015 Enter Date Of Your Trip:
-              August 21, 2015 Enter Date Of Your Return: August 28, 2015 (you
-              may enter any date of return) Remember to provide an itinerary
-              that matches your dates of travel, if you need to get the Passport
-              immediately.
-            </li>
-          </ul>
-        </ol>
-
-        <ol>
           <li>
-            For Countries To Be Visited, Enter any country. (e.g. CANADA,
-            MEXICO, etc.)
+            In the<b> Travel Plans</b> page,
           </li>
           <ul>
             <li>
-              If you are traveling to specific countr(ies), you can Enter them
+              If you need the Passport to be back immediately, you MUST enter
+              the travel dates in <b>TWO WEEKS </b>time.
             </li>
-            <li>Click “Next” when done</li>
-          </ul>
-          <li>In Who should we contact in case of an emergency? page,</li>
-          <ul>
-            <li>Fill Out all fields</li>
-            <li>Click “Next” when done</li>
-          </ul>
-          <li>In Your Most Recent Passport page,</li>
-          <ul>
-            <li>Choose “None”</li>
-            <li>Click “Next” when done</li>
-          </ul>
-        </ol>
-        <ol>
-          <li>In Parent & Spouse Information page,</li>
-          <ul>
-            <li>Fill Out all necessary fields</li>
-            <li>Click “Next” when done</li>
-          </ul>
-          <li>In Are you known by other names? page,</li>
-          <ul>
-            <li>Fill Out if applicable</li>
-            <li>Click “Next” when done</li>
-          </ul>
-          <li>In Personal Application Review page,</li>
-          <ul>
-            <li>Review all entered information</li>
-            <li>Edit, if necessary</li>
-            <li>Click “Next” when done</li>
-          </ul>
-
-          <li>In Passport Products and Fees page,</li>
-          <ul>
-            <li>Choose “Passport Book ($110)” for Passport Options</li>
-            <li>Then, Check 52 Page Book (Non-Standard)</li>
             <li>
-              Choose “Expedited at Agency Service ($60)” for Processing Methods
+              For example:
+              <h6>Current Date: August 7, 2015</h6>
+              <h6>Enter Date Of Your Trip: August 21, 2015</h6>
+              <h6>
+                Enter Date Of Your Return: August 28, 2015 (you may enter any
+                date of return)
+              </h6>
+              <p>
+                Remember to provide an itinerary that matches your dates of
+                travel, if you need to get the Passport immediately.
+              </p>
             </li>
           </ul>
-          <p>
-            {" "}
-            Note: This is the government fee that you have to pay in order to
-            process your Passport through a travel agency.
-          </p>
-        </ol>
 
-        <ul>
-          <li>Choose “Standard Delivery (FREE)” for Delivery Methods</li>
-          <p>
-            Note: This is only for application purpose. WVT will collect your
-            Passport when it’s done and mail it back to you.
-          </p>
+          <ol>
+            <li>
+              For <b>Countries To Be Visited,</b> Enter any country. (e.g.
+              CANADA, MEXICO, etc.)
+            </li>
+            <ul>
+              <li>
+                If you are traveling to specific countr(ies), you can Enter them
+              </li>
+              <li>Click “Next” when done</li>
+            </ul>
+            <li>
+              In <b>Who should we contact in case of an emergency?</b> page,
+            </li>
+            <ul>
+              <li>Fill Out all fields</li>
+              <li>Click “Next” when done</li>
+            </ul>
+            <li>
+              In <b>Your Most Recent Passport</b> page,
+            </li>
+            <ul>
+              <li>Choose “None”</li>
+              <li>Click “Next” when done</li>
+            </ul>
+            <li>
+              In <b>Parent & Spouse Information</b> page,
+            </li>
+            <ul>
+              <li>Fill Out all necessary fields</li>
+              <li>Click “Next” when done</li>
+            </ul>
+            <li>
+              In <b>Are you known by other names? </b>page,
+            </li>
+            <ul>
+              <li>Fill Out if applicable</li>
+              <li>Click “Next” when done</li>
+            </ul>
+            <li>
+              In <b>Personal Application Review</b> page,
+            </li>
+            <ul>
+              <li>Review all entered information</li>
+              <li>Edit, if necessary</li>
+              <li>Click “Next” when done</li>
+            </ul>
 
-          <li>Skip “Additional Fees”</li>
-          <p>
-            Note: There is an Acceptance Fee ($25) for New Passport Applications
-            to be paid to the clerk at Post Office / Courthouse.
-          </p>
-          <li>Click “Next” when done</li>
-        </ul>
+            <li>
+              In <b>Passport Products and Fees</b> page,
+            </li>
+            <ul>
+              <li>Choose “Passport Book ($110)” for Passport Options</li>
+              <li>Then, Check 52 Page Book (Non-Standard)</li>
+              <li>
+                Choose “Expedited at Agency Service ($60)” for Processing
+                Methods
+              </li>
+            </ul>
+            <p>
+              {" "}
+              Note: This is the government fee that you have to pay in order to
+              process your Passport through a travel agency.
+            </p>
+          </ol>
 
-        <ol>
-          <li>In Next Steps page,</li>
+          <ul>
+            <li>Choose “Standard Delivery (FREE)” for Delivery Methods</li>
+            <p>
+              Note: This is only for application purpose. WVT will collect your
+              Passport when it’s done and mail it back to you.
+            </p>
+
+            <li>Skip “Additional Fees”</li>
+            <p>
+              Note: There is an Acceptance Fee ($25) for New Passport
+              Applications to be paid to the clerk at Post Office / Courthouse.
+            </p>
+            <li>Click “Next” when done</li>
+          </ul>
+
+          <li>
+            <b>
+              In <b>Next Steps </b>page,
+            </b>
+          </li>
           <ul>
             <li>
-              Check I have read and acknowledge the steps and information
-              contained above.
+              Check{" "}
+              <b>
+                I have read and acknowledge the steps and information contained
+                above.
+              </b>
             </li>
             <li>Click “Create Form”</li>
           </ul>
@@ -300,9 +338,10 @@ const Reqdouments = () => {
           <li>The Forms will be downloaded to your computer.</li>
           <ul>
             <li>Print the Forms.</li>
+
             <p>
-              Print Your DS-11 Forms Printing Instructions: Please print this
-              form on SINGLE-SIDED PAPER – double-sided printing will not be
+              <b>Printing Instructions: </b>Please print this form on{" "}
+              <b>SINGLE-SIDED PAPER </b> – double-sided printing will not be
               accepted. Do NOT Sign the forms yet.
             </p>
           </ul>
@@ -344,11 +383,15 @@ const Reqdouments = () => {
               after 5 business days
             </li>
             <li>
-              Please send all Required Documents to us Same Day/Next Day after
-              it is signed
+              Please send <b>all Required Documents</b> to us Same Day/Next Day
+              after it is signed
             </li>
           </ul>
         </ol>
+      </div>
+
+      <div className="reqdoument_table">
+        <Costing />
       </div>
     </div>
   );
