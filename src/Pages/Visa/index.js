@@ -3,12 +3,9 @@ import VisaCardType from "../../Components/VisaTypeCard";
 
 function Visa() {
   const visatypes = [
-    { type: "tourist", citizenship: "us" },
-    { type: "tourist", citizenship: "non-us" },
-    { type: "business", citizenship: "us" },
-    { type: "business", citizenship: "non-us" },
-    { type: "official", citizenship: "us" },
-    { type: "official", citizenship: "us" },
+    { type: "tourist" },
+    { type: "business" },
+    { type: "official" },
   ];
   return (
     <div className="container py-5">

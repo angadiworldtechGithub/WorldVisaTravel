@@ -14,10 +14,16 @@ function VisaCardType({ type, citizenship }) {
   //   let initialValue = { label: "United States", value: "US" };
 
   const [sourceCountry, setSourceCountry] = useState(null);
+  const [citizenshipType, setCitizenShipType] = useState("");
+  const citizenshipOptions = [
+    { value: "us", label: "US Citizen" },
+    { value: "non-us", label: "Non-US Citizen" },
+  ];
 
   useEffect(() => {
     console.log(sourceCountry);
   }, [sourceCountry]);
+
   return (
     <div
       style={{
@@ -60,7 +66,9 @@ function VisaCardType({ type, citizenship }) {
             textDecoration: "underline",
           }}
         >
-          {type + " Visa for " + citizenship + " Citizens"}
+          {`${type} Visa ${
+            citizenshipType ? " for " + citizenshipType.label + "s" : ""
+          }`}
         </h2>
       </div>
 
@@ -73,6 +81,13 @@ function VisaCardType({ type, citizenship }) {
           justifyContent: "center",
         }}
       >
+        <Select
+          className="select-box"
+          placeholder="Choose citizenship"
+          options={citizenshipOptions}
+          value={citizenshipType}
+          onChange={setCitizenShipType}
+        />
         <Select
           className="select-box"
           placeholder="Select Destination Country"
