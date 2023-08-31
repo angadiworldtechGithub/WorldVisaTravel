@@ -5,7 +5,7 @@ function VisaRequirements() {
   useEffect(() => {
     console.log(params);
   }, []);
-  return <div>{VisaRequirements}</div>;
+  return <div>VisaRequirements</div>;
 }
 
 export default VisaRequirements;
