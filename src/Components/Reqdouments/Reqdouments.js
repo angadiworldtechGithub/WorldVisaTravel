@@ -160,18 +160,18 @@ const Reqdouments = () => {
   return (
     <div className="reqdouments">
       <center className="reqdouments-header">
-        <h3>NEW OR FIRST TIME U.S. PASSPORT</h3>
+        <h3 className='costing-Header'>NEW OR FIRST TIME U.S. PASSPORT</h3>
         <h5>REQUIRED DOCUMENTS</h5>
       </center>
       <ReqdoumentsTable />
       <div className="reqdouments-passage-list">
         <center>
-          <h3>APPLICATION GUIDE</h3>
-          <h5>
+          <h3 className='costing-Header'>APPLICATION GUIDE</h3>
+          <h4 className='costing-Header-h5'>
             Issue is determined by the U.S. Passport Agency based on the urgency
             of your departure.
-          </h5>
-          <h5>
+          </h4>
+          <h5 style={{color:"#2C3A90",paddingBottom:"40px",fontWeight:"700"}}>
             PLEASE FOLLOW THESE INSTRUCTIONS CAREFULLY. MISSING OR INCORRECT
             INFORMATION MAY RESULT IN SIGNIFICANT DELAYS.
           </h5>
@@ -357,7 +357,6 @@ const Reqdouments = () => {
           <Costing/>
      </div>
       
-
     </div>
   );
 };

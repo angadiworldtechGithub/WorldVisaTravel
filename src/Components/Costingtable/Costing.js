@@ -27,8 +27,8 @@ const datatable3 = [
 const ResponsiveTable = () => {
   return (
     <div className="table-container">
-    <center><h3>U.S. GOVERNMENT FEES</h3></center>
-      <table className="responsive-table">
+    <center><h3 className='costing-Header'>U.S. GOVERNMENT FEES</h3></center>
+      <table className="costing-responsive-table">
         <thead>
           <tr>
             <th>Type</th>
@@ -47,8 +47,15 @@ const ResponsiveTable = () => {
           ))}
         </tbody>
       </table>
-     <center><h3> WORLD VISA TRAVEL SERVICE FEES</h3></center>
-      <table className="responsive-table">
+
+      <ul>
+      <li>The fees above include the U.S. government passport fee, any pertinent rush fees, and the execution fees.</li>
+      <li>Government fees are subject to change without notice.</li>
+      <li>If there is any uncertainty, please give us a call to verify.</li>
+      </ul>
+      
+     <center><h3 className='costing-Header'> WORLD VISA TRAVEL SERVICE FEES</h3></center>
+      <table className="costing-responsive-table">
         <thead>
           <tr>
             <th>Type</th>
@@ -66,12 +73,13 @@ const ResponsiveTable = () => {
           ))}
         </tbody>
       </table>
-      <center><h3>RETURN SHIPPING FEES</h3></center>
-      <table className="responsive-table">
+
+      <center><h3 className='costing-Header'>RETURN SHIPPING FEES</h3></center>
+      <table className="costing-responsive-table">
       <thead>
         <tr>
-          <th>FedEx Overnight</th>
-          <th>Price</th>
+          <th className="reqdocument-column1">FedEx Overnight</th>
+          <th className="reqdocument-column1">Price</th>
         </tr>
       </thead>
       <tbody>

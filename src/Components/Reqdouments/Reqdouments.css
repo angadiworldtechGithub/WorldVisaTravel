@@ -1,7 +1,13 @@
 .reqdouments{
   margin: 40px;
-  border: 2px solid #000;
+  border: 2px solid #ccc;
 }
+
+.costing-Header-h5{
+ font-weight: 600;
+ color: #000;
+}
+
   .table-container{
     margin: 30px 30px 30px 30px;
   }

@@ -1,35 +1,44 @@
+.costing-Header{
+    padding: 20px;
+    font-weight: 700;
+    color: #2C3A90;
+}
+
+
 .table-container {
     overflow-x: auto;
+    
   }
   
-  .responsive-table {
+  .costing-responsive-table {
     width: 100%;
     border-collapse: collapse;
+
   }
   
-  .responsive-table th,
-  .responsive-table td {
-    border: 1px solid #ccc;
+  .costing-responsive-table th,
+  .costing-responsive-table td {
+    border: 2px solid #000;
     padding: 8px;
     text-align: center;
   }
   
   @media (max-width: 768px) {
-    .responsive-table {
+    .costing-responsive-table {
       display: block;
     }
   
-    .responsive-table thead {
+    .costing-responsive-table thead {
       display: none;
     }
   
-    .responsive-table tbody tr {
+    .costing-responsive-table tbody tr {
       margin-bottom: 15px;
       display: block;
-      border: 1px solid #ccc;
+      border: 2px solid #000;
     }
   
-    .responsive-table td {
+    .costing-responsive-table td {
       display: flex;
       justify-content: space-between;
       align-items: center;
