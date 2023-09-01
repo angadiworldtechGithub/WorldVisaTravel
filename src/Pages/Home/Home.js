@@ -322,74 +322,80 @@ function Home() {
             <Slider {...settings}>
               <div class="card-wrapper container-sm d-flex  justify-content-around">
                 <div class="card" style={{ flex: 1 }}>
+                <div class="card-body">
+                   <h5 class="card-title">Business Visa Travel</h5>
+                </div>
                   <img
                     src="https://source.unsplash.com/collection/190727/1600x900"
                     class="card-img-top"
                     alt="country_img"
                   ></img>
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                  </div>
+                
                 </div>
               </div>
               <div class="card-wrapper container-sm d-flex  justify-content-around">
                 <div class="card" style={{ flex: 1 }}>
+                <div class="card-body">
+                    <h5 class="card-title">Job Seeker Visa</h5>
+                </div>
                   <img
                     src="https://source.unsplash.com/collection/190727/1600x900"
                     class="card-img-top"
                     alt="country_img"
                   ></img>
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                  </div>
+                
                 </div>
               </div>{" "}
               <div class="card-wrapper container-sm d-flex  justify-content-around">
                 <div class="card" style={{ flex: 1 }}>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                </div>
                   <img
                     src="https://source.unsplash.com/collection/190727/1600x900"
                     class="card-img-top"
                     alt="country_img"
                   ></img>
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                  </div>
+               
                 </div>
               </div>{" "}
               <div class="card-wrapper container-sm d-flex  justify-content-around">
                 <div class="card" style={{ flex: 1 }}>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                </div>
                   <img
                     src="https://source.unsplash.com/collection/190727/1600x900"
                     class="card-img-top"
                     alt="country_img"
                   ></img>
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                  </div>
+                
                 </div>
               </div>{" "}
               <div class="card-wrapper container-sm d-flex  justify-content-around">
                 <div class="card" style={{ flex: 1 }}>
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                </div>
                   <img
                     src="https://source.unsplash.com/collection/190727/1600x900"
                     class="card-img-top"
                     alt="country_img"
                   ></img>
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                  </div>
+               
                 </div>
               </div>{" "}
               <div class="card-wrapper container-sm d-flex  justify-content-around">
                 <div class="card" style={{ flex: 1 }}>
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+               </div>
                   <img
                     src="https://source.unsplash.com/collection/190727/1600x900"
                     class="card-img-top"
                     alt="country_img"
                   ></img>
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                  </div>
+               
                 </div>
               </div>
             </Slider>
