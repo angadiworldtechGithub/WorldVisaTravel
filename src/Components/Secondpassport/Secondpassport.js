@@ -142,7 +142,7 @@ const Secondpassport = () => {
         <h3 className='costing-Header'>SECOND VALID U.S. PASSPORT</h3>
         <h5>REQUIRED DOCUMENTS</h5>
       </center>
-      <SecondpassportTable />
+      <ReqdoumentsTable />
       <div className="reqdouments-passage-list">
         <center>
           <h3 className='costing-Header'>APPLICATION GUIDE</h3>
