@@ -2,6 +2,9 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
+.country_img{
+ border-radius: 30px;
+}
 
 .Home-container {
   display: flex;
@@ -29,12 +32,12 @@ body {
   }
 }
 @media (max-width: 768px) {
-  .Home-container {
-    /* position: relative;
+  /*.Home-container {
+     position: relative;
     flex-direction: column; */
-    /* width: 400px; */
+    /* width: 400px; 
   }
-
+*/
   .Home-box {
     margin-bottom: 10px;
   }

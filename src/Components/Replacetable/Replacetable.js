@@ -1,12 +1,12 @@
 import React from 'react';
-import './Costing.css'; // Make sure to create this CSS file
+import './Replacetable.css'; // Make sure to create this CSS file
 
 
 const datatable1 = [
-  ['Regular',	'$165.00',	'$135.00',	'8-10 Weeks'],
-  [ 'Expedited','$225.00',	'$195.00',	'4-6 Weeks'] ,   
-  ['Rush','$225.00','$195.00','2-3 Weeks'],
-  ['Priority','$225.00','$195.00',	'7-10 Business Days'],
+  ['Regular','$165.00','$130.00','8-10 Weeks'],
+  [ 'Expedited','$225.00','$209.53','4-6 Weeks'] ,   
+  ['Rush','$225.00','$209.53','2-3 Weeks'],
+  ['Priority','$225.00','$209.53','7-10 Business Days'],
 ];
 
 const datatable2 = [
@@ -24,7 +24,7 @@ const datatable3 = [
   ];
 
 
-const Costing= () => {
+const Replacetable = () => {
   return (
     <div className="req-table-container">
     <center><h3 className='costing-Header'>U.S. GOVERNMENT FEES</h3></center>
@@ -97,7 +97,7 @@ const Costing= () => {
   );
 };
 
-export default Costing;
+export default Replacetable;
 
 
 

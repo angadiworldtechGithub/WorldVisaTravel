@@ -230,7 +230,7 @@ function Home() {
         }}
       >
         <div className="Home-top-flexbox3-leftside">
-          <div className="parent">
+          <div className="parent" style={{paddingBottom:"60px"}}>
             <img
               src="assets/img/flexbox2_1.png"
               alt="image1"
@@ -315,91 +315,117 @@ function Home() {
           <div
             style={{
               paddingBottom: "120px",
-              width: "80%",
+              width: "90%",
               marginInline: "auto",
             }}
           >
             <Slider {...settings}>
-              <div class="card-wrapper container-sm d-flex  justify-content-around">
-                <div class="card" style={{ flex: 1 }}>
-                <div class="card-body">
-                   <h5 class="card-title">Business Visa Travel</h5>
+              <div className="card-wrapper container-sm d-flex  justify-content-around">
+                <div className="card" style={{ flex: 1 }}>
+                <div className="card-body">
+                    <h5 className="card-title">Family Visa</h5>
                 </div>
                   <img
                     src="https://source.unsplash.com/collection/190727/1600x900"
-                    class="card-img-top"
+                    className="card-img-top"
+                    alt="country_img" width={"60%"} 
+                  ></img>
+                  <p>A family visa is a legal document that allows individuals to reunite with their close family members 
+                  who may be living in a different country.
+                  </p>
+        
+                </div>
+              </div>{" "}
+              <div className="card-wrapper container-sm d-flex  justify-content-around">
+                <div className="card" style={{ flex: 1 }}>
+                <div className="card-body">
+                    <h5 className="card-title">Migrate  Visa</h5>
+                </div>
+                  <img
+                    src="https://source.unsplash.com/collection/190727/1600x900"
+                    className="card-img-top"
                     alt="country_img"
                   ></img>
-                
+                  <p>Migrate Visa- Migrate visa offers individuals the opportunity to start a new chapter in a 
+                  foreign land, pursuing their dreams and aspirations
+                  </p>
                 </div>
+              </div>{" "}
+
+              <div className="card-wrapper container-sm d-flex  justify-content-around">
+              <div className="card" style={{ flex: 1 }}>
+              <div className="card-body">
+                <h5 className="card-title">Student Visa</h5>
               </div>
-              <div class="card-wrapper container-sm d-flex  justify-content-around">
-                <div class="card" style={{ flex: 1 }}>
-                <div class="card-body">
-                    <h5 class="card-title">Job Seeker Visa</h5>
+                <img
+                  src="https://source.unsplash.com/collection/190727/1600x900"
+                  className="card-img-top"
+                  alt="country_img"
+                ></img>
+               <p>A business visa is a type of travel document that allows individuals to enter a foreign country
+                for the purpose of conducting business activities, such as meetings, conferences, and negotiations.
+               </p>
+              </div>
+            </div>{" "}
+
+              <div className="card-wrapper container-sm d-flex  justify-content-around">
+                <div className="card" style={{ flex: 1 }}>
+                <div className="card-body">
+                    <h5 className="card-title">Transit Visa</h5>
                 </div>
                   <img
                     src="https://source.unsplash.com/collection/190727/1600x900"
-                    class="card-img-top"
+                    className="card-img-top"
                     alt="country_img"
                   ></img>
-                
+                <p> A student visa is a document that allows foreign nationals to study in a specific country
+                 for a designated period, typically for the purpose of pursuing educational courses at recognized institutions.
+                </p>
                 </div>
               </div>{" "}
-              <div class="card-wrapper container-sm d-flex  justify-content-around">
-                <div class="card" style={{ flex: 1 }}>
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+              <div className="card-wrapper container-sm d-flex  justify-content-around">
+                <div className="card" style={{ flex: 1 }}>
+                <div className="card-body">
+                  <h5 className="card-title">Diplomatic Visa</h5>
                 </div>
                   <img
                     src="https://source.unsplash.com/collection/190727/1600x900"
-                    class="card-img-top"
-                    alt="country_img"
-                  ></img>
-               
-                </div>
-              </div>{" "}
-              <div class="card-wrapper container-sm d-flex  justify-content-around">
-                <div class="card" style={{ flex: 1 }}>
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                </div>
-                  <img
-                    src="https://source.unsplash.com/collection/190727/1600x900"
-                    class="card-img-top"
-                    alt="country_img"
-                  ></img>
-                
-                </div>
-              </div>{" "}
-              <div class="card-wrapper container-sm d-flex  justify-content-around">
-                <div class="card" style={{ flex: 1 }}>
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                </div>
-                  <img
-                    src="https://source.unsplash.com/collection/190727/1600x900"
-                    class="card-img-top"
+                    className="card-img-top"
                     alt="country_img"
                   ></img>
                
                 </div>
               </div>{" "}
-              <div class="card-wrapper container-sm d-flex  justify-content-around">
-                <div class="card" style={{ flex: 1 }}>
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+
+              <div className="card-wrapper container-sm d-flex  justify-content-around">
+              <div className="card" style={{ flex: 1 }}>
+              <div className="card-body">
+                <h5 className="card-title">Tourist Visa</h5>
+              </div>
+                <img
+                  src="https://source.unsplash.com/collection/190727/1600x900"
+                  className="card-img-top"
+                  alt="country_img"
+                ></img>
+             
+              </div>
+            </div>{" "}
+
+              <div className="card-wrapper container-sm d-flex  justify-content-around">
+                <div className="card" style={{ flex: 1 }}>
+                <div className="card-body">
+                  <h5 className="card-title">Transit Visa</h5>
                </div>
                   <img
                     src="https://source.unsplash.com/collection/190727/1600x900"
-                    class="card-img-top"
+                    className="card-img-top"
                     alt="country_img"
                   ></img>
                
                 </div>
               </div>
             </Slider>
-          </div>
+            </div>
         </div>
 
         <div className="under_card_silder">

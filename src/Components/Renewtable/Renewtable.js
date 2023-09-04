@@ -1,12 +1,12 @@
 import React from 'react';
-import './Costing.css'; // Make sure to create this CSS file
+import './Renewtable.css'; // Make sure to create this CSS file
 
 
 const datatable1 = [
-  ['Regular',	'$165.00',	'$135.00',	'8-10 Weeks'],
-  [ 'Expedited','$225.00',	'$195.00',	'4-6 Weeks'] ,   
-  ['Rush','$225.00','$195.00','2-3 Weeks'],
-  ['Priority','$225.00','$195.00',	'7-10 Business Days'],
+  ['Regular',	'$130.00','8-10 Weeks'],
+  [ 'Expedited','$209.53','4-6 Weeks'] ,   
+  ['Rush','$209.53','2-3 Weeks'],
+  ['Priority','$209.53','7-10 Business Days'],
 ];
 
 const datatable2 = [
@@ -24,7 +24,7 @@ const datatable3 = [
   ];
 
 
-const Costing= () => {
+const Renewtable = () => {
   return (
     <div className="req-table-container">
     <center><h3 className='costing-Header'>U.S. GOVERNMENT FEES</h3></center>
@@ -33,7 +33,6 @@ const Costing= () => {
           <tr>
             <th>Type</th>
             <th>Adult Price</th>
-            <th>Minors Price</th>
             <th>Processing Time</th>
           </tr>
         </thead>
@@ -49,9 +48,8 @@ const Costing= () => {
       </table>
 
       <ul>
-      <li>The fees above include the U.S. government passport fee, any pertinent rush fees, and the execution fees.</li>
       <li>Government fees are subject to change without notice.</li>
-      <li>If there is any uncertainty, please give us a call to verify.</li>
+     <li> If there is any uncertainty, please give us a call to verify.</li>
       </ul>
       
      <center><h3 className='costing-Header'> WORLD VISA TRAVEL SERVICE FEES</h3></center>
@@ -97,7 +95,7 @@ const Costing= () => {
   );
 };
 
-export default Costing;
+export default Renewtable;
 
 
 

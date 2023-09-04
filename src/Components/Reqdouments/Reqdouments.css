@@ -8,13 +8,10 @@
  color: #000;
 }
 
-  .table-container{
-    margin: 30px 30px 30px 30px;
-  }
   .reqdouments-header{
      margin: 40px 40px 40px 40px;
   }
-
+/*
   .table-section {
     margin-top: 20px;
   }
@@ -37,7 +34,7 @@
   
   .table tr:nth-child(even) {
     background-color: #ccc;
-  }
+  }*/
   
   .reqdocument-column1{
     width: 20%;
@@ -49,21 +46,16 @@
     background-color: #f0f0f0;
   }
   
-  .additional-flex-section {
-    flex-basis: calc(33.33% - 20px); /* Three columns with some spacing */
-    margin: 10px;
-    padding: 20px;
-    background-color: #f0f0f0;
-  }
 
 .reqdouments-passage-list{
     padding: 30px;
 }
   
-.table-container {
+.req-table-container {
   overflow-x: auto;
+  padding: 40px;
 }
-
+/*
 .responsive-table {
   width: 100%;
   border-collapse: collapse;
@@ -98,4 +90,4 @@
     padding: 8px;
     border: none;
   }
-}
+}*/

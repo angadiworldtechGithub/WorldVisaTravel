@@ -4,14 +4,15 @@ import Navbar from "./Components/Navbar/Navbar";
 import Home from "./Pages/Home/Home";
 import About from "./Pages/About/About";
 import Contact from "./Pages/Contact/Contact";
-import Feedback from "./Pages/Feedback/Feedback.js";
 import { Routes, Route } from "react-router-dom";
 import Legalizations from "./Pages/Legalizations/Legalizations";
 import Passport from "./Pages/Passport/Passport";
 import Reqdouments from "./Components/Reqdouments/Reqdouments";
+import Renew from "./Components/Renew/Renew";
 import Visas from "./Pages/Visa";
 import VisaRequirements from "./Pages/VisaRequirements";
 import Costing from "./Components/Costingtable/Costing";
+import Replace from "./Components/Replace/Replace";
 
 function App() {
   return (
@@ -23,14 +24,15 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/passports" element={<Passport />} />
-          <Route path="/passports/:serviceType" element={<Reqdouments />} />
+          <Route path="/passports/:serviceType" element={<Reqdouments />}/>
           <Route path="/legalizations" element={<Legalizations />} />
           {/* <Route path="/passport" element={<Passport/>}/>
           <Route path="/reqdouments" element={<Reqdouments/>}/> */}
           <Route path="/costing" element={<Costing />} />
           <Route path="/legalizations" element={<Legalizations />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/feedback" element={<Feedback />} />
+          <Route path="/renew" element={<Renew/>}/>
+          <Route path="/replace" element={<Replace/>}/>
           {/* visas */}
           <Route path="/visas" element={<Visas />} />
           <Route

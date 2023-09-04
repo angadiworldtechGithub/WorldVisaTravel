@@ -40,7 +40,7 @@ function Footer() {
         <div class="footer-item-right">
           <img
             className="footer-logo"
-            src="assets/logo.png"
+            src="/assets/logo.png"
             alt="footer_logo"
             width="250px"
           ></img>

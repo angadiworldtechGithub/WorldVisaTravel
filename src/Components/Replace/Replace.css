@@ -1,0 +1,94 @@
+.reqdouments{
+    margin: 40px;
+    border: 2px solid #ccc;
+  }
+  
+  .costing-Header-h5{
+   font-weight: 600;
+   color: #000;
+  }
+  
+    .reqdouments-header{
+       margin: 40px 40px 40px 40px;
+    }
+  /*
+    .table-section {
+      margin-top: 20px;
+    }
+  
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid #ccc;
+      margin: 30px 30px 30px 30px;
+    }
+    
+    .table th, .table td {
+      padding: 8px;
+      border: 1px solid #ccc;
+    }
+    
+    .table th {
+      background-color: #f0f0f0;
+    }
+    
+    .table tr:nth-child(even) {
+      background-color: #ccc;
+    }*/
+    
+    .reqdocument-column1{
+      width: 20%;
+      background-color: #f0f0f0;
+    }
+  
+    .reqdocument-column2{
+      width: 70%;
+      background-color: #f0f0f0;
+    }
+    
+  
+  .reqdouments-passage-list{
+      padding: 30px;
+  }
+    
+  .req-table-container {
+    overflow-x: auto;
+    padding: 40px;
+  }
+  /*
+  .responsive-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .responsive-table th,
+  .responsive-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .responsive-table {
+      display: block;
+    }
+  
+    .responsive-table thead {
+      display: none;
+    }
+  
+    .responsive-table tbody tr {
+      margin-bottom: 15px;
+      display: block;
+      border: 1px solid #ccc;
+    }
+  
+    .responsive-table td {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px;
+      border: none;
+    }
+  }*/
+  
