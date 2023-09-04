@@ -16,7 +16,8 @@ import Replace from "./Components/Replace/Replace";
 import Newpassport from "./Components/Newpassport/Newpassport";
 import Reissuance from "./Components/Reissuance/Reissuance";
 import Lostpassport from "./Components/Lostpassport/Lostpassport";
-
+import PassportServiceType from "./Pages/PassportServiceType";
+import NotFoundPage from "./Pages/404";
 
 function App() {
   return (
@@ -28,24 +29,26 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/passports" element={<Passport />} />
-          <Route path="/passports/:serviceType" element={<Reqdouments />}/>
+          <Route
+            path="/passports/:serviceType"
+            element={<PassportServiceType />}
+          />
           <Route path="/legalizations" element={<Legalizations />} />
-          {/* <Route path="/passport" element={<Passport/>}/>
-          <Route path="/reqdouments" element={<Reqdouments/>}/> */}
           <Route path="/costing" element={<Costing />} />
           <Route path="/legalizations" element={<Legalizations />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/renew" element={<Renew/>}/>
-          <Route path="/replace" element={<Replace/>}/>
-          <Route path="/newpassport" element={<Newpassport/>}/>
-          <Route path="/reissuance" element={<Reissuance/>}/>
-          <Route path="/lostpassport" element={<Lostpassport/>}/>
+          <Route path="/renew" element={<Renew />} />
+          <Route path="/replace" element={<Replace />} />
+          <Route path="/newpassport" element={<Newpassport />} />
+          <Route path="/reissuance" element={<Reissuance />} />
+          <Route path="/lostpassport" element={<Lostpassport />} />
           {/* visas */}
           <Route path="/visas" element={<Visas />} />
           <Route
             path="/visas/:countryId/:visaType"
             element={<VisaRequirements />}
           />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
 
         <Footer />

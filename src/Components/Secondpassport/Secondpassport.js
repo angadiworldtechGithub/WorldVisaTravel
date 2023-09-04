@@ -2,16 +2,13 @@ import React from "react";
 import "./Secondpassport.css"; // Create a CSS file for styling
 import Secondptable from "../Secondptable/Secondptable";
 
-
 const ReqdoumentsTable = () => {
   const tableData = [
     {
       id: 1,
       column1: "Passport",
       column2: {
-        content: [
-          "Your most recently issued valid 10 year passport.",
-        ],
+        content: ["Your most recently issued valid 10 year passport."],
       },
     },
     {
@@ -37,15 +34,15 @@ const ReqdoumentsTable = () => {
     },
 
     {
-        id: 4,
-        column1: "Letter of Explanation",
-        column2: {
-          content: [
-            "Download Explanation Letter",
-            "One completed and signed Letter of Explanation",
-          ],
+      id: 4,
+      column1: "Letter of Explanation",
+      column2: {
+        content: [
+          "Download Explanation Letter",
+          "One completed and signed Letter of Explanation",
+        ],
       },
-     },
+    },
 
     {
       id: 5,
@@ -54,31 +51,31 @@ const ReqdoumentsTable = () => {
         content: [
           "A name change documentation by marriage or court order is required (if applicable).",
         ],
+      },
     },
-   },
 
-   {
-    id: 6,
-    column1: "Proof of Departure",
-    column2: {
-      content: [
-        "A copy of your round trip airline tickets, or itinerary, or letter for employer (for Same Day/Next Day processing).",
-      ],
-  },
- },
+    {
+      id: 6,
+      column1: "Proof of Departure",
+      column2: {
+        content: [
+          "A copy of your round trip airline tickets, or itinerary, or letter for employer (for Same Day/Next Day processing).",
+        ],
+      },
+    },
 
- {
-    id: 7,
-    column1: "DS-82 Application Form",
-    column2: {
-      content: [
-        "DS-82: Online Application for New Passport",
-        "Please complete application online and print ONE",
-        "completed DS-82 form.*We advise to use the most",
-        "updated version of the form provided by the link.",
-      ],
-  },
- },
+    {
+      id: 7,
+      column1: "DS-82 Application Form",
+      column2: {
+        content: [
+          "DS-82: Online Application for New Passport",
+          "Please complete application online and print ONE",
+          "completed DS-82 form.*We advise to use the most",
+          "updated version of the form provided by the link.",
+        ],
+      },
+    },
 
     {
       id: 8,
@@ -139,18 +136,24 @@ const Secondpassport = () => {
   return (
     <div className="reqdouments">
       <center className="reqdouments-header">
-        <h3 className='costing-Header'>SECOND VALID U.S. PASSPORT</h3>
+        <h3 className="costing-Header">SECOND VALID U.S. PASSPORT</h3>
         <h5>REQUIRED DOCUMENTS</h5>
       </center>
-      <SecondpassportTable />
+      {/* <SecondpassportTable /> */}
       <div className="reqdouments-passage-list">
         <center>
-          <h3 className='costing-Header'>APPLICATION GUIDE</h3>
-          <h4 className='costing-Header-h5'>
+          <h3 className="costing-Header">APPLICATION GUIDE</h3>
+          <h4 className="costing-Header-h5">
             Issue is determined by the U.S. Passport Agency based on the urgency
             of your departure.
           </h4>
-          <h5 style={{color:"#2C3A90",paddingBottom:"40px",fontWeight:"700"}}>
+          <h5
+            style={{
+              color: "#2C3A90",
+              paddingBottom: "40px",
+              fontWeight: "700",
+            }}
+          >
             PLEASE FOLLOW THESE INSTRUCTIONS CAREFULLY. MISSING OR INCORRECT
             INFORMATION MAY RESULT IN SIGNIFICANT DELAYS.
           </h5>
@@ -240,10 +243,28 @@ const Secondpassport = () => {
               In <b>Your Most Recent Passport</b> page,
             </li>
             <ul>
-            <li>Choose what is applicable to you for <b> Have you been issued any of the following? and Fill Out all fields </b></li>
-            <li>Click “Next” when done</li>
-            <li>Choose what is applicable to you for <b>Was the data printed correctly in your most recent document?</b></li>
-            <li>Choose what is applicable to you for <b>Has your name changed since your most recent document was issued?</b></li>
+              <li>
+                Choose what is applicable to you for{" "}
+                <b>
+                  {" "}
+                  Have you been issued any of the following? and Fill Out all
+                  fields{" "}
+                </b>
+              </li>
+              <li>Click “Next” when done</li>
+              <li>
+                Choose what is applicable to you for{" "}
+                <b>
+                  Was the data printed correctly in your most recent document?
+                </b>
+              </li>
+              <li>
+                Choose what is applicable to you for{" "}
+                <b>
+                  Has your name changed since your most recent document was
+                  issued?
+                </b>
+              </li>
             </ul>
             <li>
               In <b>Are you known by other names?</b> page,
@@ -266,7 +287,10 @@ const Secondpassport = () => {
             <ul>
               <li>Choose “Passport Book ($110)” for Passport Options</li>
               <li>Then, Check 52 Page Book (Non-Standard)</li>
-              <li>Choose “Expedited at Agency Service ($60)” for Processing Methods</li>
+              <li>
+                Choose “Expedited at Agency Service ($60)” for Processing
+                Methods
+              </li>
             </ul>
             <p>
               {" "}
@@ -278,7 +302,8 @@ const Secondpassport = () => {
           <ul>
             <li>Choose “Standard Delivery (FREE)” for Delivery Methods</li>
             <p>
-               Note: This is only for application purpose. WVT will collect your Passport when it’s done and mail it back to you.
+              Note: This is only for application purpose. WVT will collect your
+              Passport when it’s done and mail it back to you.
             </p>
             <li>Click “Next” when done</li>
           </ul>
@@ -304,16 +329,22 @@ const Secondpassport = () => {
             <p>
               <b>Printing Instructions: </b>Please print this form on{" "}
               <b>SINGLE-SIDED PAPER </b> – double-sided printing will not be
-              accepted. 
+              accepted.
             </p>
-            <li>Include Letter of Explanation, explaining the need for second valid Passport</li>
-            <li>Send <b>all Required Documents</b> to WORLD VISA TRAVEL, INC. for processing</li>
+            <li>
+              Include Letter of Explanation, explaining the need for second
+              valid Passport
+            </li>
+            <li>
+              Send <b>all Required Documents</b> to WORLD VISA TRAVEL, INC. for
+              processing
+            </li>
           </ul>
         </ol>
       </div>
 
       <div className="reqdoument_table">
-        <Secondptable/>
+        <Secondptable />
       </div>
     </div>
   );
