@@ -13,6 +13,10 @@ import Visas from "./Pages/Visa";
 import VisaRequirements from "./Pages/VisaRequirements";
 import Costing from "./Components/Costingtable/Costing";
 import Replace from "./Components/Replace/Replace";
+import Newpassport from "./Components/Newpassport/Newpassport";
+import Reissuance from "./Components/Reissuance/Reissuance";
+import Lostpassport from "./Components/Lostpassport/Lostpassport";
+
 
 function App() {
   return (
@@ -33,6 +37,9 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/renew" element={<Renew/>}/>
           <Route path="/replace" element={<Replace/>}/>
+          <Route path="/newpassport" element={<Newpassport/>}/>
+          <Route path="/reissuance" element={<Reissuance/>}/>
+          <Route path="/lostpassport" element={<Lostpassport/>}/>
           {/* visas */}
           <Route path="/visas" element={<Visas />} />
           <Route
