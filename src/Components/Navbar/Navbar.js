@@ -1,15 +1,19 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import BurgerIcon from "../icons/BurgerIcon";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
-
+  const [path, setPath] = useState("");
+  const location = useLocation();
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
   return (
     <div
       className="nav-container"
