@@ -7,17 +7,12 @@ import Contact from "./Pages/Contact/Contact";
 import { Routes, Route } from "react-router-dom";
 import Legalizations from "./Pages/Legalizations/Legalizations";
 import Passport from "./Pages/Passport/Passport";
-import Reqdouments from "./Components/Reqdouments/Reqdouments";
-import Renew from "./Components/Renew/Renew";
 import Visas from "./Pages/Visa";
 import VisaRequirements from "./Pages/VisaRequirements";
 import Costing from "./Components/Costingtable/Costing";
-import Replace from "./Components/Replace/Replace";
-import Newpassport from "./Components/Newpassport/Newpassport";
-import Reissuance from "./Components/Reissuance/Reissuance";
-import Lostpassport from "./Components/Lostpassport/Lostpassport";
 import PassportServiceType from "./Pages/PassportServiceType";
 import NotFoundPage from "./Pages/404";
+import Afghanistana from "./Pages/Afghanistana/Afghanistana";
 
 function App() {
   return (
@@ -37,11 +32,7 @@ function App() {
           <Route path="/costing" element={<Costing />} />
           <Route path="/legalizations" element={<Legalizations />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/renew" element={<Renew />} />
-          <Route path="/replace" element={<Replace />} />
-          <Route path="/newpassport" element={<Newpassport />} />
-          <Route path="/reissuance" element={<Reissuance />} />
-          <Route path="/lostpassport" element={<Lostpassport />} />
+          <Route path="/afghanistana" element={<Afghanistana/>}/>
           {/* visas */}
           <Route path="/visas" element={<Visas />} />
           <Route
