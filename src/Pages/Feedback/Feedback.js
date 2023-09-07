@@ -14,13 +14,13 @@ const Feedback = () => {
               Feedback Form
             </div>
             <div className="col-md-5 ps-md-5 d-flex justify-content-center">
-              <div className="map-container w-60 d-flex justify-content-center ps-md-5">
-                <img src="assets/flex2_image.png" className="w-100"></img>
+              <div className="map-container w-40 d-flex justify-content-center ps-md-3">
+                <img src="assets/feedback.png" className="w-100"></img>
               </div>
             </div>
             <div className="col-md-7 p-2">
               <div className="contact-form d-flex justify-content-center flex-column align-items-center">
-                <form className="feedback-form">
+                <form id="feedback-form"  className="w-100">
                   <label htmlFor="name">Name:</label>
                   <input type="text" id="name" name="name" required />
 

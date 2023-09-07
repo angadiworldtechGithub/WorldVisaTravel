@@ -1,11 +1,19 @@
 .legal-container {
   background-color: #fff;
+  background-image: url(/public/assets/banners/legalization.png);
+  background-color: transparent;
+  background-position: right bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  height: 300px;
 }
 /* App.css */
 .legal-banner img {
   width: 100%;
   height: auto;
 }
+
 
 .legal {
   margin: 30px;

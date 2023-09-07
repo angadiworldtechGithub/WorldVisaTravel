@@ -1,5 +1,8 @@
 import React from "react";
-import "./Legalizations.css"; // Import your CSS file for styling
+import styles from "./legal.module.css";
+import { Link } from "react-router-dom";
+import HomeIcon from "../../Components/icons/HomeIcon";
+// Import your CSS file for styling
 
 const Legalizations = () => {
   const data = [
@@ -33,26 +36,42 @@ const Legalizations = () => {
   ];
   return (
     <div className="legal-container">
-      <div className="legal-banner">
+    <div className="legal-banner"> 
+    <div
+    className={`${styles["legal-container"]} d-flex position-relative align-items-center`}
+  >
+    <div className="container d-flex flex-column text-light">
+      <h2>Legalization</h2>
+      <div className="d-flex gap-2 align-items-center">
+        <Link to="/">
+          <HomeIcon />
+        </Link>
+        <span className="sep"> → </span>
+        <span>Legalization</span>
+      </div>
+    </div>
+  </div>
+  </div>
+      {/*
         <img
           src="assets/banners/legalization.png"
           alt="Banner"
           style={{ width: "100%", minWidth: "250px" }}
-        />
-      </div>
+          />
+  </div>  {`${styles["section-lg"]}`} */}
 
-      <div className="legal">
-        <div className="legal-main-content1">
-          <div className="legal-flex-section-img">
+      <div className={`${styles["legal"]}`}>
+        <div className={`${styles["legal-main-content1"]}`}>
+          <div className={"legal-flex-section-img"}>
             <img
-              className="legal-image"
+              className={"legal-image"}
               src="assets/legal/3.png"
               alt="Banner"
               style={{ width: "100%", minWidth: "250px" }}
             ></img>
           </div>
-          <div className="legal-flex-section">
-            <h3 className="legal-header">
+          <div className={`${styles["legal-flex-section"]}`}>
+            <h3 className={`${styles["legal-header"]}`}>
               DOCUMENT LEGALIZATION AND AUTHENTICATION
             </h3>
             <p>
@@ -66,14 +85,14 @@ const Legalizations = () => {
           </div>
         </div>
 
-        <div className="legal-main-content2">
-          <h3 className="legal-header">WVT FULL SERVICE FEE</h3>
-          <h5 className="legal-header-h4">
+        <div className={`${styles["legal-main-content2"]}`}>
+          <h3 className={`${styles["legal-header"]}`}>WVT FULL SERVICE FEE</h3>
+          <h5 className={`${styles["legal-header-h4"]}`}>
             Fees charged by World Visa Travel in processing your documents.
           </h5>
         </div>
-        <section className="table-section">
-          <table className="table">
+        <section className={`${styles["table-section"]}`}>
+          <table className={`${styles["table"]}`}>
             <thead>
               <tr>
                 <th>Services</th>
@@ -91,7 +110,7 @@ const Legalizations = () => {
           </table>
         </section>
 
-        <div className="legal-lists">
+        <div className={`${styles["legal-lists"]}`}>
         <ul>
           <li>Fees are subject to change without notice.</li>
           <li>WVT Fees only cover our processing fees.</li>
@@ -100,15 +119,15 @@ const Legalizations = () => {
         </ul>
         </div>
 
-        <div className="legal-main-content3">
-          <h3 className="legal-header">WVT SHORT STEP FEE</h3>
-          <h5 className="legal-header-h4">
+        <div className={`${styles["legal-main-content3"]}`}>
+          <h3 className={`${styles["legal-header"]}`}>WVT SHORT STEP FEE</h3>
+          <h5 className={`${styles["legal-header-h4"]}`}>
             Fees charged by World Visa Travel in processing your documents.
           </h5>
         </div>
 
-        <section className="table-section">
-          <table className="table">
+        <section className={`${styles["table-section"]}`}>
+          <table className={`${styles["table"]}`}>
             <thead>
               <tr>
                 <th>Services</th>
@@ -126,7 +145,7 @@ const Legalizations = () => {
           </table>
         </section>
 
-        <div className="legal-lists">
+        <div className={`${styles["legal-lists"]}`}>
         <ul>
         <li>Fees are subject to change without notice.</li>
         <li>WVT Fees only cover our processing fees.</li>
@@ -135,9 +154,9 @@ const Legalizations = () => {
         </ul>
         </div>
 
-        <div className="legal-main-content4">
-          <div className="legal-flex-section">
-            <h3 className="legal-header">WVT LEGALIZATION WORK ORDER</h3>
+        <div className={`${styles["legal-main-content4"]}`}>
+          <div className={`${styles["legal-flex-section"]}`}>
+            <h3 className={`${styles["legal-header"]}`}>WVT LEGALIZATION WORK ORDER</h3>
             <p>
               <h5>
                 You must fill in the WVT Work Legalization Order Form. Download
@@ -154,9 +173,9 @@ const Legalizations = () => {
               company/cashier check or money order.
             </h6>
           </div>
-          <div className="legal-flex-section-img">
+          <div className={`${styles["legal-flex-section-img"]}`}>
             <img
-              className="legal-image"
+              className={`${styles["legal-image"]}`}
               src="assets/legal/4.png"
               alt="Banner"
               style={{ width: "100%", minWidth: "250px" }}
@@ -164,17 +183,17 @@ const Legalizations = () => {
           </div>
         </div>
 
-        <div className="legal-main-content5">
-          <div className="legal-flex-section-img">
+        <div className={`${styles["legal-main-content5"]}`}>
+          <div className={`${styles["legal-flex-section-img"]}`}>
             <img
-              className="legal-image"
+              className={"legal-image"}
               src="assets/legal/5.png"
               alt="Banner"
               style={{ width: "100%", minWidth: "250px" }}
             ></img>
           </div>
-          <div className="legal-flex-section">
-            <h3 className="legal-header">MAIL YOUR DOCUMENTS</h3>
+          <div className={`${styles["legal-flex-section"]}`}>
+            <h3 className={`${styles["legal-header"]}`}>MAIL YOUR DOCUMENTS</h3>
             <h5>Please mail the completed requirements to:</h5>
 
             <address>
@@ -202,15 +221,15 @@ const Legalizations = () => {
           </div>
         </div>
 
-        <div className="legal-main-content6">
-          <h3 className="legal-header">RETURN SHIPPING FEES</h3>
+        <div className={`${styles["legal-main-content6"]}`}>
+          <h3 className={`${styles["legal-header"]}`}>RETURN SHIPPING FEES</h3>
           <h5 className="legal-header-h4">
             Once your order is complete, your documents will be returned to you
             via FedEx Overnight.
           </h5>
         </div>
-        <section className="table-section">
-          <table className="table">
+        <section className={`${styles["table-section"]}`}>
+          <table className={`${styles["table"]}`}>
             <thead>
               <tr>
                 <th>FedEx Return Shipping</th>
@@ -228,14 +247,14 @@ const Legalizations = () => {
           </table>
         </section>
 
-        <div className="legal-main-content7">
-          <h3 className="legal-header">STANDARD LEGALIZATION FEES</h3>
-          <h5 className="legal-header-h4">
+        <div className={`${styles["legal-main-content7"]}`}>
+          <h3 className={`${styles["legal-header"]}`}>STANDARD LEGALIZATION FEES</h3>
+          <h5 className={`${styles["legal-header-h4"]}`}>
             Fees charged by different legalization services.
           </h5>
         </div>
-        <section className="table-section">
-          <table className="table">
+        <section className={`${styles["table-section"]}`}>
+          <table className={`${styles["table"]}`}>
             <thead>
               <tr>
                 <th>Services</th>
@@ -254,7 +273,7 @@ const Legalizations = () => {
         </section>
 
         <div>
-        <div className="legal-lists">
+        <div className={`${styles["legal-lists"]}`}>
         <ul>
           <li>Fees are subject to change without notice.</li>
           <li>If there is any uncertainty, please give us a call to verify.</li>

@@ -3,9 +3,9 @@ import VisaCardType from "../../Components/VisaTypeCard";
 
 function Visa() {
   const visatypes = [
-    { type: "tourist" },
-    { type: "business" },
-    { type: "official" },
+    { type: "tourist", backgroundimage:"/assets/visa/visa1.png" },
+    { type: "business", backgroundimage:"/assets/visa/visa2.png" },
+    { type: "official", backgroundimage:"/assets/visa/visa3.png" },
   ];
   return (
     <div className="container py-5">
@@ -25,7 +25,8 @@ function Visa() {
         {visatypes.map((visa) => {
           return (
             <div className="col-md-6 col-lg-4 ">
-              <VisaCardType type={visa.type} citizenship={visa.citizenship} />
+              <VisaCardType type={visa.type}  bg={visa.backgroundimage} citizenship={visa.citizenship} />
+            
             </div>
           );
         })}

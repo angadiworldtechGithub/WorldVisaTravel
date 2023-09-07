@@ -5,7 +5,7 @@ import { countries } from "countries-list"; // Import the countries list
 import ReactCountryFlag from "react-country-flag";
 import ArrowRight from "../icons/ArrowRight";
 import "./index.css";
-function VisaCardType({ type, citizenship }) {
+function VisaCardType({ type, citizenship ,bg}) {
   const countryOptions = Object.keys(countries).map((countryCode) => ({
     value: countryCode,
     label: countries[countryCode].name,
@@ -43,7 +43,7 @@ function VisaCardType({ type, citizenship }) {
       <div
         className="d-flex justify-content-center align-items-center text-capitalize"
         style={{
-          backgroundImage: "url(/assets/visa/visa1.png)",
+          backgroundImage:`url(${bg})`,
           backgroundColor: "transparent",
           backgroundPosition: "right bottom",
           backgroundSize: "cover",
@@ -99,7 +99,7 @@ function VisaCardType({ type, citizenship }) {
         />
       </div>
       <button style={{ alignSelf: "flex-end" }} className="more-info-btn">
-       <Link to="/Afghanistana"> <span className=".more-info-btn-label me-2"> More Info</span></Link>
+       <Link to="/Afghanistana"><span className=".more-info-btn-label me-2"> More Info</span></Link>
         <ArrowRight />
       </button>
     </div>
