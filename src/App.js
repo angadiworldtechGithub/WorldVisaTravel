@@ -12,7 +12,6 @@ import VisaRequirements from "./Pages/VisaRequirements";
 import Costing from "./Components/Costingtable/Costing";
 import PassportServiceType from "./Pages/PassportServiceType";
 import NotFoundPage from "./Pages/404";
-import Afghanistana from "./Pages/Afghanistana/Afghanistana";
 import Moreinfo from "./Pages/Moreinfo/Moreinfo";
 
 function App() {
@@ -33,7 +32,6 @@ function App() {
           <Route path="/costing" element={<Costing />} />
           <Route path="/legalizations" element={<Legalizations />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/afghanistana" element={<Afghanistana/>}/>
           <Route path="/Moreinfo" element={<Moreinfo/>}/>
           {/* visas */}
           <Route path="/visas" element={<Visas />} />
