@@ -16,6 +16,7 @@ function Afghanistana() {
         </p>
         <img className="country-img" src="assets/Touristvisa.png"></img>
       </div>
+      
       <div className="Country-form">
         <h3 className="Country-header">Tourist Visa</h3>
         <div className="country-formdata">

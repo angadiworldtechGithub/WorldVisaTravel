@@ -99,7 +99,7 @@ function VisaCardType({ type, citizenship ,bg}) {
         />
       </div>
       <button style={{ alignSelf: "flex-end" }} className="more-info-btn">
-       <Link to="/Afghanistana"><span className=".more-info-btn-label me-2"> More Info</span></Link>
+       <Link to="/moreinfo"><span className=".more-info-btn-label me-2"> More Info</span></Link>
         <ArrowRight />
       </button>
     </div>
