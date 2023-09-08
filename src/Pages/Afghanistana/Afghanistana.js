@@ -2,6 +2,7 @@ import "./Afghanistana.css";
 import React from "react";
 
 function Afghanistana() {
+
   return (
     <div>
     <div className="Country-container">
@@ -69,7 +70,8 @@ function Afghanistana() {
             required
           >
             <option value="">Select Your Country</option>
-          </select>
+  </select>
+         
         </div>
 
         <div className="country-formdata">
@@ -101,7 +103,7 @@ function Afghanistana() {
    
        <div className="country-services">
          <h5  className="country-service-header">Passport</h5>
-         <img style={{paddingBottom:"23px"}} src="assets/visacountry/moreinfo1.png"></img>
+         <img style={{paddingBottom:"23px"}} src="assets/visacountry/moreinfo1.png" width={"98%"}></img>
          <p>Your passport must be
          valid for at least six
          months beyond the
@@ -110,7 +112,7 @@ function Afghanistana() {
 
        <div className="country-services">
        <h5 className="country-service-header">Proof of Funds</h5>
-        <img src="assets/visacountry/moreinfo2.png"></img>
+        <img src="assets/visacountry/moreinfo2.png"  width={"98%"}></img>
        <p>You must show that you have
        enough funds to cover your stay.
        This can include bank statements
@@ -119,7 +121,7 @@ function Afghanistana() {
 
        <div className="country-services">
        <h5 className="country-service-header">Criminal Background Check</h5>
-       <img src="assets/visacountry/moreinfo3.png"></img>
+       <img src="assets/visacountry/moreinfo3.png"  width={"98%"}></img>
        <p>Some countries require a
        criminal background check
        before issuing a visa. Check the

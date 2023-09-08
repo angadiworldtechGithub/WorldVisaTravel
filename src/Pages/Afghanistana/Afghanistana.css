@@ -1,4 +1,22 @@
 /* App.css */
+@media (max-width: 768px) {
+
+  .Country-container {
+    /* Modify styles for the main container */
+    display: flex;
+    margin: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    align-items: center;
+  }
+
+  .Country-header-content {
+    /* Example: Reduce font size */
+    font-size: 16px;
+  }
+
+  /* Continue modifying other elements as needed */
+}
 
 .Country-container {
     display: flex;
