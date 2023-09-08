@@ -1,3 +1,13 @@
+.passport-container {
+  background-image: url(/public/assets/banners/passport.png);
+  background-color: transparent;
+  background-position: right bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  height: 300px;
+}
+
 .passport-header{
   font-weight: 700;
   padding-left:40px;

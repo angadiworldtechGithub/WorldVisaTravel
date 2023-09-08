@@ -1,0 +1,10 @@
+.visa-container {
+    background-image: url(/public/assets/banners/visa.png);
+    background-color: transparent;
+    background-position: right bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    height: 300px;
+  }
+  

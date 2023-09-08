@@ -1,15 +1,16 @@
 import React from "react";
+import styles from "./Passport.module.css";
 import { Link } from "react-router-dom";
-import "./Passport.css"; // Create a CSS file for styling
+import HomeIcon from "../../Components/icons/HomeIcon";
 
 const Card = ({ img, header, passage, buttonLabel, link }) => {
   return (
-    <div className="passport-card">
-      <img src={img} alt="Card" className="card-img" />
-      <h3 className="card-header">{header}</h3>
-      <p className="card-passage">{passage}</p>
+    <div className={`${styles["passport-card"]}`}>
+      <img src={img} alt="Card" className="card-img"/>
+      <h3 className={`${styles["card-header"]}`}>{header}</h3>
+      <p className={`${styles["card-passage"]}`}>{passage}</p>
       <Link to={"/passports" + link}>
-        <button className="card-button">{buttonLabel}</button>
+        <button className={`${styles["card-button"]}`}>{buttonLabel}</button>
       </Link>
     </div>
   );
@@ -17,10 +18,26 @@ const Card = ({ img, header, passage, buttonLabel, link }) => {
 
 const CardContainer = ({ cards }) => {
   return (
-    <div className="passport-container">
+    <div className="passport">
+
+    <div
+    className={`${styles["passport-container"]} d-flex position-relative align-items-center`}
+    >
+    <div className="container d-flex flex-column text-light">
+      <h2>Passport</h2>
+      <div className="d-flex gap-2 align-items-center">
+        <Link to="/">
+          <HomeIcon />
+        </Link>
+        <span className="sep"> → </span>
+        <span>Passport</span>
+      </div>
+    </div>
+   </div>
+
       <center>
-        <h3 className="passport-header">U.S. PASSPORT SERVICES</h3>
-        <h5 className="passport-sub-header">
+        <h3 className={`${styles["passport-header"]}`}>U.S. PASSPORT SERVICES</h3>
+        <h5 className={`${styles["passport-sub-header"]}`}>
           World Visa Travel is specialized in expediting new U.S. passports,
           renewals, reissue, children/minors, and more. Please choose the right
           service for your travel needs.

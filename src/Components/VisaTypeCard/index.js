@@ -37,6 +37,7 @@ function VisaCardType({ type, citizenship ,bg}) {
         boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
         paddingBottom: "20px",
         borderRadius: "20px",
+
         // overflow: "hidden",
       }}
     >
@@ -65,6 +66,7 @@ function VisaCardType({ type, citizenship ,bg}) {
             fontWeight: "bold",
             textTransform: "uppercase",
             textDecoration: "underline",
+  
           }}
         >
           {`${type} Visa ${
