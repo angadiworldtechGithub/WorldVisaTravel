@@ -4,8 +4,8 @@ import "./Moreinfo.css"
 function Moreinfo() {
   return (
     <div>
-    <div className="container">
-      <div className="left-flex">
+    <div className="Moreinfo-container">
+      <div className="Moreinfo-left-flex">
         <h3 className="header">Tourist Visa</h3>
         <p className="description">
           A Tourist visa allows travelers to visit a foreign country for leisure, sightseeing, 
@@ -14,7 +14,7 @@ function Moreinfo() {
         <img className="more_image" src="assets/Touristvisa.png" alt="Tourist Visa" width="90%"/>
       </div>
 
-      <div className="right-flex" w>
+      <div className="Moreinfo-right-flex" w>
         <h3 className="header">Tourist Visa</h3>
         <div className="form">
         <div className="country-formdata">

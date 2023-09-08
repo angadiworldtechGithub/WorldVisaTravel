@@ -143,12 +143,24 @@ body {
   padding-top: 30px;
   padding-left: 20px;
   padding-bottom: 20px;
+  color: #fff;
+}
+.Home-header-text1{
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  color: #000;
 }
 .Home-header-icon {
   font-size: 50px;
   padding-right: 20px;
+  color: #fff;
 }
-
+.Home-header-icon1 {
+  font-size: 50px;
+  padding-right: 20px;
+  color: #000;
+}
 /* Responsive layout - makes a one column-layout instead of a two-column layout */
 @media (max-width: 800px) {
   .Home-top-flex1 {

@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom"
 import { BsCheck2Circle } from "react-icons/bs";
 import { FaAddressBook, FaUserGraduate } from "react-icons/fa";
 import { HiArrowNarrowRight } from "react-icons/hi";
@@ -109,12 +110,12 @@ function Home() {
         <div className="Home-container" id="Home-top">
           <div className="Home-box">
             <div className="Home-top-flex1">
-              <h4 className="Home-header-text">
+             <Link to="/visas"> <h4 className="Home-header-text">
                 <i className="Home-header-icon">
                   <GiOpenBook />
                 </i>
                 Apply Online Visa
-              </h4>
+              </h4></Link>
               <hr></hr>
               <p>
                 We are trustworthy immigration consultants who can manage your
@@ -124,12 +125,13 @@ function Home() {
           </div>
           <div className="Home-box">
             <div className="Home-top-flex2">
-              <h4 className="Home-header-text">
+            <Link to="/visas"><h4 className="Home-header-text">
                 <i className="Home-header-icon">
                   <FaAddressBook />
                 </i>
                 Book an Appointment
               </h4>
+            </Link>
               <hr></hr>
               <p>
                 To manage your visa application through our knowledgeable
@@ -141,12 +143,12 @@ function Home() {
           <div className="Home-box">
             {" "}
             <div className="Home-top-flex3">
-              <h4 className="Home-header-text">
-                <i className="Home-header-icon">
+            <Link to="/visas"> <h4 className="Home-header-text1">
+                <i className="Home-header-icon1">
                   <FaUserGraduate />
                 </i>
                 Immigration Experts
-              </h4>
+              </h4></Link>
               <hr></hr>
               <p>
                 Our goal has been provide immigration in all over country and
@@ -442,12 +444,12 @@ function Home() {
               Contact us today by fill up free online visa assessment and we
               will contact you
             </p>
-            <button className="under_card_silder_button text-center">
+            <Link to="/contact" ><button className="under_card_silder_button text-center">
               Discover More
               <i className="under_card_silder_icon">
                 <HiArrowNarrowRight />
               </i>
-            </button>
+            </button></Link>
           </div>
         </div>
       </div>

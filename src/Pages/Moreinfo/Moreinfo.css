@@ -1,16 +1,16 @@
 /* Afghanistana.css */
-.container {
+.Moreinfo-container {
     display: flex;
     flex-direction: column; /* Stack flex containers vertically on smaller screens */
   }
   
-  .left-flex {
+  .Moreinfo-left-flex {
     flex: 70%; /* Take up 70% of the available space */
     padding: 20px;
     text-align: center;
   }
   
-  .right-flex {
+  .Moreinfo-right-flex {
     flex: 30%; /* Take up 30% of the available space */
     padding: 20px;
     text-align: center;
@@ -18,15 +18,15 @@
   
   @media (min-width: 768px) {
     /* On screens with a minimum width of 768px, change to a row layout */
-    .container {
+    .Moreinfo-container {
       flex-direction: row;
     }
   
-    .left-flex {
+    .Moreinfo-left-flex {
       flex: 70%; /* Take up 70% of the available space */
     }
   
-    .right-flex {
+    .Moreinfo-right-flex {
       flex: 30%; /* Take up 30% of the available space */
     }
   }
@@ -86,7 +86,7 @@
     font-size: 16px;
     margin-bottom: 10px;
     text-align: justify;
-    color: #fff;
+    color: #000;
   }
   
   .checkbox {
