@@ -1,10 +1,9 @@
-import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
 import Navbar from "./Components/Navbar/Navbar";
 import Home from "./Pages/Home/Home";
 import About from "./Pages/About/About";
 import Contact from "./Pages/Contact/Contact";
-import { Routes, Route } from "react-router-dom";
+import { Route,Routes } from "react-router-dom";
 import Legalizations from "./Pages/Legalizations/Legalizations";
 import Passport from "./Pages/Passport/Passport";
 import Visas from "./Pages/Visa";
@@ -13,12 +12,13 @@ import Costing from "./Components/Costingtable/Costing";
 import PassportServiceType from "./Pages/PassportServiceType";
 import NotFoundPage from "./Pages/404";
 import Moreinfo from "./Pages/Moreinfo/Moreinfo";
+import Businessvisa from "./Pages/Businessvisa/Businessvisa";
+
 
 function App() {
   return (
     <>
       <div className="App">
-        <Header />
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -33,15 +33,18 @@ function App() {
           <Route path="/legalizations" element={<Legalizations />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/Moreinfo" element={<Moreinfo/>}/>
+          <Route path="/businessvisa" element={<Businessvisa/>}/>
           {/* visas */}
           <Route path="/visas" element={<Visas />} />
           <Route
             path="/visas/:countryId/:visaType"
             element={<VisaRequirements />}
           />
+          <Route path="/moreinfo/:visaType" component={<Moreinfo/>} />
+          {/* Other routes can be defined here */}
           <Route path="*" element={<NotFoundPage />} />
-        </Routes>
 
+        </Routes>
         <Footer />
       </div>
     </>

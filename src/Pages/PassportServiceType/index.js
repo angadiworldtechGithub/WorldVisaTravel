@@ -15,6 +15,7 @@ function PassportServiceType() {
     console.log(serviceType);
   }, []);
 
+  
   let page;
   switch (serviceType) {
     case "new-us-passport":

@@ -1,18 +1,17 @@
 import React, { useEffect, useState } from "react";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import Select from "react-select";
-import { countries } from "countries-list"; // Import the countries list
+import { countries } from "countries-list";
 import ReactCountryFlag from "react-country-flag";
 import ArrowRight from "../icons/ArrowRight";
 import "./index.css";
-function VisaCardType({ type, citizenship ,bg}) {
+
+function VisaCardType({ type, citizenship, bg }) {
   const countryOptions = Object.keys(countries).map((countryCode) => ({
     value: countryCode,
     label: countries[countryCode].name,
     flag: <ReactCountryFlag countryCode={countryCode} svg />,
   }));
-
-  //   let initialValue = { label: "United States", value: "US" };
 
   const [sourceCountry, setSourceCountry] = useState(null);
   const [citizenshipType, setCitizenShipType] = useState("");
@@ -24,6 +23,9 @@ function VisaCardType({ type, citizenship ,bg}) {
   useEffect(() => {
     console.log(sourceCountry);
   }, [sourceCountry]);
+
+  // Define the route for the "More Info" page based on the type
+  const moreInfoRoute = `/moreinfo/${type.toLowerCase()}`;
 
   return (
     <div
@@ -37,14 +39,12 @@ function VisaCardType({ type, citizenship ,bg}) {
         boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
         paddingBottom: "20px",
         borderRadius: "20px",
-
-        // overflow: "hidden",
       }}
     >
       <div
         className="d-flex justify-content-center align-items-center text-capitalize"
         style={{
-          backgroundImage:`url(${bg})`,
+          backgroundImage: `url(${bg})`,
           backgroundColor: "transparent",
           backgroundPosition: "right bottom",
           backgroundSize: "cover",
@@ -55,10 +55,6 @@ function VisaCardType({ type, citizenship ,bg}) {
           padding: "20px",
         }}
       >
-        {/* <img
-          src="/assets/passport/passport5.png"
-          style={{ margin: "auto", width: "100%" }}
-        ></img> */}
         <h2
           className="text-center text-light"
           style={{
@@ -66,7 +62,6 @@ function VisaCardType({ type, citizenship ,bg}) {
             fontWeight: "bold",
             textTransform: "uppercase",
             textDecoration: "underline",
-  
           }}
         >
           {`${type} Visa ${
@@ -100,8 +95,12 @@ function VisaCardType({ type, citizenship ,bg}) {
           onChange={setSourceCountry}
         />
       </div>
+
+      {/* Use the dynamic route for "More Info" */}
       <button style={{ alignSelf: "flex-end" }} className="more-info-btn">
-       <Link to="/moreinfo"><span className=".more-info-btn-label me-2"> More Info</span></Link>
+        <Link to={moreInfoRoute}>
+          <span className=".more-info-btn-label me-2"> More Info</span>
+        </Link>
         <ArrowRight />
       </button>
     </div>
@@ -114,4 +113,5 @@ const CustomOption = ({ innerProps, label, data }) => (
     <span className="country-label">{label}</span>
   </div>
 );
+
 export default VisaCardType;
