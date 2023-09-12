@@ -23,10 +23,18 @@ body {
   }
 } */
 .select-box {
-  width: 250px;
+ /* width: 250px;*/
   /* height: 30px;
   border-radius: 10px;
   margin-left: 20px; */
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 17px;
 }
 
 .search-button {
@@ -63,7 +71,7 @@ body {
     /* flex-direction: column; */
     position: absolute;
     left: 50%;
-    top: 45%;
+    /*top: 45%;*/
     transform: translate(-50%, -50%);
     /* margin-top: 20px; */
   }
@@ -74,7 +82,7 @@ body {
     /* flex-direction: column; */
     position: absolute;
     left: 50%;
-    top: 30%;
+    /*top: 30%;*/
     transform: translate(-50%, -50%);
     /* margin-top: 20px; */
   }

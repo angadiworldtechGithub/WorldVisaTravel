@@ -21,7 +21,7 @@ function Navbar() {
     >
       <nav className={`navbar ${menuOpen ? "open" : ""}`}>
         <div className="logo">
-          <img src="/assets/logo.png" alt="logo" width="300px" height={"80px"}></img>
+          <img src="/assets/logo.png" alt="logo" width="300px"></img>
         </div>
         <div className="menu-toggle" onClick={toggleMenu}>
           <BurgerIcon />

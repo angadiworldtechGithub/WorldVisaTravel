@@ -54,15 +54,12 @@ function Home() {
     <>
      <div className="position-relative">
      <div
-     className={`${styles["Home"]} d-flex position-relative align-items-center`}
+     className={`${styles["Home"]} d-flex position-relative align-items-top`}
       >
      <div className="container d-flex flex-column text-light">
-     <h2>Experience Seamless World Travel with Our Visa and Passport Specialists</h2>
-    <center><h3 style={{paddingBottom:"30px"}}>Apply for a Travel Visa:</h3></center> 
-
-       <div className="d-flex gap-2 align-items-center">
-          <Search />
-       </div>
+     <center><h2 className={`${styles["Home-banner-heading"]}`}>Experience Seamless World Travel with Our<br></br> Visa and Passport Specialists</h2></center>
+     <center><h3>Apply for a Travel Visa:</h3></center> 
+    <center><Search/></center>
      </div>
    </div>
        {/* <div id="carousel-container">
@@ -186,7 +183,7 @@ function Home() {
         >
           <h6>WHO WE ARE</h6>
           <h2>
-            We are professional Expert<br></br> in Immigration Visa
+          We are experienced professionals <br></br>in Visa Solutions
           </h2>
         </div>
         <div className={`${styles["Home-top-flexbox2-rightside"]}`}>
@@ -283,15 +280,14 @@ function Home() {
             >
               <h6>WHO WE ARE</h6>
               <h2>
-                We are professional Expert<br></br> in Immigration Visa
+                We are experienced professionals <br></br> in Visa Solutions
               </h2>
             </div>
             <div className={`${styles["Home-top-flexbox4-rightside"]}`}>
               <p>
-                We provide expert team to create great value for immigration.
-                Our certified & reliable Immigration Consultant professionals
-                can help you get a positive decision on your case. We provide
-                immigration services in all different areas of countries.
+              We offer a skilled team dedicated to enhancing your travel experience, adding significant value to your journeys.
+               Our certified and dependable Travel Consultants are here to assist you in achieving favorable outcomes for your travel plans. 
+              Our services extend across various regions within countries.
               </p>
             </div>
           </div>
@@ -356,7 +352,7 @@ function Home() {
                   className={`${styles["card-img-top"]}`}
                   alt="Home_country_icon"  width="90%"
                 ></img>
-               <p className={`${styles["Home-Card-content"]}`}>A student visa is a document that allows foreign nationals to study in a specific country for a designated period, typically for the purpose of pursuing educational courses at recognized institutions.
+               <p className={`${styles["Home-Card-content"]}`}>A student visa is that allows foreign nationals to study in a specific country for a designated period, typically for the purpose of pursuing educational courses at recognized institutions.
                </p>
               </div>
             </div>{" "}
@@ -371,7 +367,7 @@ function Home() {
                     className={`${styles["card-img-top"]}`}
                     alt="Home_country_icon"  width="90%"
                   ></img>
-                <p className={`${styles["Home-Card-content"]}`}>A diplomatic visa is issued to foreign government officials, diplomats, and accompanying family members, enabling them to enter and stay in a host country for official diplomatic purposes.</p>
+                <p className={`${styles["Home-Card-content"]}`}>A diplomatic visa is issued to foreign government officials and accompanying family members, enabling them to enter and stay in a host country for official diplomatic purposes.</p>
                 </div>
               </div>{" "}
 
@@ -385,7 +381,7 @@ function Home() {
                   className={`${styles["card-img-top"]}`}
                   alt="Home_country_icon"  width="90%"
                 ></img>
-                <p className={`${styles["Home-Card-content"]}`}>A tourist visa is a temporary travel document allowing visits to foreign countries for leisure, sightseeing, and recreation, typically for a limited duration, with no paid employment permitted.</p>
+                <p className={`${styles["Home-Card-content"]}`}>A tourist visa is a temporary travel document allowing visits to foreign countries for sightseeing, and recreation, typically for a limited duration, with no paid employment permitted.</p>
                  
               </div>
             </div>{" "}
@@ -414,7 +410,7 @@ function Home() {
                     className={`${styles["card-img-top"]}`}
                     alt="Home_country_icon"  width="90%" 
                   ></img>
-                <p className={`${styles["Home-Card-content"]}`}>A transit visa permits travelers to briefly pass through a country while on their way to their ultimate destination. It's usually necessary for extended layovers that surpass a specified time limit.</p>
+                <p className={`${styles["Home-Card-content"]}`}>A transit visa permits travelers to briefly pass through a country while on their way to ultimate destination. It's usually necessary for extended layovers that surpass a specified time limit.</p>
                 </div>
               </div>
             </Slider>
@@ -436,8 +432,8 @@ function Home() {
           Contact us today by fill up free online<br></br>
           visa assessment and we will contact you
         </p>
-        <Link to="/contact" ><button className={`${styles["under_card_silder_button text-center"]}`}>
-        Discover More
+        <Link to="/contact" ><button className={`${styles["under_card_silder_button text-center"]}`} style={{padding:"10px",background:"#0067da",color:"#fff",fontWeight:"700",border:"1px solid #0067da"}}>
+         Contact Us
         <i className={`${styles["under_card_silder_icon"]}`}>
           <HiArrowNarrowRight />
         </i>
