@@ -6,7 +6,7 @@ import HomeIcon from "../../Components/icons/HomeIcon";
 const Card = ({ img, header, passage, buttonLabel, link }) => {
   return (
     <div className={`${styles["passport-card"]}`}>
-      <img src={img} alt="Card" className="card-img"/>
+      <img src={img} alt="Card" className="card-img" />
       <h3 className={`${styles["card-header"]}`}>{header}</h3>
       <p className={`${styles["card-passage"]}`}>{passage}</p>
       <Link to={"/passports" + link}>
@@ -19,40 +19,44 @@ const Card = ({ img, header, passage, buttonLabel, link }) => {
 const CardContainer = ({ cards }) => {
   return (
     <div className="passport">
-
-    <div
-    className={`${styles["passport-container"]} d-flex position-relative align-items-center`}
-    >
-    <div className="container d-flex flex-column text-light">
-      <h2>Passport</h2>
-      <div className="d-flex gap-2 align-items-center">
-        <Link to="/">
-          <HomeIcon />
-        </Link>
-        <span className="sep"> → </span>
-        <span>Passport</span>
+      <div
+        className={`${styles["passport-container"]} d-flex position-relative align-items-center`}
+      >
+        <div className="container d-flex flex-column text-light">
+          <h2>Passport</h2>
+          <div className="d-flex gap-2 align-items-center">
+            <Link to="/">
+              <HomeIcon />
+            </Link>
+            <span className="sep"> → </span>
+            <span>Passport</span>
+          </div>
+        </div>
       </div>
-    </div>
-   </div>
 
       <center>
-        <h3 className={`${styles["passport-header"]}`}>U.S. PASSPORT SERVICES</h3>
+        <h3 className={`${styles["passport-header"]}`}>
+          U.S. PASSPORT SERVICES
+        </h3>
         <h5 className={`${styles["passport-sub-header"]}`}>
           World Visa Travel is specialized in expediting new U.S. passports,
           renewals, reissue, children/minors, and more. Please choose the right
           service for your travel needs.
         </h5>
       </center>
-      {cards.map((card, index) => (
-        <Card
-          key={index}
-          img={card.image}
-          header={card.header}
-          passage={card.passage}
-          buttonLabel={card.buttonLabel}
-          link={card.link}
-        />
-      ))}
+      <div className={`${styles["cards-div-passport"]}`}>
+        {cards.map((card, index) => (
+          <Card
+            className={`${styles["cards-passport"]}`}
+            key={index}
+            img={card.image}
+            header={card.header}
+            passage={card.passage}
+            buttonLabel={card.buttonLabel}
+            link={card.link}
+          />
+        ))}
+      </div>
     </div>
   );
 };

@@ -38,9 +38,8 @@ function Search() {
           justifyContent: "center",
         }}
       >
-    
         <Select
-          className="select-box"
+          className="select-box serach-box-homepage-src"
           placeholder="Select Source Country"
           options={countryOptions}
           components={{ Option: CustomOption }}
@@ -48,9 +47,8 @@ function Search() {
           onChange={setSourceCountry}
         />
 
-     
         <Select
-          className="select-box"
+          className="select-box serach-box-homepage-dest"
           placeholder="Select Destination Country"
           options={countryOptions}
           components={{ Option: CustomOption }}

@@ -78,6 +78,15 @@
   margin: 20px;
 }
 
+.cards-div-passport{
+  display: flex !important;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* height: 500px !important; */
+}
+
 /* Media query for mobile screens */
 @media (max-width: 767px) {
   .passport-card {
