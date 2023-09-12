@@ -6,10 +6,10 @@ import VisaCardType from "../../Components/VisaTypeCard";
 
 function Visa() {
   const visatypes = [
-    { type: "tourist", backgroundimage: "/assets/visa/visa1.png", route: "/moreinfo" },
-    { type: "business", backgroundimage: "/assets/visa/visa2.png", route: "/businessvisa" },
-    { type: "official", backgroundimage: "/assets/visa/visa3.png", route: "/official-visa" },
-    { type: "E-", backgroundimage: "/assets/visa/visa3.png", route: "/e-visa" },
+    { type: "tourist", backgroundimage: "/assets/visa/visa1.png", route: "/moreinfo/Tourist" },
+    { type: "business", backgroundimage: "/assets/visa/visa2.png", route: "/moreinfo/businessvisa" },
+    { type: "official", backgroundimage: "/assets/visa/visa3.png", route: "/moreinfo/officialvisa" },
+    { type: "E-visa", backgroundimage: "/assets/visa/visa3.png", route: "/moreinfo/e-visa" },
   ];
 
   return (
@@ -33,7 +33,7 @@ function Visa() {
               <div className="col-md-6 col-lg-4" key={index}>
                 <Link to={visa.route}>
                   {/* You can pass other props to the VisaCardType component if needed */}
-                  <VisaCardType type={visa.type} bg={visa.backgroundimage} />
+                  <VisaCardType  type={visa.type} bg={visa.backgroundimage} />
                 </Link>
               </div>
             );

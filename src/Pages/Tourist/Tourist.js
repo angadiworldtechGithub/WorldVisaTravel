@@ -1,8 +1,9 @@
 import React from 'react'
-import "./Moreinfo.css"
+import "./Tourist.css"
 
-function Moreinfo() {
+function Tourist() {
   return (
+    <div>
     <div>
     <div className="Moreinfo-container">
       <div className="Moreinfo-left-flex">
@@ -11,7 +12,7 @@ function Moreinfo() {
           A Tourist visa allows travelers to visit a foreign country for leisure, sightseeing, 
           and recreational purposes, typically for a limited duration.
         </p>
-        <img className="more_image" src="assets/Touristvisa.png" alt="Tourist Visa" width="90%"/>
+        <img className="more_image" src="/assets/Touristvisa.png" alt="Tourist Visa" width="90%"/>
       </div>
 
       <div className="Moreinfo-right-flex">
@@ -104,7 +105,7 @@ function Moreinfo() {
      
          <div className="country-services">
            <h5  className="country-service-header">Passport</h5>
-           <img style={{paddingBottom:"23px"}} src="assets/visacountry/moreinfo1.png" width={"98%"}></img>
+           <img style={{paddingBottom:"23px"}} src="/assets/visacountry/moreinfo1.png" width={"98%"}></img>
            <p>Your passport must be
            valid for at least six
            months beyond the
@@ -113,7 +114,7 @@ function Moreinfo() {
   
          <div className="country-services">
          <h5 className="country-service-header">Proof of Funds</h5>
-          <img src="assets/visacountry/moreinfo2.png"  width={"98%"}></img>
+          <img src="/assets/visacountry/moreinfo2.png"  width={"98%"}></img>
          <p>You must show that you have
          enough funds to cover your stay.
          This can include bank statements
@@ -122,7 +123,7 @@ function Moreinfo() {
   
          <div className="country-services">
          <h5 className="country-service-header">Criminal Background Check</h5>
-         <img src="assets/visacountry/moreinfo3.png"  width={"98%"}></img>
+         <img src="/assets/visacountry/moreinfo3.png"  width={"98%"}></img>
          <p>Some countries require a
          criminal background check
          before issuing a visa. Check the
@@ -167,7 +168,9 @@ function Moreinfo() {
       </div>
     </div>
     </div>
+    
+    </div>
   )
 }
 
-export default Moreinfo
+export default Tourist

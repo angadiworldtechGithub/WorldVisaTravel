@@ -84,12 +84,6 @@ const About = () => {
             Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
             commodo consequat nulla ut elementum sapien an pulvinar augue.
           </h6>
-          <button className={`${styles["About-button"]}`}>
-            Discover More
-            <i className={`${styles["About-arrow-icon"]}`}>
-              <RxArrowRight />
-            </i>
-          </button>
         </div>
 
         <div className={`${styles["About-item"]}`}>

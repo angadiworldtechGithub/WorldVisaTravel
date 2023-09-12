@@ -13,6 +13,9 @@ import PassportServiceType from "./Pages/PassportServiceType";
 import NotFoundPage from "./Pages/404";
 import Moreinfo from "./Pages/Moreinfo/Moreinfo";
 import Businessvisa from "./Pages/Businessvisa/Businessvisa";
+import Evisa from "./Pages/Evisa/Evisa";
+import Officialvisa from "./Pages/Officialvisa/Officialvisa";
+import Tourist from "./Pages/Tourist/Tourist";
 
 
 function App() {
@@ -40,7 +43,13 @@ function App() {
             path="/visas/:countryId/:visaType"
             element={<VisaRequirements />}
           />
-          <Route path="/moreinfo/:visaType" component={<Moreinfo/>} />
+          <Route path="/moreinfo" >
+          <Route path="tourist" element={<Tourist/>}/>
+          <Route path="Businessvisa" element={<Businessvisa/>}/>
+          <Route path="e-visa" element={<Evisa/>}/>
+          <Route path="Officialvisa" element={<Officialvisa/>}/>
+          </Route>
+
           {/* Other routes can be defined here */}
           <Route path="*" element={<NotFoundPage />} />
 

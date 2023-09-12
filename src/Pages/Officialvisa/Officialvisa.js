@@ -1,23 +1,23 @@
-import React from 'react'
-import "./Businessvisa.css"
+import React from 'react';
+import "./Officialvisa.css";
 
-function Businessvisa() {
+
+function officialvisa() {
   return (
-    <div>
-    <div className="Moreinfo-container">
+    <div>  <div className="Moreinfo-container">
     <div className="Moreinfo-left-flex">
-      <h3 className="Country-header-content">Business Visa</h3>
+      <h3 className="Country-header-content">Official Visa</h3>
       <p className="Country-passage">
-      Experience hassle-free global mobility with our comprehensive business visa services.
-      Our expertise spans across a spectrum of visa categories, from investor visas to work permits,
-      enabling your ventures to thrive without borders. Let us be your gateway to international opportunities.
+      Navigate the world of official visas effortlessly with our comprehensive services covering a wide range of categories.
+       Whether you're representing your government, an international organization, or diplomatic mission, we ensure swift and secure visa processing. 
+      Trust us to facilitate your official travels with utmost professionalism and efficiency."
       </p>
       <img className="more_image" src="/assets/Touristvisa.png" alt="Tourist Visa" width="90%"/>
     </div>
 
     <div className="Moreinfo-right-flex">
     <div className="Country-form">
-      <h3 className="Country-header">Business Visa</h3>
+      <h3 className="Country-header">Official Visa</h3>
       
       <div className="country-formdata">
         <input
@@ -166,9 +166,8 @@ function Businessvisa() {
     specific requirements for your
     destination.</p>
     </div>
-  </div>
-    </div>
+  </div></div>
   )
 }
 
-export default Businessvisa
+export default officialvisa

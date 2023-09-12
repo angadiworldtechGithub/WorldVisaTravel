@@ -64,7 +64,7 @@ function VisaCardType({ type, citizenship, bg }) {
             textDecoration: "underline",
           }}
         >
-          {`${type} Visa ${
+          {`${type} ${type=="E-visa"?"": "Visa"}  ${
             citizenshipType ? " for " + citizenshipType.label + "s" : ""
           }`}
         </h2>

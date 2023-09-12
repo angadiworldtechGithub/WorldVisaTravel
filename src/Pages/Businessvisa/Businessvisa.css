@@ -1,37 +1,38 @@
-/* App.css */
-@media (max-width: 768px) {
-
-  .Country-container {
-    /* Modify styles for the main container */
+/* Afghanistana.css */
+.Moreinfo-container {
     display: flex;
-    margin: 20px;
-    flex-wrap: wrap;
-    justify-content: space-between; 
-    align-items: center;
+    flex-direction: column; /* Stack flex containers vertically on smaller screens */
   }
-
-  .Country-header-content {
-    /* Example: Reduce font size */
-    font-size: 16px;
-  }
-
-  /* Continue modifying other elements as needed */
-}
-
-.Country-container {
-    display: flex;
-    margin: 20px;
-    flex-wrap: wrap;
-    justify-content: space-between; 
-    align-items: center;
-  }
-
-.country-img{
-    width: 100%;
-    padding: 20px;
-}
   
-.Country-header{
+  .Moreinfo-left-flex {
+    flex: 65%; /* Take up 70% of the available space */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .Moreinfo-right-flex {
+    flex: 35%; /* Take up 30% of the available space */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  @media (min-width: 768px) {
+    /* On screens with a minimum width of 768px, change to a row layout */
+    .Moreinfo-container {
+      flex-direction: row;
+    }
+  
+    .Moreinfo-left-flex {
+      flex: 65%; /* Take up 70% of the available space */
+    }
+  
+    .Moreinfo-right-flex {
+      flex: 35%; /* Take up 30% of the available space */
+    }
+  }
+  
+  
+  .Country-header{
     margin: 10px;
     color: #fff;
     font-weight: 700;
@@ -45,11 +46,7 @@
     align-items: center;
     padding: 40px;
 }
-  .Country-content {
-    flex: 2; 
-    text-align: center;
-  }
-  
+
   .Country-form {
     flex: 1; 
     min-width: 200px; 
@@ -99,8 +96,9 @@
     accent-color: #072f5f;
   }
   
+ 
   /* FlexBoxes2.css */
-.country-container-two {
+  .country-container-two {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; /* Adjust as needed */
@@ -155,4 +153,5 @@
       flex-basis: 100%; /* One item per row for smaller screens */
     }
   }
+  
   

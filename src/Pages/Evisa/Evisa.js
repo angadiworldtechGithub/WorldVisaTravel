@@ -1,23 +1,25 @@
 import React from 'react'
-import "./Businessvisa.css"
+import "./Evisa.css"
 
-function Businessvisa() {
+
+function Evisa() {
   return (
     <div>
     <div className="Moreinfo-container">
     <div className="Moreinfo-left-flex">
-      <h3 className="Country-header-content">Business Visa</h3>
+      <h3 className="Country-header-content">E-Visa</h3>
       <p className="Country-passage">
-      Experience hassle-free global mobility with our comprehensive business visa services.
-      Our expertise spans across a spectrum of visa categories, from investor visas to work permits,
-      enabling your ventures to thrive without borders. Let us be your gateway to international opportunities.
+      Simplify your international travel with our E-visa expertise, tailored to diverse visa categories. 
+      Whether you're an entrepreneur, investor, or skilled professional,
+      we're your trusted partner for streamlined visa solutions.
+      Explore new horizons with confidence through our seamless E-visa services.
       </p>
       <img className="more_image" src="/assets/Touristvisa.png" alt="Tourist Visa" width="90%"/>
     </div>
 
     <div className="Moreinfo-right-flex">
     <div className="Country-form">
-      <h3 className="Country-header">Business Visa</h3>
+      <h3 className="Country-header">E-Visa</h3>
       
       <div className="country-formdata">
         <input
@@ -167,8 +169,8 @@ function Businessvisa() {
     destination.</p>
     </div>
   </div>
-    </div>
+  </div>
   )
 }
 
-export default Businessvisa
+export default Evisa

@@ -2,9 +2,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
-.country_img{
- border-radius: 30px;
-}
+
 
 .Home {
   display: flex;
@@ -32,42 +30,7 @@ body {
   position: absolute;
   bottom: -125px;
 }
-.Home-card{
-  flex: 1;
-  padding: 20px;
-  margin: 10px;
-  color: #000;
-  background-color: #fff;
-  border-radius: 20px;
-}
-.Home-card-silder{
-  padding-Bottom: 120px;
-  width: 90%;
-  margin-Inline: auto;
-}
-.card-title{
-  text-align: center;
-  padding: 10px;
-  font-weight: 700;
-  color: #2c3a90;
-}
-.Home-Card-content{
-  text-align: justify;
-}
-.under_card_img{
-  width: 100%;
-  min-Width: 250pd;
-}
-.Home-banner-heading{
-  padding-top: 30px;
-  font-weight: 600;
-  color: #2c3a90;
-}
-.Home-box {
-  flex: 1;
-  width: 400px;
-  text-align: center;
-}
+
 @media (max-width: 900px) {
   .Home-container {
     position: relative;
@@ -100,6 +63,10 @@ body {
   top: 0;
   left: 0;
 }
+.country_img{
+  border-radius: 30px;
+ }
+ 
 #carousel-container {
   position: relative;
 }
@@ -337,71 +304,53 @@ body {
     background: none;
   }
 }
-
-.under_card_silder {
-  position: relative;
-  margin-inline: auto;
-
-  /* top: 2400px; */
-  /* left: 250px; */
-  max-width: 680px;
-  bottom: 80px;
-  border-radius: 10px;
-  display: flex;
-  flex-wrap: wrap;
+/*Home page Card Silder*/
+.Home-card{
+  flex: 1;
+  padding: 20px;
+  margin: 10px;
+  color: #000;
   background-color: #fff;
-  padding-right: 20px;
-  /* width: 60%;
-  margin: 30px 30px 30px 30px; */
-  border: 1px solid #ccc;
-  max-height: fit-content;
-  overflow: hidden;
-  align-items: center;
-  /* margin-inline: 20px; */
-  /* top: 50%;
-  left: 50%;
-  transform: translate(-50%, 90%); */
+  border-radius: 20px;
 }
-
-.under_card_silder_item1 {
-  flex:1; /* Equal width for both items */
-  min-width: 200px;
- /* width: 80%;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px; */
+.Home-card-silder{
+  padding-Bottom: 120px;
+  width: 90%;
+  margin-Inline: auto;
 }
-
-.under_card_silder_item2 {
-  flex: 2; /* Equal width for both items */
-  /* width: 80%;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 40px;
-  padding-bottom: 20px; */
+.card-title{
+  text-align: center;
+  padding: 10px;
+  font-weight: 700;
+  color: #2c3a90;
 }
-.under_card_silder_button{
-  width: 200px;
-  background-color: #0067da;
+.Home-Card-content{
+  text-align: justify;
 }
-.under_card_silder_icon {
-  padding-left: 20px;
+.under_card_img{
+  width: 100%;
+  min-Width: 250pd;
+}
+.Home-banner-heading{
+  padding-top: 30px;
+  font-weight: 600;
+  color: #2c3a90;
+}
+.Home-box {
+  flex: 1;
+  width: 400px;
+  text-align: center;
 }
 
 
 /* Flexbox5 Container for flexboxes */
 .flexbox5 {
-  /* padding-top: 40px; */
   padding-bottom: 20px;
-  /* margin-top: 240px; */
 }
 
 .Home-flexbox5 {
   display: flex;
   flex-wrap: wrap;
-  /* padding-left: 40px;
-  padding-right: 60px; */
 }
 
 /* Create four equal columns */

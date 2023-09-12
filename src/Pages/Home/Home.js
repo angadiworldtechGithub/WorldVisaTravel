@@ -425,43 +425,7 @@ function Home() {
             </Slider>
           </div>
         </div>
-
-        <div className={`${styles["under_card_silder"]}`}>
-          <div className={`${styles["under_card_silder_item1"]}`}>
-            <img
-              src="/assets/country/1.png"
-              alt="img"
-              className="under_card_img"
-            />
-          </div>
-          <div
-            className={`${styles["under_card_silder_item2 p-2 text-center"]}`}
-          >
-            <h4>Free Online Visa Assessment</h4>
-            <p>
-              Contact us today by fill up free online<br></br>
-              visa assessment and we will contact you
-            </p>
-            <Link to="/contact">
-              <button
-                className={`${styles["under_card_silder_button text-center"]}`}
-                style={{
-                  padding: "10px",
-                  background: "#0067da",
-                  color: "#fff",
-                  fontWeight: "700",
-                  border: "1px solid #0067da",
-                }}
-              >
-                Contact Us
-                <i className={`${styles["under_card_silder_icon"]}`}>
-                  <HiArrowNarrowRight />
-                </i>
-              </button>
-            </Link>
-          </div>
-        </div>
-      </div>
+</div>
 
       <div
         className={`${styles["Home-top-flexbox3"]}`}
