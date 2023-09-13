@@ -43,7 +43,7 @@ const Footer = () => {
                 <div className="col-xl-4 col-lg-4 mb-50">
                     <div className="footer-widget">
                         <div className="footer-logo">
-                           <Link href="index.html"><img src="/assets/logo.png" className="img-fluid" alt="logo"></img></Link>
+                           <Link to="index.html"><img src="/assets/logo.png" className="img-fluid" alt="logo"></img></Link>
                         </div>
                         <div className="footer-text">
                             <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
@@ -51,10 +51,10 @@ const Footer = () => {
                         </div>
                         <div className="footer-social-icon">
                             <span>Follow us</span>
-                            <Link href="#"><i classNameName="fa-facebook"><BsFacebook/></i></Link>
-                           <Link href="#"><i classNameName="fa-twitter"><BsTwitter/></i></Link>
-                           <Link href="#"><i classNameName="fa-instagram"><BsInstagram/></i></Link>
-                           <Link href="#"><i classNameName="fa-whatsapp"><BsWhatsapp/></i></Link>
+                            <Link to="#"><i classNameName="fa-facebook"><BsFacebook/></i></Link>
+                           <Link to="#"><i classNameName="fa-twitter"><BsTwitter/></i></Link>
+                           <Link to="#"><i classNameName="fa-instagram"><BsInstagram/></i></Link>
+                           <Link to="#"><i classNameName="fa-whatsapp"><BsWhatsapp/></i></Link>
                         </div>
                     </div>
                 </div>
@@ -64,14 +64,14 @@ const Footer = () => {
                             <h3>Useful Links</h3>
                         </div>
                         <ul>
-                            <li><Link href="/">Home</Link></li>
-                            <li><Link href="/about">About Us</Link></li>
-                            <li><Link href="/visas">Visas</Link></li>
-                            <li><Link href="/passport">Passport</Link></li>
-                            <li><Link href="/legalizations">Legalizations</Link></li>
-                            <li><Link href="/">E-Visas</Link></li>
-                            <li><Link href="#">Our Services</Link></li>
-                            <li><Link href="/contact">Contact us</Link></li>
+                            <li><Link to="/">Home</Link></li>
+                            <li><Link to="/about">About Us</Link></li>
+                            <li><Link to="/visas">Visas</Link></li>
+                            <li><Link to="/passport">Passport</Link></li>
+                            <li><Link to="/legalizations">Legalizations</Link></li>
+                            <li><Link to="/">E-Visas</Link></li>
+                            <li><Link to="#">Our Services</Link></li>
+                            <li><Link to="/contact">Contact us</Link></li>
 
                         </ul>
                     </div>
@@ -100,17 +100,17 @@ const Footer = () => {
             <div className="row">
                 <div className="col-xl-6 col-lg-6 text-center text-lg-left">
                     <div className="copyright-text">
-                        <p>Copyright &copy; 2018, All Right Reserved<Link href="https://worldvisatravel.com/">  World Visa Travel</Link></p>
+                        <p>Copyright &copy; 2018, All Right Reserved<Link to="https://worldvisatravel.com/">  World Visa Travel</Link></p>
                     </div>
                 </div>
                 <div className="col-xl-6 col-lg-6 d-none d-lg-block text-right">
                     <div className="footer-menu">
                         <ul>
-                            <li><Link href="/">Home</Link></li>
-                            <li><Link href="#">Terms</Link></li>
-                            <li><Link href="#">Privacy</Link></li>
-                            <li><Link href="#">Policy</Link></li>
-                            <li><Link href="/contact">Contact</Link></li>
+                            <li><Link to="/">Home</Link></li>
+                            <li><Link to="#">Terms</Link></li>
+                            <li><Link to="#">Privacy</Link></li>
+                            <li><Link to="#">Policy</Link></li>
+                            <li><Link to="/contact">Contact</Link></li>
                         </ul>
                     </div>
                 </div>
