@@ -250,6 +250,8 @@ function Home() {
             </div>
           </div>
 
+
+
           <div className={`${styles["Home-card-silder"]}`}>
             <Slider {...settings}>
               <div
@@ -498,7 +500,7 @@ function Home() {
         </div>
       </div>
 
-      <div className={`${styles["flexbox5"]}`}>
+      {/*<div className={`${styles["flexbox5"]}`}>
         <center style={{ paddingBottom: "20px" }}>
           <h6>CHOOSE COUNTRY</h6>
           <h1>
@@ -569,8 +571,137 @@ function Home() {
             </p>
             <h6>Read More</h6>
           </div>
-        </div>
+      </div>*/}
+       
+
+        <div className={`${styles["Homeless-card-silder"]}`}>
+        <center style={{ padding: "20px" }}>
+        <h6>HomeLess Ministry</h6>
+        <h1>
+          Homeless<b style={{color:"#2c3a90"}}> Ministry</b>
+        </h1>
+      </center>
+      <div>
+      <center>
+      <p className={`${styles["Homeless-Card-content"]}`}>
+       At World Visa Travel we believe in the power of humanity. Our Homeless Ministry extends a
+       helping hand to those without a home,
+       working towards a society where everyone has a place to call home and a chance for a better life.
+      </p>
+      </center>
+      
       </div>
+        <Slider {...settings}>
+          <div
+            className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
+            style={{ background: "#fff" }}
+          >
+            <div className={`${styles["Homeless-card"]}`}>
+              <img
+                src="assets/Homeless/homeless1.png"
+                className={`${styles["Homeless-card-img-top"]}`}
+                alt="Home_country_icon"
+                width="90%"
+              ></img>
+            </div>
+          </div>{" "}
+          <div
+            className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
+          >
+            <div className={`${styles["Homeless-card"]}`}>
+           
+              <img
+                src="assets/Homeless/homeless2.png"
+                className={`${styles["Homeless-card-img-top"]}`}
+                alt="Home_country_icon"
+                width="90%"
+              ></img>
+            </div>
+          </div>{" "}
+          <div
+            className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
+          >
+            <div className={`${styles["Homeless-card"]}`}>
+             
+              <img
+              src="assets/Homeless/homeless3.png"
+                className={`${styles["Homeless-card-img-top"]}`}
+                alt="Home_country_icon"
+                width="90%"
+              ></img>
+            </div>
+          </div>{" "}
+          <div
+            className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
+          >
+            <div className={`${styles["Homeless-card"]}`}>
+           
+              <img
+               src="assets/Homeless/homeless4.png"
+                className={`${styles["Homeless-card-img-top"]}`}
+                alt="Home_country_icon"
+                width="90%"
+              ></img>
+           
+            </div>
+          </div>{" "}
+          <div
+            className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
+          >
+            <div className={`${styles["Homeless-card"]}`}>
+              <img
+               src="assets/Homeless/homeless5.png"
+                className={`${styles["Homeless-card-img-top"]}`}
+                alt="Home_country_icon"
+                width="90%"
+              ></img>
+           
+            </div>
+          </div>{" "}
+          <div
+            className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
+          >
+            <div className={`${styles["Homeless-card"]}`}>
+            
+              <img
+              src="assets/Homeless/homeless6.png"
+                className={`${styles["Homeless-card-img-top"]}`}
+                alt="Home_country_icon"
+                width="90%"
+              ></img>
+            
+            </div>
+          </div>{" "}
+          <div
+            className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
+          >
+            <div className={`${styles["Homeless-card"]}`}>
+           
+              <img
+              src="assets/Homeless/homeless7.png"
+                className={`${styles["Homeless-card-img-top"]}`}
+                alt="Home_country_icon"
+                width="90%"
+              ></img>
+           
+            </div>
+          </div>{" "}
+          <div
+            className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
+          >
+            <div className={`${styles["Homeless-card"]}`}>
+              <img
+              src="assets/Homeless/homeless8.png"
+                className={`${styles["Homeless-card-img-top"]}`}
+                alt="Home_country_icon"
+                width="90%"
+              ></img>
+           
+            </div>
+          </div>
+        </Slider>
+      </div>
+    
     </>
   );
 }
