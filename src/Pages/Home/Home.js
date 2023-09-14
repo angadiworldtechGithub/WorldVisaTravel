@@ -1,12 +1,10 @@
 import React from "react";
 import styles from "./Home.module.css";
-import HomeIcon from "../../Components/icons/HomeIcon";
 import { Link } from "react-router-dom";
+import {GiOpenBook} from "react-icons/gi";
 import { BsCheck2Circle } from "react-icons/bs";
 import { FaAddressBook, FaUserGraduate } from "react-icons/fa";
-import { HiArrowNarrowRight } from "react-icons/hi";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
-import { GiOpenBook } from "react-icons/gi";
 import Search from "./../../Components/SearchCountry/Search";
 import Carousel from "react-bootstrap/Carousel";
 import Slider from "react-slick";
@@ -63,9 +61,9 @@ function Home() {
               </h2>
             </center>
             <center>
-              <h3>Apply for a Travel Visa:</h3>
+              <h3 className={`${styles["Home-banner-heading1"]}`}>Apply for a Travel Visa:</h3>
             </center>
-            <center>
+            <center className={`${styles["Home-banner-heading1"]}`}>
               <Search />
             </center>
           </div>
@@ -500,80 +498,6 @@ function Home() {
         </div>
       </div>
 
-      {/*<div className={`${styles["flexbox5"]}`}>
-        <center style={{ paddingBottom: "20px" }}>
-          <h6>CHOOSE COUNTRY</h6>
-          <h1>
-            Immigration - Choose <b>your country!</b>
-          </h1>
-        </center>
-
-        <div className={`${styles["Home-flexbox5"]}`}>
-          <div className={`${styles["Home-top-flexbox5"]}`}>
-            <img
-              src="assets/country/1.png"
-              height="auto"
-              width="280px"
-              alt="country_img"
-            ></img>
-            <h5 className={`${styles["Home-top-flexbox5-header"]}`}>
-              United States
-            </h5>
-            <p>
-              Studying In The United State of America quis nostrud exercitation
-            </p>
-            <h6>Read More</h6>
-          </div>
-
-          <div className={`${styles["Home-top-flexbox5"]}`}>
-            <img
-              src="assets/country/2.png"
-              height="auto"
-              width="280px"
-              alt="country_img"
-            ></img>
-            <h5 className={`${styles["Home-top-flexbox5-header"]}`}>
-              Australia
-            </h5>
-            <p>
-              Studying in the Australia quis nostrud exercitation ullamco
-              laboris.
-            </p>
-            <h6>Read More</h6>
-          </div>
-
-          <div className={`${styles["Home-top-flexbox5"]}`}>
-            <img
-              src="assets/country/3.png"
-              height="auto"
-              width="280px"
-              alt="country_img"
-            ></img>
-            <h5 className={`${styles["Home-top-flexbox5-header"]}`}>Canada</h5>
-            <p>
-              Studying in the Canada quis nostrud exercitation ullamco laboris.
-            </p>
-            <h6>Read More</h6>
-          </div>
-
-          <div className={`${styles["Home-top-flexbox5"]}`}>
-            <img
-              src="assets/country/4.png"
-              height="auto"
-              width="280px"
-              alt="country_img"
-            ></img>
-            <h5 className={`${styles["Home-top-flexbox5-header"]}`}>
-              United Kingdom
-            </h5>
-            <p>
-              Studying in the United Kingdom quis nostrud exercitation ullamco.
-            </p>
-            <h6>Read More</h6>
-          </div>
-      </div>*/}
-       
-
         <div className={`${styles["Homeless-card-silder"]}`}>
         <center style={{ padding: "20px" }}>
         <h6>HomeLess Ministry</h6>
@@ -700,6 +624,84 @@ function Home() {
             </div>
           </div>
         </Slider>
+      </div>
+
+      <div className={`${styles["flexbox5"]}`}>
+        <center style={{ paddingBottom: "20px" }}>
+          <h5>Testimonials of Transformation</h5>
+          <h1>
+           Our Client <b style={{color:"#D6F8FF"}}> Testimonials</b>
+          </h1>
+        </center>
+
+        <div className={`${styles["Home-flexbox5"]}`}>
+          <div className={`${styles["Home-top-flexbox5"]}`}>
+            <img
+              src="assets/country/1.png"
+              height="auto"
+              width="280px"
+              alt="country_img"
+            ></img>
+            <h5 className={`${styles["Home-top-flexbox5-header"]}`}>
+              Customer Testimonial1
+            </h5>
+            <p className={`${styles["Home-testimonial-content"]}`}>
+            I have had the pleasure of working with World Visa Travel, Inc. from 2004-2023,
+            through the agency I was employed with.  Randy and his staff were always professional,
+            courteous, and pleasant to work with.  They were extremely helpful in assisting us in obtaining visas
+            from the various embassies and passports from the State Department.   There were many times when they 
+            went above and beyond for us and we greatly appreciated it.
+            I would highly recommend using their service for any travel needs you may have.
+            </p>
+          </div>
+
+          <div className={`${styles["Home-top-flexbox5"]}`}>
+            <img
+              src="assets/country/2.png"
+              height="auto"
+              width="280px"
+              alt="country_img"
+            ></img>
+            <h5 className={`${styles["Home-top-flexbox5-header"]}`}>
+              Australia
+            </h5>
+            <p>
+              Studying in the Australia quis nostrud exercitation ullamco
+              laboris.
+            </p>
+            <h6>Read More</h6>
+          </div>
+
+          <div className={`${styles["Home-top-flexbox5"]}`}>
+            <img
+              src="assets/country/3.png"
+              height="auto"
+              width="280px"
+              alt="country_img"
+            ></img>
+            <h5 className={`${styles["Home-top-flexbox5-header"]}`}>Canada</h5>
+            <p>
+              Studying in the Canada quis nostrud exercitation ullamco laboris.
+            </p>
+            <h6>Read More</h6>
+          </div>
+
+          <div className={`${styles["Home-top-flexbox5"]}`}>
+            <img
+              src="assets/country/4.png"
+              height="auto"
+              width="280px"
+              alt="country_img"
+            ></img>
+            <h5 className={`${styles["Home-top-flexbox5-header"]}`}>
+              United Kingdom
+            </h5>
+            <p>
+              Studying in the United Kingdom quis nostrud exercitation ullamco.
+            </p>
+            <h6>Read More</h6>
+          </div>
+      </div>
       </div>
     
     </>
