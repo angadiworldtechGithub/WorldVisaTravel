@@ -12,7 +12,7 @@ function officialvisa() {
        Whether you're representing your government, an international organization, or diplomatic mission, we ensure swift and secure visa processing. 
       Trust us to facilitate your official travels with utmost professionalism and efficiency."
       </p>
-      <img className="more_image" src="/assets/Touristvisa.png" alt="Tourist Visa" width="90%"/>
+      <img className="more_image" src="/assets/visaservices/officalvisa.png" alt="Tourist Visa" width="90%"/>
     </div>
 
     <div className="Moreinfo-right-flex">

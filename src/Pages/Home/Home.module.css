@@ -19,8 +19,48 @@ body {
   height: 700px;
 }
 
+/*Apply visa tab*/
+.Home-Apply{
+  position: sticky;
+  display: flex;
+ /* justify-content: center; */
+  align-items: center; 
+  flex-wrap: wrap;
+}
+.Home-Apply-visa{
+  width: 100%;
+  flex: 40%; 
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #fff;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+.Home-Apply-evisa{
+  width: 100%;
+  flex: 40%; 
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #fff;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+.Home-search{
+  margin: 300px;
+}
 
+/*Home page in mobile view*/
 @media (max-width: 900px) {
+  .Home{
+    padding-right: 10px;
+    align-items: center;
+  }
+  .Home-Apply-visa{
+    width: 100%;
+  }
+  .Home-Apply{
+    padding-right: 50px;
+    bottom: 0;
+  }
   .Home-banner-heading {
     padding-right: 40px;
     bottom: 0;
@@ -31,6 +71,11 @@ body {
   }
 }
 @media (max-width: 768px) {
+  .Home-Apply{
+    padding-right: 50px;
+    text-align: center;
+    bottom: 0;
+  }
   .Home-banner-heading {
     padding-right: 40px;
     bottom: 0;
@@ -43,6 +88,7 @@ body {
 
 .Home-container {
   display: flex;
+  position: sticky;
   justify-content: center;
   max-width: 1400px;
   margin: 20px 20px 20px 20px;
@@ -50,8 +96,6 @@ body {
   flex-wrap: wrap;
   margin-inline: auto;
   padding-inline: 60px;
-  position: absolute;
-  bottom: -125px;
 }
 
 @media (max-width: 900px) {
@@ -123,10 +167,11 @@ body {
   }
 }
 
-
 #Home-top {
-  margin-bottom: 20px;
-  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Optional: Wrap items if they don't fit in one row */
   z-index: 99;
 }
 .Home-top-flex1 {
@@ -330,6 +375,8 @@ body {
 
 /*Home page Card Silder*/
 .Home-card{
+ 
+  position: sticky;
   flex: 1;
   padding: 20px;
   margin: 10px;
@@ -338,8 +385,9 @@ body {
   border-radius: 20px;
 }
 .Home-card-silder{
-  padding-Bottom: 120px;
   width: 90%;
+  position: sticky;
+  padding-Bottom: 120px;
   margin-Inline: auto;
 }
 .card-title{
@@ -350,6 +398,7 @@ body {
 }
 .Home-Card-content{
   text-align: justify;
+  position: sticky;
 }
 .under_card_img{
   width: 100%;
@@ -389,6 +438,7 @@ body {
   padding-top: 20px;
   padding-bottom: 10px;
   font-weight: 600;
+  text-align: center;
 }
 /* On screens that are 992px wide or less, go from four columns to two columns */
 @media screen and (max-width: 992px) {
@@ -434,4 +484,6 @@ body {
 
 .Home-testimonial-content{
   text-align: justify;
+  padding-left: 20px;
+  padding-right: 20px;
 }

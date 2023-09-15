@@ -42,9 +42,9 @@
 
 .About-container2 {
   display: flex;
-  background-color: #2d3845;
+  background-color: #2C3A90;
   color: #fff;
-  border: 1px solid #7e909f;
+  border: 1px solid #fff;
   border-left: none; /* Remove left border */
   border-right: none; /* Remove right border */
   border-bottom: none; /* Remove bottom border */
@@ -59,7 +59,7 @@
     15% - 10px
   ); /* Equal width for each item, accounting for spacing */
   font-size: 50px;
-  color: #7e909f;
+  color: #fff;
   padding: 15px;
   margin-left: 40px; 
   box-sizing: border-box; /* Include padding and border in item width */

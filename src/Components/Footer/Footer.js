@@ -46,8 +46,10 @@ const Footer = () => {
                            <Link to="index.html"><img src="/assets/logo.png" className="img-fluid" alt="logo"></img></Link>
                         </div>
                         <div className="footer-text">
-                            <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
-                            elit,Lorem ipsum dolor sit amet.</p>
+                            <p style={{textAlign:"justify",paddingleft:"30px",paddingRight:"30px"}}>At World Visa Travel we believe in the power of humanity. 
+                            Our Homeless Ministry extends a helping hand to those without a home, 
+                            working towards a society where everyone has a place to call home and a chance for a better 
+                            life.</p>
                         </div>
                         <div className="footer-social-icon">
                             <span>Follow us</span>

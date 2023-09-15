@@ -12,7 +12,7 @@ function Businessvisa() {
       Our expertise spans across a spectrum of visa categories, from investor visas to work permits,
       enabling your ventures to thrive without borders. Let us be your gateway to international opportunities.
       </p>
-      <img className="more_image" src="/assets/Touristvisa.png" alt="Tourist Visa" width="90%"/>
+      <img className="more_image" src="/assets/visaservices/businessvisa.png" alt="Tourist Visa" width="90%"/>
     </div>
 
     <div className="Moreinfo-right-flex">

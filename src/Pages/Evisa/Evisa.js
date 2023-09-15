@@ -14,7 +14,7 @@ function Evisa() {
       we're your trusted partner for streamlined visa solutions.
       Explore new horizons with confidence through our seamless E-visa services.
       </p>
-      <img className="more_image" src="/assets/Touristvisa.png" alt="Tourist Visa" width="90%"/>
+      <img className="more_image" src="/assets/visaservices/evisa.png" alt="Tourist Visa" width="90%"/>
     </div>
 
     <div className="Moreinfo-right-flex">

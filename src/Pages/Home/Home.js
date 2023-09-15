@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Home.module.css";
 import { Link } from "react-router-dom";
-import {GiOpenBook} from "react-icons/gi";
+import { GiOpenBook } from "react-icons/gi";
 import { BsCheck2Circle } from "react-icons/bs";
 import { FaAddressBook, FaUserGraduate } from "react-icons/fa";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
@@ -55,18 +55,29 @@ function Home() {
         >
           <div className="container d-flex flex-column text-light">
             <center>
-              <h2 className={`${styles["Home-banner-heading"]}`}>
+              <h1 className={`${styles["Home-banner-heading"]}`}>
                 Experience Seamless World Travel with Our<br></br> Visa and
                 Passport Specialists
-              </h2>
+              </h1>
             </center>
-            <center>
-              <h3 className={`${styles["Home-banner-heading1"]}`}>Apply for a Travel Visa:</h3>
-            </center>
-            <center className={`${styles["Home-banner-heading1"]}`}>
-              <Search />
-            </center>
+
+            <div className={`${styles["Home-Apply"]}`}>
+              <div className={`${styles["Home-Apply-evisa"]}`}>
+                <h1 className={`${styles["Home-banner-heading1"]}`}>
+                  Apply for E-visa Travel
+                </h1>
+              </div>
+              <div className={`${styles["Home-Apply-visa"]}`}>
+                <h1 className={`${styles["Home-banner-heading1"]}`}>
+                  Apply for a Visa Travel
+                </h1>
+              </div>
+            </div>
           </div>
+
+          <center className={`${styles["Home-banner-heading1"]}`}>
+            <Search />
+          </center>
         </div>
         {/* <div id="carousel-container">
           <Carousel data-bs-theme="dark">
@@ -128,6 +139,12 @@ function Home() {
         <div
           className={`${styles["Home-container"]}`}
           id={`${styles["Home-top"]}`}
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            flexWrap: "wrap",
+          }}
         >
           <div className={`${styles["Home-box"]}`}>
             <div className={`${styles["Home-top-flex1"]}`}>
@@ -147,6 +164,7 @@ function Home() {
               </p>
             </div>
           </div>
+
           <div className={`${styles["Home-box"]}`}>
             <div className={`${styles["Home-top-flex2"]}`}>
               <Link to="/passport">
@@ -179,23 +197,21 @@ function Home() {
               </Link>
               <hr></hr>
               <p>
-                Trust our seasoned legalisation experts to navigate complex visa
-                processes efficiently, making your international aspirations a
-                reality.
+                Trust our experts to handle visa processes, making your
+                international goals a reality.
               </p>
             </div>
           </div>
         </div>
-      </div>
 
-      <div className={`${styles["Home-top-flexbox2 px-sm-2 px-lg-5"]}`}>
+        {/* <div className={`${styles["Home-top-flexbox2 px-sm-2 px-lg-5"]}`}>
         <div
           className={`${styles["Home-flexbox2"]}`}
           style={{ position: "relative" }}
         >
           <div
             className={`${styles["Home-top-flexbox2"]}`}
-            style={{ paddingBottom: "40px", paddingTop: "40px" }}
+            style={{ paddingBottom: "40px" }}
           >
             <div
               className={`${styles["Home-top-flexbox2-leftside"]}`}
@@ -217,416 +233,587 @@ function Home() {
             </div>
           </div>
         </div>
-      </div>
+        </div>*/}
 
-      <div className={`${styles["position-relative"]}`}>
-        <div
-          className={`${styles["Home-flexbox4"]}`}
-          style={{ position: "relative" }}
-        >
+        <div className={`${styles["position-relative"]}`}>
           <div
-            className={`${styles["Home-top-flexbox4"]}`}
-            style={{ paddingBottom: "40px", paddingTop: "60px" }}
+            className={`${styles["Home-flexbox4"]}`}
+            style={{ position: "relative" }}
           >
             <div
-              className={`${styles["Home-top-flexbox4-leftside"]}`}
-              style={{ paddingLeft: "120px", paddingBottom: "40px" }}
+              className={`${styles["Home-top-flexbox4"]}`}
+              style={{ paddingBottom: "40px", paddingTop: "60px" }}
             >
-              <h6>WHO WE ARE</h6>
-              <h2>
-                We are experienced professionals <br></br> in Visa Solutions
-              </h2>
-            </div>
-            <div className={`${styles["Home-top-flexbox4-rightside"]}`}>
-              <p>
-                We offer a skilled team dedicated to enhancing your travel
-                experience, adding significant value to your journeys. Our
-                certified and dependable Travel Consultants are here to assist
-                you in achieving favorable outcomes for your travel plans. Our
-                services extend across various regions within countries.
-              </p>
-            </div>
-          </div>
-
-
-
-          <div className={`${styles["Home-card-silder"]}`}>
-            <Slider {...settings}>
               <div
-                className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
-                style={{ background: "#fff" }}
+                className={`${styles["Home-top-flexbox4-leftside"]}`}
+                style={{ paddingLeft: "120px", paddingBottom: "40px" }}
               >
-                <div className={`${styles["Home-card"]}`}>
-                  <div className={"card-body"}>
-                    <h5 className={`${styles["card-title"]}`}>Family Visa</h5>
-                  </div>
-                  <img
-                    src="assets/Homeicons/Family.png"
-                    className={`${styles["card-img-top"]}`}
-                    alt="Home_country_icon"
-                    width="90%"
-                  ></img>
-                  <p className={`${styles["Home-Card-content"]}`}>
-                    A family visa is a legal permit for individuals to reunite
-                    with close family members in another country, fostering
-                    family unity. It enables loved ones separated by borders to
-                    live together.
-                  </p>
-                </div>
-              </div>{" "}
-              <div
-                className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
-              >
-                <div className={`${styles["Home-card"]}`}>
-                  <div className={`${styles["card-body"]}`}>
-                    <h5 className={`${styles["card-title"]}`}>Migrate Visa</h5>
-                  </div>
-                  <img
-                    src="assets/Homeicons/migrate.png"
-                    className={`${styles["card-img-top"]}`}
-                    alt="Home_country_icon"
-                    width="90%"
-                  ></img>
-                  <p className={`${styles["Home-Card-content"]}`}>
-                    A migration visa opens doors for individuals to begin anew
-                    in a foreign country, pursuing their dreams and ambitions.
-                    It's a gateway to a fresh start and new opportunities on
-                    foreign soil.
-                  </p>
-                </div>
-              </div>{" "}
-              <div
-                className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
-              >
-                <div className={`${styles["Home-card"]}`}>
-                  <div className={`${styles["card-body"]}`}>
-                    <h5 className={`${styles["card-title"]}`}>Investor Visa</h5>
-                  </div>
-                  <img
-                    src="assets/Homeicons/investor.png"
-                    className={`${styles["card-img-top"]}`}
-                    alt="Home_country_icon"
-                    width="90%"
-                  ></img>
-                  <p className={`${styles["Home-Card-content"]}`}>
-                    An investor visa, offered in many countries, enables
-                    individuals to obtain residency or citizenship by making
-                    significant financial investments, fostering global mobility
-                    and business prospects.
-                  </p>
-                </div>
-              </div>{" "}
-              <div
-                className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
-              >
-                <div className={`${styles["Home-card"]}`}>
-                  <div className={`${styles["card-body"]}`}>
-                    <h5 className={`${styles["card-title"]}`}>Student Visa</h5>
-                  </div>
-                  <img
-                    src="assets/Homeicons/student.png"
-                    className={`${styles["card-img-top"]}`}
-                    alt="Home_country_icon"
-                    width="90%"
-                  ></img>
-                  <p className={`${styles["Home-Card-content"]}`}>
-                    A student visa is that allows foreign nationals to study in
-                    a specific country for a designated period, typically for
-                    the purpose of pursuing educational courses at recognized
-                    institutions.
-                  </p>
-                </div>
-              </div>{" "}
-              <div
-                className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
-              >
-                <div className={`${styles["Home-card"]}`}>
-                  <div className={`${styles["card-body"]}`}>
-                    <h5 className={`${styles["card-title"]}`}>
-                      Diplomatic Visa
-                    </h5>
-                  </div>
-                  <img
-                    src="assets/Homeicons/diplomatic.png"
-                    className={`${styles["card-img-top"]}`}
-                    alt="Home_country_icon"
-                    width="90%"
-                  ></img>
-                  <p className={`${styles["Home-Card-content"]}`}>
-                    A diplomatic visa is issued to foreign government officials
-                    and accompanying family members, enabling them to enter and
-                    stay in a host country for official diplomatic purposes.
-                  </p>
-                </div>
-              </div>{" "}
-              <div
-                className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
-              >
-                <div className={`${styles["Home-card"]}`}>
-                  <div className={`${styles["card-body"]}`}>
-                    <h5 className={`${styles["card-title"]}`}>Tourist Visa</h5>
-                  </div>
-                  <img
-                    src="assets/Homeicons/tourist.png"
-                    className={`${styles["card-img-top"]}`}
-                    alt="Home_country_icon"
-                    width="90%"
-                  ></img>
-                  <p className={`${styles["Home-Card-content"]}`}>
-                    A tourist visa is a temporary travel document allowing
-                    visits to foreign countries for sightseeing, and recreation,
-                    typically for a limited duration, with no paid employment
-                    permitted.
-                  </p>
-                </div>
-              </div>{" "}
-              <div
-                className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
-              >
-                <div className={`${styles["Home-card"]}`}>
-                  <div className={`${styles["card-body"]}`}>
-                    <h5 className={`${styles["card-title"]}`}>Business Visa</h5>
-                  </div>
-                  <img
-                    src="assets/Homeicons/business.png"
-                    className={`${styles["card-img-top"]}`}
-                    alt="Home_country_icon"
-                    width="90%"
-                  ></img>
-                  <p className={`${styles["Home-Card-content"]}`}>
-                    A business visa is a type of travel document that allows
-                    individuals to enter a foreign country for the purpose of
-                    conducting business activities, such as meetings,
-                    conferences, and negotiations.
-                  </p>
-                </div>
-              </div>{" "}
-              <div
-                className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
-              >
-                <div className={`${styles["Home-card"]}`}>
-                  <div className={`${styles["card-body"]}`}>
-                    <h5 className={`${styles["card-title"]}`}>Transit Visa</h5>
-                  </div>
-                  <img
-                    src="assets/Homeicons/Transit.png"
-                    className={`${styles["card-img-top"]}`}
-                    alt="Home_country_icon"
-                    width="90%"
-                  ></img>
-                  <p className={`${styles["Home-Card-content"]}`}>
-                    A transit visa permits travelers to briefly pass through a
-                    country while on their way to ultimate destination. It's
-                    usually necessary for extended layovers that surpass a
-                    specified time limit.
-                  </p>
-                </div>
+                <h6>WHO WE ARE</h6>
+                <h2>
+                  We are experienced professionals <br></br> in Visa Solutions
+                </h2>
               </div>
-            </Slider>
-          </div>
-        </div>
-</div>
+              <div className={`${styles["Home-top-flexbox4-rightside"]}`}>
+                <p>
+                  We offer a skilled team dedicated to enhancing your travel
+                  experience, adding significant value to your journeys. Our
+                  certified and dependable Travel Consultants are here to assist
+                  you in achieving favorable outcomes for your travel plans. Our
+                  services extend across various regions within countries.
+                </p>
+              </div>
+            </div>
 
-      <div
-        className={`${styles["Home-top-flexbox3"]}`}
-        style={{
-          backgroundColor: "#ffffff",
-          // paddingLeft: "60px",
-          // paddingRight: "50px",
-          // paddingTop: "30px",
-          // paddingBottom: "40px",
-        }}
-      >
-        <div className={`${styles["Home-top-flexbox3-leftside"]}`}>
-          <div
-            className={`${styles["parent"]}`}
-            style={{ paddingBottom: "60px" }}
-          >
-            <img
-              src="assets/img/Homeright.png"
-              alt="image1"
-              className={`${styles["image1"]}`}
-            ></img>
-            <img
-              src="assets/img/Homeright1.png"
-              alt="image1"
-              className={`${styles["image2"]}`}
-            ></img>
+            <div className={`${styles["Home-card-silder"]}`}>
+              <Slider {...settings}>
+                <div
+                  className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
+                  style={{ background: "#fff" }}
+                >
+                  <div className={`${styles["Home-card"]}`}>
+                    <div className={"card-body"}>
+                      <h5 className={`${styles["card-title"]}`}>Family Visa</h5>
+                    </div>
+                    <img
+                      src="assets/Homeicons/Family.png"
+                      className={`${styles["card-img-top"]}`}
+                      alt="Home_country_icon"
+                      width="90%"
+                    ></img>
+                    <p className={`${styles["Home-Card-content"]}`}>
+                      A family visa is a legal permit for individuals to reunite
+                      with close family members in another country, fostering
+                      family unity. It enables loved ones separated by borders
+                      to live together.
+                    </p>
+                  </div>
+                </div>{" "}
+                <div
+                  className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
+                >
+                  <div className={`${styles["Home-card"]}`}>
+                    <div className={`${styles["card-body"]}`}>
+                      <h5 className={`${styles["card-title"]}`}>
+                        Migrate Visa
+                      </h5>
+                    </div>
+                    <img
+                      src="assets/Homeicons/migrate.png"
+                      className={`${styles["card-img-top"]}`}
+                      alt="Home_country_icon"
+                      width="90%"
+                    ></img>
+                    <p className={`${styles["Home-Card-content"]}`}>
+                      A migration visa opens doors for individuals to begin anew
+                      in a foreign country, pursuing their dreams and ambitions.
+                      It's a gateway to a fresh start and new opportunities on
+                      foreign soil.
+                    </p>
+                  </div>
+                </div>{" "}
+                <div
+                  className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
+                >
+                  <div className={`${styles["Home-card"]}`}>
+                    <div className={`${styles["card-body"]}`}>
+                      <h5 className={`${styles["card-title"]}`}>
+                        Investor Visa
+                      </h5>
+                    </div>
+                    <img
+                      src="assets/Homeicons/investor.png"
+                      className={`${styles["card-img-top"]}`}
+                      alt="Home_country_icon"
+                      width="90%"
+                    ></img>
+                    <p className={`${styles["Home-Card-content"]}`}>
+                      An investor visa, offered in many countries, enables
+                      individuals to obtain residency or citizenship by making
+                      significant financial investments, fostering global
+                      mobility and business prospects.
+                    </p>
+                  </div>
+                </div>{" "}
+                <div
+                  className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
+                >
+                  <div className={`${styles["Home-card"]}`}>
+                    <div className={`${styles["card-body"]}`}>
+                      <h5 className={`${styles["card-title"]}`}>
+                        Student Visa
+                      </h5>
+                    </div>
+                    <img
+                      src="assets/Homeicons/student.png"
+                      className={`${styles["card-img-top"]}`}
+                      alt="Home_country_icon"
+                      width="90%"
+                    ></img>
+                    <p className={`${styles["Home-Card-content"]}`}>
+                      A student visa is that allows foreign nationals to study
+                      in a specific country for a designated period, typically
+                      for the purpose of pursuing educational courses at
+                      recognized institutions.
+                    </p>
+                  </div>
+                </div>{" "}
+                <div
+                  className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
+                >
+                  <div className={`${styles["Home-card"]}`}>
+                    <div className={`${styles["card-body"]}`}>
+                      <h5 className={`${styles["card-title"]}`}>
+                        Diplomatic Visa
+                      </h5>
+                    </div>
+                    <img
+                      src="assets/Homeicons/diplomatic.png"
+                      className={`${styles["card-img-top"]}`}
+                      alt="Home_country_icon"
+                      width="90%"
+                    ></img>
+                    <p className={`${styles["Home-Card-content"]}`}>
+                      A diplomatic visa is issued to foreign government
+                      officials and accompanying family members, enabling them
+                      to enter and stay in a host country for official
+                      diplomatic purposes.
+                    </p>
+                  </div>
+                </div>{" "}
+                <div
+                  className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
+                >
+                  <div className={`${styles["Home-card"]}`}>
+                    <div className={`${styles["card-body"]}`}>
+                      <h5 className={`${styles["card-title"]}`}>
+                        Tourist Visa
+                      </h5>
+                    </div>
+                    <img
+                      src="assets/Homeicons/tourist.png"
+                      className={`${styles["card-img-top"]}`}
+                      alt="Home_country_icon"
+                      width="90%"
+                    ></img>
+                    <p className={`${styles["Home-Card-content"]}`}>
+                      A tourist visa is a temporary travel document allowing
+                      visits to foreign countries for sightseeing, and
+                      recreation, typically for a limited duration, with no paid
+                      employment permitted.
+                    </p>
+                  </div>
+                </div>{" "}
+                <div
+                  className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
+                >
+                  <div className={`${styles["Home-card"]}`}>
+                    <div className={`${styles["card-body"]}`}>
+                      <h5 className={`${styles["card-title"]}`}>
+                        Business Visa
+                      </h5>
+                    </div>
+                    <img
+                      src="assets/Homeicons/business.png"
+                      className={`${styles["card-img-top"]}`}
+                      alt="Home_country_icon"
+                      width="90%"
+                    ></img>
+                    <p className={`${styles["Home-Card-content"]}`}>
+                      A business visa is a type of travel document that allows
+                      individuals to enter a foreign country for the purpose of
+                      conducting business activities, such as meetings,
+                      conferences, and negotiations.
+                    </p>
+                  </div>
+                </div>{" "}
+                <div
+                  className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
+                >
+                  <div className={`${styles["Home-card"]}`}>
+                    <div className={`${styles["card-body"]}`}>
+                      <h5 className={`${styles["card-title"]}`}>
+                        Transit Visa
+                      </h5>
+                    </div>
+                    <img
+                      src="assets/Homeicons/Transit.png"
+                      className={`${styles["card-img-top"]}`}
+                      alt="Home_country_icon"
+                      width="90%"
+                    ></img>
+                    <p className={`${styles["Home-Card-content"]}`}>
+                      A transit visa permits travelers to briefly pass through a
+                      country while on their way to ultimate destination. It's
+                      usually necessary for extended layovers that surpass a
+                      specified time limit.
+                    </p>
+                  </div>
+                </div>
+              </Slider>
+            </div>
           </div>
         </div>
-        <div className={`${styles["Home-top-flexbox3-rightside"]}`}>
-          <h6>ABOUT WORLD VISA TRAVEL</h6>
-          <h1>
-            Immigration Services From<br></br>
-            <strong>Experienced Lawyers.</strong>
-          </h1>
-          <p>
-            We've been counselling students for educational Opportun in Foreign
-            countries.
-          </p>
-          <p>
-            Fusce non mi at nisl laoreet pretium. Nulla ut elementum sapien, a
-            pulvinar augue. Sed semper sed tellus in ultrices. Nam hendrerit
-            elit vel urna fermentum congue.
-          </p>
-          <ul className={`${styles["Home-header-3flex"]}`}>
-            <li>
-              <i className={`${styles["Home-header-3flex-icon"]}`}>
-                <BsCheck2Circle />
+
+        <div
+          className={`${styles["Home-top-flexbox3"]}`}
+          style={{
+            backgroundColor: "#ffffff",
+            // paddingLeft: "60px",
+            // paddingRight: "50px",
+            // paddingTop: "30px",
+            // paddingBottom: "40px",
+          }}
+        >
+          <div className={`${styles["Home-top-flexbox3-leftside"]}`}>
+            <div
+              className={`${styles["parent"]}`}
+              style={{ paddingBottom: "60px" }}
+            >
+              <img
+                src="/assets/img/Homeright.png"
+                alt="image1"
+                className={`${styles["image1"]}`}
+              ></img>
+              <img
+                src="/assets/img/Homeright1.png"
+                alt="image1"
+                className={`${styles["image2"]}`}
+              ></img>
+            </div>
+          </div>
+          <div className={`${styles["Home-top-flexbox3-rightside"]}`}>
+            <h6>ABOUT WORLD VISA TRAVEL</h6>
+            <h1>
+              Immigration Services From<br></br>
+              <strong>Experienced Lawyers.</strong>
+            </h1>
+            <p>
+              We've been counselling students for educational Opportun in
+              Foreign countries.
+            </p>
+            <p>
+              Fusce non mi at nisl laoreet pretium. Nulla ut elementum sapien, a
+              pulvinar augue. Sed semper sed tellus in ultrices. Nam hendrerit
+              elit vel urna fermentum congue.
+            </p>
+            <ul className={`${styles["Home-header-3flex"]}`}>
+              <li>
+                <i className={`${styles["Home-header-3flex-icon"]}`}>
+                  <BsCheck2Circle />
+                </i>
+                Talk to one of our best consultant today
+              </li>
+              <li>
+                <i className={`${styles["Home-header-3flex-icon"]}`}>
+                  <BsCheck2Circle />
+                </i>
+                Our experts are able to find new growth
+              </li>
+              <li>
+                <i className={`${styles["Home-header-3flex-icon"]}`}>
+                  <BsCheck2Circle />
+                </i>
+                Find more information our website
+              </li>
+            </ul>
+            <button className={`${styles["Home-header-3flex-button"]}`}>
+              Discover More{" "}
+              <i className={`${styles["Home-3flex-button-icon"]}`}>
+                <HiOutlineArrowNarrowRight />
               </i>
-              Talk to one of our best consultant today
-            </li>
-            <li>
-              <i className={`${styles["Home-header-3flex-icon"]}`}>
-                <BsCheck2Circle />
-              </i>
-              Our experts are able to find new growth
-            </li>
-            <li>
-              <i className={`${styles["Home-header-3flex-icon"]}`}>
-                <BsCheck2Circle />
-              </i>
-              Find more information our website
-            </li>
-          </ul>
-          <button className={`${styles["Home-header-3flex-button"]}`}>
-            Discover More{" "}
-            <i className={`${styles["Home-3flex-button-icon"]}`}>
-              <HiOutlineArrowNarrowRight />
-            </i>
-          </button>
+            </button>
+          </div>
+        </div>
+
+        <div className={`${styles["flexbox5"]}`}>
+          <center style={{ padding: "20px" }}>
+            <h5>Testimonials of Transformation</h5>
+            <h1>
+              Our Client <b style={{ color: "#D6F8FF" }}> Testimonials</b>
+            </h1>
+          </center>
+          <Slider {...settings}>
+            <div
+              className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
+              style={{ background: "#fff" }}
+            >
+              <div className={"card-body"}>
+                <h5 className={`${styles["Home-top-flexbox5-header"]}`}>
+                  Customer Testimonial1
+                </h5>
+              </div>
+              <p className={`${styles["Home-testimonial-content"]}`}>
+                I have had the pleasure of working with World Visa Travel, Inc.
+                from 2004-2023, through the agency I was employed with. Randy
+                and his staff were always professional, courteous, and pleasant
+                to work with. They were extremely helpful in assisting us in
+                obtaining visas from the various embassies and passports from
+                the State Department. There were many times when they went above
+                and beyond for us and we greatly appreciated it. I would highly
+                recommend using their service for any travel needs you may have.
+              </p>
+            </div>{" "}
+            <div
+              className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
+            >
+              <div className={`${styles["card-body"]}`}>
+                <div className={"card-body"}>
+                  <h5 className={`${styles["Home-top-flexbox5-header"]}`}>
+                    Customer Testimonial1
+                  </h5>
+                </div>
+                <p className={`${styles["Home-testimonial-content"]}`}>
+                  I have had the pleasure of working with World Visa Travel,
+                  Inc. from 2004-2023, through the agency I was employed with.
+                  Randy and his staff were always professional, courteous, and
+                  pleasant to work with. They were extremely helpful in
+                  assisting us in obtaining visas from the various embassies and
+                  passports from the State Department. There were many times
+                  when they went above and beyond for us and we greatly
+                  appreciated it. I would highly recommend using their service
+                  for any travel needs you may have.
+                </p>
+              </div>
+            </div>{" "}
+            <div
+              className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
+            >
+              <div className={`${styles["card-body"]}`}>
+                <div className={"card-body"}>
+                  <h5 className={`${styles["Home-top-flexbox5-header"]}`}>
+                    Customer Testimonial1
+                  </h5>
+                </div>
+                <p className={`${styles["Home-testimonial-content"]}`}>
+                  I have had the pleasure of working with World Visa Travel,
+                  Inc. from 2004-2023, through the agency I was employed with.
+                  Randy and his staff were always professional, courteous, and
+                  pleasant to work with. They were extremely helpful in
+                  assisting us in obtaining visas from the various embassies and
+                  passports from the State Department. There were many times
+                  when they went above and beyond for us and we greatly
+                  appreciated it. I would highly recommend using their service
+                  for any travel needs you may have.
+                </p>
+              </div>
+            </div>{" "}
+            <div
+              className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
+            >
+              <div className={`${styles["card-body"]}`}>
+                <div className={"card-body"}>
+                  <h5 className={`${styles["Home-top-flexbox5-header"]}`}>
+                    Customer Testimonial1
+                  </h5>
+                </div>
+                <p className={`${styles["Home-testimonial-content"]}`}>
+                  I have had the pleasure of working with World Visa Travel,
+                  Inc. from 2004-2023, through the agency I was employed with.
+                  Randy and his staff were always professional, courteous, and
+                  pleasant to work with. They were extremely helpful in
+                  assisting us in obtaining visas from the various embassies and
+                  passports from the State Department. There were many times
+                  when they went above and beyond for us and we greatly
+                  appreciated it. I would highly recommend using their service
+                  for any travel needs you may have.
+                </p>
+              </div>
+            </div>{" "}
+            <div
+              className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
+            >
+              <div className={`${styles["card-body"]}`}>
+                <div className={"card-body"}>
+                  <h5 className={`${styles["Home-top-flexbox5-header"]}`}>
+                    Customer Testimonial1
+                  </h5>
+                </div>
+                <p className={`${styles["Home-testimonial-content"]}`}>
+                  I have had the pleasure of working with World Visa Travel,
+                  Inc. from 2004-2023, through the agency I was employed with.
+                  Randy and his staff were always professional, courteous, and
+                  pleasant to work with. They were extremely helpful in
+                  assisting us in obtaining visas from the various embassies and
+                  passports from the State Department. There were many times
+                  when they went above and beyond for us and we greatly
+                  appreciated it. I would highly recommend using their service
+                  for any travel needs you may have.
+                </p>
+              </div>
+            </div>{" "}
+            <div
+              className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
+            >
+              <div className={`${styles["card-body"]}`}>
+                <div className={"card-body"}>
+                  <h5 className={`${styles["Home-top-flexbox5-header"]}`}>
+                    Customer Testimonial1
+                  </h5>
+                </div>
+                <p className={`${styles["Home-testimonial-content"]}`}>
+                  I have had the pleasure of working with World Visa Travel,
+                  Inc. from 2004-2023, through the agency I was employed with.
+                  Randy and his staff were always professional, courteous, and
+                  pleasant to work with. They were extremely helpful in
+                  assisting us in obtaining visas from the various embassies and
+                  passports from the State Department. There were many times
+                  when they went above and beyond for us and we greatly
+                  appreciated it. I would highly recommend using their service
+                  for any travel needs you may have.
+                </p>
+              </div>
+            </div>{" "}
+            <div
+              className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
+            >
+              <div className={`${styles["card-body"]}`}>
+                <div className={"card-body"}>
+                  <h5 className={`${styles["Home-top-flexbox5-header"]}`}>
+                    Customer Testimonial1
+                  </h5>
+                </div>
+                <p className={`${styles["Home-testimonial-content"]}`}>
+                  I have had the pleasure of working with World Visa Travel,
+                  Inc. from 2004-2023, through the agency I was employed with.
+                  Randy and his staff were always professional, courteous, and
+                  pleasant to work with. They were extremely helpful in
+                  assisting us in obtaining visas from the various embassies and
+                  passports from the State Department. There were many times
+                  when they went above and beyond for us and we greatly
+                  appreciated it. I would highly recommend using their service
+                  for any travel needs you may have.
+                </p>
+              </div>
+            </div>{" "}
+            <div
+              className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
+            >
+              <div className={`${styles["card-body"]}`}>
+                <div className={"card-body"}>
+                  <h5 className={`${styles["Home-top-flexbox5-header"]}`}>
+                    Customer Testimonial1
+                  </h5>
+                </div>
+                <p className={`${styles["Home-testimonial-content"]}`}>
+                  I have had the pleasure of working with World Visa Travel,
+                  Inc. from 2004-2023, through the agency I was employed with.
+                  Randy and his staff were always professional, courteous, and
+                  pleasant to work with. They were extremely helpful in
+                  assisting us in obtaining visas from the various embassies and
+                  passports from the State Department. There were many times
+                  when they went above and beyond for us and we greatly
+                  appreciated it. I would highly recommend using their service
+                  for any travel needs you may have.
+                </p>
+              </div>
+            </div>{" "}
+          </Slider>
         </div>
       </div>
 
-        <div className={`${styles["Homeless-card-silder"]}`}>
+      <div className={`${styles["Homeless-card-silder"]}`}>
         <center style={{ padding: "20px" }}>
-        <h6>HomeLess Ministry</h6>
-        <h1>
-          Homeless<b style={{color:"#2c3a90"}}> Ministry</b>
-        </h1>
-      </center>
-      <div>
-      <center>
-      <p className={`${styles["Homeless-Card-content"]}`}>
-       At World Visa Travel we believe in the power of humanity. Our Homeless Ministry extends a
-       helping hand to those without a home,
-       working towards a society where everyone has a place to call home and a chance for a better life.
-      </p>
-      </center>
-      
-      </div>
+          <h6>HomeLess Ministry</h6>
+          <h1>
+            Homeless<b style={{ color: "#2c3a90" }}> Ministry</b>
+          </h1>
+        </center>
+        <div>
+          <center>
+            <p className={`${styles["Homeless-Card-content"]}`}>
+              At World Visa Travel we believe in the power of humanity. Our
+              Homeless Ministry extends a helping hand to those without a home,
+              working towards a society where everyone has a place to call home
+              and a chance for a better life.
+            </p>
+          </center>
+        </div>
         <Slider {...settings}>
           <div
             className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
             style={{ background: "#fff" }}
           >
-            <div className={`${styles["Homeless-card"]}`}>
-              <img
-                src="assets/Homeless/homeless1.png"
-                className={`${styles["Homeless-card-img-top"]}`}
-                alt="Home_country_icon"
-                width="90%"
-              ></img>
-            </div>
+            <img
+              src="assets/Homeless/homeless1.png"
+              className={`${styles["Homeless-card-img-top"]}`}
+              alt="Home_country_icon"
+              width="90%"
+            ></img>
           </div>{" "}
           <div
             className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
           >
-            <div className={`${styles["Homeless-card"]}`}>
-           
-              <img
-                src="assets/Homeless/homeless2.png"
-                className={`${styles["Homeless-card-img-top"]}`}
-                alt="Home_country_icon"
-                width="90%"
-              ></img>
-            </div>
+            <img
+              src="assets/Homeless/homeless2.png"
+              className={`${styles["Homeless-card-img-top"]}`}
+              alt="Home_country_icon"
+              width="90%"
+            ></img>
           </div>{" "}
           <div
             className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
           >
-            <div className={`${styles["Homeless-card"]}`}>
-             
-              <img
+            <img
               src="assets/Homeless/homeless3.png"
-                className={`${styles["Homeless-card-img-top"]}`}
-                alt="Home_country_icon"
-                width="90%"
-              ></img>
-            </div>
+              className={`${styles["Homeless-card-img-top"]}`}
+              alt="Home_country_icon"
+              width="90%"
+            ></img>
           </div>{" "}
           <div
             className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
           >
-            <div className={`${styles["Homeless-card"]}`}>
-           
-              <img
-               src="assets/Homeless/homeless4.png"
-                className={`${styles["Homeless-card-img-top"]}`}
-                alt="Home_country_icon"
-                width="90%"
-              ></img>
-           
-            </div>
+            <img
+              src="assets/Homeless/homeless4.png"
+              className={`${styles["Homeless-card-img-top"]}`}
+              alt="Home_country_icon"
+              width="90%"
+            ></img>
           </div>{" "}
           <div
             className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
           >
-            <div className={`${styles["Homeless-card"]}`}>
-              <img
-               src="assets/Homeless/homeless5.png"
-                className={`${styles["Homeless-card-img-top"]}`}
-                alt="Home_country_icon"
-                width="90%"
-              ></img>
-           
-            </div>
+            <img
+              src="assets/Homeless/homeless5.png"
+              className={`${styles["Homeless-card-img-top"]}`}
+              alt="Home_country_icon"
+              width="90%"
+            ></img>
           </div>{" "}
           <div
             className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
           >
-            <div className={`${styles["Homeless-card"]}`}>
-            
-              <img
+            <img
               src="assets/Homeless/homeless6.png"
-                className={`${styles["Homeless-card-img-top"]}`}
-                alt="Home_country_icon"
-                width="90%"
-              ></img>
-            
-            </div>
+              className={`${styles["Homeless-card-img-top"]}`}
+              alt="Home_country_icon"
+              width="90%"
+            ></img>
           </div>{" "}
           <div
             className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
           >
-            <div className={`${styles["Homeless-card"]}`}>
-           
-              <img
+            <img
               src="assets/Homeless/homeless7.png"
-                className={`${styles["Homeless-card-img-top"]}`}
-                alt="Home_country_icon"
-                width="90%"
-              ></img>
-           
-            </div>
+              className={`${styles["Homeless-card-img-top"]}`}
+              alt="Home_country_icon"
+              width="90%"
+            ></img>
           </div>{" "}
           <div
             className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
           >
-            <div className={`${styles["Homeless-card"]}`}>
-              <img
+            <img
               src="assets/Homeless/homeless8.png"
-                className={`${styles["Homeless-card-img-top"]}`}
-                alt="Home_country_icon"
-                width="90%"
-              ></img>
-           
-            </div>
+              className={`${styles["Homeless-card-img-top"]}`}
+              alt="Home_country_icon"
+              width="90%"
+            ></img>
           </div>
         </Slider>
       </div>
 
-      <div className={`${styles["flexbox5"]}`}>
+      {/*<div className={`${styles["flexbox5"]}`}>
         <center style={{ paddingBottom: "20px" }}>
           <h5>Testimonials of Transformation</h5>
           <h1>
@@ -701,9 +888,9 @@ function Home() {
             </p>
             <h6>Read More</h6>
           </div>
+
       </div>
-      </div>
-    
+      </div> */}
     </>
   );
 }
