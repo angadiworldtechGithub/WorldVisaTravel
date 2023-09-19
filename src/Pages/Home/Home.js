@@ -1,21 +1,19 @@
-import React from "react";
 import styles from "./Home.module.css";
 import { Link } from "react-router-dom";
 import { GiOpenBook } from "react-icons/gi";
 import { BsCheck2Circle } from "react-icons/bs";
 import { FaAddressBook, FaUserGraduate } from "react-icons/fa";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
-import Search from "./../../Components/SearchCountry/Search";
-import Carousel from "react-bootstrap/Carousel";
 import Slider from "react-slick";
-
+import React, { useState } from 'react';
 import "../../../node_modules/slick-carousel/slick/slick.css";
 import "../../../node_modules/slick-carousel/slick/slick-theme.css";
+
 function Home() {
   var settings = {
     dots: true,
     infinite: false,
-    speed: 500,
+    speed: 700,
     slidesToShow: 4,
     slidesToScroll: 4,
     initialSlide: 0,
@@ -47,6 +45,8 @@ function Home() {
     ],
   };
 
+
+
   return (
     <>
       <div className="position-relative">
@@ -60,24 +60,8 @@ function Home() {
                 Passport Specialists
               </h1>
             </center>
-
-            <div className={`${styles["Home-Apply"]}`}>
-              <div className={`${styles["Home-Apply-evisa"]}`}>
-                <h1 className={`${styles["Home-banner-heading1"]}`}>
-                  Apply for E-visa Travel
-                </h1>
-              </div>
-              <div className={`${styles["Home-Apply-visa"]}`}>
-                <h1 className={`${styles["Home-banner-heading1"]}`}>
-                  Apply for a Visa Travel
-                </h1>
-              </div>
-            </div>
           </div>
-
-          <center className={`${styles["Home-banner-heading1"]}`}>
-            <Search />
-          </center>
+         
         </div>
         {/* <div id="carousel-container">
           <Carousel data-bs-theme="dark">
@@ -525,7 +509,7 @@ function Home() {
           </div>
         </div>
 
-        <div className={`${styles["flexbox5"]}`}>
+        <div className={`${styles["flexbox5"]}`} >
           <center style={{ padding: "20px" }}>
             <h5>Testimonials of Transformation</h5>
             <h1>
@@ -537,6 +521,7 @@ function Home() {
               className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
               style={{ background: "#fff" }}
             >
+            <div className={`${styles["testmonial-content"]}`}>
               <div className={"card-body"}>
                 <h5 className={`${styles["Home-top-flexbox5-header"]}`}>
                   Customer Testimonial1
@@ -552,11 +537,12 @@ function Home() {
                 and beyond for us and we greatly appreciated it. I would highly
                 recommend using their service for any travel needs you may have.
               </p>
+              </div>
             </div>{" "}
             <div
               className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
             >
-              <div className={`${styles["card-body"]}`}>
+            <div className={`${styles["testmonial-content"]}`}>
                 <div className={"card-body"}>
                   <h5 className={`${styles["Home-top-flexbox5-header"]}`}>
                     Customer Testimonial1
@@ -578,7 +564,7 @@ function Home() {
             <div
               className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
             >
-              <div className={`${styles["card-body"]}`}>
+            <div className={`${styles["testmonial-content"]}`}>
                 <div className={"card-body"}>
                   <h5 className={`${styles["Home-top-flexbox5-header"]}`}>
                     Customer Testimonial1
@@ -600,7 +586,7 @@ function Home() {
             <div
               className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
             >
-              <div className={`${styles["card-body"]}`}>
+              <div className={`${styles["testmonial-content"]}`}>
                 <div className={"card-body"}>
                   <h5 className={`${styles["Home-top-flexbox5-header"]}`}>
                     Customer Testimonial1
@@ -622,7 +608,7 @@ function Home() {
             <div
               className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
             >
-              <div className={`${styles["card-body"]}`}>
+              <div className={`${styles["testmonial-content"]}`}>
                 <div className={"card-body"}>
                   <h5 className={`${styles["Home-top-flexbox5-header"]}`}>
                     Customer Testimonial1
@@ -644,7 +630,7 @@ function Home() {
             <div
               className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
             >
-              <div className={`${styles["card-body"]}`}>
+              <div className={`${styles["testmonial-content"]}`}>
                 <div className={"card-body"}>
                   <h5 className={`${styles["Home-top-flexbox5-header"]}`}>
                     Customer Testimonial1
@@ -666,7 +652,7 @@ function Home() {
             <div
               className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
             >
-              <div className={`${styles["card-body"]}`}>
+              <div className={`${styles["testmonial-content"]}`}>
                 <div className={"card-body"}>
                   <h5 className={`${styles["Home-top-flexbox5-header"]}`}>
                     Customer Testimonial1
@@ -688,7 +674,7 @@ function Home() {
             <div
               className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
             >
-              <div className={`${styles["card-body"]}`}>
+              <div className={`${styles["testmonial-content"]}`}>
                 <div className={"card-body"}>
                   <h5 className={`${styles["Home-top-flexbox5-header"]}`}>
                     Customer Testimonial1
@@ -734,7 +720,7 @@ function Home() {
             style={{ background: "#fff" }}
           >
             <img
-              src="assets/Homeless/homeless1.png"
+              src="/assets/Homeless/homeless1.png"
               className={`${styles["Homeless-card-img-top"]}`}
               alt="Home_country_icon"
               width="90%"
@@ -744,7 +730,7 @@ function Home() {
             className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
           >
             <img
-              src="assets/Homeless/homeless2.png"
+              src="/assets/Homeless/homeless2.png"
               className={`${styles["Homeless-card-img-top"]}`}
               alt="Home_country_icon"
               width="90%"
@@ -754,7 +740,7 @@ function Home() {
             className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
           >
             <img
-              src="assets/Homeless/homeless3.png"
+              src="/assets/Homeless/homeless3.png"
               className={`${styles["Homeless-card-img-top"]}`}
               alt="Home_country_icon"
               width="90%"
@@ -764,7 +750,7 @@ function Home() {
             className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
           >
             <img
-              src="assets/Homeless/homeless4.png"
+              src="/assets/Homeless/homeless4.png"
               className={`${styles["Homeless-card-img-top"]}`}
               alt="Home_country_icon"
               width="90%"
@@ -774,7 +760,7 @@ function Home() {
             className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
           >
             <img
-              src="assets/Homeless/homeless5.png"
+              src="/assets/Homeless/homeless5.png"
               className={`${styles["Homeless-card-img-top"]}`}
               alt="Home_country_icon"
               width="90%"
@@ -784,7 +770,7 @@ function Home() {
             className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
           >
             <img
-              src="assets/Homeless/homeless6.png"
+              src="/assets/Homeless/homeless6.png"
               className={`${styles["Homeless-card-img-top"]}`}
               alt="Home_country_icon"
               width="90%"
@@ -794,7 +780,7 @@ function Home() {
             className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
           >
             <img
-              src="assets/Homeless/homeless7.png"
+              src="/assets/Homeless/homeless7.png"
               className={`${styles["Homeless-card-img-top"]}`}
               alt="Home_country_icon"
               width="90%"
@@ -804,7 +790,7 @@ function Home() {
             className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
           >
             <img
-              src="assets/Homeless/homeless8.png"
+              src="/assets/Homeless/homeless8.png"
               className={`${styles["Homeless-card-img-top"]}`}
               alt="Home_country_icon"
               width="90%"

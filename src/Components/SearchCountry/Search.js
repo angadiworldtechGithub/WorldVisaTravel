@@ -57,13 +57,6 @@ function Search() {
         />
       </div>
 
-      {/* <Select
-        className="select-box"
-        placeholder="Select Residing State"
-        options={stateOptions}
-        value={residingState}
-        onChange={setResidingState}
-      /> */}
       <button className="search-button" onClick={handleSearch}>
         Go
       </button>

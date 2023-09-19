@@ -16,13 +16,16 @@ import Businessvisa from "./Pages/Businessvisa/Businessvisa";
 import Evisa from "./Pages/Evisa/Evisa";
 import Officialvisa from "./Pages/Officialvisa/Officialvisa";
 import Tourist from "./Pages/Tourist/Tourist";
+import React from 'react';
+import "./App.css";
 
 
 function App() {
   return (
     <>
       <div className="App">
-        <Navbar />
+        <Navbar/>
+      
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

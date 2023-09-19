@@ -70,7 +70,7 @@ function VisaCardType({ type, citizenship, bg }) {
         </h2>
       </div>
 
-      <div
+      {/* <div
         className="search1"
         style={{
           display: "flex",
@@ -79,7 +79,7 @@ function VisaCardType({ type, citizenship, bg }) {
           justifyContent: "center",
         }}
       >
-        <Select
+       <Select
           className="select-box"
           placeholder="Choose citizenship"
           options={citizenshipOptions}
@@ -94,7 +94,7 @@ function VisaCardType({ type, citizenship, bg }) {
           value={sourceCountry}
           onChange={setSourceCountry}
         />
-      </div>
+      </div>*/}
 
       {/* Use the dynamic route for "More Info" */}
       <button style={{ alignSelf: "flex-end" }} className="more-info-btn">

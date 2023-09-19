@@ -1,47 +1,67 @@
-import React from "react";
+import React from 'react'
 import styles from "./index.module.css";
 import { Link } from "react-router-dom";
 import HomeIcon from "../../Components/icons/HomeIcon";
-import VisaCardType from "../../Components/VisaTypeCard";
 
-function Visa() {
-  const visatypes = [
-    { type: "tourist", backgroundimage: "/assets/visa/visa1.png", route: "/moreinfo/Tourist" },
-    { type: "business", backgroundimage: "/assets/visa/visa2.png", route: "/moreinfo/businessvisa" },
-    { type: "official", backgroundimage: "/assets/visa/visa3.png", route: "/moreinfo/officialvisa" },
-    { type: "E-visa", backgroundimage: "/assets/visa/visa3.png", route: "/moreinfo/e-visa" },
+function index() {
+  const cardsData = [
+    {
+      id: 1,
+      name: 'Tourist Visa',
+      image: '/assets/visa/visa1.png',
+      paragraph: 'A Tourist Visa allows travelers to explore and experience foreign destinations for leisure and tourism purposes.',
+      link:'/moreinfo/Tourist'
+    },
+    {
+      id: 2,
+      name: 'Business Visa',
+      image: '/assets/visa/visa2.png',
+      paragraph: 'A Business Visa enables individuals to engage in commercial activities, attend meetings, and conduct business in foreign countries.',
+      link:'/moreinfo/businessvisa'
+    },
+    {
+      id: 3,
+      name: 'Official Visa',
+      image: '/assets/visa/visa3.png',
+      paragraph: 'An Official Visa is granted to government representatives for official diplomatic interactions between nations.',
+      link:'/moreinfo/officialvisa'
+    },
+    {
+      id: 4,
+      name: 'E-Visa',
+      image: '/assets/visa/visa3.png',
+      paragraph: 'An eVisa streamlines visa applications, allowing travelers to obtain international travel authorization conveniently online.',
+      link:'/moreinfo/e-visa'
+    },
   ];
-
   return (
     <div className="visa">
-      <div className={`${styles["visa-container"]} d-flex position-relative align-items-center`}>
-        <div className="container d-flex flex-column text-light">
-          <h2>Visas</h2>
-          <div className="d-flex gap-2 align-items-center">
-            <Link to="/">
-              <HomeIcon />
-            </Link>
-            <span className="sep"> → </span>
-            <span>Visas</span>
-          </div>
-        </div>
-      </div>
-      <div className="container py-5">
-        <div className="row " style={{ rowGap: "20px", color: "#072f5f" }}>
-          {visatypes.map((visa, index) => {
-            return (
-              <div className="col-md-6 col-lg-4" key={index}>
-                <Link to={visa.route}>
-                  {/* You can pass other props to the VisaCardType component if needed */}
-                  <VisaCardType  type={visa.type} bg={visa.backgroundimage} />
-                </Link>
-              </div>
-            );
-          })}
+    <div className={`${styles["visa-container"]} d-flex position-relative align-items-center`}>
+      <div className="container d-flex flex-column text-light">
+        <h2>Visas</h2>
+        <div className="d-flex gap-2 align-items-center">
+          <Link to="/">
+            <HomeIcon />
+          </Link>
+          <span className="sep"> → </span>
+          <span>Visas</span>
         </div>
       </div>
     </div>
-  );
+    <div className={`${styles["card-container"]}`}>
+      {cardsData.map((card) => (
+        <Link to={card.link} key={card.id}>
+          <div className={`${styles["card"]}`}>
+          <img src={card.image} alt={card.name} className={`${styles["card-image"]}`} />
+            <h2 className={`${styles["card-name"]}`}>{card.name}</h2>
+            <p className={`${styles["card-paragraph"]}`}>{card.paragraph}</p>
+            <button className={`${styles["card-button"]}`}>More Info</button>
+          </div>
+        </Link>
+      ))}
+    </div>
+    </div>
+  )
 }
 
-export default Visa;
+export default index
