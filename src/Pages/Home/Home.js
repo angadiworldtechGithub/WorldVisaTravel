@@ -1,4 +1,5 @@
 import styles from "./Home.module.css";
+import Search from "../../Components/SearchCountry/Search";
 import { Link } from "react-router-dom";
 import { GiOpenBook } from "react-icons/gi";
 import { BsCheck2Circle } from "react-icons/bs";
@@ -262,7 +263,7 @@ function Home() {
                       src="assets/Homeicons/Family.png"
                       className={`${styles["card-img-top"]}`}
                       alt="Home_country_icon"
-                      width="90%"
+                      width="100%"
                     ></img>
                     <p className={`${styles["Home-Card-content"]}`}>
                       A family visa is a legal permit for individuals to reunite
@@ -285,7 +286,7 @@ function Home() {
                       src="assets/Homeicons/migrate.png"
                       className={`${styles["card-img-top"]}`}
                       alt="Home_country_icon"
-                      width="90%"
+                      width="100%"
                     ></img>
                     <p className={`${styles["Home-Card-content"]}`}>
                       A migration visa opens doors for individuals to begin anew
@@ -308,7 +309,7 @@ function Home() {
                       src="assets/Homeicons/investor.png"
                       className={`${styles["card-img-top"]}`}
                       alt="Home_country_icon"
-                      width="90%"
+                      width="100%"
                     ></img>
                     <p className={`${styles["Home-Card-content"]}`}>
                       An investor visa, offered in many countries, enables
@@ -331,7 +332,7 @@ function Home() {
                       src="assets/Homeicons/student.png"
                       className={`${styles["card-img-top"]}`}
                       alt="Home_country_icon"
-                      width="90%"
+                      width="100%"
                     ></img>
                     <p className={`${styles["Home-Card-content"]}`}>
                       A student visa is that allows foreign nationals to study
@@ -354,7 +355,7 @@ function Home() {
                       src="assets/Homeicons/diplomatic.png"
                       className={`${styles["card-img-top"]}`}
                       alt="Home_country_icon"
-                      width="90%"
+                      width="100%"
                     ></img>
                     <p className={`${styles["Home-Card-content"]}`}>
                       A diplomatic visa is issued to foreign government
@@ -377,7 +378,7 @@ function Home() {
                       src="assets/Homeicons/tourist.png"
                       className={`${styles["card-img-top"]}`}
                       alt="Home_country_icon"
-                      width="90%"
+                      width="100%"
                     ></img>
                     <p className={`${styles["Home-Card-content"]}`}>
                       A tourist visa is a temporary travel document allowing
@@ -400,7 +401,7 @@ function Home() {
                       src="assets/Homeicons/business.png"
                       className={`${styles["card-img-top"]}`}
                       alt="Home_country_icon"
-                      width="90%"
+                      width="100%"
                     ></img>
                     <p className={`${styles["Home-Card-content"]}`}>
                       A business visa is a type of travel document that allows
@@ -423,7 +424,7 @@ function Home() {
                       src="assets/Homeicons/Transit.png"
                       className={`${styles["card-img-top"]}`}
                       alt="Home_country_icon"
-                      width="90%"
+                      width="100%"
                     ></img>
                     <p className={`${styles["Home-Card-content"]}`}>
                       A transit visa permits travelers to briefly pass through a
@@ -442,10 +443,6 @@ function Home() {
           className={`${styles["Home-top-flexbox3"]}`}
           style={{
             backgroundColor: "#ffffff",
-            // paddingLeft: "60px",
-            // paddingRight: "50px",
-            // paddingTop: "30px",
-            // paddingBottom: "40px",
           }}
         >
           <div className={`${styles["Home-top-flexbox3-leftside"]}`}>
@@ -467,18 +464,16 @@ function Home() {
           </div>
           <div className={`${styles["Home-top-flexbox3-rightside"]}`}>
             <h6>ABOUT WORLD VISA TRAVEL</h6>
-            <h1>
-              Immigration Services From<br></br>
-              <strong>Experienced Lawyers.</strong>
-            </h1>
+            <h2>Legal assistance for international<br></br>migration from <strong>experienced professionals.</strong>
+            </h2>
+            <p>We've been counselling students for educational Opportun in Foreign countries.
+            Changed to We help students for educational opportunity in Foreign Countries!</p>
             <p>
-              We've been counselling students for educational Opportun in
-              Foreign countries.
-            </p>
-            <p>
-              Fusce non mi at nisl laoreet pretium. Nulla ut elementum sapien, a
-              pulvinar augue. Sed semper sed tellus in ultrices. Nam hendrerit
-              elit vel urna fermentum congue.
+               World Visa Travel is a company with expertise in obtaining tourist and business visas,
+               as well as U.S. regular, official, or diplomatic passports. They can help you get single,
+               double, or multiple entry visas. They also serve non-U.S. citizens who are permanent 
+              residents or legally authorized to live in the United States. Additionally, they can help
+               you legalize documents with the embassies of the designated countries.
             </p>
             <ul className={`${styles["Home-header-3flex"]}`}>
               <li>
@@ -500,12 +495,6 @@ function Home() {
                 Find more information our website
               </li>
             </ul>
-            <button className={`${styles["Home-header-3flex-button"]}`}>
-              Discover More{" "}
-              <i className={`${styles["Home-3flex-button-icon"]}`}>
-                <HiOutlineArrowNarrowRight />
-              </i>
-            </button>
           </div>
         </div>
 

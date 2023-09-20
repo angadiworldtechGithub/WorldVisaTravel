@@ -1,5 +1,18 @@
 import React, { useState } from "react";
+import "./FormVisa.css";
+import Select from "react-select";
+import { countries } from "countries-list"; // Import the countries list
+import ReactCountryFlag from "react-country-flag";
+
+
 const axios = require("axios");
+const countryOptions = Object.keys(countries).map((countryCode) => ({
+  value: countryCode,
+  label: countries[countryCode].name,
+  flag: <ReactCountryFlag countryCode={countryCode} svg />,
+}));
+
+
 
 const FormVisa = ({ visaType }) => {
   const [formData, setFormData] = useState({
@@ -38,13 +51,27 @@ const FormVisa = ({ visaType }) => {
       sendFormdetailsApi();
     }
   };
+
+  const [chooseCitizenship,setChooseCitizenship] = useState(null);
+  const [sourceCountry, setSourceCountry] = useState(null);
+  const [destinationCountry, setDestinationCountry] = useState(null);
+  const [residingState, setResidingState] = useState(null);
+
+  const handleSearch = () => {
+    console.log("Choose Citizenship:", chooseCitizenship?.label);
+    console.log("Source Country:", sourceCountry?.label);
+    console.log("Destination Country:", destinationCountry?.label);
+    console.log("Residing State:", residingState?.label);
+  };
+
+
   return (
     <div className="Moreinfo-right-flex">
       <div className="Country-form">
         <h3 className="Country-header">{visaType}</h3>
-        <div className="country-formdata">
-          <input
-            className="country-input"
+  
+          <input style={{paddingLeft:"140px",paddingBottom:"8px",paddingTop:"8px"}}
+            className="country-formdata"
             type="text"
             id="name"
             name="name"
@@ -54,10 +81,9 @@ const FormVisa = ({ visaType }) => {
               setFormData((pre) => ({ ...pre, name: e.target.value }));
             }}
           />
-        </div>
-        <div className="country-formdata">
-          <input
-            className="country-input"
+    
+          <input style={{paddingLeft:"110px",paddingBottom:"8px",paddingTop:"8px"}}
+            className="country-formdata"
             type="email"
             id="email"
             name="email"
@@ -66,11 +92,10 @@ const FormVisa = ({ visaType }) => {
             onChange={(e) => {
               setFormData((pre) => ({ ...pre, email: e.target.value }));
             }}
-          />
-        </div>
-        <div className="country-formdata">
-          <input
-            className="country-input"
+/>
+        
+          <input style={{paddingLeft:"110px",paddingBottom:"8px",paddingTop:"8px"}}
+            className="country-formdata"
             type="phoneNumber"
             id="phoneNumber"
             name="phoneNumber"
@@ -80,35 +105,64 @@ const FormVisa = ({ visaType }) => {
               setFormData((pre) => ({ ...pre, phone: e.target.value }));
             }}
           />
-        </div>
+        
+        <Select
+        className="country-formdata"
+        placeholder="Choose Citizenship"
+        options={countryOptions}
+        value={chooseCitizenship}
+        onChange={setChooseCitizenship}
+        />
+      
+      
+        <Select
+        className="country-formdata"
+        placeholder="Select Source Country"
+        options={countryOptions}
+        value={sourceCountry}
+        onChange={setSourceCountry}
+      />
+      
 
-        <div className="country-formdata">
+      <Select
+        className="country-formdata"
+        placeholder="Select Destination Country"
+        options={countryOptions}
+        value={destinationCountry}
+        onChange={setDestinationCountry}
+      />
+      
+    
+
+  {/*  <div className="country-formdata">
           <select
             className="country-input"
             id="citizenship"
             name="citizenship"
+            options={countryOptions}
+            value={chooseCitizenship}
             placeholder="Choose citizenship"
             required
             onChange={(e) => {
-              setFormData((pre) => ({ ...pre, citizen: e.target.value }));
+              setChooseCitizenship((pre) => ({ ...pre, citizen: e.target.value }));
             }}
           >
-            <option value="">Choose citizenship</option>
           </select>
-        </div>
+         </div>
 
         <div className="country-formdata">
           <select
             className="country-input"
             id="country"
             name="country"
+            options={countryOptions}
+            value={destinationCountry}
             placeholder="Select Your Country"
             required
             onChange={(e) => {
-              setFormData((pre) => ({ ...pre, srcCountry: e.target.value }));
+              setSourceCountry((pre) => ({ ...pre, srcCountry: e.target.value }));
             }}
           >
-            <option value="">Select Your Country</option>
           </select>
         </div>
 
@@ -117,14 +171,16 @@ const FormVisa = ({ visaType }) => {
             className="country-input"
             id="destinationCountry"
             name="destinationCountry"
+            options={countryOptions}
+            value={chooseCitizenship}
             required
             onChange={(e) => {
-              setFormData((pre) => ({ ...pre, dstCountry: e.target.value }));
+              setDestinationCountry((pre) => ({ ...pre, dstCountry: e.target.value }));
             }}
           >
-            <option value="">Select Your Destination Country</option>
+
           </select>
-        </div>
+          </div>*/}
         <label className="country_label">
           <input type="checkbox" className="checkbox" required />I authorize
           world visa travel and its representative to contact me with updates
@@ -140,7 +196,7 @@ const FormVisa = ({ visaType }) => {
           </button>
         </center>
       </div>
-    </div>
+      </div>
   );
 };
 

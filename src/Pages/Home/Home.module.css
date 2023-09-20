@@ -10,7 +10,7 @@ body {
   padding-top: 20px;
   padding-left: 60px;
   padding-bottom: 60px;
-  background-image: url(/public/assets/banners/10.png);
+  background-image: url(/public/assets/banners/Homebanner.png);
   background-color: transparent;
   background-position: right bottom;
   background-size: cover;
@@ -19,6 +19,73 @@ body {
   height: 700px;
 }
 
+/*Apply visa tab*/
+.Home-Apply{
+  position: sticky;
+  display: flex;
+ /* justify-content: center; */
+  align-items: center; 
+  flex-wrap: wrap;
+}
+.Home-Apply-visa{
+  width: 100%;
+  flex: 40%; 
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #fff;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+.Home-Apply-evisa{
+  width: 100%;
+  flex: 40%; 
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #fff;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+.Home-search{
+  margin: 300px;
+}
+
+/*Home page in mobile view*/
+@media (max-width: 900px) {
+  .Home{
+    padding-right: 10px;
+    align-items: center;
+  }
+  .Home-Apply-visa{
+    width: 100%;
+  }
+  .Home-Apply{
+    padding-right: 50px;
+    bottom: 0;
+  }
+  .Home-banner-heading {
+    padding-right: 40px;
+    bottom: 0;
+
+  }
+  .Home-banner-heading1{
+    padding-right: 50px;
+    bottom: 0;
+  }
+}
+@media (max-width: 768px) {
+  .Home-Apply{
+    padding-right: 50px;
+    text-align: center;
+    bottom: 0;
+  }
+  .Home-banner-heading {
+    padding-right: 40px;
+    bottom: 0;
+  }
+  .Home-banner-heading1{
+    padding-right: 50px;
+    bottom: 0;
+  }
+}
 
 .Home-search{
   margin: 300px;
@@ -242,6 +309,7 @@ body {
 .Home-top-flexbox3 {
   display: flex;
   flex-wrap: wrap;
+  padding: 20px;
 }
 .Home-top-flexbox3-leftside {
   background: #f5f8fb;
@@ -362,6 +430,10 @@ body {
   font-weight: 700;
   color: #2c3a90;
 }
+.card-img-top{
+  padding: 10px;
+  border-radius: 10px;
+}
 .Home-Card-content{
   text-align: justify;
   position: sticky;
@@ -373,7 +445,7 @@ body {
 .Home-banner-heading{
   padding-top: 30px;
   font-weight: 600;
-  color: #2c3a90;
+  color: #fff;
 }
 .Home-box {
   flex: 1;

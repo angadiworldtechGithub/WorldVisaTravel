@@ -43,47 +43,36 @@ const About = () => {
           className={`${styles["About-item"]}`}
           style={{ paddingTop: "30px" }}
         >
-          <h6>ABOUT AGENCY</h6>
-          <h1>25 years of experience</h1>
-          <h1>
-            <b>Visa Immigration</b>
-          </h1>
-          <h3>
-            Weve been counselling students for educational Opportun in Foreign
-            countries.
-          </h3>
-          <h6>
-            With a community of over 400 million users (and a majority age group
-            being 18 to 29), wouldn’t you want to make sure you’re monitoring
-            what people are posting on social networks?
-          </h6>
-          <h6>The majority have suffered alteration</h6>
-          <h6>Best Exam Preparation with us</h6>
-          <button className={`${styles["About-button"]}`}>
-            Discover More
-            <i className={`${styles["About-arrow-icon"]}`}>
-              <RxArrowRight />
-            </i>
-          </button>
+          <h6 className={`${styles["about-paragraph-heading"]}`}>ABOUT WORLD VISA TRAVEL</h6>
+          <h2 className={`${styles["about-paragraph-heading"]}`}><strong>25 years of expertise</strong> in Visa and Travel Services.</h2>
+          <h5 className={`${styles["about-paragraph-content"]}`}>World Visa Travel, abbreviated as WVT,
+          operates as a privately held enterprise with a core focus on expediting passport requests, 
+          procuring visas, and authenticating paperwork in an expeditious manner.
+          Our scope of services encompasses replacements for passports that have been misplaced or pilfered,
+          urgent and unforeseen passport requisitions, US passport renewals, and an array of other valuable offerings. 
+          With our round-the-clock Passport Service, your passport becomes our utmost concern. Additionally,
+          we extend expedited services with same-day processing for your convenience.</h5>
+          <h5  className={`${styles["about-paragraph-content"]}`}>With World Visa Travel, you can travel with confidence, knowing that your passport and visa
+           requirements are in capable hands. We take pride in our commitment to efficiency, accuracy, and
+           customer satisfaction. Let us handle the paperwork so you can focus on creating unforgettable 
+          travel memories.</h5>
         </div>
       </div>
 
       <div className={`${styles["About-container2"]}`}>
         <div className={`${styles["About-item"]}`}>
-          <h6>OUR COMPANY</h6>
-          <h1>Since 1980 we have</h1>
-          <h1>
-            <b>branches all over world</b>
-          </h1>
-          <h6>
-            We have been counselling students for educational opportunities in
-            Foreign countries. Fusce non mi at nisl laoreet pretium. Nulla ut
-            elementum sapien an pulvinar augue.
-          </h6>
-          <h6>
-            Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat nulla ut elementum sapien an pulvinar augue.
-          </h6>
+          <h6 className={`${styles["about-paragraph-heading"]}`}>OUR COMPANY</h6>
+          <h2 className={`${styles["about-paragraph-heading"]}`}>Since 1980 we have</h2>
+          <h2>
+            <b className={`${styles["about-paragraph-heading"]}`}>branches all over world</b>
+          </h2>
+          <h6 className={`${styles["about-paragraph-content"]}`}>World Visa Travel is a trusted company with over 30 years of experience in helping people
+           get their passports and other travel documents quickly and efficiently. We understand that when you 
+           are planning a trip, time is of the essence. That's why we offer a 24-hour passport expediting service.</h6>
+
+          <h6 className={`${styles["about-paragraph-content"]}`}>Unlike the U.S. Passport Company, which can take over 8 weeks to process a passport, we are able to
+           get it done in just 24 hours. We know that sometimes things happen unexpectedly and you may need a 
+           passport quickly. That's why we are here to help.</h6>
         </div>
 
         <div className={`${styles["About-item"]}`}>
@@ -159,9 +148,7 @@ const About = () => {
             Meet Our <b>Dedicated Team</b>
           </h1>
           <h6>
-            Cursus porta, feugiat primis in ultrice ligula risus auctor tempus
-            dolor feugiat, felis lacinia risus interdum auctor id viverra dolor
-            iaculis luctus placerat and massa
+             Together, we're more than a team; we're a family united by a shared passion for excellence!
           </h6>
         </center>
 
