@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Select from "react-select";
 import { countries } from "countries-list"; // Import the countries list
 import ReactCountryFlag from "react-country-flag";
@@ -57,9 +58,9 @@ function Search() {
         />
       </div>
 
-      <button className="search-button" onClick={handleSearch}>
+     <Link to="/visas"> <button className="search-button" onClick={handleSearch}>
         Go
-      </button>
+      </button></Link>
     </div>
   );
 }
