@@ -152,7 +152,7 @@ const About = () => {
           </h6>
         </center>
 
-        <div className={`${styles["About-cilent-box"]}`}>
+       {/* <div className={`${styles["About-cilent-box"]}`}>
           <div className={`${styles["About-cilent-item"]}`}>
             <img
               src="assets/aboutus/cilent1.png"
@@ -201,8 +201,8 @@ const About = () => {
             <h5 className={`${styles["About-cilent-header"]}`}>David Smith</h5>
             <h6>Visa Director</h6>
           </div>
-        </div>
-      </div>
+        </div>*/}
+  </div>
     </div>
   );
 };
