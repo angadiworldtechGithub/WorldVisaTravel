@@ -2,21 +2,31 @@ import styles from "./Home.module.css";
 import { Link } from "react-router-dom";
 import { GiOpenBook } from "react-icons/gi";
 import { BsCheck2Circle } from "react-icons/bs";
-import Select from "react-select";
 import { FaAddressBook, FaUserGraduate } from "react-icons/fa";
 import Slider from "react-slick";
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import "../../../node_modules/slick-carousel/slick/slick.css";
 import "../../../node_modules/slick-carousel/slick/slick-theme.css";
-import ReactFlagsSelect from "react-flags-select";
+import { countries } from "countries-list"; // Import the countries list
+import ReactCountryFlag from "react-country-flag";
+import Search from "../../Components/SearchCountry/Search";
+
+
+const countryOptions = Object.keys(countries).map((countryCode) => ({
+  value: countryCode,
+  label: countries[countryCode].name,
+  flag: <ReactCountryFlag countryCode={countryCode} svg />,
+}));
+
+const stateOptions = [
+  { value: "state1", label: "State 1" },
+  { value: "state2", label: "State 2" },
+  // Add more state options
+];
 
 
 
 function Home() {
-
-  const [select, setSelect] = useState("SE");
-  const onSelect = (code) => setSelect(code);
-  console.log("SELECT", select);
 
   var settings = {
     dots: true,
@@ -53,6 +63,15 @@ function Home() {
     ],
   };
 
+  const [sourceCountry, setSourceCountry] = useState(null);
+  const [destinationCountry, setDestinationCountry] = useState(null);
+  const [residingState, setResidingState] = useState(null);
+
+  const handleSearch = () => {
+    console.log("Source Country:", sourceCountry?.label);
+    console.log("Destination Country:", destinationCountry?.label);
+    console.log("Residing State:", residingState?.label);
+  };
  
 
   return (
@@ -67,52 +86,69 @@ function Home() {
                 Experience Seamless World Travel with Our<br></br> Visa and
                 Passport Specialists
               </h1>
+
+              <div className={`${styles["Home-Searchbar"]}`}>
+              <Link to="/moreinfo/e-visa"> <button className={`${styles["e-visa-button"]}`}>Apply for E-Visa Travel</button> </Link>
+              <center><div className={`${styles["Home-country-container"]}`}
+               style={{
+                display: "flex",
+                gap: "10px",
+                flexWrap: "wrap",
+                justifyContent: "center",
+                paddingLeft:"60px",
+              }}>
+              <div className={`${styles["Search"]}`}
+              >
+                 <Search/>
+              </div>
+              </div></center> 
+              </div>
           
-            <div className={`${styles["Home-Searchbar"]}`}>
-            <button className={`${styles["e-visa-button"]}`}>Apply for E-Visa Travel</button>
-            <div className={`${styles["Home-country-container"]}`}>
+
+         {/* <div className={`${styles["Home-Searchbar"]}`}>
+            <Link to="/moreinfo/e-visa"> <button className={`${styles["e-visa-button"]}`}>Apply for E-Visa Travel</button> </Link>
+            <div className={`${styles["Home-country-container"]}`}
+             style={{
+              display: "flex",
+              gap: "10px",
+              flexWrap: "wrap",
+              justifyContent: "center",
+            }}>
+            
+
+               <div className={`${styles["Home-country"]}`} >
+               
+               <Select
+               className="select-box serach-box-homepage-src"
+               placeholder="Select Source Country"
+               components={{ Option: CustomOption }}
+               options={countryOptions}
+               value={sourceCountry}
+               onChange={setSourceCountry}
+              />
+              </div>
+
                <div className={`${styles["Home-country"]}`}>
-               <ReactFlagsSelect
-               selected={select}
-               onSelect={onSelect}
-               countries={["AF","AL","DZ","AS","AD","AO","AI","AQ",
-               "AG","AR","AM","AW","AU","AT","AZ",
-               "BS","BH","BD","BB","BY","BE","BZ","BJ","BM","BT","BO","BA","BW","BR","IO","BN","BG","BF","BI",
-               "CV","KH","CM","CA","KH","CM","CA","KY","CF","TD","CL","CN","CX","CC","CO","KM","CD","CG","CK","CR","HR","CU","CW","CY","CZ","CI","DK","DJ","DM","DO","EC",
-               "EG","SV","GQ","ER","EE","SZ","ET","FK","FO","FJ","FI","FR","GF","PF","TF","GA","GM","GE","DE","GH","GI","GR","GL","GD","GP",
-               "GU","GT","GG","GN","GW","GY","HT","HM","VA","HN","HU","IS","IN","ID","IR","IQ","IE","IM","IL","IT","JM","JP","JE","JO","KZ",
-               "KE","KI","KP","KR","KW","KG","LA","LV","LB","LS","LR","LY","LI","LT","LU","MO","MG","MW","MY","MV","ML","MT","MH","MQ","MR",
-               "MU","YT","MX","FM","MD","MC","MN","ME","MA","NR","NP","NL","NC","NZ","NI","NE","NG","NU","NF","MP","NO","OM","PK","PW","PS",
-               "PA","PG","PY","PE","PH","PN","PL","PT","PR","QA","CG","RE","RO","RU","RW","BL","SH","KN","LC","MF","PM","VC","WS","SM","ST",
-               "SA","SN","RS","SC","SL","SG","SX","SK","SI","SB","SO","ZA","KR","SS","ES","LK","SD","SR","SJ","SZ","SE","CH","SY","TW","TJ",
-               "TZ","TH","TG","TK","TO","TT","TN","TR","TM","TC","TV","VI","UG","UA","AE","GB","US","UY","UZ","VU","VA","VE","VN","WF","EH",
-               "YE","ZM","ZW"]}
-             />
+
+               <Select
+               className="select-box serach-box-homepage-dest"
+               placeholder="Select Destination Country"
+               components={{ Option: CustomOption }}
+               options={countryOptions}
+               value={destinationCountry}
+                onChange={setDestinationCountry}
+              />
                </div>
-               <div className={`${styles["Home-country"]}`}>
-               <ReactFlagsSelect
-               selected={select}
-               onSelect={onSelect}
-               countries={["AF","AL","DZ","AS","AD","AO","AI","AQ",
-               "AG","AR","AM","AW","AU","AT","AZ",
-               "BS","BH","BD","BB","BY","BE","BZ","BJ","BM","BT","BO","BA","BW","BR","IO","BN","BG","BF","BI",
-               "CV","KH","CM","CA","KH","CM","CA","KY","CF","TD","CL","CN","CX","CC","CO","KM","CD","CG","CK","CR","HR","CU","CW","CY","CZ","CI","DK","DJ","DM","DO","EC",
-               "EG","SV","GQ","ER","EE","SZ","ET","FK","FO","FJ","FI","FR","GF","PF","TF","GA","GM","GE","DE","GH","GI","GR","GL","GD","GP",
-               "GU","GT","GG","GN","GW","GY","HT","HM","VA","HN","HU","IS","IN","ID","IR","IQ","IE","IM","IL","IT","JM","JP","JE","JO","KZ",
-               "KE","KI","KP","KR","KW","KG","LA","LV","LB","LS","LR","LY","LI","LT","LU","MO","MG","MW","MY","MV","ML","MT","MH","MQ","MR",
-               "MU","YT","MX","FM","MD","MC","MN","ME","MA","NR","NP","NL","NC","NZ","NI","NE","NG","NU","NF","MP","NO","OM","PK","PW","PS",
-               "PA","PG","PY","PE","PH","PN","PL","PT","PR","QA","CG","RE","RO","RU","RW","BL","SH","KN","LC","MF","PM","VC","WS","SM","ST",
-               "SA","SN","RS","SC","SL","SG","SX","SK","SI","SB","SO","ZA","KR","SS","ES","LK","SD","SR","SJ","SZ","SE","CH","SY","TW","TJ",
-               "TZ","TH","TG","TK","TO","TT","TN","TR","TM","TC","TV","VI","UG","UA","AE","GB","US","UY","UZ","VU","VA","VE","VN","WF","EH",
-               "YE","ZM","ZW"]}
-               />
-               </div>
-               <button className={`${styles["Home-country-go-button"]}`}>Go</button>
+             
+             
             </div>
-            </div>
+            <Link to="/visas"> <button  className={`${styles["search-button"]}`} onClick={handleSearch}>
+              Go
+           </button></Link>
+          </div>*/}
             </center>
            </div>
-        </div>
+          </div> 
 
         <div
           className={`${styles["Home-container"]}`}
@@ -449,7 +485,7 @@ function Home() {
                 className={`${styles["image1"]}`}
               ></img>
               <img
-                src="/assets/img/Homeright1.png"
+                src="assets/img/Homeright1.png"
                 alt="image1"
                 className={`${styles["image2"]}`}
               ></img>
@@ -457,23 +493,16 @@ function Home() {
           </div>
           <div className={`${styles["Home-top-flexbox3-rightside"]}`}>
             <h6>ABOUT WORLD VISA TRAVEL</h6>
-            <h2>
-              Legal assistance for international<br></br>migration from{" "}
-              <strong>experienced professionals.</strong>
+            <h2>Legal assistance for international<br></br>migration from <strong>experienced professionals.</strong>
             </h2>
+            <p>We've been counselling students for educational Opportun in Foreign countries.
+            Changed to We help students for educational opportunity in Foreign Countries!</p>
             <p>
-              We've been counselling students for educational Opportun in
-              Foreign countries. Changed to We help students for educational
-              opportunity in Foreign Countries!
-            </p>
-            <p>
-              World Visa Travel is a company with expertise in obtaining tourist
-              and business visas, as well as U.S. regular, official, or
-              diplomatic passports. They can help you get single, double, or
-              multiple entry visas. They also serve non-U.S. citizens who are
-              permanent residents or legally authorized to live in the United
-              States. Additionally, they can help you legalize documents with
-              the embassies of the designated countries.
+               World Visa Travel is a company with expertise in obtaining tourist and business visas,
+               as well as U.S. regular, official, or diplomatic passports. They can help you get single,
+               double, or multiple entry visas. They also serve non-U.S. citizens who are permanent 
+              residents or legally authorized to live in the United States. Additionally, they can help
+               you legalize documents with the embassies of the designated countries.
             </p>
             <ul className={`${styles["Home-header-3flex"]}`}>
               <li>
@@ -498,7 +527,7 @@ function Home() {
           </div>
         </div>
 
-        <div className={`${styles["flexbox5"]}`}>
+        <div className={`${styles["flexbox5"]}`} >
           <center style={{ padding: "20px" }}>
             <h5>Testimonials of Transformation</h5>
             <h1>
@@ -510,7 +539,28 @@ function Home() {
               className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
               style={{ background: "#fff" }}
             >
-              <div className={`${styles["testmonial-content"]}`}>
+            <div className={`${styles["testmonial-content"]}`}>
+              <div className={"card-body"}>
+                <h5 className={`${styles["Home-top-flexbox5-header"]}`}>
+                  Customer Testimonial1
+                </h5>
+              </div>
+              <p className={`${styles["Home-testimonial-content"]}`}>
+                I have had the pleasure of working with World Visa Travel, Inc.
+                from 2004-2023, through the agency I was employed with. Randy
+                and his staff were always professional, courteous, and pleasant
+                to work with. They were extremely helpful in assisting us in
+                obtaining visas from the various embassies and passports from
+                the State Department. There were many times when they went above
+                and beyond for us and we greatly appreciated it. I would highly
+                recommend using their service for any travel needs you may have.
+              </p>
+              </div>
+            </div>{" "}
+            <div
+              className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
+            >
+            <div className={`${styles["testmonial-content"]}`}>
                 <div className={"card-body"}>
                   <h5 className={`${styles["Home-top-flexbox5-header"]}`}>
                     Customer Testimonial1
@@ -532,29 +582,7 @@ function Home() {
             <div
               className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
             >
-              <div className={`${styles["testmonial-content"]}`}>
-                <div className={"card-body"}>
-                  <h5 className={`${styles["Home-top-flexbox5-header"]}`}>
-                    Customer Testimonial1
-                  </h5>
-                </div>
-                <p className={`${styles["Home-testimonial-content"]}`}>
-                  I have had the pleasure of working with World Visa Travel,
-                  Inc. from 2004-2023, through the agency I was employed with.
-                  Randy and his staff were always professional, courteous, and
-                  pleasant to work with. They were extremely helpful in
-                  assisting us in obtaining visas from the various embassies and
-                  passports from the State Department. There were many times
-                  when they went above and beyond for us and we greatly
-                  appreciated it. I would highly recommend using their service
-                  for any travel needs you may have.
-                </p>
-              </div>
-            </div>{" "}
-            <div
-              className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
-            >
-              <div className={`${styles["testmonial-content"]}`}>
+            <div className={`${styles["testmonial-content"]}`}>
                 <div className={"card-body"}>
                   <h5 className={`${styles["Home-top-flexbox5-header"]}`}>
                     Customer Testimonial1
@@ -788,85 +816,6 @@ function Home() {
           </div>
         </Slider>
       </div>
-
-      {/*<div className={`${styles["flexbox5"]}`}>
-        <center style={{ paddingBottom: "20px" }}>
-          <h5>Testimonials of Transformation</h5>
-          <h1>
-           Our Client <b style={{color:"#D6F8FF"}}> Testimonials</b>
-          </h1>
-        </center>
-
-        <div className={`${styles["Home-flexbox5"]}`}>
-          <div className={`${styles["Home-top-flexbox5"]}`}>
-            <img
-              src="assets/country/1.png"
-              height="auto"
-              width="280px"
-              alt="country_img"
-            ></img>
-            <h5 className={`${styles["Home-top-flexbox5-header"]}`}>
-              Customer Testimonial1
-            </h5>
-            <p className={`${styles["Home-testimonial-content"]}`}>
-            I have had the pleasure of working with World Visa Travel, Inc. from 2004-2023,
-            through the agency I was employed with.  Randy and his staff were always professional,
-            courteous, and pleasant to work with.  They were extremely helpful in assisting us in obtaining visas
-            from the various embassies and passports from the State Department.   There were many times when they 
-            went above and beyond for us and we greatly appreciated it.
-            I would highly recommend using their service for any travel needs you may have.
-            </p>
-          </div>
-
-          <div className={`${styles["Home-top-flexbox5"]}`}>
-            <img
-              src="assets/country/2.png"
-              height="auto"
-              width="280px"
-              alt="country_img"
-            ></img>
-            <h5 className={`${styles["Home-top-flexbox5-header"]}`}>
-              Australia
-            </h5>
-            <p>
-              Studying in the Australia quis nostrud exercitation ullamco
-              laboris.
-            </p>
-            <h6>Read More</h6>
-          </div>
-
-          <div className={`${styles["Home-top-flexbox5"]}`}>
-            <img
-              src="assets/country/3.png"
-              height="auto"
-              width="280px"
-              alt="country_img"
-            ></img>
-            <h5 className={`${styles["Home-top-flexbox5-header"]}`}>Canada</h5>
-            <p>
-              Studying in the Canada quis nostrud exercitation ullamco laboris.
-            </p>
-            <h6>Read More</h6>
-          </div>
-
-          <div className={`${styles["Home-top-flexbox5"]}`}>
-            <img
-              src="assets/country/4.png"
-              height="auto"
-              width="280px"
-              alt="country_img"
-            ></img>
-            <h5 className={`${styles["Home-top-flexbox5-header"]}`}>
-              United Kingdom
-            </h5>
-            <p>
-              Studying in the United Kingdom quis nostrud exercitation ullamco.
-            </p>
-            <h6>Read More</h6>
-          </div>
-
-      </div>
-      </div> */}
     </>
   );
 }
