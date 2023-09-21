@@ -124,7 +124,7 @@ const FormVisa = ({ visaType }) => {
            required
            placeholder="Select Citizenship">
               <option>US Citizens</option>
-              <option>NON-Us Citizens</option>
+              <option>NON-US Citizens</option>
           </select>
        
         <Select
