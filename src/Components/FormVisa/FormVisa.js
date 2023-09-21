@@ -29,8 +29,8 @@ const FormVisa = ({ visaType }) => {
       email: formData.email,
       phone: formData.phone,
       citizen: formData.citizen,
-      srcCountry: formData.srcCountry,
-      dstCountry: formData.dstCountry,
+      srcCountry: formData.srcCountry.label,
+      dstCountry: formData.dstCountry.label,
     };
     axios
       .post(apiUrl, payload)
@@ -117,16 +117,25 @@ const FormVisa = ({ visaType }) => {
             setFormData({ ...formData, phone: e.target.value });
           }}
         />
-        
-       
-          <select   style={{paddingLeft:"110px",paddingBottom:"8px",paddingTop:"8px"}}
-           className="country-formdata"
-           required
-           placeholder="Select Citizenship">
-              <option>US Citizens</option>
-              <option>NON-US Citizens</option>
-          </select>
-       
+
+        <select
+          style={{
+            paddingLeft: "110px",
+            paddingBottom: "8px",
+            paddingTop: "8px",
+          }}
+          className="country-formdata"
+          required
+          placeholder="Select Citizenship"
+          value={formData.citizen}
+          onChange={(selectedOption) => {
+            setFormData({ ...formData, citizen: selectedOption.target.value });
+          }}
+        >
+          <option>us Citizens</option>
+          <option>non-us citizens</option>
+        </select>
+
         <Select
           className="country-formdata"
           placeholder="Select Source Country"
