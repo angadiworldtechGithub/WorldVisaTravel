@@ -117,53 +117,6 @@ const FormVisa = ({ visaType }) => {
             setFormData({ ...formData, phone: e.target.value });
           }}
         />
-
-        <Select
-          className="country-formdata"
-          placeholder="Choose Citizenship"
-          options={countryOptions}
-          value={formData.citizen}
-          onChange={(selectedOption) => {
-            setFormData({ ...formData, citizen: selectedOption });
-          }}
-        />
-
-  
-          <input style={{paddingLeft:"140px",paddingBottom:"8px",paddingTop:"8px"}}
-            className="country-formdata"
-            type="text"
-            id="name"
-            name="name"
-            required
-            placeholder="Name"
-            onChange={(e) => {
-              setFormData((pre) => ({ ...pre, name: e.target.value }));
-            }}
-          />
-    
-          <input style={{paddingLeft:"110px",paddingBottom:"8px",paddingTop:"8px"}}
-            className="country-formdata"
-            type="email"
-            id="email"
-            name="email"
-            required
-            placeholder="Email Address"
-            onChange={(e) => {
-              setFormData((pre) => ({ ...pre, email: e.target.value }));
-            }}
-/>
-        
-          <input style={{paddingLeft:"110px",paddingBottom:"8px",paddingTop:"8px"}}
-            className="country-formdata"
-            type="phoneNumber"
-            id="phoneNumber"
-            name="phoneNumber"
-            required
-            placeholder="Phone Number"
-            onChange={(e) => {
-              setFormData((pre) => ({ ...pre, phone: e.target.value }));
-            }}
-          />
         
        
           <select   style={{paddingLeft:"110px",paddingBottom:"8px",paddingTop:"8px"}}
