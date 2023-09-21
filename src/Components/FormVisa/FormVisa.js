@@ -106,15 +106,15 @@ const FormVisa = ({ visaType }) => {
             }}
           />
         
-        <Select
-        className="country-formdata"
-        placeholder="Choose Citizenship"
-        options={countryOptions}
-        value={chooseCitizenship}
-        onChange={setChooseCitizenship}
-        />
-      
-      
+       
+          <select   style={{paddingLeft:"110px",paddingBottom:"8px",paddingTop:"8px"}}
+           className="country-formdata"
+           required
+           placeholder="Select Citizenship">
+              <option>US Citizens</option>
+              <option>NON-Us Citizens</option>
+          </select>
+       
         <Select
         className="country-formdata"
         placeholder="Select Source Country"
