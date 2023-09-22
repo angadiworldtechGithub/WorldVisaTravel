@@ -3,6 +3,11 @@ body {
   font-family: Arial, sans-serif;
 }
 
+.flex-item {
+  flex: 1; 
+  margin: 10px;
+  padding-left: 10px;
+}
 
 .Home {
   display: flex;

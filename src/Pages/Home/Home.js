@@ -1,5 +1,6 @@
 import styles from "./Home.module.css";
 import { Link } from "react-router-dom";
+import { AiFillStar } from "react-icons/ai";
 import { GiOpenBook } from "react-icons/gi";
 import { BsCheck2Circle } from "react-icons/bs";
 import { FaAddressBook, FaUserGraduate } from "react-icons/fa";
@@ -182,18 +183,18 @@ function Home() {
 
           <div className={`${styles["Home-box"]}`}>
             <div className={`${styles["Home-top-flex2"]}`}>
-              <Link to="/passport">
+              <Link to="/passports">
                 <h4 className={`${styles["Home-header-text"]}`}>
                   <i className={`${styles["Home-header-icon"]}`}>
                     <FaAddressBook />
                   </i>
-                  Book an Appointment
+                  Passport Services
                 </h4>
               </Link>
               <hr></hr>
               <p>
-                To manage your visa application through our knowledgeable
-                certified agents.
+                To facilitate your passport application through our experienced
+                and certified professionals.
               </p>
             </div>
           </div>
@@ -553,27 +554,14 @@ function Home() {
                     Customer Testimonial1
                   </h5>
                 </div>
-                <p className={`${styles["Home-testimonial-content"]}`}>
-                  I have had the pleasure of working with World Visa Travel,
-                  Inc. from 2004-2023, through the agency I was employed with.
-                  Randy and his staff were always professional, courteous, and
-                  pleasant to work with. They were extremely helpful in
-                  assisting us in obtaining visas from the various embassies and
-                  passports from the State Department. There were many times
-                  when they went above and beyond for us and we greatly
-                  appreciated it. I would highly recommend using their service
-                  for any travel needs you may have.
-                </p>
-              </div>
-            </div>{" "}
-            <div
-              className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
-            >
-              <div className={`${styles["testmonial-content"]}`}>
-                <div className={"card-body"}>
-                  <h5 className={`${styles["Home-top-flexbox5-header"]}`}>
-                    Customer Testimonial1
-                  </h5>
+                <div className={`${styles["flex-item"]}`}>
+                  <i>
+                    <AiFillStar />
+                    <AiFillStar />
+                    <AiFillStar />
+                    <AiFillStar />
+                    <AiFillStar />
+                  </i>
                 </div>
                 <p className={`${styles["Home-testimonial-content"]}`}>
                   I have had the pleasure of working with World Visa Travel,
@@ -586,6 +574,9 @@ function Home() {
                   appreciated it. I would highly recommend using their service
                   for any travel needs you may have.
                 </p>
+                <div className={`${styles["flex-item"]}`}>
+                  <strong> - PAMELA CLARK</strong>
+                </div>
               </div>
             </div>{" "}
             <div
@@ -596,6 +587,15 @@ function Home() {
                   <h5 className={`${styles["Home-top-flexbox5-header"]}`}>
                     Customer Testimonial1
                   </h5>
+                </div>
+                <div className={`${styles["flex-item"]}`}>
+                  <i>
+                    <AiFillStar />
+                    <AiFillStar />
+                    <AiFillStar />
+                    <AiFillStar />
+                    <AiFillStar />
+                  </i>
                 </div>
                 <p className={`${styles["Home-testimonial-content"]}`}>
                   I have had the pleasure of working with World Visa Travel,
@@ -608,6 +608,9 @@ function Home() {
                   appreciated it. I would highly recommend using their service
                   for any travel needs you may have.
                 </p>
+                <div className={`${styles["flex-item"]}`}>
+                  <strong> - PAMELA CLARK</strong>
+                </div>
               </div>
             </div>{" "}
             <div
@@ -618,6 +621,15 @@ function Home() {
                   <h5 className={`${styles["Home-top-flexbox5-header"]}`}>
                     Customer Testimonial1
                   </h5>
+                </div>
+                <div className={`${styles["flex-item"]}`}>
+                  <i>
+                    <AiFillStar />
+                    <AiFillStar />
+                    <AiFillStar />
+                    <AiFillStar />
+                    <AiFillStar />
+                  </i>
                 </div>
                 <p className={`${styles["Home-testimonial-content"]}`}>
                   I have had the pleasure of working with World Visa Travel,
@@ -630,6 +642,9 @@ function Home() {
                   appreciated it. I would highly recommend using their service
                   for any travel needs you may have.
                 </p>
+                <div className={`${styles["flex-item"]}`}>
+                  <strong> - PAMELA CLARK</strong>
+                </div>
               </div>
             </div>{" "}
             <div
@@ -640,6 +655,15 @@ function Home() {
                   <h5 className={`${styles["Home-top-flexbox5-header"]}`}>
                     Customer Testimonial1
                   </h5>
+                </div>
+                <div className={`${styles["flex-item"]}`}>
+                  <i>
+                    <AiFillStar />
+                    <AiFillStar />
+                    <AiFillStar />
+                    <AiFillStar />
+                    <AiFillStar />
+                  </i>
                 </div>
                 <p className={`${styles["Home-testimonial-content"]}`}>
                   I have had the pleasure of working with World Visa Travel,
@@ -652,6 +676,9 @@ function Home() {
                   appreciated it. I would highly recommend using their service
                   for any travel needs you may have.
                 </p>
+                <div className={`${styles["flex-item"]}`}>
+                  <strong> - PAMELA CLARK</strong>
+                </div>
               </div>
             </div>{" "}
             <div
@@ -662,6 +689,15 @@ function Home() {
                   <h5 className={`${styles["Home-top-flexbox5-header"]}`}>
                     Customer Testimonial1
                   </h5>
+                </div>
+                <div className={`${styles["flex-item"]}`}>
+                  <i>
+                    <AiFillStar />
+                    <AiFillStar />
+                    <AiFillStar />
+                    <AiFillStar />
+                    <AiFillStar />
+                  </i>
                 </div>
                 <p className={`${styles["Home-testimonial-content"]}`}>
                   I have had the pleasure of working with World Visa Travel,
@@ -674,6 +710,9 @@ function Home() {
                   appreciated it. I would highly recommend using their service
                   for any travel needs you may have.
                 </p>
+                <div className={`${styles["flex-item"]}`}>
+                  <strong> - PAMELA CLARK</strong>
+                </div>
               </div>
             </div>{" "}
             <div
@@ -684,6 +723,15 @@ function Home() {
                   <h5 className={`${styles["Home-top-flexbox5-header"]}`}>
                     Customer Testimonial1
                   </h5>
+                </div>
+                <div className={`${styles["flex-item"]}`}>
+                  <i>
+                    <AiFillStar />
+                    <AiFillStar />
+                    <AiFillStar />
+                    <AiFillStar />
+                    <AiFillStar />
+                  </i>
                 </div>
                 <p className={`${styles["Home-testimonial-content"]}`}>
                   I have had the pleasure of working with World Visa Travel,
@@ -696,6 +744,9 @@ function Home() {
                   appreciated it. I would highly recommend using their service
                   for any travel needs you may have.
                 </p>
+                <div className={`${styles["flex-item"]}`}>
+                  <strong> - PAMELA CLARK</strong>
+                </div>
               </div>
             </div>{" "}
             <div
@@ -706,6 +757,15 @@ function Home() {
                   <h5 className={`${styles["Home-top-flexbox5-header"]}`}>
                     Customer Testimonial1
                   </h5>
+                </div>
+                <div className={`${styles["flex-item"]}`}>
+                  <i>
+                    <AiFillStar />
+                    <AiFillStar />
+                    <AiFillStar />
+                    <AiFillStar />
+                    <AiFillStar />
+                  </i>
                 </div>
                 <p className={`${styles["Home-testimonial-content"]}`}>
                   I have had the pleasure of working with World Visa Travel,
@@ -718,6 +778,43 @@ function Home() {
                   appreciated it. I would highly recommend using their service
                   for any travel needs you may have.
                 </p>
+                <div className={`${styles["flex-item"]}`}>
+                  <strong> - PAMELA CLARK</strong>
+                </div>
+              </div>
+            </div>{" "}
+            <div
+              className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
+            >
+              <div className={`${styles["testmonial-content"]}`}>
+                <div className={"card-body"}>
+                  <h5 className={`${styles["Home-top-flexbox5-header"]}`}>
+                    Customer Testimonial1
+                  </h5>
+                </div>
+                <div className={`${styles["flex-item"]}`}>
+                  <i>
+                    <AiFillStar />
+                    <AiFillStar />
+                    <AiFillStar />
+                    <AiFillStar />
+                    <AiFillStar />
+                  </i>
+                </div>
+                <p className={`${styles["Home-testimonial-content"]}`}>
+                  I have had the pleasure of working with World Visa Travel,
+                  Inc. from 2004-2023, through the agency I was employed with.
+                  Randy and his staff were always professional, courteous, and
+                  pleasant to work with. They were extremely helpful in
+                  assisting us in obtaining visas from the various embassies and
+                  passports from the State Department. There were many times
+                  when they went above and beyond for us and we greatly
+                  appreciated it. I would highly recommend using their service
+                  for any travel needs you may have.
+                </p>
+                <div className={`${styles["flex-item"]}`}>
+                  <strong> - PAMELA CLARK</strong>
+                </div>
               </div>
             </div>{" "}
           </Slider>
@@ -726,7 +823,7 @@ function Home() {
 
       <div className={`${styles["Homeless-card-silder"]}`}>
         <center style={{ padding: "20px" }}>
-          <h6>HomeLess Ministry</h6>
+          <h6>OTHER SERVICES </h6>
           <h1>
             Homeless<b style={{ color: "#2c3a90" }}> Ministry</b>
           </h1>
