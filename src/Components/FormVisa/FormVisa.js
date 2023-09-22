@@ -11,6 +11,13 @@ const countryOptions = Object.keys(countries).map((countryCode) => ({
   flag: <ReactCountryFlag countryCode={countryCode} svg />,
 }));
 
+const CustomOption = ({ innerProps, label, data }) => (
+  <div {...innerProps} style={{ display: "flex", paddingLeft: "15px" }}>
+    <span className="country-flag">{data.flag}</span>
+    <span className="country-label">{label}</span>
+  </div>
+);
+
 const FormVisa = ({ visaType }) => {
   const [isChecked, setIsChecked] = useState(false);
   const [formData, setFormData] = useState({
@@ -134,25 +141,23 @@ const FormVisa = ({ visaType }) => {
           }}
         />
 
-      <select
-      style={{
-        textAlign:"center",
-       /* paddingLeft: "110px",
-        paddingBottom: "8px",
-        paddingTop: "8px",*/
-      }}
-      className="country-formdata"
-      placeholder="Select Citizenship"
-      required
-      value={formData.citizen}
-    >
-    
-    <option value="" disabled>
-    Select Citizen
-  </option>
-     <option value="us-citizen">US Citizen</option>
-    <option value="non-us-citizen">Non-US Citizen</option>
-    </select>
+        <select
+        style={{
+          paddingLeft: "110px",
+          paddingBottom: "8px",
+          paddingTop: "8px",
+        }}
+        className="country-formdata"
+        required
+        value={formData.citizen}
+        onChange={(selectedOption) => {
+          setFormData({ ...formData, citizen: selectedOption.target.value });
+        }}
+      >
+        <option value="">Select Citizenship</option>
+        <option value="us Citizens">US Citizens</option>
+        <option value="non-us citizens">Non-US Citizens</option>
+      </select>
 
    
 
@@ -167,6 +172,7 @@ const FormVisa = ({ visaType }) => {
           placeholder="Select Source Country"
           options={countryOptions}
           value={formData.srcCountry}
+          components={{ Option: CustomOption }}
           onChange={(selectedOption) => {
             setFormData({ ...formData, srcCountry: selectedOption });
           }}
@@ -184,6 +190,7 @@ const FormVisa = ({ visaType }) => {
           placeholder="Select Destination Country"
           options={countryOptions}
           value={formData?.dstCountry}
+          components={{ Option: CustomOption }}
           onChange={(selectedOption) => {
             setFormData({
               ...formData,

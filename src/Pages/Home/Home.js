@@ -240,6 +240,7 @@ function Home() {
                 </p>
           </center>
           </div>
+          
             <div className={`${styles["Home-card-silder"]}`}>
               <Slider {...settings}>
                 <div
