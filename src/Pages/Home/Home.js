@@ -219,66 +219,26 @@ function Home() {
           </div>
         </div>
 
-        {/* <div className={`${styles["Home-top-flexbox2 px-sm-2 px-lg-5"]}`}>
-        <div
-          className={`${styles["Home-flexbox2"]}`}
-          style={{ position: "relative" }}
-        >
-          <div
-            className={`${styles["Home-top-flexbox2"]}`}
-            style={{ paddingBottom: "40px" }}
-          >
-            <div
-              className={`${styles["Home-top-flexbox2-leftside"]}`}
-              style={{ paddingLeft: "120px", paddingBottom: "40px" }}
-            >
-              <h6>WHO WE ARE</h6>
-              <h2>
-                We are experienced professionals <br></br>in Visa Solutions
-              </h2>
-            </div>
-            <div className={`${styles["Home-top-flexbox2-rightside"]}`}>
-              <p>
-                We offer a skilled team dedicated to enhancing your travel
-                experience, adding significant value to your journeys. Our
-                certified and dependable Travel Consultants are here to assist
-                you in achieving favorable outcomes for your travel plans. Our
-                services extend across various regions within countries.
-              </p>
-            </div>
-          </div>
-        </div>
-        </div>*/}
-
         <div className={`${styles["position-relative"]}`}>
           <div
             className={`${styles["Home-flexbox4"]}`}
             style={{ position: "relative" }}
           >
-            <div
-              className={`${styles["Home-top-flexbox4"]}`}
-              style={{ paddingBottom: "40px", paddingTop: "60px" }}
-            >
-              <div
-                className={`${styles["Home-top-flexbox4-leftside"]}`}
-                style={{ paddingLeft: "120px", paddingBottom: "40px" }}
-              >
-                <h6>WHO WE ARE</h6>
+          <div className={`${styles["Home-who-we-are-content"]}`}>
+          <center>
+                <strong><h2>WHO WE ARE</h2></strong>
                 <h2>
-                  We are experienced professionals <br></br> in Visa Solutions
+                  We are experienced professionals in Visa Solutions
                 </h2>
-              </div>
-              <div className={`${styles["Home-top-flexbox4-rightside"]}`}>
-                <p>
-                  We offer a skilled team dedicated to enhancing your travel
-                  experience, adding significant value to your journeys. Our
+                <p className={`${styles["Home-who-we-are-content-paragraph"]}`}>
+                <i>We offer a skilled team dedicated to enhancing your travel
+                  experience, adding significant value to your journeys.<br></br> Our
                   certified and dependable Travel Consultants are here to assist
-                  you in achieving favorable outcomes for your travel plans. Our
-                  services extend across various regions within countries.
+                  you in achieving favorable outcomes for your travel plans.<br></br> Our
+                  services extend across various regions within countries.</i>
                 </p>
-              </div>
-            </div>
-
+          </center>
+          </div>
             <div className={`${styles["Home-card-silder"]}`}>
               <Slider {...settings}>
                 <div

@@ -24,6 +24,14 @@ body {
   height: 700px;
 }
 
+.Home-who-we-are-content{
+  padding: 20px;
+  color: #fff;
+}
+.Home-who-we-are-content-paragraph{
+  text-align: center;
+  font-size: 18px;
+}
 /*Apply visa tab*/
 .Home-Apply{
   position: sticky;
@@ -533,6 +541,7 @@ body {
   text-align: justify;
   padding-left: 20px;
   padding-right: 20px;
+  font-family: 'Square Peg', cursive;
 }
 .testmonial-content{
   padding: 10px;
