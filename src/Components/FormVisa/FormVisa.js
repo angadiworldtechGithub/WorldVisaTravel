@@ -145,8 +145,8 @@ const FormVisa = ({ visaType }) => {
             setFormData({ ...formData, citizen: selectedOption.target.value });
           }}
         >
-          <option>us Citizens</option>
-          <option>non-us citizens</option>
+          <option>US Citizens</option>
+          <option>NON-US citizens</option>
         </select>
 
         <Select

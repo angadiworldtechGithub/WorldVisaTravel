@@ -21,7 +21,7 @@ function index() {
     },
     {
       id: 3,
-      name: 'Official Visa',
+      name: 'Official/Diplomatic Visa',
       image: '/assets/visa/visa3.png',
       paragraph: 'An Official Visa is granted to government representatives for official diplomatic interactions between nations.',
       link:'/moreinfo/officialvisa'
@@ -29,7 +29,7 @@ function index() {
     {
       id: 4,
       name: 'E-Visa',
-      image: '/assets/visa/visa3.png',
+      image: '/assets/visa/visa4.png',
       paragraph: 'An eVisa streamlines visa applications, allowing travelers to obtain international travel authorization conveniently online.',
       link:'/moreinfo/e-visa'
     },

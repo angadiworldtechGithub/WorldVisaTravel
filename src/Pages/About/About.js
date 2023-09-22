@@ -89,7 +89,7 @@ const About = () => {
         </div>
         <div className={`${styles["About-Service"]}`}>
           <h4>Visas</h4>
-          <img src="assets/country/2.png" alt="Image 2"  className="About-Service-img"/>
+          <img src="assets/country/3.png" alt="Image 2"  className="About-Service-img"/>
           <p className={`${styles["About-Service-content"]}`}>
           Navigating the intricate world of visas can be a daunting task. PassportVisaPro specializes in
           securing the appropriate visas for your destination country, whether you're traveling for business, 
@@ -99,7 +99,7 @@ const About = () => {
         </div>
         <div className={`${styles["About-Service"]}`}>
           <h4>Legalization</h4>
-          <img src="assets/country/3.png" alt="Image 2"  className="About-Service-img" />
+          <img src="assets/country/4.png" alt="Image 2"  className="About-Service-img" />
           <p className={`${styles["About-Service-content"]}`}>
             World Visa Travel is a pioneering company dedicated to simplifying the complex and often
             daunting process of legalizing your stay in a foreign country. Our mission is to be your
@@ -109,7 +109,7 @@ const About = () => {
         </div>
         <div className={`${styles["About-Service"]}`}>
           <h3>E-Visas</h3>
-          <img src="assets/country/4.png" alt="Image 2"  className="About-Service-img"/>
+          <img src="assets/country/2.png" alt="Image 2"  className="About-Service-img"/>
           <p className={`${styles["About-Service-content"]}`}>
             We offer end-to-end support for eVisa applications. Our team of experienced professionals will
             guide you through the entire process, from filling out the application to gathering the necessary 
