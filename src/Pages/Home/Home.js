@@ -439,25 +439,20 @@ function Home() {
           <div className={`${styles["Home-top-flexbox3-leftside"]}`}>
             <div
               className={`${styles["parent"]}`}
-              style={{ paddingBottom: "60px" }}
+              style={{ paddingBottom: "20px" }}
             >
-              <img
-                src="assets/img/Homeright.png"
-                alt="image1"
-                className={`${styles["image1"]}`}
-              ></img>
-              <img
-                src="assets/img/Homeright1.png"
-                alt="image1"
-                className={`${styles["image2"]}`}
+             <img
+               src="assets/Home1.png"
+               alt="About_png"
+               className={`${styles["Home_flex_img"]}`}
+               style={{ width: "100%" }}
               ></img>
             </div>
           </div>
           <div className={`${styles["Home-top-flexbox3-rightside"]}`}>
             <h6>ABOUT WORLD VISA TRAVEL</h6>
             <h2>
-              Legal assistance for international<br></br>migration from{" "}
-              <strong>experienced professionals.</strong>
+              Your Gateway to Global Opportunities:<br></br> <strong> Visa & Documentation Experts</strong>
             </h2>
             <p>
               We've been counselling students for educational Opportun in

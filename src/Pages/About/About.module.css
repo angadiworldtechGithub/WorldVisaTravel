@@ -15,25 +15,22 @@
 
 .about-paragraph-content{
   text-align: justify;
-  padding: 10px;
   font-family: 'Open Sans', sans-serif; 
   font-size: 18px;
 }
 .about-paragraph-heading{
   text-align: justify;
-  padding-left: 10px;
   color: #2C3A90;
 }
 .about-paragraph-heading1{
   text-align: justify;
-  padding-left: 10px;
   color: #fff;
 }
 
 .About-item {
   flex: 1; /* Equal width for both items */
-  padding: 10px;
   margin: 10px;
+  padding-right: 20px;
   min-width: 240px; /* Set a minimum width for the items */
 }
 .Aboutus_flex_img {

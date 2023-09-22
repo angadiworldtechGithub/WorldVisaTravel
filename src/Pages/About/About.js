@@ -81,48 +81,39 @@ const About = () => {
           <h4>Passport</h4>
           <img src="assets/country/1.png" alt="Image 1"  className="About-Service-img"/>
           <p className={`${styles["About-Service-content"]}`}>
-            A passport is an official government-issued document that verifies a
-            person's identity and citizenship. It contains personal information
-            like the holder's name, photograph, and date of birth, enabling
-            international travel and serving as a record of border crossings.
-            Passports are essential for accessing foreign countries and
-            obtaining visas for travel.
+          We provide a hassle-free experience when it comes to applying for a new passport, 
+          renewing an existing one, or even obtaining a second passport. Our team will guide
+          you through the requirements, assist with document preparation, and ensure your application 
+          is submitted correctly and promptly.
           </p>
         </div>
         <div className={`${styles["About-Service"]}`}>
           <h4>Visas</h4>
           <img src="assets/country/2.png" alt="Image 2"  className="About-Service-img"/>
           <p className={`${styles["About-Service-content"]}`}>
-            Visas, government-issued permits, play a crucial role in
-            international travel by granting entry and stay in foreign
-            countries. These permits are categorized based on travel purposes,
-            such as tourism, work, or study, ensuring travelers comply with
-            immigration regulations, thus facilitating a smooth and legal entry
-            into their chosen destinations.
+          Navigating the intricate world of visas can be a daunting task. PassportVisaPro specializes in
+          securing the appropriate visas for your destination country, whether you're traveling for business, 
+          leisure, or study. Our experts will help you complete the necessary forms, gather supporting documents,
+          and handle all communication with consulates or embassies.
           </p>
         </div>
         <div className={`${styles["About-Service"]}`}>
           <h4>Legalization</h4>
           <img src="assets/country/3.png" alt="Image 2"  className="About-Service-img" />
           <p className={`${styles["About-Service-content"]}`}>
-            Legalization is the process of authenticating documents to ensure
-            their validity and credibility in international transactions and
-            legal matters. It involves obtaining official endorsements from
-            government authorities or consulates. This procedure is essential
-            for documents like certificates, contracts, and agreements to be
-            recognized and accepted across borders.
+            World Visa Travel is a pioneering company dedicated to simplifying the complex and often
+            daunting process of legalizing your stay in a foreign country. Our mission is to be your
+            trusted partner, guiding you through the intricate web of visas, permits, and related paperwork, 
+            so you can focus on what truly matters - pursuing your dreams and opportunities abroad.
           </p>
         </div>
         <div className={`${styles["About-Service"]}`}>
           <h3>E-Visas</h3>
           <img src="assets/country/4.png" alt="Image 2"  className="About-Service-img"/>
           <p className={`${styles["About-Service-content"]}`}>
-            An eVisa, or electronic visa, is a digital travel authorization
-            document that allows travelers to apply for and obtain entry permits
-            online. This streamlined process eliminates the need for physical
-            visa stamps and offers convenience and efficiency for international
-            travelers. Evisas are increasingly popular for their simplicity and
-            accessibility.
+            We offer end-to-end support for eVisa applications. Our team of experienced professionals will
+            guide you through the entire process, from filling out the application to gathering the necessary 
+            documents and submitting your application to the relevant authorities.
           </p>
         </div>
       </div>
@@ -160,7 +151,7 @@ const About = () => {
           <img
             src="assets/mapdesign.png"
             alt="map_png"
-            style={{ width: "100%" }}
+            style={{ width: "110%" }}
           ></img>
         </div>
       </div>

@@ -24,6 +24,10 @@ body {
   height: 700px;
 }
 
+.Home_flex_img{
+  border-radius: 20px;
+}
+
 .Home-who-we-are-content{
   padding: 20px;
   color: #fff;
