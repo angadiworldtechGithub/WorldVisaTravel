@@ -82,9 +82,10 @@ const FormVisa = ({ visaType }) => {
 
         <input
           style={{
-            paddingLeft: "140px",
+            textAlign:"center",
+           /* paddingLeft: "140px",
             paddingBottom: "8px",
-            paddingTop: "8px",
+            paddingTop: "8px",*/
           }}
           className="country-formdata"
           type="text"
@@ -99,9 +100,10 @@ const FormVisa = ({ visaType }) => {
 
         <input
           style={{
-            paddingLeft: "110px",
+            textAlign:"center",
+           /* paddingLeft: "100px",
             paddingBottom: "8px",
-            paddingTop: "8px",
+            paddingTop: "8px",*/
           }}
           className="country-formdata"
           type="email"
@@ -116,9 +118,10 @@ const FormVisa = ({ visaType }) => {
 
         <input
           style={{
-            paddingLeft: "110px",
+            textAlign:"center",
+            /*paddingLeft: "110px",
             paddingBottom: "8px",
-            paddingTop: "8px",
+            paddingTop: "8px",*/
           }}
           className="country-formdata"
           type="tel"
@@ -131,25 +134,35 @@ const FormVisa = ({ visaType }) => {
           }}
         />
 
-        <select
-          style={{
-            paddingLeft: "110px",
-            paddingBottom: "8px",
-            paddingTop: "8px",
-          }}
-          className="country-formdata"
-          placeholder="Select Citizenship"
-          required
-          value={formData.citizen}
-          onChange={(selectedOption) => {
-            setFormData({ ...formData, citizen: selectedOption.target.value });
-          }}
-        >
-          <option>US Citizens</option>
-          <option>NON-US Citizens</option>
-        </select>
+      <select
+      style={{
+        textAlign:"center",
+       /* paddingLeft: "110px",
+        paddingBottom: "8px",
+        paddingTop: "8px",*/
+      }}
+      className="country-formdata"
+      placeholder="Select Citizenship"
+      required
+      value={formData.citizen}
+    >
+    
+    <option value="" disabled>
+    Select Citizen
+  </option>
+     <option value="us-citizen">US Citizen</option>
+    <option value="non-us-citizen">Non-US Citizen</option>
+    </select>
+
+   
 
         <Select
+        style={{
+          textAlign:"center",
+         /* paddingLeft: "110px",
+          paddingBottom: "8px",
+          paddingTop: "8px",*/
+        }}
           className="country-formdata"
           placeholder="Select Source Country"
           options={countryOptions}
@@ -158,7 +171,15 @@ const FormVisa = ({ visaType }) => {
             setFormData({ ...formData, srcCountry: selectedOption });
           }}
         />
+
+
         <Select
+        style={{
+          textAlign:"center",
+         /* paddingLeft: "110px",
+          paddingBottom: "8px",
+          paddingTop: "8px",*/
+        }}
           className="country-formdata"
           placeholder="Select Destination Country"
           options={countryOptions}

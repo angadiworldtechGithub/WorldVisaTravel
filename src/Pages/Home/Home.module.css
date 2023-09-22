@@ -3,10 +3,11 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.flex-item {
+.home-testmonial-star {
   flex: 1; 
   margin: 10px;
   padding-left: 10px;
+  color: #2c3a90;
 }
 
 .Home {
@@ -31,6 +32,16 @@ body {
 .Home-who-we-are-content{
   padding: 20px;
   color: #fff;
+}
+.Home-who-we-are-heading{
+  color: #2c3a90;
+  font-weight: 800;
+}
+.Home-who-we-are-heading1{
+  color: #2c3a90;
+}
+.Home-top-flexbox3-heading{
+  color: #2c3a90;
 }
 .Home-who-we-are-content-paragraph{
   text-align: center;
@@ -393,7 +404,7 @@ body {
 /*flex box4*/
 
 .Home-flexbox4 {
-  background-color: #2c3a90;
+  background-color: #007BFF;
 }
 /*
 .Home-top-flexbox4-rightside {
@@ -452,10 +463,9 @@ body {
   border-radius: 10px;
 }
 .Home-Card-content{
-  text-align: justify;
-  position: sticky;
-  overflow: hidden;  
-  text-overflow: ellipsis;
+  margin: 10px;
+  text-align: center;
+  color: #000;
 }
 .under_card_img{
   width: 100%;
