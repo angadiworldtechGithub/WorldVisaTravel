@@ -454,6 +454,8 @@ body {
 .Home-Card-content{
   text-align: justify;
   position: sticky;
+  overflow: hidden;  
+  text-overflow: ellipsis;
 }
 .under_card_img{
   width: 100%;
