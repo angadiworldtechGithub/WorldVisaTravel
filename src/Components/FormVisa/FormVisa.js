@@ -31,10 +31,23 @@ const FormVisa = ({ visaType }) => {
       citizen: formData.citizen,
       srcCountry: formData.srcCountry.label,
       dstCountry: formData.dstCountry.label,
+      Type: visaType.toUpperCase(),
     };
     axios
       .post(apiUrl, payload)
       .then((response) => {
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          citizen: null,
+          srcCountry: null,
+          dstCountry: null,
+        });
+        setIsChecked(false);
+        alert(
+          "Thank you for filling the form you recived the details in E-mail"
+        );
         console.log("Response:", response.data);
       })
       .catch((error) => {
