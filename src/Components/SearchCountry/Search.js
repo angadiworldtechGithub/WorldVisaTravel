@@ -58,9 +58,12 @@ function Search() {
         />
       </div>
 
-     <Link to="/visas"> <button className="search-button" onClick={handleSearch}>
-        Go
-      </button></Link>
+      <Link to="/visas">
+        {" "}
+        <button className="search-button" onClick={handleSearch}>
+          Go
+        </button>
+      </Link>
     </div>
   );
 }
