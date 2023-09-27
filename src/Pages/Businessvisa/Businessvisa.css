@@ -39,6 +39,7 @@
 }
 .Country-header-content{
     margin: 10px;
+    padding: 10px;
     color: #072f5f;
     font-weight: 700;
 }
@@ -111,6 +112,10 @@
     padding: 20px;
     border: 1px solid #ccc;
     text-align: center;
+    background-color: #072f5f;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
     box-sizing: border-box;
   }
   
@@ -128,6 +133,8 @@
   
   .country-service-header{
     font-weight: 700;
+    padding: 10px;
+    font-size: 22px;
   }
 
 /* FlexItems.css */
@@ -143,7 +150,11 @@
     flex-basis: calc(50% - 10px); /* Two items per row; Adjust as needed */
     margin: 5px;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 5px solid #072f5f;
+    border-radius: 20px;
+    font-size: 18px;
+    color: #000;
+    background-color: #D6F8FF;
     text-align: center;
     box-sizing: border-box;
   }
@@ -154,4 +165,9 @@
     }
   }
   
-  
+  .Application-item-heading{
+    color: #072f5f;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 5px;
+  }

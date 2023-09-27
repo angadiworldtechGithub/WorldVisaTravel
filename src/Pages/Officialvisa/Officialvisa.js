@@ -66,28 +66,28 @@ function officialvisa() {
       </center>
       <div className="Application-process-container">
         <div className="Application-item ">
-          <h5>Research</h5>
+          <h5  className="Application-item-heading">Research</h5>
           <p>
             Some countries require a criminal background check before issuing a
             visa. Check the specific requirements for your destination.
           </p>
         </div>
         <div className="Application-item">
-          <h5>complete Forms</h5>
+          <h5  className="Application-item-heading">complete Forms</h5>
           <p>
             Some countries require a criminal background check before issuing a
             visa. Check the specific requirements for your destination.
           </p>
         </div>
         <div className="Application-item ">
-          <h5>Submit Applications</h5>
+          <h5  className="Application-item-heading">Submit Applications</h5>
           <p>
             Some countries require a criminal background check before issuing a
             visa. Check the specific requirements for your destination.
           </p>
         </div>
         <div className="Application-item ">
-          <h5>Wait for Decision</h5>
+          <h5  className="Application-item-heading">Wait for Decision</h5>
           <p>
             Some countries require a criminal background check before issuing a
             visa. Check the specific requirements for your destination.
