@@ -83,10 +83,10 @@ function Home() {
                 Passport Specialists
               </h1>
               <div className={`${styles["Home-Searchbar"]}`}>
-                <Link to="/moreinfo/e-visa">
+                <Link to="/index">
                   {" "}
                   <button className={`${styles["e-visa-button"]}`}>
-                    Apply for E-Visa Travel
+                    Apply for Visa Travel
                   </button>{" "}
                 </Link>
                 <center>
@@ -509,11 +509,6 @@ function Home() {
               style={{ background: "#fff" }}
             >
               <div className={`${styles["testmonial-content"]}`}>
-                <div className={"card-body"}>
-                  <h5 className={`${styles["Home-top-flexbox5-header"]}`}>
-                    Customer Testimonial1
-                  </h5>
-                </div>
                 <div className={`${styles["home-testmonial-star"]}`}>
                   <i>
                     <AiFillStar />
@@ -534,7 +529,7 @@ function Home() {
                   appreciated it. I would highly recommend using their service
                   for any travel needs you may have.
                 </p>
-                <div className={`${styles["home-testmonial-star"]}`}>
+                <div className={`${styles["home-testmonial-name"]}`}>
                   <strong> - PAMELA CLARK</strong>
                 </div>
               </div>
@@ -543,11 +538,6 @@ function Home() {
               className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
             >
               <div className={`${styles["testmonial-content"]}`}>
-                <div className={"card-body"}>
-                  <h5 className={`${styles["Home-top-flexbox5-header"]}`}>
-                    Customer Testimonial1
-                  </h5>
-                </div>
                 <div className={`${styles["home-testmonial-star"]}`}>
                   <i>
                     <AiFillStar />
@@ -568,7 +558,7 @@ function Home() {
                   appreciated it. I would highly recommend using their service
                   for any travel needs you may have.
                 </p>
-                <div className={`${styles["home-testmonial-star"]}`}>
+                <div className={`${styles["home-testmonial-name"]}`}>
                   <strong> - PAMELA CLARK</strong>
                 </div>
               </div>
@@ -577,11 +567,6 @@ function Home() {
               className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
             >
               <div className={`${styles["testmonial-content"]}`}>
-                <div className={"card-body"}>
-                  <h5 className={`${styles["Home-top-flexbox5-header"]}`}>
-                    Customer Testimonial1
-                  </h5>
-                </div>
                 <div className={`${styles["home-testmonial-star"]}`}>
                   <i>
                     <AiFillStar />
@@ -602,7 +587,7 @@ function Home() {
                   appreciated it. I would highly recommend using their service
                   for any travel needs you may have.
                 </p>
-                <div className={`${styles["home-testmonial-star"]}`}>
+                <div className={`${styles["home-testmonial-name"]}`}>
                   <strong> - PAMELA CLARK</strong>
                 </div>
               </div>
@@ -611,11 +596,6 @@ function Home() {
               className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
             >
               <div className={`${styles["testmonial-content"]}`}>
-                <div className={"card-body"}>
-                  <h5 className={`${styles["Home-top-flexbox5-header"]}`}>
-                    Customer Testimonial1
-                  </h5>
-                </div>
                 <div className={`${styles["home-testmonial-star"]}`}>
                   <i>
                     <AiFillStar />
@@ -636,7 +616,7 @@ function Home() {
                   appreciated it. I would highly recommend using their service
                   for any travel needs you may have.
                 </p>
-                <div className={`${styles["home-testmonial-star"]}`}>
+                <div className={`${styles["home-testmonial-name"]}`}>
                   <strong> - PAMELA CLARK</strong>
                 </div>
               </div>
@@ -645,11 +625,6 @@ function Home() {
               className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
             >
               <div className={`${styles["testmonial-content"]}`}>
-                <div className={"card-body"}>
-                  <h5 className={`${styles["Home-top-flexbox5-header"]}`}>
-                    Customer Testimonial1
-                  </h5>
-                </div>
                 <div className={`${styles["home-testmonial-star"]}`}>
                   <i>
                     <AiFillStar />
@@ -670,7 +645,7 @@ function Home() {
                   appreciated it. I would highly recommend using their service
                   for any travel needs you may have.
                 </p>
-                <div className={`${styles["home-testmonial-star"]}`}>
+                <div className={`${styles["home-testmonial-name"]}`}>
                   <strong> - PAMELA CLARK</strong>
                 </div>
               </div>
@@ -679,11 +654,6 @@ function Home() {
               className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
             >
               <div className={`${styles["testmonial-content"]}`}>
-                <div className={"card-body"}>
-                  <h5 className={`${styles["Home-top-flexbox5-header"]}`}>
-                    Customer Testimonial1
-                  </h5>
-                </div>
                 <div className={`${styles["home-testmonial-star"]}`}>
                   <i>
                     <AiFillStar />
@@ -704,7 +674,7 @@ function Home() {
                   appreciated it. I would highly recommend using their service
                   for any travel needs you may have.
                 </p>
-                <div className={`${styles["home-testmonial-star"]}`}>
+                <div className={`${styles["home-testmonial-name"]}`}>
                   <strong> - PAMELA CLARK</strong>
                 </div>
               </div>
@@ -713,11 +683,6 @@ function Home() {
               className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
             >
               <div className={`${styles["testmonial-content"]}`}>
-                <div className={"card-body"}>
-                  <h5 className={`${styles["Home-top-flexbox5-header"]}`}>
-                    Customer Testimonial1
-                  </h5>
-                </div>
                 <div className={`${styles["home-testmonial-star"]}`}>
                   <i>
                     <AiFillStar />
@@ -738,7 +703,7 @@ function Home() {
                   appreciated it. I would highly recommend using their service
                   for any travel needs you may have.
                 </p>
-                <div className={`${styles["home-testmonial-star"]}`}>
+                <div className={`${styles["home-testmonial-name"]}`}>
                   <strong> - PAMELA CLARK</strong>
                 </div>
               </div>
@@ -747,11 +712,6 @@ function Home() {
               className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
             >
               <div className={`${styles["testmonial-content"]}`}>
-                <div className={"card-body"}>
-                  <h5 className={`${styles["Home-top-flexbox5-header"]}`}>
-                    Customer Testimonial1
-                  </h5>
-                </div>
                 <div className={`${styles["home-testmonial-star"]}`}>
                   <i>
                     <AiFillStar />
@@ -772,7 +732,7 @@ function Home() {
                   appreciated it. I would highly recommend using their service
                   for any travel needs you may have.
                 </p>
-                <div className={`${styles["home-testmonial-star"]}`}>
+                <div className={`${styles["home-testmonial-name"]}`}>
                   <strong> - PAMELA CLARK</strong>
                 </div>
               </div>
@@ -784,8 +744,8 @@ function Home() {
       <div className={`${styles["Homeless-card-silder"]}`}>
         <center style={{ padding: "20px" }}>
           <h6>OTHER SERVICES </h6>
-          <h1>
-            Homeless<b style={{ color: "#2c3a90" }}> Ministry</b>
+          <h1 style={{ color: "#2c3a90" }}>
+          <b> Homeless Ministry</b>
           </h1>
         </center>
         <div>

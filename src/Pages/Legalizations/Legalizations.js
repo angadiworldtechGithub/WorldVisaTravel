@@ -35,7 +35,9 @@ const Legalizations = () => {
     { name: "Photocopy", description: "$1.00" },
   ];
   return (
+
     <div className="legal-container">
+    
     <div className="legal-banner"> 
     <div
     className={`${styles["legal-container"]} d-flex position-relative align-items-center`}

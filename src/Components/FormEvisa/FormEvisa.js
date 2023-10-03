@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./FormVisa.css";
+import "./FormEvisa.css";
 import Select from "react-select";
 import { countries } from "countries-list"; // Import the countries list
 import ReactCountryFlag from "react-country-flag";
@@ -18,7 +18,7 @@ const CustomOption = ({ innerProps, label, data }) => (
   </div>
 );
 
-const FormVisa = ({ visaType }) => {
+const FormEvisa = ({ visaType }) => {
   const [isChecked, setIsChecked] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
@@ -229,4 +229,4 @@ const FormVisa = ({ visaType }) => {
   );
 };
 
-export default FormVisa;
+export default FormEvisa;

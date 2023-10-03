@@ -1,30 +1,30 @@
 import React from "react";
 import "./Evisa.css";
-import FormVisa from "../../Components/FormVisa/FormVisa";
+import FormEvisa from "../../Components/FormEvisa/FormEvisa";
 
 function Evisa() {
   return (
     <div>
+      {" "}
       <div className="Moreinfo-container">
         <div className="Moreinfo-left-flex">
-          <h3 className="Country-header-content">E-Visa</h3>
+          <h3 className="Country-header-content">e-Visa</h3>
           <p className="Country-passage">
-            Simplify your international travel with our E-visa expertise,
-            tailored to diverse visa categories. Whether you're an entrepreneur,
-            investor, or skilled professional, we're your trusted partner for
-            streamlined visa solutions. Explore new horizons with confidence
-            through our seamless E-visa services.
+          Simplify your international travel with our e-visa expertise,
+          tailored to diverse visa categories. Whether you're an entrepreneur,
+          investor, or skilled professional, we're your trusted partner for
+          streamlined visa solutions. Explore new horizons with confidence
+          through our seamless e-visa services.
           </p>
           <img
-            className="more_image"
-            src="/assets/visaservices/evisa.png"
-            alt="Tourist Visa"
-            width="90%"
-          />
+          className="more_image"
+          src="/assets/visaservices/evisa.png"
+          alt="Tourist Visa"
+          width="90%"
+        />
         </div>
-        <FormVisa visaType="E-Visa" />
+        <FormEvisa visaType={"e-Visa"} />
       </div>
-
       <center>
         <h3 className="Country-header-content">Visa Requirements</h3>
       </center>
@@ -60,7 +60,6 @@ function Evisa() {
           </p>
         </div>
       </div>
-
       <center>
         <h3 className="Country-header-content">Application process</h3>
       </center>
