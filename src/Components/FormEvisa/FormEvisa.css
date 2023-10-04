@@ -1,4 +1,10 @@
-/* Afghanistana.css */
+
+.flag-image {
+  width: 20px; /* Adjust the size as needed */
+  height: 15px;
+  margin-right: 5px; /* Spacing between country name and flag */
+}
+
 .Moreinfo-container {
     display: flex;
     flex-direction: column; /* Stack flex containers vertically on smaller screens */

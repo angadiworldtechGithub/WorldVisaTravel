@@ -79,8 +79,7 @@ function Home() {
           <div className="container d-flex flex-column text-light">
             <center>
               <h1 className={`${styles["Home-banner-heading"]}`}>
-                Experience Seamless World Travel with Our<br></br> Visa and
-                Passport Specialists
+             We are here to help you Since 1987 <br></br>Experience Seamless World Visa Travel
               </h1>
               <div className={`${styles["Home-Searchbar"]}`}>
                 <Link to="/index">

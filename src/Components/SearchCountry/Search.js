@@ -11,11 +11,7 @@ const countryOptions = Object.keys(countries).map((countryCode) => ({
   flag: <ReactCountryFlag countryCode={countryCode} svg />,
 }));
 
-const stateOptions = [
-  { value: "state1", label: "State 1" },
-  { value: "state2", label: "State 2" },
-  // Add more state options
-];
+
 
 function Search() {
   const [sourceCountry, setSourceCountry] = useState(null);

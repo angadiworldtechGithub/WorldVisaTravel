@@ -5,11 +5,15 @@ import { countries } from "countries-list"; // Import the countries list
 import ReactCountryFlag from "react-country-flag";
 import axios from "axios";
 
+
+
 const countryOptions = Object.keys(countries).map((countryCode) => ({
   value: countryCode,
   label: countries[countryCode].name,
   flag: <ReactCountryFlag countryCode={countryCode} svg />,
 }));
+
+
 
 const CustomOption = ({ innerProps, label, data }) => (
   <div {...innerProps} style={{ display: "flex", paddingLeft: "15px" }}>
@@ -144,7 +148,7 @@ const FormEvisa = ({ visaType }) => {
 
         <select
         style={{
-          paddingLeft: "110px",
+          paddingLeft: "100px",
           paddingBottom: "8px",
           paddingTop: "8px",
         }}
@@ -180,25 +184,42 @@ const FormEvisa = ({ visaType }) => {
         />
 
 
-        <Select
+        <select
         style={{
-          textAlign:"center",
-         /* paddingLeft: "110px",
+          paddingLeft: "60px",
           paddingBottom: "8px",
-          paddingTop: "8px",*/
+          paddingTop: "8px",
         }}
-          className="country-formdata"
-          placeholder="Select Destination Country"
-          options={countryOptions}
-          value={formData?.dstCountry}
-          components={{ Option: CustomOption }}
-          onChange={(selectedOption) => {
-            setFormData({
-              ...formData,
-              dstCountry: selectedOption,
-            });
-          }}
-        />
+        className="country-formdata"
+        required
+        value={formData.citizen}
+        onChange={(selectedOption) => {
+          setFormData({ ...formData, citizen: selectedOption.target.value });
+        }}
+      >
+        <option value="">Select Destination Country </option>
+        <option value="Argentina"><img src="assets/flag/flag.png" width="20px" height="20px"></img>Argentina</option>
+        <option value="Australian">Australian</option>
+        <option value="Azerbaijan">Azerbaijan</option>
+        <option value="Benin">Benin</option>
+        <option value="Brazilian">Brazilian</option>
+        <option value="Cambodia">Cambodia</option>
+        <option value="Canadian">Canadian</option>
+        <option value="Egypt">Egypt</option>
+        <option value="India">India</option>
+        <option value="Kenyan">Kenyan</option>
+        <option value="Myanmar">Myanmar</option>
+        <option value="New Zealand">New Zealand</option>
+        <option value="Oman">Oman</option>
+        <option value="Russian">Russian</option>
+        <option value="Rwanda">Rwanda</option>
+        <option value="Saudi">Saudi</option>
+        <option value="Sri Lanka">Sri Lanka</option>
+        <option value="Tanzania">Tanzania</option>
+        <option value="Turkish">Turkish</option>
+        <option value="Uganda">Uganda</option>
+      </select>
+
 
         <label className="country_label">
           <input
