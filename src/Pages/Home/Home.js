@@ -534,6 +534,7 @@ function Home() {
                 </div>
               </div>
             </div>{" "}
+
             <div
               className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
             >
@@ -548,12 +549,13 @@ function Home() {
                   </i>
                 </div>
                 <p className={`${styles["Home-testimonial-content"]}`}>
-                I wholeheartedly endorse Randy Gunawan and World Visa Travel for their exceptional
-                 25-year partnership with Winrock International. Their unwavering commitment to
-                  efficiency and seamless communication with foreign embassies have consistently
-                   exceeded our expectations. Their expertise and dedication to excellence make them our
-                    exclusive choice for visa and passport services. I confidently recommend their services
-                     and anticipate a continued successful partnership for the next 25+ years.
+                I wholeheartedly endorse Randy Gunawan and World Visa Travel for their exceptional 
+                25-year partnership with Winrock International. Their unwavering commitment to efficiency 
+                and seamless communication with foreign embassies have consistently exceeded our expectations.
+                 Their expertise and dedication to excellence make them our exclusive choice for visa and passport services.
+                 I confidently recommend their services and anticipate a continued successful partnership for
+                  the next 25+ years.
+                
                 </p>
                 <div className={`${styles["home-testmonial-name"]}`}>
                   <strong> - Mr.GUNAWAN</strong>
@@ -574,15 +576,12 @@ function Home() {
                   </i>
                 </div>
                 <p className={`${styles["Home-testimonial-content"]}`}>
-                  I have had the pleasure of working with World Visa Travel,
-                  Inc. from 2004-2023, through the agency I was employed with.
-                  Randy and his staff were always professional, courteous, and
-                  pleasant to work with. They were extremely helpful in
-                  assisting us in obtaining visas from the various embassies and
-                  passports from the State Department. There were many times
-                  when they went above and beyond for us and we greatly
-                  appreciated it. I would highly recommend using their service
-                  for any travel needs you may have.
+       World Visa Travel has consistently been my preferred choice for visa and passport services.
+       Their dedicated and knowledgeable team stays well-informed about the latest visa requirements,
+       making the process hassle-free. They are readily available to promptly address any queries and 
+       expertly guide every step of the way. I wholeheartedly endorse their exceptional services to anyone
+       seeking a stress-free and reliable visa experience.Their expertise, along with their approach, truly 
+       sets them apart.
                 </p>
                 <div className={`${styles["home-testmonial-name"]}`}>
                   <strong> - PAMELA CLARK</strong>
@@ -736,7 +735,7 @@ function Home() {
             </div>{" "}
           </Slider>
         </div>
-      </div>
+        </div>
 
       <div className={`${styles["Homeless-card-silder"]}`}>
         <center style={{ padding: "20px" }}>
