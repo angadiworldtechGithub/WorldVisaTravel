@@ -445,10 +445,11 @@ function Home() {
               style={{ paddingBottom: "20px" }}
             >
               <img
-                src="assets/Home1.png"
+                src="assets/Home2.png"
                 alt="About_png"
                 className={`${styles["Home_flex_img"]}`}
                 style={{ width: "100%" }}
+
               ></img>
             </div>
           </div>
@@ -547,18 +548,15 @@ function Home() {
                   </i>
                 </div>
                 <p className={`${styles["Home-testimonial-content"]}`}>
-                  I have had the pleasure of working with World Visa Travel,
-                  Inc. from 2004-2023, through the agency I was employed with.
-                  Randy and his staff were always professional, courteous, and
-                  pleasant to work with. They were extremely helpful in
-                  assisting us in obtaining visas from the various embassies and
-                  passports from the State Department. There were many times
-                  when they went above and beyond for us and we greatly
-                  appreciated it. I would highly recommend using their service
-                  for any travel needs you may have.
+                I wholeheartedly endorse Randy Gunawan and World Visa Travel for their exceptional
+                 25-year partnership with Winrock International. Their unwavering commitment to
+                  efficiency and seamless communication with foreign embassies have consistently
+                   exceeded our expectations. Their expertise and dedication to excellence make them our
+                    exclusive choice for visa and passport services. I confidently recommend their services
+                     and anticipate a continued successful partnership for the next 25+ years.
                 </p>
                 <div className={`${styles["home-testmonial-name"]}`}>
-                  <strong> - PAMELA CLARK</strong>
+                  <strong> - Mr.GUNAWAN</strong>
                 </div>
               </div>
             </div>{" "}

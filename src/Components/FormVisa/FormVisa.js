@@ -11,6 +11,11 @@ const countryOptions = Object.keys(countries).map((countryCode) => ({
   flag: <ReactCountryFlag countryCode={countryCode} svg />,
 }));
 
+const citizen = [
+  { value: 'US Citizens', label: 'US Citizens'},
+  { value: 'Non-US Citizens', label: 'Non-US Citizens' },
+]
+
 const CustomOption = ({ innerProps, label, data }) => (
   <div {...innerProps} style={{ display: "flex", paddingLeft: "15px" }}>
     <span className="country-flag">{data.flag}</span>
@@ -142,23 +147,21 @@ const FormVisa = ({ visaType }) => {
           }}
         />
 
-        <select
-        style={{
-          paddingLeft: "110px",
-          paddingBottom: "8px",
-          paddingTop: "8px",
-        }}
-        className="country-formdata"
-        required
-        value={formData.citizen}
-        onChange={(selectedOption) => {
-          setFormData({ ...formData, citizen: selectedOption.target.value });
-        }}
-      >
-        <option value="">Select Citizenship</option>
-        <option value="us Citizens">US Citizens</option>
-        <option value="non-us citizens">Non-US Citizens</option>
-      </select>
+      <Select
+      options={citizen}
+      isSearchable={false} 
+      placeholder="Select Citizenship"
+      required
+      value={formData.citizen}
+      onChange={(selectedOption) => {
+        setFormData({ ...formData, citizen: selectedOption.target.value });
+      }}
+      formatOptionLabel={({ label}) => (
+        <div>
+          {label}
+        </div>
+      )}
+    />
 
    
 

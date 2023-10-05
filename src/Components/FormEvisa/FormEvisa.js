@@ -22,6 +22,36 @@ const CustomOption = ({ innerProps, label, data }) => (
   </div>
 );
 
+const options = [
+  { value: 'Argentina', label: 'Argentina', imagePath: '/assets/flag/flag.png' },
+  { value: 'Australian', label: 'Australian', imagePath: '/assets/flag/australia.png' },
+  { value: 'Azerbaijan', label: 'Azerbaijan', imagePath: '/assets/flag/azerbaijan.png' },
+  { value: 'Benin', label: 'Benin', imagePath: '/assets/flag/benin.png' },
+  { value: 'Brazilian', label: 'Brazilian', imagePath: '/assets/flag/brazil.png' },
+  { value: 'Cambodia', label: 'Cambodia', imagePath: '/assets/flag/cambodia.png' },
+  { value: 'Canadian', label: 'Canadian', imagePath: '/assets/flag/canada.png' },
+  { value: 'Egypt', label: 'Egypt', imagePath: '/assets/flag/egypt.png' },
+  { value: 'India', label: 'india', imagePath: '/assets/flag/india.png' },
+  { value: 'Kenyan', label: 'Kenyan', imagePath: '/assets/flag/kenya.png' },
+  { value: 'Myanmar', label: 'Myanmar', imagePath: '/assets/flag/myanmar.png' },
+  { value: 'New Zealand', label: 'New Zealand', imagePath: '/assets/flag/new-zealand.png' },
+  { value: 'Oman', label: 'Oman', imagePath: '/assets/flag/oman.png' },
+  { value: 'Russian', label: 'Russian', imagePath: '/assets/flag/russia.png' },
+  { value: 'Rwanda', label: 'Rwanda', imagePath: '/assets/flag/rwanda.png' },
+  { value: 'Saudi', label: 'Saudi', imagePath: '/assets/flag/saudi-arabia.png' },
+  { value: 'Sri Lankan', label: 'Sri Lankan', imagePath: '/assets/flag/sri-lanka.png' },
+  { value: 'Tanzania', label: 'Tanzania', imagePath: '/assets/flag/tanzania.png' },
+  { value: 'Turkish', label: 'Turkish', imagePath: '/assets/flag/turkey.png' },
+  { value: 'uganda', label: 'uganda', imagePath: '/assets/flag/uganda.png' },
+];
+
+
+const citizen = [
+  { value: 'US Citizens', label: 'US Citizens'},
+  { value: 'Non-US Citizens', label: 'Non-US Citizens' },
+]
+
+
 const FormEvisa = ({ visaType }) => {
   const [isChecked, setIsChecked] = useState(false);
   const [formData, setFormData] = useState({
@@ -146,25 +176,22 @@ const FormEvisa = ({ visaType }) => {
           }}
         />
 
-        <select
-        style={{
-          paddingLeft: "100px",
-          paddingBottom: "8px",
-          paddingTop: "8px",
-        }}
-        className="country-formdata"
+
+        <Select
+        options={citizen}
+        isSearchable={false} 
+        placeholder="Select Citizenship"
         required
         value={formData.citizen}
         onChange={(selectedOption) => {
           setFormData({ ...formData, citizen: selectedOption.target.value });
         }}
-      >
-        <option value="">Select Citizenship</option>
-        <option value="us Citizens">US Citizens</option>
-        <option value="non-us citizens">Non-US Citizens</option>
-      </select>
-
-   
+        formatOptionLabel={({ label}) => (
+          <div>
+            {label}
+          </div>
+        )}
+      />
 
         <Select
         style={{
@@ -182,46 +209,22 @@ const FormEvisa = ({ visaType }) => {
             setFormData({ ...formData, srcCountry: selectedOption });
           }}
         />
+     
+    <Select style={{marginBottom:"20px"}}
+    options={options}
+    isSearchable={false} // Optional: Disable search
+    placeholder="Select Destination Country"
+    menuPlacement="auto"
+    menuPosition="fixed"
+    formatOptionLabel={({ label, imagePath }) => (
+      <div style={{ display: 'flex', alignItems: 'start'}}>
+        <img src={imagePath} alt={label} style={{ marginRight: '10px', width: '20px', height: '18px' }} />
+        {label}
+      </div>
+    )}
+  />
 
-
-        <select
-        style={{
-          paddingLeft: "60px",
-          paddingBottom: "8px",
-          paddingTop: "8px",
-        }}
-        className="country-formdata"
-        required
-        value={formData.citizen}
-        onChange={(selectedOption) => {
-          setFormData({ ...formData, citizen: selectedOption.target.value });
-        }}
-      >
-        <option value="">Select Destination Country </option>
-        <option value="Argentina"><img src="assets/flag/flag.png" width="20px" height="20px"></img>Argentina</option>
-        <option value="Australian">Australian</option>
-        <option value="Azerbaijan">Azerbaijan</option>
-        <option value="Benin">Benin</option>
-        <option value="Brazilian">Brazilian</option>
-        <option value="Cambodia">Cambodia</option>
-        <option value="Canadian">Canadian</option>
-        <option value="Egypt">Egypt</option>
-        <option value="India">India</option>
-        <option value="Kenyan">Kenyan</option>
-        <option value="Myanmar">Myanmar</option>
-        <option value="New Zealand">New Zealand</option>
-        <option value="Oman">Oman</option>
-        <option value="Russian">Russian</option>
-        <option value="Rwanda">Rwanda</option>
-        <option value="Saudi">Saudi</option>
-        <option value="Sri Lanka">Sri Lanka</option>
-        <option value="Tanzania">Tanzania</option>
-        <option value="Turkish">Turkish</option>
-        <option value="Uganda">Uganda</option>
-      </select>
-
-
-        <label className="country_label">
+  <label className="country_label">
           <input
             type="checkbox"
             className="checkbox"

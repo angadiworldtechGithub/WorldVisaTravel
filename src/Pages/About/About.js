@@ -32,7 +32,7 @@ const About = () => {
       <div className={`${styles["About-container1"]}`}>
         <div className={`${styles["About-item"]}`}>
           <img
-            src="assets/about1.png"
+            src="assets/about2.png"
             alt="About_png"
             className={`${styles["Aboutus_flex_img"]}`}
             style={{ width: "100%" }}
