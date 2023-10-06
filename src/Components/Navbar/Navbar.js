@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import {Link} from "react-router-dom"
 import "./Navbar.css";
 import { NavLink, useLocation } from "react-router-dom";
 import BurgerIcon from "../icons/BurgerIcon";
@@ -21,7 +22,7 @@ function Navbar() {
     >
       <nav className={`navbar ${menuOpen ? "open" : ""}`}>
         <div className="logo">
-          <img src="/assets/logo.png" alt="logo" width="250px"></img>
+         <Link to="/"><img src="/assets/logo.png" alt="logo" width="250px"></img></Link> 
         </div>
         <div className="menu-toggle" onClick={toggleMenu}>
           <BurgerIcon />

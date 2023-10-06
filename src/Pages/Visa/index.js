@@ -60,6 +60,27 @@ function index() {
         </Link>
       ))}
     </div>
+
+    <div className={`${styles["Expedited-Services-container"]}`}>
+
+    <div className={`${styles["Expedited-Services"]}`}>
+
+      <div className={`${styles["Expedited-Services-left"]}`}>
+        <h3 className={`${styles["Expedited-Services-heading"]}`}>Expedited Services</h3>
+        <p  className={`${styles["Expedited-Services-paragraph"]}`}>We are the best at providing quickest passport and visa services. Start your process today under our guidance.</p>
+      </div>
+      
+      <div className={`${styles["Expedited-Services-right "]}`}>
+       <center> 
+       <Link to="/visas"><button>Travel Visa Service</button></Link>
+       <Link to="/passports"><button>Passport Service</button></Link>
+       </center>
+      </div>
+
+    </div>
+
+  </div>
+
     </div>
   )
 }

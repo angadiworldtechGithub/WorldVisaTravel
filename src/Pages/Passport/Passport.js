@@ -135,8 +135,10 @@ const Passport = () => {
         </div>
         
         <div className={`${styles["Expedited-Services-right "]}`}>
-         <center> <button>Travel Visa Service</button>
-          <button>Passport Service</button></center>
+         <center> 
+         <Link to="/visas"><button>Travel Visa Service</button></Link>
+         <Link to="/passports"><button>Passport Service</button></Link>
+         </center>
         </div>
 
       </div>
