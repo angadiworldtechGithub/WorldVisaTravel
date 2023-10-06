@@ -124,6 +124,24 @@ const Passport = () => {
   return (
     <div className="Passport">
       <CardContainer cards={cardsData} />
+
+      <div className={`${styles["Expedited-Services-container"]}`}>
+
+      <div className={`${styles["Expedited-Services"]}`}>
+
+        <div className={`${styles["Expedited-Services-left"]}`}>
+          <h3 className={`${styles["Expedited-Services-heading"]}`}>Expedited Services</h3>
+          <p  className={`${styles["Expedited-Services-paragraph"]}`}>We are the best at providing quickest passport and visa services. Start your process today under our guidance.</p>
+        </div>
+        
+        <div className={`${styles["Expedited-Services-right "]}`}>
+         <center> <button>Travel Visa Service</button>
+          <button>Passport Service</button></center>
+        </div>
+
+      </div>
+
+    </div>
     </div>
   );
 };

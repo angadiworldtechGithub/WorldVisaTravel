@@ -561,8 +561,6 @@ body {
 }
 
 .Home-testimonial-content{
-  display: flex;
-  flex-wrap: wrap;
   text-align: justify;
   padding-left: 20px;
   padding-right: 20px;
@@ -570,6 +568,8 @@ body {
   color: #2c3a90;
 }
 .testmonial-content{
+  height: 550px;
+  width: 300px;
   padding: 10px;
   margin: 10px;
   border-radius: 20px;
@@ -649,7 +649,15 @@ body {
     padding-right: 60px;
     width: 100%;
    }
-   
+   .testmonial-content{
+    height: 550px;
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #000;
+  }
 }
 
 .search-button {

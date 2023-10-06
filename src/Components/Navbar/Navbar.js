@@ -116,33 +116,8 @@ function Navbar() {
               CONTACT US
             </NavLink>
           </li>
-          {/*<li>
-           <NavLink
-              to="/feedback"
-              style={({ isActive, isPending }) => {
-                return {
-                  fontWeight: isActive ? "900" : "",
-                  color: isActive ? "#2c3a90" : "Black",
-                  textDecoration: isActive ? "underline" : "",
-                };
-              }}
-            >
-              FEEDBACK
-            </NavLink>
-            </li>*/}
+      
         </ul>
-
-        {/* <div className="Navbar_right">
-          <div className="Navbar_right1">
-            <ul className="Navbarright_list">
-              <li>Have any Questions?</li>
-              <li>+(202) 289-6251</li>
-            </ul>
-            <i className="Navbarright_icon">
-              <LuMessagesSquare />
-            </i>
-          </div>
-        </div> */}
       </nav>
     </div>
   );

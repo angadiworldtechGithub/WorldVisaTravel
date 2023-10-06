@@ -17,6 +17,7 @@
   text-align: justify;
   font-family: 'Open Sans', sans-serif; 
   font-size: 18px;
+  padding-left: 20px;
 }
 .about-paragraph-heading{
   text-align: justify;
@@ -25,6 +26,8 @@
 .about-paragraph-heading1{
   text-align: justify;
   color: #fff;
+  font-weight: 700;
+  padding:20px;
 }
 .About-Service-Heading{
   color: #2C3A90;

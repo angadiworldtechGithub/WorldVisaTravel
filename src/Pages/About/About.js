@@ -120,30 +120,26 @@ const About = () => {
 
       <div className={`${styles["About-container2"]}`}>
         <div className={`${styles["About-item"]}`}>
-          <h6 className={`${styles["about-paragraph-heading1"]}`}>
-            OUR COMPANY
-          </h6>
           <h2 className={`${styles["about-paragraph-heading1"]}`}>
-            Since 1980 we have
+            OUR COMPANY
           </h2>
-          <h2>
-            <b className={`${styles["about-paragraph-heading1"]}`}>
-              branches all over world
-            </b>
-          </h2>
+         
+          
           <h5 className={`${styles["about-paragraph-content"]}`}>
-            World Visa Travel is a trusted company with over 30 years of
-            experience in helping people get their passports and other travel
-            documents quickly and efficiently. We understand that when you are
-            planning a trip, time is of the essence. That's why we offer a
-            24-hour passport expediting service.
+          World Visa Travel is a trusted company with over 30 years of experience
+           in helping people get their passports and other travel documents quickly 
+           and efficiently. Our team of dedicated professionals is committed to providing 
+           expedited passport services that meet your urgent travel needs. We understand
+            that when you are planning a trip, time is of the essence. That's why we offer
+             a 24-hour passport expediting service.
           </h5>
 
           <h5 className={`${styles["about-paragraph-content"]}`}>
-            Unlike the U.S. Passport Company, which can take over 8 weeks to
-            process a passport, we are able to get it done in just 24 hours. We
-            know that sometimes things happen unexpectedly and you may need a
-            passport quickly. That's why we are here to help.
+          Unlike the U.S. Passport Company, which can take over 8 weeks to process a
+           passport, we are able to get it done in just 24 hours. We know that sometimes
+            things happen unexpectedly and you may need a passport quickly. That's why we
+             are here to help. With our efficient processes and years of expertise, you can 
+             trust us to deliver your passport promptly and hassle-free.
           </h5>
         </div>
 
