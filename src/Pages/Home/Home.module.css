@@ -8,7 +8,7 @@ body {
   flex: 1; 
   margin: 10px;
   padding-left: 10px;
-  color: #fff700;
+  color: #F9C70C;
 }
 .home-testmonial-name{
   flex: 1; 
@@ -589,8 +589,8 @@ body {
 }
 
 .e-visa-button {
+  background-color: #007BFF;
   padding: 15px 30px;
-  background-color: #0A2472;
   color: #fff;
   border: none;
   border-radius: 5px;

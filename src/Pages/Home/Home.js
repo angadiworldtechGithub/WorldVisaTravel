@@ -78,7 +78,7 @@ function Home() {
         >
           <div className="container d-flex flex-column text-light">
             <center>
-              <h1
+              {/*<h1
                 className={`${styles["Home-banner-heading"]}`}
                 style={{
                   paddingTop: "45px",
@@ -86,7 +86,7 @@ function Home() {
               >
                 We are here to help you Since 1987 <br></br>Experience Seamless
                 World Visa Travel
-              </h1>
+              </h1>*/}
               <div className={`${styles["Home-Searchbar"]}`}>
                 <Link to="/index">
                   {" "}
@@ -464,11 +464,6 @@ function Home() {
               Your Gateway to Global Opportunities:<br></br>{" "}
               <strong> Visa & Documentation Experts</strong>
             </h2>
-            <p>
-              We've been counselling students for educational Opportun in
-              Foreign countries. Changed to We help students for educational
-              opportunity in Foreign Countries!
-            </p>
             <p>
               World Visa Travel is a company with expertise in obtaining tourist
               and business visas, as well as U.S. regular, official, or

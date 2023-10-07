@@ -163,8 +163,6 @@ const FormVisa = ({ visaType }) => {
       )}
     />
 
-   
-
         <Select
         style={{
           textAlign:"center",

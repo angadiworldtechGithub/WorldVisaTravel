@@ -70,50 +70,71 @@ const About = () => {
         </div>
       </div>
 
-
-
       <h2 className={`${styles["About-Services-Heading"]}`}>
-      <strong> Our Popular Services</strong>
+        <strong> Our Popular Services</strong>
       </h2>
 
       <div className={`${styles["About-Services-container"]}`}>
         <div className={`${styles["About-Service"]}`}>
           <h4 className={`${styles["About-Service-Heading"]}`}>Passport</h4>
-          <img src="assets/country/1.png" alt="Image 1"  className="About-Service-img"/>
+          <img
+            src="assets/country/1.png"
+            alt="Image 1"
+            className="About-Service-img"
+          />
           <p className={`${styles["About-Service-content"]}`}>
-          We provide a hassle-free experience when it comes to applying for a new passport, 
-          renewing an existing one, or even obtaining a second passport. Our team will guide
-          you through the requirements, assist with document preparation, and ensure your application 
-          is submitted correctly and promptly.
+            We provide a hassle-free experience when it comes to applying for a
+            new passport, renewing an existing one, or even obtaining a second
+            passport. Our team will guide you through the requirements, assist
+            with document preparation, and ensure your application is submitted
+            correctly and promptly.
           </p>
         </div>
         <div className={`${styles["About-Service"]}`}>
           <h4 className={`${styles["About-Service-Heading"]}`}>Visas</h4>
-          <img src="assets/country/3.png" alt="Image 2"  className="About-Service-img"/>
+          <img
+            src="assets/country/3.png"
+            alt="Image 2"
+            className="About-Service-img"
+          />
           <p className={`${styles["About-Service-content"]}`}>
-          Navigating the intricate world of visas can be a daunting task. PassportVisaPro specializes in
-          securing the appropriate visas for your destination country, whether you're traveling for business, 
-          leisure, or study. Our experts will help you complete the necessary forms, gather supporting documents,
-          and handle all communication with consulates or embassies.
+            Navigating the intricate world of visas can be a daunting task.
+            PassportVisaPro specializes in securing the appropriate visas for
+            your destination country, whether you're traveling for business,
+            leisure, or study. Our experts will help you complete the necessary
+            forms, gather supporting documents, and handle all communication
+            with consulates or embassies.
           </p>
         </div>
         <div className={`${styles["About-Service"]}`}>
           <h4 className={`${styles["About-Service-Heading"]}`}>Legalization</h4>
-          <img src="assets/country/4.png" alt="Image 2"  className="About-Service-img" />
+          <img
+            src="assets/country/4.png"
+            alt="Image 2"
+            className="About-Service-img"
+          />
           <p className={`${styles["About-Service-content"]}`}>
-            World Visa Travel is a pioneering company dedicated to simplifying the complex and often
-            daunting process of legalizing your stay in a foreign country. Our mission is to be your
-            trusted partner, guiding you through the intricate web of visas, permits, and related paperwork, 
-            so you can focus on what truly matters - pursuing your dreams and opportunities abroad.
+            World Visa Travel is a pioneering company dedicated to simplifying
+            the complex and often daunting process of legalizing your stay in a
+            foreign country. Our mission is to be your trusted partner, guiding
+            you through the intricate web of visas, permits, and related
+            paperwork, so you can focus on what truly matters - pursuing your
+            dreams and opportunities abroad.
           </p>
         </div>
         <div className={`${styles["About-Service"]}`}>
           <h3 className={`${styles["About-Service-Heading"]}`}>E-Visas</h3>
-          <img src="assets/country/2.png" alt="Image 2"  className="About-Service-img"/>
+          <img
+            src="assets/country/2.png"
+            alt="Image 2"
+            className="About-Service-img"
+          />
           <p className={`${styles["About-Service-content"]}`}>
-            We offer end-to-end support for eVisa applications. Our team of experienced professionals will
-            guide you through the entire process, from filling out the application to gathering the necessary 
-            documents and submitting your application to the relevant authorities.
+            We offer end-to-end support for eVisa applications. Our team of
+            experienced professionals will guide you through the entire process,
+            from filling out the application to gathering the necessary
+            documents and submitting your application to the relevant
+            authorities.
           </p>
         </div>
       </div>
@@ -123,23 +144,24 @@ const About = () => {
           <h2 className={`${styles["about-paragraph-heading1"]}`}>
             OUR COMPANY
           </h2>
-         
-          
+
           <h5 className={`${styles["about-paragraph-content"]}`}>
-          World Visa Travel is a trusted company with over 30 years of experience
-           in helping people get their passports and other travel documents quickly 
-           and efficiently. Our team of dedicated professionals is committed to providing 
-           expedited passport services that meet your urgent travel needs. We understand
-            that when you are planning a trip, time is of the essence. That's why we offer
-             a 24-hour passport expediting service.
+            World Visa Travel is a trusted company with over 30 years of
+            experience in helping people get their passports and other travel
+            documents quickly and efficiently. Our team of dedicated
+            professionals is committed to providing expedited passport services
+            that meet your urgent travel needs. We understand that when you are
+            planning a trip, time is of the essence. That's why we offer the
+            fastest passport expediting service.
           </h5>
 
           <h5 className={`${styles["about-paragraph-content"]}`}>
-          Unlike the U.S. Passport Company, which can take over 8 weeks to process a
-           passport, we are able to get it done in just 24 hours. We know that sometimes
-            things happen unexpectedly and you may need a passport quickly. That's why we
-             are here to help. With our efficient processes and years of expertise, you can 
-             trust us to deliver your passport promptly and hassle-free.
+            Unlike the U.S. Passport Company, which can take over 8 weeks to
+            process a passport, we are able to get it done in the fastest time
+            possible. We know that sometimes things happen unexpectedly, and you
+            may need a passport quickly. That's why we are here to help. With
+            our efficient processes and years of expertise, you can trust us to
+            deliver your passport promptly and hassle-free
           </h5>
         </div>
 

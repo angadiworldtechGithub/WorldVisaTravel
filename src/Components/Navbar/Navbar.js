@@ -29,90 +29,48 @@ function Navbar() {
         </div>
         <ul
           className={`menu ${menuOpen ? "open" : ""}`}
-          style={{
-            backgroundColor: menuOpen ? "rgb(214 248 255)" : "",
-          }}
+          // style={{
+          //   backgroundColor: menuOpen ? "rgb(214 248 255)" : "",
+          // }}
         >
           <li>
-            <NavLink
+            <NavLink className="navbar-link" style={{color:"#2c3A90"}}
               to={"/"}
-              style={({ isActive, isPending }) => {
-                return {
-                  fontWeight: isActive ? "900" : "",
-                  color: isActive ? "#2c3a90" : "Black",
-                  textDecoration: isActive ? "underline" : "",
-                };
-              }}
             >
               HOME
             </NavLink>
           </li>
           <li>
-            <NavLink
+            <NavLink  className="navbar-link"  style={{color:"#2c3A90"}}
               to={"/about"}
-              style={({ isActive, isPending }) => {
-                return {
-                  fontWeight: isActive ? "900" : "",
-                  color: isActive ? "#2c3a90" : "Black",
-                  textDecoration: isActive ? "underline" : "",
-                };
-              }}
             >
               ABOUT US
             </NavLink>
           </li>
           <li>
-            <NavLink
+            <NavLink className="navbar-link"  style={{color:"#2c3A90"}}
               to={"/passports"}
-              style={({ isActive, isPending }) => {
-                return {
-                  fontWeight: isActive ? "900" : "",
-                  color: isActive ? "#2c3a90" : "Black",
-                  textDecoration: isActive ? "underline" : "",
-                };
-              }}
             >
               PASSPORT
             </NavLink>
           </li>
           <li>
-            <NavLink
+            <NavLink  className="navbar-link"  style={{color:"#2c3A90"}}
               to={"/visas"}
-              style={({ isActive, isPending }) => {
-                return {
-                  fontWeight: isActive ? "900" : "",
-                  color: isActive ? "#2c3a90" : "Black",
-                  textDecoration: isActive ? "underline" : "",
-                };
-              }}
             >
               VISAS
             </NavLink>
           </li>
           <li>
-            <NavLink
+            <NavLink  className="navbar-link"  style={{color:"#2c3A90"}}
               to={"/legalizations"}
-              style={({ isActive, isPending }) => {
-                return {
-                  fontWeight: isActive ? "900" : "",
-                  color: isActive ? "#2c3a90" : "Black",
-                  textDecoration: isActive ? "underline" : "",
-                };
-              }}
             >
               LEGALIZATIONS
             </NavLink>
           </li>
           <li>
-            <NavLink
+            <NavLink  className="navbar-link"  style={{color:"#2c3A90"}}
               to="/contact"
-              style={({ isActive, isPending }) => {
-                return {
-                  fontWeight: isActive ? "900" : "",
-                  color: isActive ? "#2c3a90" : "Black",
-                  textDecoration: isActive ? "underline" : "",
-                };
-              }}
             >
               CONTACT US
             </NavLink>
