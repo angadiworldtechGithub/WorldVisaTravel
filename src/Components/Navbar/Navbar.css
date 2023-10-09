@@ -2,10 +2,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
-
-
-
-  .navbar-link:hover,
+.navbar-link:hover,
 .navbar-link:active {
   border-bottom: 5px solid #2c3A90;
   padding-bottom: 15px;
@@ -72,7 +69,7 @@ body {
     top: 100%;
     left: 0;
     width: 100%;
-    /* background-color: #d6f8ff; */
+     background-color: #d6f8ff; 
     padding: 10px;
   }
 
