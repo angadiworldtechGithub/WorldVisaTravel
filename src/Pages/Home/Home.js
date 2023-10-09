@@ -78,7 +78,7 @@ function Home() {
         >
           <div className="container d-flex flex-column text-light">
             <center>
-              {/*<h1
+              <h1
                 className={`${styles["Home-banner-heading"]}`}
                 style={{
                   paddingTop: "45px",
@@ -86,7 +86,7 @@ function Home() {
               >
                 We are here to help you Since 1987 <br></br>Experience Seamless
                 World Visa Travel
-              </h1>*/}
+              </h1>
               <div className={`${styles["Home-Searchbar"]}`}>
                 <Link to="/index">
                   {" "}
@@ -238,12 +238,14 @@ function Home() {
                 <h2>We are experienced professionals in Visa Solutions</h2>
                 <p className={`${styles["Home-who-we-are-content-paragraph"]}`}>
                   <i className={`${styles["Home-who-we-are-heading1"]}`}>
-                    We offer a skilled team dedicated to enhancing your travel
-                    experience, adding significant value to your journeys.
-                    <br></br> Our certified and dependable Travel Consultants
-                    are here to assist you in achieving favorable outcomes for
-                    your travel plans.<br></br> Our services extend across
-                    various regions within countries.
+                  worldvisatravel Hello! We are World Visa Travel, a privately
+                  owned company founded over 25 years ago that specializes
+                  in rapidly expediting all passport applications, obtaining visas
+                  and legalizing documents. We do replacements for lost or
+                  stolen passports, rush and emergency passports, U.S.
+                  passport renewals, and many more services. With our 24-
+                  hour Passport Service, your passport is our priority. We also
+                  provide SAME DAY services! Thank you for your support!
                   </i>
                 </p>
               </center>
@@ -464,6 +466,7 @@ function Home() {
               Your Gateway to Global Opportunities:<br></br>{" "}
               <strong> Visa & Documentation Experts</strong>
             </h2>
+            <h5>All your travel needs in the heart of Washington DC since 1987</h5>
             <p>
               World Visa Travel is a company with expertise in obtaining tourist
               and business visas, as well as U.S. regular, official, or

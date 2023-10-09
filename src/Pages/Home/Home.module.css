@@ -9,12 +9,14 @@ body {
   margin: 10px;
   padding-left: 10px;
   color: #F9C70C;
+  align-items:center;
 }
 .home-testmonial-name{
   flex: 1; 
   margin: 10px;
   padding-left: 10px;
   color: #000;
+  align-items:center;
 }
 
 .Home {
@@ -23,7 +25,7 @@ body {
   padding-top: 20px;
   padding-left: 60px;
   padding-bottom: 60px;
-  background-image: url(/public/assets/banners/Homebannermap.png);
+  background-image: url(/public/assets/banners/Homebanner.png);
   background-color: transparent;
   background-position: right bottom;
   background-size: cover;
@@ -561,15 +563,15 @@ body {
 }
 
 .Home-testimonial-content{
-  text-align: justify;
+  text-align: center;
   padding-left: 20px;
   padding-right: 20px;
   font-family: 'Square Peg', cursive;
   color: #2c3a90;
 }
 .testmonial-content{
-  height: 550px;
-  width: 300px;
+  /* height: 550px;
+  width: 300px; */
   padding: 10px;
   margin: 10px;
   border-radius: 20px;
@@ -650,8 +652,8 @@ body {
     width: 100%;
    }
    .testmonial-content{
-    height: 550px;
-    width: 300px;
+    /* height: 550px;
+    width: 300px; */
     padding: 10px;
     margin: 10px;
     border-radius: 20px;
