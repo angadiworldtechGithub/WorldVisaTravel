@@ -84,8 +84,7 @@ function Home() {
                   paddingTop: "45px",
                 }}
               >
-                We are here to help you Since 1987 <br></br>Experience Seamless
-                World Visa Travel
+              Expedite passports , visas and legalization and all your travel needs since 1987 , located at the heart of Washington DC
               </h1>
               <div className={`${styles["Home-Searchbar"]}`}>
                 <Link to="/index">
@@ -111,52 +110,9 @@ function Home() {
                   </div>
                 </center>
               </div>
-
-              {/* <div className={`${styles["Home-Searchbar"]}`}>
-            <Link to="/moreinfo/e-visa"> <button className={`${styles["e-visa-button"]}`}>Apply for E-Visa Travel</button> </Link>
-            <div className={`${styles["Home-country-container"]}`}
-             style={{
-              display: "flex",
-              gap: "10px",
-              flexWrap: "wrap",
-              justifyContent: "center",
-            }}>
-            
-
-               <div className={`${styles["Home-country"]}`} >
-               
-               <Select
-               className="select-box serach-box-homepage-src"
-               placeholder="Select Source Country"
-               components={{ Option: CustomOption }}
-               options={countryOptions}
-               value={sourceCountry}
-               onChange={setSourceCountry}
-              />
-              </div>
-
-               <div className={`${styles["Home-country"]}`}>
-
-               <Select
-               className="select-box serach-box-homepage-dest"
-               placeholder="Select Destination Country"
-               components={{ Option: CustomOption }}
-               options={countryOptions}
-               value={destinationCountry}
-                onChange={setDestinationCountry}
-              />
-               </div>
-             
-             
-            </div>
-            <Link to="/visas"> <button  className={`${styles["search-button"]}`} onClick={handleSearch}>
-              Go
-           </button></Link>
-          </div>*/}
             </center>
           </div>
-        </div>
-
+        </div> 
         <div
           className={`${styles["Home-container"]}`}
           id={`${styles["Home-top"]}`}
@@ -220,10 +176,20 @@ function Home() {
               <p>
                 Trust our experts to handle visa processes, making your
                 international goals a reality.
-              </p>
-            </div>
-          </div>
-        </div>
+             </p>
+           </div>
+         </div>
+      </div>
+
+      
+
+
+      
+
+
+
+
+
 
         <div className={`${styles["position-relative"]}`}>
           <div

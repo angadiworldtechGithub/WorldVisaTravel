@@ -32,8 +32,7 @@ const Secondptable = () => {
         <thead>
           <tr>
             <th>Type</th>
-            <th>Adult Price</th>
-            <th>Minors Price</th>
+            <th>Price</th>
             <th>Processing Time</th>
           </tr>
         </thead>

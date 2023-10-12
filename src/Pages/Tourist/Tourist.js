@@ -21,7 +21,7 @@ function Tourist() {
               width="90%"
             />
           </div>
-          <FormVisa visaType={"Tourist Visa"} />
+          <FormVisa visaType={"Tourist Visa"}/>
         </div>
         <center>
           <h3 className="Country-header-content">Visa Requirements</h3>

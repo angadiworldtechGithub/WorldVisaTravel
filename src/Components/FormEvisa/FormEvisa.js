@@ -195,9 +195,6 @@ const FormEvisa = ({ visaType }) => {
         <Select
         style={{
           textAlign:"center",
-         /* paddingLeft: "110px",
-          paddingBottom: "8px",
-          paddingTop: "8px",*/
         }}
           className="country-formdata"
           placeholder="Select Source Country"

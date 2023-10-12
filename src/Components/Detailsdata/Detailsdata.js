@@ -1,12 +1,16 @@
 import React from 'react';
-import './Reissuancetable.css'; // Make sure to create this CSS file
+import './Detailsdata.css'; // Make sure to create this CSS file
+
 
 const datatable1 = [
-  ['','','Please Call Our Offices for More Info'],
+    ['Single', '$245.00', '4 Business Days' ,'Up to 30 days', '3 Months'],
+    ['Single', '$165.00', '10 Business Days','Up to 30 days','3 Months'],
+  
 ];
 
 const datatable2 = [
-    ['','','Please Call Our Offices for More Info'],
+    ['$90.00','10 Business Days'],
+    ['$140.00','4 Business Days'],
   ];
 
   
@@ -17,16 +21,18 @@ const datatable3 = [
   ];
 
 
-const Reissuancetable = () => {
+const Detailsdata = () => {
   return (
     <div className="req-table-container">
-    <center><h3 className='costing-Header'>U.S. GOVERNMENT FEES</h3></center>
+    <center><h3 className='costing-Header'>CONSULAR FEES</h3></center>
       <table className="costing-responsive-table">
         <thead>
           <tr>
-            <th>Type</th>
-            <th>Adult Price</th>
+            <th>Entry</th>
+            <th>Price</th>
             <th>Processing Time</th>
+            <th>PMaximum Stay</th>
+            <th>Valid</th>
           </tr>
         </thead>
         <tbody>
@@ -40,17 +46,18 @@ const Reissuancetable = () => {
         </tbody>
       </table>
 
-      <ul>
-      <li>The fees above include a $5.00 check writing fee.</li>
-      <li>Government fees are subject to change without notice.</li>
-       <li>If there is any uncertainty,please give us a call to verify.</li>
-    </ul>
+      <div className='Detailsdata_descripition'>
+       <h6>The fees above include a $5.00 check writing fee.</h6>
+      <h6>Consular fees are subject to change without notice.</h6>
+      <h6>If there is any uncertainty, please give us a call to verify.</h6>
+      <h6>Maximum Stay and Validity of Visa is dependent on the Embassy’s discretion.</h6>
+      
+      </div>
       
      <center><h3 className='costing-Header'> WORLD VISA TRAVEL SERVICE FEES</h3></center>
       <table className="costing-responsive-table">
         <thead>
           <tr>
-            <th>Type</th>
             <th>Price</th>
             <th>Processing Time</th>
           </tr>
@@ -89,7 +96,7 @@ const Reissuancetable = () => {
   );
 };
 
-export default Reissuancetable;
+export default Detailsdata;
 
 
 
