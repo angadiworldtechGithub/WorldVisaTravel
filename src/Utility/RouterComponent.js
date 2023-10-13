@@ -19,7 +19,9 @@ import Officialvisa from "../Pages/Officialvisa/Officialvisa";
 import Tourist from "../Pages/Tourist/Tourist";
 import "../App.css";
 import Details from '../Components/Details/Details';
-
+import USCitizen from '../Pages/USCitizen/USCitizen';
+import NonUsCitizen from '../Pages/NonUsCitizen/NonUsCitizen';
+import Canada from '../Components/Canada/Canada';
 
 
 function RouterComponent() {
@@ -44,6 +46,9 @@ function RouterComponent() {
       <Route path="/businessvisa" element={<Businessvisa/>}/>
       {/* visas */}
       <Route path="/visas" element={<Visas />} />
+      <Route path="/USCitizen" element={<USCitizen/>}/>
+      <Route path="/NonUsCitizen" element={<NonUsCitizen/>}/>
+      <Route path="/canada" element={<Canada/>}/>
       <Route
         path="/visas/:countryId/:visaType"
         element={<VisaRequirements />}
@@ -53,6 +58,7 @@ function RouterComponent() {
       <Route path="Businessvisa" element={<Businessvisa/>}/>
       <Route path="e-visa" element={<Evisa/>}/>
       <Route path="Officialvisa" element={<Officialvisa/>}/>
+
       </Route>
 
       {/* Other routes can be defined here */}

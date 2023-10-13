@@ -4,6 +4,7 @@ import Select from "react-select";
 import { countries } from "countries-list"; // Import the countries list
 import ReactCountryFlag from "react-country-flag";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 
 const countryOptions = Object.keys(countries).map((countryCode) => ({
@@ -13,9 +14,9 @@ const countryOptions = Object.keys(countries).map((countryCode) => ({
 }));
 
 const citizen = [
-  { value: 'US Citizens', label: 'US Citizens'},
-  { value: 'Non-US Citizens', label: 'Non-US Citizens' },
-]
+  { value: "US Citizens", label: "US Citizens" },
+  { value: "Non-US Citizens", label: "Non-US Citizens" },
+];
 
 const CustomOption = ({ innerProps, label, data }) => (
   <div {...innerProps} style={{ display: "flex", paddingLeft: "15px" }}>
@@ -25,13 +26,11 @@ const CustomOption = ({ innerProps, label, data }) => (
 );
 
 const FormVisa = ({ visaType }) => {
-  //const navigate = useNavigate();
-
- 
-
+  
 
   const [isChecked, setIsChecked] = useState(false);
-  
+  const navigation = useNavigate()
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -41,28 +40,21 @@ const FormVisa = ({ visaType }) => {
     dstCountry: null,
   });
 
-  const handleSubmit = event => {
-    event.preventDefault();
-    // if((citizen.value  == "US Citizens") && (dstCountry.value == "AD")){
-    //   navigate("/contact")
-    // }
-    // switch("contact"){
-    //   case citizen.value  == "US Citizens"  && dstCountry.value == "AD" :{
-    //     navigate("/contact");
-    //     break;
-    //   }
-    //   case "about":{
-    //     navigate("/about")
-    //   }
-    //   case "legalization":{
-    //     navigate("/legalizations")
-    //   }
-   
-    // }
+  const handleSubmit = () => {
+
+    console.log("Destination",formData.dstCountry.label)
+
+    if(formData.citizen.value === "Non-US Citizens") {
+      console.log("NON US");
+      navigation(`/NonUsCitizen?country=${formData.dstCountry.label}`)
+    } else {
+      console.log("US");
+      navigation(`/USCitizen?country=${formData.dstCountry.label}`)
+    }
   };
 
   // const sendFormdetailsApi = () => {
-    
+
   //   let payload = {
   //     name: formData.name,
   //     email: formData.email,
@@ -118,14 +110,13 @@ const FormVisa = ({ visaType }) => {
   // };
 
   return (
-  
-    <div className="Moreinfo-right-flex">
+   <div className="Moreinfo-right-flex" id="myform">
       <div className="Country-form">
         <h3 className="Country-header">{visaType}</h3>
-      
+
         <input
           style={{
-            textAlign:"center",
+            textAlign: "center",
           }}
           className="country-formdata"
           type="text"
@@ -140,7 +131,7 @@ const FormVisa = ({ visaType }) => {
 
         <input
           style={{
-            textAlign:"center",
+            textAlign: "center",
           }}
           className="country-formdata"
           type="email"
@@ -155,7 +146,7 @@ const FormVisa = ({ visaType }) => {
 
         <input
           style={{
-            textAlign:"center",
+            textAlign: "center",
             /*paddingLeft: "110px",
             paddingBottom: "8px",
             paddingTop: "8px",*/
@@ -171,26 +162,23 @@ const FormVisa = ({ visaType }) => {
           }}
         />
 
-      <Select
-      options={citizen}
-      isSearchable={false} 
-      placeholder="Select Citizenship"
-      required
-      value={formData.citizen}
-      onChange={(selectedOption) => {
-        setFormData({ ...formData, citizen: selectedOption });
-      }}
-      formatOptionLabel={({ label}) => (
-        <div>
-          {label}
-        </div>
-      )}
-    />
+        <Select
+          id="citizenship"
+          options={citizen}
+          isSearchable={false}
+          placeholder="Select Citizenship"
+          required
+          value={formData.citizen}
+          onChange={(selectedOption) => {
+            setFormData({ ...formData, citizen: selectedOption });
+          }}
+          formatOptionLabel={({ label }) => <div>{label}</div>}
+        />
 
         <Select
-        style={{
-          textAlign:"center",
-        }}
+          style={{
+            textAlign: "center",
+          }}
           className="country-formdata"
           placeholder="Select Source Country"
           options={countryOptions}
@@ -202,16 +190,17 @@ const FormVisa = ({ visaType }) => {
         />
 
         <Select
-        style={{
-          textAlign:"center",
-        }}
+          style={{
+            textAlign: "center",
+          }}
           className="country-formdata"
+          id="dstcountry"
           placeholder="Select Destination Country"
           options={countryOptions}
           value={formData.dstCountry}
-          components={{ Option:CustomOption }}
+          components={{ Option: CustomOption }}
           onChange={(selectedOption) => {
-            setFormData({ ...formData, dstCountry: selectedOption });
+            setFormData({ ...formData, dstCountry: selectedOption  });
           }}
         />
 
@@ -238,10 +227,9 @@ const FormVisa = ({ visaType }) => {
           </button>
         </center>
       </div>
-
-
+      
     </div>
-  );
-};
-
-export default FormVisa;
+    );
+  
+}
+  export default FormVisa;
