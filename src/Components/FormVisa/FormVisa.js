@@ -29,7 +29,7 @@ const FormVisa = ({ visaType }) => {
   
 
   const [isChecked, setIsChecked] = useState(false);
-  const navigation = useNavigate()
+  const navigation = useNavigate();
 
   const [formData, setFormData] = useState({
     name: "",
@@ -40,74 +40,30 @@ const FormVisa = ({ visaType }) => {
     dstCountry: null,
   });
 
+
   const handleSubmit = () => {
 
-    console.log("Destination",formData.dstCountry.label)
+    // console.log("Destination",formData.dstCountry.label)
 
-    if(formData.citizen.value === "Non-US Citizens") {
+    // console.log("CITIZEN",formData.citizen.value);
+
+    
+
+
+    if(formData?.citizen?.value === "Non-US Citizens") {
       console.log("NON US");
-      navigation(`/NonUsCitizen?country=${formData.dstCountry.label}`)
+       navigation(`/NonUsCitizen?country=${formData?.srcCountry?.label}&destination=${formData?.dstCountry?.label}`)
+      
     } else {
       console.log("US");
-      navigation(`/USCitizen?country=${formData.dstCountry.label}`)
+       navigation(`/USCitizen?country=${formData?.srcCountry?.label}&destination=${formData?.dstCountry?.label}`)
     }
+   
   };
 
-  // const sendFormdetailsApi = () => {
-
-  //   let payload = {
-  //     name: formData.name,
-  //     email: formData.email,
-  //     phone: formData.phone,
-  //     citizen: formData.citizen,
-  //     srcCountry: formData.srcCountry.label,
-  //     dstCountry: formData.dstCountry.label,
-  //     Type: visaType.toUpperCase(),
-  //   };
-  //   axios
-  //     .post(apiUrl, payload)
-  //     .then((response) => {
-  //       setFormData({
-  //         name: "",
-  //         email: "",
-  //         phone: "",
-  //         citizen: null,
-  //         srcCountry: null,
-  //         dstCountry: null,
-  //       });
-  //       setIsChecked(false);
-  //       alert(
-  //         "Thank you for filling the form you recived the details in E-mail"
-  //       );
-  //       if(response.data){
-
-  //         window.location.href = '/about';
-  //       }
-  //     })
-  //     .catch((error) => {
-  //       console.error("Error:", error);
-  //     });
-  // };
-
-  console.log("harika", formData);
-  // const checkhandler = () => {
-  //   if (
-  //     !formData.name ||
-  //     !formData.email ||
-  //     !formData.phone ||
-  //     !formData.citizen ||
-  //     !formData.srcCountry ||
-  //     !formData.dstCountry
-  //   ) {
-  //     alert("Please fill in all the details");
-  //     return;
-  //   } else if (!isChecked) {
-  //     alert("Please select the checkbox");
-  //     return;
-  //   } else {
-  //     sendFormdetailsApi();
-  //   }
-  // };
+const handleAlert = ()=> {
+ alert("please fill all the details")
+}
 
   return (
    <div className="Moreinfo-right-flex" id="myform">
@@ -147,9 +103,6 @@ const FormVisa = ({ visaType }) => {
         <input
           style={{
             textAlign: "center",
-            /*paddingLeft: "110px",
-            paddingBottom: "8px",
-            paddingTop: "8px",*/
           }}
           className="country-formdata"
           type="tel"
@@ -218,13 +171,21 @@ const FormVisa = ({ visaType }) => {
           with updates and notifications via Email, SMS, WhatsApp, and call.
         </label>
         <center>
+        {formData.srcCountry !== null && formData.dstCountry !== null  ? 
           <button
             className="country_submit"
             type="button"
             onClick={handleSubmit}
           >
             Submit
+          </button> :
+           <button
+            className="country_submit"
+            type="button"
+            onClick={handleAlert}
+          > submit 
           </button>
+          }
         </center>
       </div>
       
