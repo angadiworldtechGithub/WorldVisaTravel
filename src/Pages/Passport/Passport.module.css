@@ -30,7 +30,7 @@
   flex-direction: row; /* Display buttons side by side */
 }
 
-button {
+.passport-button {
   padding: 10px;
   background-color: #2c3a90;
   margin: 10px;
@@ -57,7 +57,7 @@ button {
     align-items: center; /* Horizontally center the buttons in mobile view */
   }
   
-  button {
+  .passport-button {
     width: 60%; /* Set button width to 60% in mobile view */
     align-items: center;
   }

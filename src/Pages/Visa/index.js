@@ -72,8 +72,8 @@ function index() {
       
       <div className={`${styles["Expedited-Services-right "]}`}>
        <center> 
-       <Link to="/visas"><button>Travel Visa Service</button></Link>
-       <Link to="/passports"><button>Passport Service</button></Link>
+       <Link to="/visas"><button className={`${styles["passport-button"]}`}>Travel Visa Service</button></Link>
+       <Link to="/passports"><button className={`${styles["passport-button"]}`}>Passport Service</button></Link>
        </center>
       </div>
 

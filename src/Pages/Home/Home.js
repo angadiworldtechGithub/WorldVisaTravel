@@ -73,46 +73,18 @@ function Home() {
   return (
     <>
       <div className="position-relative">
-        <div
-          className={`${styles["Home"]} d-flex position-relative align-items-top`}
-        >
+        <div className={`${styles["Home"]}`}>
           <div className="container d-flex flex-column text-light">
-            <center>
-              <h1
-                className={`${styles["Home-banner-heading"]}`}
-                style={{
-                  paddingTop: "45px",
-                }}
-              >
+              <h3  className={`${styles["Home-Banner-text"]}`} >
                 Expedite passports , visas and legalization and all your travel
                 needs since 1987 , located at the heart of Washington DC
-              </h1>
-              <div className={`${styles["Home-Searchbar"]}`}>
-                <Link to="/index">
-                  {" "}
-                  <button className={`${styles["e-visa-button"]}`}>
-                    Apply for Visa Travel
-                  </button>{" "}
-                </Link>
-                <center>
-                  <div
-                    className={`${styles["Home-country-container"]}`}
-                    style={{
-                      display: "flex",
-                      gap: "10px",
-                      flexWrap: "wrap",
-                      justifyContent: "center",
-                      paddingLeft: "60px",
-                    }}
-                  >
-                    <div className={`${styles["Search"]}`}>
-                      <Search />
-                    </div>
-                  </div>
-                </center>
-              </div>
-            </center>
+              </h3>
+              <center><Link to="/visas"><button className={`${styles["Home-Banner-button"]}`}>Apply for Visa</button></Link></center>
           </div>
+          <div className={`${styles["Home-Banner-Search"]}`}  >
+           <center><Search/></center> 
+          </div>
+        
         </div>
 
         <div className={`${styles["Home-Service-container"]}`}>

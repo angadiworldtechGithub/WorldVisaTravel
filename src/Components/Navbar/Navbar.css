@@ -81,6 +81,10 @@ body {
     margin-right: 0;
     margin-bottom: 10px;
   }
+  .navbar-link:hover {
+    border-bottom: none;
+    
+}
 }
 .Navbar_right1 {
   display: flex;
