@@ -84,7 +84,8 @@ function Home() {
                   paddingTop: "45px",
                 }}
               >
-              Expedite passports , visas and legalization and all your travel needs since 1987 , located at the heart of Washington DC
+                Expedite passports , visas and legalization and all your travel
+                needs since 1987 , located at the heart of Washington DC
               </h1>
               <div className={`${styles["Home-Searchbar"]}`}>
                 <Link to="/index">
@@ -112,40 +113,33 @@ function Home() {
               </div>
             </center>
           </div>
-        </div> 
-        <div
-          className={`${styles["Home-container"]}`}
-          id={`${styles["Home-top"]}`}
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            flexWrap: "wrap",
-          }}
-        >
-          <div className={`${styles["Home-box"]}`}>
-            <div className={`${styles["Home-top-flex1"]}`}>
-              <Link to="/visas">
-                {" "}
-                <h4 className={`${styles["Home-header-text"]}`}>
-                  <i className={`${styles["Home-header-icon"]}`}>
-                    <GiOpenBook />
-                  </i>
-                  Apply Online Visa
-                </h4>
-              </Link>
-              <hr></hr>
-              <p>
-                Apply for your Visa online with ease through our comprehensive
-                online Visa application portal.
-              </p>
-            </div>
-          </div>
+        </div>
 
-          <div className={`${styles["Home-box"]}`}>
-            <div className={`${styles["Home-top-flex2"]}`}>
+        <div className={`${styles["Home-Service-container"]}`}>
+             <div className={`${styles["Home-Service-Box1"]}`}>
+             <div>
+             <Link to="/visas">
+               {" "}
+               <h4 className={`${styles["Home-service-Heading"]}`}>
+                 <i className={`${styles["Home-header-icon"]}`}>
+                   <GiOpenBook />
+                 </i>
+                 Apply Online Visa
+               </h4>
+             </Link>
+             <hr></hr>
+             <p className={`${styles["Home-service-paragraph"]}`}>
+               Apply for your Visa online with ease through our comprehensive
+               online Visa application portal.
+             </p>
+           </div>
+             </div>
+
+            <div className={`${styles["Home-Service-Box2"]}`}>
+            <div>
+            <div>
               <Link to="/passports">
-                <h4 className={`${styles["Home-header-text"]}`}>
+                <h4 className={`${styles["Home-service-Heading"]}`}>
                   <i className={`${styles["Home-header-icon"]}`}>
                     <FaAddressBook />
                   </i>
@@ -153,19 +147,21 @@ function Home() {
                 </h4>
               </Link>
               <hr></hr>
-              <p>
+              <p className={`${styles["Home-service-paragraph"]}`}>
                 To facilitate your passport application through our experienced
                 and certified professionals.
               </p>
             </div>
           </div>
+            </div>
 
-          <div className={`${styles["Home-box"]}`}>
+            <div className={`${styles["Home-Service-Box3"]}`}>
+            <div>
             {" "}
-            <div className={`${styles["Home-top-flex3"]}`}>
+            <div>
               <Link to="/legalizations">
                 {" "}
-                <h4 className={`${styles["Home-header-text1"]}`}>
+                <h4 className={`${styles["Home-service-Heading1"]}`}>
                   <i className={`${styles["Home-header-icon1"]}`}>
                     <FaUserGraduate />
                   </i>
@@ -173,23 +169,14 @@ function Home() {
                 </h4>
               </Link>
               <hr></hr>
-              <p>
+              <p className={`${styles["Home-service-paragraph"]}`}>
                 Trust our experts to handle visa processes, making your
                 international goals a reality.
-             </p>
-           </div>
-         </div>
-      </div>
-
-      
-
-
-      
-
-
-
-
-
+              </p>
+            </div>
+          </div>
+            </div>
+       </div>
 
         <div className={`${styles["position-relative"]}`}>
           <div
@@ -204,14 +191,14 @@ function Home() {
                 <h2>We are experienced professionals in Visa Solutions</h2>
                 <p className={`${styles["Home-who-we-are-content-paragraph"]}`}>
                   <i className={`${styles["Home-who-we-are-heading1"]}`}>
-                  worldvisatravel Hello! We are World Visa Travel, a privately
-                  owned company founded over 25 years ago that specializes
-                  in rapidly expediting all passport applications, obtaining visas
-                  and legalizing documents. We do replacements for lost or
-                  stolen passports, rush and emergency passports, U.S.
-                  passport renewals, and many more services. With our 24-
-                  hour Passport Service, your passport is our priority. We also
-                  provide SAME DAY services! Thank you for your support!
+                    worldvisatravel Hello! We are World Visa Travel, a privately
+                    owned company founded over 25 years ago that specializes in
+                    rapidly expediting all passport applications, obtaining
+                    visas and legalizing documents. We do replacements for lost
+                    or stolen passports, rush and emergency passports, U.S.
+                    passport renewals, and many more services. With our 24- hour
+                    Passport Service, your passport is our priority. We also
+                    provide SAME DAY services! Thank you for your support!
                   </i>
                 </p>
               </center>
@@ -432,7 +419,9 @@ function Home() {
               Your Gateway to Global Opportunities:<br></br>{" "}
               <strong> Visa & Documentation Experts</strong>
             </h2>
-            <h5>All your travel needs in the heart of Washington DC since 1987</h5>
+            <h5>
+              All your travel needs in the heart of Washington DC since 1987
+            </h5>
             <p>
               World Visa Travel is a company with expertise in obtaining tourist
               and business visas, as well as U.S. regular, official, or
@@ -694,11 +683,12 @@ function Home() {
                   For a quarter of a century, World Visa Travel has been the
                   cornerstone of my travel experiences. Their expertise in visa
                   and passport services is truly unparalleled, and I have never
-                  encountered a more reliable partner in my journeys. World Visa Travel for their unwavering
-                  commitment to providing exceptional service to travelers like
-                  me. World Visa Travel's dedication to excellence continues to
-                  be the gold standard in the industry, ensuring that each trip
-                  is met with confidence and peace of mind.
+                  encountered a more reliable partner in my journeys. World Visa
+                  Travel for their unwavering commitment to providing
+                  exceptional service to travelers like me. World Visa Travel's
+                  dedication to excellence continues to be the gold standard in
+                  the industry, ensuring that each trip is met with confidence
+                  and peace of mind.
                 </p>
                 <div className={`${styles["home-testmonial-name"]}`}>
                   <strong> - JOHN SMITH</strong>

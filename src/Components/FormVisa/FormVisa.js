@@ -3,9 +3,7 @@ import "./FormVisa.css";
 import Select from "react-select";
 import { countries } from "countries-list"; // Import the countries list
 import ReactCountryFlag from "react-country-flag";
-import axios from "axios";
 import { useNavigate } from "react-router-dom";
-
 
 const countryOptions = Object.keys(countries).map((countryCode) => ({
   value: countryCode,
@@ -26,8 +24,6 @@ const CustomOption = ({ innerProps, label, data }) => (
 );
 
 const FormVisa = ({ visaType }) => {
-  
-
   const [isChecked, setIsChecked] = useState(false);
   const navigation = useNavigate();
 
@@ -40,33 +36,30 @@ const FormVisa = ({ visaType }) => {
     dstCountry: null,
   });
 
-
   const handleSubmit = () => {
-
     // console.log("Destination",formData.dstCountry.label)
 
     // console.log("CITIZEN",formData.citizen.value);
 
-    
-
-
-    if(formData?.citizen?.value === "Non-US Citizens") {
+    if (formData?.citizen?.value === "Non-US Citizens") {
       console.log("NON US");
-       navigation(`/NonUsCitizen?country=${formData?.srcCountry?.label}&destination=${formData?.dstCountry?.label}`)
-      
+      navigation(
+        `/NonUsCitizen?country=${formData?.srcCountry?.label}&destination=${formData?.dstCountry?.label}`
+      );
     } else {
       console.log("US");
-       navigation(`/USCitizen?country=${formData?.srcCountry?.label}&destination=${formData?.dstCountry?.label}`)
+      navigation(
+        `/USCitizen?country=${formData?.srcCountry?.label}&destination=${formData?.dstCountry?.label}`
+      );
     }
-   
   };
 
-const handleAlert = ()=> {
- alert("please fill all the details")
-}
+  const handleAlert = () => {
+    alert("please fill all the details");
+  };
 
   return (
-   <div className="Moreinfo-right-flex" id="myform">
+    <div className="Moreinfo-right-flex" id="myform">
       <div className="Country-form">
         <h3 className="Country-header">{visaType}</h3>
 
@@ -153,7 +146,7 @@ const handleAlert = ()=> {
           value={formData.dstCountry}
           components={{ Option: CustomOption }}
           onChange={(selectedOption) => {
-            setFormData({ ...formData, dstCountry: selectedOption  });
+            setFormData({ ...formData, dstCountry: selectedOption });
           }}
         />
 
@@ -171,26 +164,27 @@ const handleAlert = ()=> {
           with updates and notifications via Email, SMS, WhatsApp, and call.
         </label>
         <center>
-        {formData.srcCountry !== null && formData.dstCountry !== null  ? 
-          <button
-            className="country_submit"
-            type="button"
-            onClick={handleSubmit}
-          >
-            Submit
-          </button> :
-           <button
-            className="country_submit"
-            type="button"
-            onClick={handleAlert}
-          > submit 
-          </button>
-          }
+          {formData.srcCountry !== null && formData.dstCountry !== null ? (
+            <button
+              className="country_submit"
+              type="button"
+              onClick={handleSubmit}
+            >
+              Submit
+            </button>
+          ) : (
+            <button
+              className="country_submit"
+              type="button"
+              onClick={handleAlert}
+            >
+              {" "}
+              submit
+            </button>
+          )}
         </center>
       </div>
-      
     </div>
-    );
-  
-}
-  export default FormVisa;
+  );
+};
+export default FormVisa;
