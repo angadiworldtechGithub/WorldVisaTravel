@@ -75,12 +75,12 @@
 
   @media (max-width: 900px) {
     .card-container {
-      margin: 20px;
+      margin: 60px;
     }
   }
   @media (max-width: 768px) {
     .card-container {
-      margin:20px;
+      margin:60px;
     }
   }
   
