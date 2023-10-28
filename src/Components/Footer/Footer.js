@@ -14,7 +14,7 @@ const Footer = () => {
                         <i className="fas fa-map-marker-alt"></i>
                         <div className="cta-text">
                             <h4>Find us</h4>
-                            <span>1413 K Street NW, 9th Floor, Washington D.C. 20005</span>
+                            <p className='footer-findus-text'>1413 K Street NW, 9th Floor, Washington D.C. 20005</p>
                         </div>
                     </div>
                 </div>
@@ -23,7 +23,7 @@ const Footer = () => {
                         <i className="fas fa-phone"></i>
                         <div className="cta-text">
                             <h4>Call us</h4>
-                            <span>(202) 289-6251</span>
+                            <p className='footer-findus-text'>(202) 289-6251</p>
                         </div>
                     </div>
                 </div>
@@ -32,7 +32,7 @@ const Footer = () => {
                         <i className="far fa-envelope-open"></i>
                         <div className="cta-text">
                             <h4>Mail us</h4>
-                            <span>support@worldvisatravel.com</span>
+                            <p className='footer-findus-text'>support@worldvisatravel.com</p>
                         </div>
                     </div>
                 </div>
@@ -46,9 +46,11 @@ const Footer = () => {
                            <Link to="index.html"><img src="/assets/logo.png" className="img-fluid" alt="logo"></img></Link>
                         </div>
                         <div className="footer-text">
-                            <p style={{textAlign:"justify",paddingleft:"30px",paddingRight:"30px"}}>At World Visa Travel we believe in the power of humanity. 
+                            <p style={{textAlign:"justify",paddingleft:"30px",paddingRight:"30px"}}>
+                            At World Visa Travel we believe in the power of humanity. 
                             Our Homeless Ministry extends a helping hand to those without a home, 
-                            working towards a society where everyone has a place to call home and a chance for a better 
+                            working towards a society where everyone has a place to call home and a chance
+                             for a better 
                             life.</p>
                         </div>
                         <div className="footer-social-icon">
@@ -81,10 +83,10 @@ const Footer = () => {
                 <div className="col-xl-4 col-lg-4 col-md-6 mb-50">
                     <div className="footer-widget">
                         <div className="footer-widget-heading">
-                            <h3>Subscribe</h3>
+                            <h3>After-Hours Contact Information</h3>
                         </div>
                         <div className="footer-text mb-25">
-                            <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                            <p>If you have urgent matters to address after office hours, you can leave a message at +1(240)4856673, and someone should get back to you when the office reopens.</p>
                         </div>
                         <div className="subscribe-form">
                             <form action="#">

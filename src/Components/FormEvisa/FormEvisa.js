@@ -230,7 +230,7 @@ const FormEvisa = ({ visaType }) => {
               setIsChecked(!isChecked);
             }}
           />
-          I authorize world visa travel and its representative to contact me
+          I authorize WVT/World visa travel and its representative to contact me
           with updates and notifications via Email, SMS, WhatsApp, and call.
         </label>
         <center>

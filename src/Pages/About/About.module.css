@@ -148,7 +148,6 @@
 .About-Services-container{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; /* Adjust as needed */
   padding-bottom: 40px;
 }
 
@@ -156,7 +155,7 @@
   flex: 1;
   background-color: #D6f8ff;
   padding: 20px;
-  margin: 10px;
+  margin: 20px;
   text-align: center;
   color: #000;
 }
@@ -177,8 +176,8 @@
   .About-Services-container {
     flex-direction: column;
     align-items: center;
-    margin-right: 20px;
-    margin-left: 10px;
+    margin-left:auto;
+    margin-right: auto;
   }
 
   .About-Service {

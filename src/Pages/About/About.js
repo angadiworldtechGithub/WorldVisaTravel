@@ -47,25 +47,28 @@ const About = () => {
             ABOUT WORLD VISA TRAVEL
           </h6>
           <h2 className={`${styles["about-paragraph-heading"]}`}>
-            <strong>25 years of expertise</strong> in Visa and Travel Services.
+            <strong>30 years of expertise</strong> in Visa and Travel Services.
           </h2>
           <h5 className={`${styles["about-paragraph-content"]}`}>
-            World Visa Travel, abbreviated as WVT, operates as a privately held
-            enterprise with a core focus on expediting passport requests,
-            procuring visas, and authenticating paperwork in an expeditious
-            manner. Our scope of services encompasses replacements for passports
-            that have been misplaced or pilfered, urgent and unforeseen passport
-            requisitions, US passport renewals, and an array of other valuable
-            offerings. With our round-the-clock Passport Service, your passport
-            becomes our utmost concern. Additionally, we extend expedited
+               
+         World Visa Travel, abbreviated as WVT, operates as a privately held 
+         enterprise, helping a lot of Individual travelers, business travelers
+          from Non-Profit Organizations, Official/Diplomatics Government travelers, 
+          with a core focus on expediting passport requests, procuring visas, and 
+          authenticating paperwork in an expeditious manner. Our scope of services 
+          encompasses replacements for passports that have been misplaced or pilfered,
+           urgent and unforeseen passport requisitions, US passport renewals, and an
+            array of other valuable offerings. With our round-the-clock Passport Service, 
+            your passport becomes our utmost concern. Additionally, we extend expedited 
             services with same-day processing for your convenience.
           </h5>
+      
+         
           <h5 className={`${styles["about-paragraph-content"]}`}>
-            With World Visa Travel, you can travel with confidence, knowing that
-            your passport and visa requirements are in capable hands. We take
-            pride in our commitment to efficiency, accuracy, and customer
-            satisfaction. Let us handle the paperwork so you can focus on
-            creating unforgettable travel memories.
+          With World Visa Travel, you can travel with confidence, knowing that your
+          passport and visa requirements are in capable hands. We take pride in our 
+          commitment to efficiency, accuracy, and customer satisfaction. Let us
+           handle the paperwork so you can focus on creating unforgettable travel memories.
           </h5>
         </div>
       </div>

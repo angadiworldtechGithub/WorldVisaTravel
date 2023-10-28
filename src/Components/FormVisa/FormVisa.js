@@ -34,25 +34,24 @@ const FormVisa = ({ visaType }) => {
     citizen: null,
     srcCountry: null,
     dstCountry: null,
-  });
+  })};
 
   const handleSubmit = () => {
-    // console.log("Destination",formData.dstCountry.label)
-
-    // console.log("CITIZEN",formData.citizen.value);
-
     if (formData?.citizen?.value === "Non-US Citizens") {
       console.log("NON US");
+
       navigation(
         `/NonUsCitizen?country=${formData?.srcCountry?.label}&destination=${formData?.dstCountry?.label}`
       );
-    } else {
+    } 
+    else {
       console.log("US");
+
       navigation(
         `/USCitizen?country=${formData?.srcCountry?.label}&destination=${formData?.dstCountry?.label}`
       );
-    }
-  };
+
+    };
 
   const handleAlert = () => {
     alert("please fill all the details");
@@ -160,7 +159,7 @@ const FormVisa = ({ visaType }) => {
               setIsChecked(!isChecked);
             }}
           />
-          I authorize world visa travel and its representative to contact me
+          I authorize WVT/World visa travel and its representative to contact me
           with updates and notifications via Email, SMS, WhatsApp, and call.
         </label>
         <center>

@@ -10,7 +10,6 @@ import Passport from "../Pages/Passport/Passport";
 import Visas from "../Pages/Visa";
 import VisaRequirements from "../Pages/VisaRequirements";
 import Costing from "../Components/Costingtable/Costing";
-import PassportServiceType from "../Pages/PassportServiceType";
 import NotFoundPage from "../Pages/404";
 import Moreinfo from "../Pages/Moreinfo/Moreinfo";
 import Businessvisa from "../Pages/Businessvisa/Businessvisa";
@@ -22,6 +21,13 @@ import Details from '../Components/Details/Details';
 import USCitizen from '../Pages/USCitizen/USCitizen';
 import NonUsCitizen from '../Pages/NonUsCitizen/NonUsCitizen';
 import Canada from '../Components/Canada/Canada';
+import Reqdouments from '../Components/Reqdouments/Reqdouments';
+import Renew from '../Components/Renew/Renew';
+import Replace from "../Components/Replace/Replace";
+import Newpassport from "../Components/Newpassport/Newpassport";
+import Secondpassport from "../Components/Secondpassport/Secondpassport";
+import Reissuance from "../Components/Reissuance/Reissuance";
+import Lostpassport from "../Components/Lostpassport/Lostpassport";
 
 
 function RouterComponent() {
@@ -32,10 +38,6 @@ function RouterComponent() {
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/passports" element={<Passport />} />
-      <Route
-        path="/passports/:serviceType"
-        element={<PassportServiceType />}
-      />
       <Route path="/legalizations" element={<Legalizations />} />
 
       <Route path="/costing" element={<Costing />} />
@@ -49,6 +51,13 @@ function RouterComponent() {
       <Route path="/USCitizen" element={<USCitizen/>}/>
       <Route path="/NonUsCitizen" element={<NonUsCitizen/>}/>
       <Route path="/canada" element={<Canada/>}/>
+      <Route path="/renew" element={<Renew/>}/>
+      <Route path="/reissuance" element={<Reissuance/>}/>
+      <Route path="/reqdouments" element={<Reqdouments/>}/>
+      <Route path="/replace" element={<Replace />}/>
+      <Route path="/newpassport" element={<Newpassport />}/>
+      <Route path="/secondpassport" element={<Secondpassport />}/>
+      <Route path="/lostpassport" element={<Lostpassport/>}/>
       <Route
         path="/visas/:countryId/:visaType"
         element={<VisaRequirements />}

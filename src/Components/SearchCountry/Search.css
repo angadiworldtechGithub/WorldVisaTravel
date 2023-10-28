@@ -3,6 +3,42 @@ body {
   font-family: Arial, sans-serif;
 }
 
+/* styles.css */
+.search-container {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search-country-box1 {
+  width: max-content;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+}
+.search-country-box2 {
+  width: 10%;
+  color: #fff;
+  font-weight: 600;
+  margin-left: -180px;
+}
+.search1{
+  width: 100%;
+  align-items: center;
+  display:flex;
+  flex-direction:row;
+  gap: 10px;
+  margin-bottom: auto;
+  margin-right: auto;
+}
+
 .serach-box-homepage-src{
   width: 400px !important;
   border: rgb(226, 218, 218) 2px solid !important;
@@ -12,32 +48,6 @@ body {
     border: rgb(224, 209, 209) 2px solid !important;
 }
 
-.search-container {
-  /* position: absolute; */
-  width: 100%;
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  /* left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%); */
-}
-
-/* @media screen and(max-width:320px) {
-  .search-container {
-    position: relative;
-    margin-top: 20px;
-  }
-} */
-.select-box {
- width: 250px;
-  /* height: 30px;
-  border-radius: 10px;
-  margin-left: 20px; */
-}
-
 .search-button {
   background-color: #007BFF;
   border-radius: 30px;
@@ -45,65 +55,92 @@ body {
   padding: 15px !important;
   font-size: 16px;
   border: none;
-  /* margin-left: 20px; */
   cursor: pointer;
+  margin-right: 69px;
 }
+.select-box {
+  width: 250px;
+ }
 
-.country-flag {
-  margin-right: 5px;
+ .country-flag {
+   margin-right: 5px;
+ }
 
-}
+ .country-label {
+   vertical-align: Left;
+   color: #000;
+ }
 
-.country-label {
-  vertical-align: Left;
-  color: #000;
-}
-
+/* Media query for mobile screens */
 @media (max-width: 768px) {
   .search-container {
-    /* flex-direction: column; */
+    width: 100%;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .search1{
+    flex-direction:column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .search-country-box1 {
+    width: 100%;
+  }
+  .search-country-box2{
+    width: 100%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+
+  .serach-box-homepage-src,
+  .serach-box-homepage-dest {
+    width: 100% !important;
+  }
+
+  .search-button {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .select-box {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+/* 
+@media (max-width: 768px) {
+  .search-container {
     position: relative;
     margin-top: 20px;
   }
-}
-
-@media (min-width: 629px) {
-  .search-container {
-    /* flex-direction: column; */
-    position: absolute;
-    left: 55%;
-    /*top: 45%;*/
-    transform: translate(-50%, -50%);
-    /* margin-top: 20px; */
+  .search1{
+    display: flex;
+    flex-direction: column;
   }
-}
-
-@media (min-width: 901px) {
-  .search-container {
-    /* flex-direction: column; */
-    position: absolute;
-    left: 55%;
-    /*top: 30%;*/
-    transform: translate(-50%, -50%);
-    /* margin-top: 20px; */
+  .css-1nmdiq5-menu {
+    max-height: 250px;
+    overflow: hidden;
+    z-index: 1000 !important;
   }
-}
-.css-1nmdiq5-menu {
-  max-height: 250px;
-  overflow: hidden;
-  z-index: 1000 !important;
-}
-
-.css-1nmdiq5-menu > div > div {
-  padding-block: 5px;
-}
-.css-1nmdiq5-menu > div > div:hover {
-  background-color: #2c3a90;
-  color: azure;
-}
-
-@media (max-width: 500px) {
-.serach-box-homepage-src {
+  
+  .css-1nmdiq5-menu > div > div {
+    padding-block: 5px;
+  }
+  .css-1nmdiq5-menu > div > div:hover {
+    background-color: #2c3a90;
+    color: azure;
+  }
+  .serach-box-homepage-src {
     width: 280px !important;
     border: rgb(226, 218, 218) 2px solid !important;
   }
@@ -112,4 +149,19 @@ body {
     width: 280px !important;
     border: rgb(224, 209, 209) 2px solid !important;
   }
-}
+  .box1 {
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+  }
+} */
+
+  
+  
+
+
+
+
+@media (max-width: 500px) {
+
+}  

@@ -1,0 +1,134 @@
+.passport-header{
+  font-weight: 700;
+  padding-left:40px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  padding-right:40px;
+  color: #2C3A90;
+}
+
+.passport-sub-header{
+  font-weight: 500;
+  padding-left:40px ;
+  padding-bottom: 20px;
+  padding-right:40px;
+}
+.Expedited-Services-container {
+  display: flex;
+  justify-content: center; /* Horizontally center the flex boxes */
+  
+}
+
+.Expedited-Services {
+  display: flex;
+  width: 100%;
+  max-width: 1400px; /* Adjust the max-width as needed */
+  justify-content: space-between; /* Space the two flex items evenly */
+  align-items: center; /* Vertically center the content */
+  padding: 40px;
+  background-color: #D6F8FF;
+}
+.Expedited-Services-heading{
+  font-weight: 700;
+  color: #2c3a90;
+}
+.Expedited-Services-paragraph{
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif; 
+}
+.Expedited-Services-left {
+  width: 70%;
+}
+
+.Expedited-Services-right {
+  display: flex;
+  flex-direction: row; /* Display buttons side by side */
+}
+
+.passport-button{
+  padding: 10px;
+  background-color: #2c3a90;
+  margin: 10px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .Expedited-Services {
+    flex-direction: column;
+    align-items: center; /* Horizontally center in mobile view */
+  }
+
+  .Expedited-Services-left {
+    width: 100%;
+  }
+
+  .Expedited-Services-right {
+    width: 100%;
+    flex-direction: column;
+    align-items: center; /* Horizontally center the buttons in mobile view */
+  }
+  
+  .passport-button {
+    width: 60%; /* Set button width to 60% in mobile view */
+    align-items: center;
+  }
+}
+
+
+/* Container for flexboxes */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+
+}
+
+/* Create four equal columns */
+.column {
+  flex:15%;
+  margin: 5px;
+  padding-bottom: 30px;
+}
+
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  .column {
+    flex: 50%;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+}
+.passport-services-heading{
+  text-align: center;
+  padding-top: 10px;
+  color: #2C3A90;
+  font-size: 20px;
+  font-weight: 700;
+}
+.passport-services-content{
+  text-align: center;
+  padding-top: 10px;
+}
+.passport-apply-button{
+  justify-content: center;
+  align-items: center;
+  background-color: #2C3A90;
+  color: #fff;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+}

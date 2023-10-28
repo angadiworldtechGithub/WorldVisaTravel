@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { AiFillStar } from "react-icons/ai";
 import { GiOpenBook } from "react-icons/gi";
 import { BsCheck2Circle } from "react-icons/bs";
+import{PiStampFill} from "react-icons/pi";
 import { FaAddressBook, FaUserGraduate } from "react-icons/fa";
 import Slider from "react-slick";
 import React, { useState } from "react";
@@ -73,12 +74,12 @@ function Home() {
   return (
     <>
       <div className="position-relative">
-        <div className={`${styles["Home"]}`}>
+        <div className={`${styles["Home"]}`} >
           <div className="container d-flex flex-column text-light">
-              <h3  className={`${styles["Home-Banner-text"]}`} >
+              <h4  className={`${styles["Home-Banner-text"]}`} >
                 Expedite passports , visas and legalization and all your travel
                 needs since 1987 , located at the heart of Washington DC
-              </h3>
+              </h4>
               <center><Link to="/visas"><button className={`${styles["Home-Banner-button"]}`}>Apply for Visa</button></Link></center>
           </div>
           <div className={`${styles["Home-Banner-Search"]}`}  >
@@ -120,8 +121,8 @@ function Home() {
               </Link>
               <hr></hr>
               <p className={`${styles["Home-service-paragraph"]}`}>
-                To facilitate your passport application through our experienced
-                and certified professionals.
+                To facilitate your passport application through our certified professionals.
+                
               </p>
             </div>
           </div>
@@ -148,6 +149,28 @@ function Home() {
             </div>
           </div>
             </div>
+
+            <div className={`${styles["Home-Service-Box4"]}`}>
+            <div>
+            {" "}
+            <div>
+              <Link to="/legalizations">
+                {" "}
+                <h4 className={`${styles["Home-service-Heading1"]}`}>
+                  <i className={`${styles["Home-header-icon1"]}`}>
+                    <PiStampFill />
+                  </i>
+                  Apply Stamp Visa
+                </h4>
+              </Link>
+              <hr></hr>
+              <p className={`${styles["Home-service-paragraph"]}`}>
+              To apply for a stamped visa in the United States,
+               whether for regular and official/diplomats.
+              </p>
+            </div>
+          </div>
+            </div>
        </div>
 
         <div className={`${styles["position-relative"]}`}>
@@ -160,211 +183,28 @@ function Home() {
                 <h2 className={`${styles["Home-who-we-are-heading"]}`}>
                   WHO WE ARE
                 </h2>
-                <h2>We are experienced professionals in Visa Solutions</h2>
+                <h2 className={`${styles["Home-who-we-are-heading2"]}`} >
+                 We are experienced professionals in Visas, Passports,<br></br> documents legalization, 
+                travel needs Solutions</h2>
                 <p className={`${styles["Home-who-we-are-content-paragraph"]}`}>
                   <i className={`${styles["Home-who-we-are-heading1"]}`}>
-                    worldvisatravel Hello! We are World Visa Travel, a privately
-                    owned company founded over 25 years ago that specializes in
-                    rapidly expediting all passport applications, obtaining
-                    visas and legalizing documents. We do replacements for lost
-                    or stolen passports, rush and emergency passports, U.S.
-                    passport renewals, and many more services. With our 24- hour
-                    Passport Service, your passport is our priority. We also
-                    provide SAME DAY services! Thank you for your support!
+                  Here we are,
+                  World Visa Travel, a privately owned company founded over 30
+                  years ago that specializes in rapidly expediting all passport applications, 
+                  obtaining visas and legalizing documents. We do replacements for lost or 
+                  stolen passports, rush and emergency passports, U.S. passport renewals, 
+                  and many more services for all your travel needs. We help with all
+                   Regular/Foreign passports, Officials/Diplomatics Passports and Visas
+                    and Documents legalizations services.
                   </i>
+              
                 </p>
+                <p  className={`${styles["Home-who-we-are-heading2"]}`}> We also help for any airline ticketing per request.</p>
               </center>
             </div>
 
-            <div className={`${styles["Home-card-silder"]}`}>
-              <Slider {...settings}>
-                <div
-                  className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
-                  style={{ background: "#fff" }}
-                >
-                  <div className={`${styles["Home-card"]}`}>
-                    <div className={"card-body"}>
-                      <h5 className={`${styles["card-title"]}`}>Family Visa</h5>
-                    </div>
-                    <img
-                      src="assets/Homeicons/Family.png"
-                      className={`${styles["card-img-top"]}`}
-                      alt="Home_country_icon"
-                      width="100%"
-                    ></img>
-                    <p className={`${styles["Home-Card-content"]}`}>
-                      A family visa is a legal permit for individuals to reunite
-                      with close family members in another country, fostering
-                      family unity. It enables loved ones separated by borders
-                      to live together.
-                    </p>
-                  </div>
-                </div>{" "}
-                <div
-                  className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
-                >
-                  <div className={`${styles["Home-card"]}`}>
-                    <div className={`${styles["card-body"]}`}>
-                      <h5 className={`${styles["card-title"]}`}>
-                        Migrate Visa
-                      </h5>
-                    </div>
-                    <img
-                      src="assets/Homeicons/migrate.png"
-                      className={`${styles["card-img-top"]}`}
-                      alt="Home_country_icon"
-                      width="100%"
-                    ></img>
-                    <p className={`${styles["Home-Card-content"]}`}>
-                      A migration visa opens doors for individuals to begin anew
-                      in a foreign country, pursuing their dreams and ambitions.
-                      It's a gateway to a fresh start and new opportunities on
-                      foreign soil.
-                    </p>
-                  </div>
-                </div>{" "}
-                <div
-                  className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
-                >
-                  <div className={`${styles["Home-card"]}`}>
-                    <div className={`${styles["card-body"]}`}>
-                      <h5 className={`${styles["card-title"]}`}>
-                        Investor Visa
-                      </h5>
-                    </div>
-                    <img
-                      src="assets/Homeicons/investor.png"
-                      className={`${styles["card-img-top"]}`}
-                      alt="Home_country_icon"
-                      width="100%"
-                    ></img>
-                    <p className={`${styles["Home-Card-content"]}`}>
-                      An investor visa, offered in many countries, enables
-                      individuals to obtain residency or citizenship by making
-                      significant financial investments,mobility and business
-                      prospects.
-                    </p>
-                  </div>
-                </div>{" "}
-                <div
-                  className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
-                >
-                  <div className={`${styles["Home-card"]}`}>
-                    <div className={`${styles["card-body"]}`}>
-                      <h5 className={`${styles["card-title"]}`}>
-                        Student Visa
-                      </h5>
-                    </div>
-                    <img
-                      src="assets/Homeicons/student.png"
-                      className={`${styles["card-img-top"]}`}
-                      alt="Home_country_icon"
-                      width="100%"
-                    ></img>
-                    <p className={`${styles["Home-Card-content"]}`}>
-                      A student visa is that allows foreign nationals to study
-                      in a specific country for a designated period, typically
-                      for the purpose of pursuing educational courses at
-                      recognized institutions.
-                    </p>
-                  </div>
-                </div>{" "}
-                <div
-                  className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
-                >
-                  <div className={`${styles["Home-card"]}`}>
-                    <div className={`${styles["card-body"]}`}>
-                      <h5 className={`${styles["card-title"]}`}>
-                        Diplomatic Visa
-                      </h5>
-                    </div>
-                    <img
-                      src="assets/Homeicons/diplomatic.png"
-                      className={`${styles["card-img-top"]}`}
-                      alt="Home_country_icon"
-                      width="100%"
-                    ></img>
-                    <p className={`${styles["Home-Card-content"]}`}>
-                      A diplomatic visa is issued to foreign government
-                      officials, enabling them to enter and reside in a host
-                      country for official diplomatic purposes, often with
-                      special privileges and immunities.
-                    </p>
-                  </div>
-                </div>{" "}
-                <div
-                  className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
-                >
-                  <div className={`${styles["Home-card"]}`}>
-                    <div className={`${styles["card-body"]}`}>
-                      <h5 className={`${styles["card-title"]}`}>
-                        Tourist Visa
-                      </h5>
-                    </div>
-                    <img
-                      src="assets/Homeicons/tourist.png"
-                      className={`${styles["card-img-top"]}`}
-                      alt="Home_country_icon"
-                      width="100%"
-                    ></img>
-                    <p className={`${styles["Home-Card-content"]}`}>
-                      A tourist visa is a temporary travel document allowing
-                      visits to foreign countries for leisurely and immersive
-                      sightseeing, recreation, and exploration, typically for a
-                      limited duration permitted.
-                    </p>
-                  </div>
-                </div>{" "}
-                <div
-                  className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
-                >
-                  <div className={`${styles["Home-card"]}`}>
-                    <div className={`${styles["card-body"]}`}>
-                      <h5 className={`${styles["card-title"]}`}>
-                        Business Visa
-                      </h5>
-                    </div>
-                    <img
-                      src="assets/Homeicons/business.png"
-                      className={`${styles["card-img-top"]}`}
-                      alt="Home_country_icon"
-                      width="100%"
-                    ></img>
-                    <p className={`${styles["Home-Card-content"]}`}>
-                      A business visa is a specific type of travel document that
-                      allows individuals to enter a foreign country for the
-                      purpose of engaging in business activities, such as
-                      meetings and negotiations.
-                    </p>
-                  </div>
-                </div>{" "}
-                <div
-                  className={`${styles["card-wrapper container-sm d-flex  justify-content-around"]}`}
-                >
-                  <div className={`${styles["Home-card"]}`}>
-                    <div className={`${styles["card-body"]}`}>
-                      <h5 className={`${styles["card-title"]}`}>
-                        Transit Visa
-                      </h5>
-                    </div>
-                    <img
-                      src="assets/Homeicons/Transit.png"
-                      className={`${styles["card-img-top"]}`}
-                      alt="Home_country_icon"
-                      width="100%"
-                    ></img>
-                    <p className={`${styles["Home-Card-content"]}`}>
-                      A transit visa permits travelers to briefly pass through a
-                      country while on their way to ultimate destination. It's
-                      usually necessary for extended layovers that surpass a
-                      specified time limit.
-                    </p>
-                  </div>
-                </div>
-              </Slider>
-            </div>
-          </div>
         </div>
+       </div>
 
         <div
           className={`${styles["Home-top-flexbox3"]}`}
@@ -456,7 +296,7 @@ function Home() {
                   assisting us in obtaining visas from the various embassies and
                   passports from the State Department. There were many times
                   when they went above and beyond for us and we greatly
-                  appreciated it. I would highly recommend using their service
+                  appreciated it. I would highly recommend their service
                   for any travel needs you may have.
                 </p>
                 <div className={`${styles["home-testmonial-name"]}`}>
@@ -489,7 +329,7 @@ function Home() {
                   the next years.
                 </p>
                 <div className={`${styles["home-testmonial-name"]}`}>
-                  <strong> - Mr.GUNAWAN</strong>
+                  <strong> - DARLA EMBRY</strong>
                 </div>
               </div>
             </div>{" "}
@@ -514,7 +354,7 @@ function Home() {
                   available to promptly address any queries and expertly guide
                   every step of the way. I wholeheartedly endorse their
                   exceptional services to anyone seeking a stress-free and
-                  reliable visa experience.Their expertise, along with their
+                  reliable visa experience along with their
                   approach, truly sets them apart.
                 </p>
                 <div className={`${styles["home-testmonial-name"]}`}>
@@ -536,15 +376,13 @@ function Home() {
                   </i>
                 </div>
                 <p className={`${styles["Home-testimonial-content"]}`}>
-                  World Visa Travel has been an integral part of my travel
-                  experiences for the past 5 years. Their commitment to
-                  excellence in expertly handling visa and passport services
-                  exceeded my expectations. I can always navigate the
-                  complexities of international travel documents with efficiency
-                  and precision. For anyone in search of a trustworthy partner
-                  to fulfill their travel needs, I wholeheartedly endorse World
-                  Visa Travel – they stand out as the absolute best in the
-                  business.
+                World Visa Travel has been an integral part of my travel experiences 
+                for the past 5 years. Their exceptional commitment to excellence in 
+                expertly handling visa and passport services exceeded my expectations.
+                 I can always navigate the complexities of international travel documents
+                  with efficiency and precision. For anyone in search of a trustworthy partner
+                   to fulfill their travel needs, I wholeheartedly endorse World Visa Travel –
+                 they stand out as the absolute best in the business.
                 </p>
                 <div className={`${styles["home-testmonial-name"]}`}>
                   <strong> - DAVID MILLER</strong>

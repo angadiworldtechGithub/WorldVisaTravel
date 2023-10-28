@@ -7,6 +7,8 @@ import TelephoneIcon from "../../Components/icons/TelephoneIcon";
 import EmailIcon from "../../Components/icons/EmailIcon";
 import Feedback from "../Feedback/Feedback";
 
+
+
 function Contact() {
   return (
     <div>
@@ -45,6 +47,7 @@ function Contact() {
                 </div>
               </div>
             </div>
+
             <div className={`col-md-4 my-2`}>
               <div className={`${styles["contact-info-card"]}`}>
                 <div className={`${styles["icon-wrapper"]}`}>
@@ -53,12 +56,15 @@ function Contact() {
                 <div
                   className={`d-flex justify-content-center align-items-center flex-column ${styles["info-text"]}`}
                 >
-                  <h2 className="text-dark">Telephone & Fax</h2>
+                  <h2 className="text-dark">Telephone</h2>
                   <div>Telephone: 202-289-6251, 202-289-9295</div>
-                  <div>Fax: 202-289-6253</div>
+                  <h4 className="text-dark"><u>Office Hours</u></h4>
+                  <div><p>Monday to Friday 9AM to 5.30PM<br></br>We are Closed on Federal Holidays</p></div>
                 </div>
               </div>
             </div>{" "}
+
+
             <div className={`col-md-4 my-2`}>
               <div className={`${styles["contact-info-card"]}`}>
                 <div className={`${styles["icon-wrapper"]}`}>

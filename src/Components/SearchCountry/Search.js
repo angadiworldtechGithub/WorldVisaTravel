@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 import Select from "react-select";
-import { countries } from "countries-list"; // Import the countries list
+import { countries } from "countries-list";
 import ReactCountryFlag from "react-country-flag";
 import "./Search.css";
 
@@ -11,12 +11,12 @@ const countryOptions = Object.keys(countries).map((countryCode) => ({
   flag: <ReactCountryFlag countryCode={countryCode} svg />,
 }));
 
-
-
 function Search() {
   const [sourceCountry, setSourceCountry] = useState(null);
   const [destinationCountry, setDestinationCountry] = useState(null);
   const [residingState, setResidingState] = useState(null);
+
+  const navigate = useNavigate();
 
   const handleSearch = () => {
     console.log("Source Country:", sourceCountry?.label);
@@ -25,41 +25,40 @@ function Search() {
   };
 
   return (
-    <div className="search-container">
-      <div
-        className="search1"
-        style={{
-          display: "flex",
-          gap: "10px",
-          flexWrap: "wrap",
-          justifyContent: "center",
-        }}
-      >
-        <Select
-          className="select-box serach-box-homepage-src"
-          placeholder="Select Source Country"
-          options={countryOptions}
-          components={{ Option: CustomOption }}
-          value={sourceCountry}
-          onChange={setSourceCountry}
-        />
+    <div>
+      <div className="search-container">
+        <div className="search-country-box1">
+          <div className="search1">
+            <Select
+              className="select-box serach-box-homepage-src"
+              placeholder="Select Source Country"
+              options={countryOptions}
+              components={{ Option: CustomOption }}
+              value={sourceCountry}
+              onChange={setSourceCountry}
+            />
 
-        <Select
-          className="select-box serach-box-homepage-dest"
-          placeholder="Select Destination Country"
-          options={countryOptions}
-          components={{ Option: CustomOption }}
-          value={destinationCountry}
-          onChange={setDestinationCountry}
-        />
+            <Select
+              className="select-box serach-box-homepage-dest"
+              placeholder="Select Destination Country"
+              options={countryOptions}
+              components={{ Option: CustomOption }}
+              value={destinationCountry}
+              onChange={setDestinationCountry}
+            />
+          </div>
+        </div>
+
+        <div className="search-country-box2">
+            <button className="search-button" onClick={()=>{
+              handleSearch();
+              navigate("/visas");
+            }}>
+            GO
+            </button> 
+        </div>
+
       </div>
-
-      <Link to="/visas">
-        {" "}
-        <button className="search-button" onClick={handleSearch}>
-          Go
-        </button>
-      </Link>
     </div>
   );
 }
