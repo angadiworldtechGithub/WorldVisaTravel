@@ -3,6 +3,7 @@ import "./FormVisa.css";
 import Select from "react-select";
 import { countries } from "countries-list"; // Import the countries list
 import ReactCountryFlag from "react-country-flag";
+import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 
@@ -52,10 +53,62 @@ const FormVisa = ({ visaType }) => {
     }
   };
 
- 
+  // const sendFormdetailsApi = () => {
+
+  //   let payload = {
+  //     name: formData.name,
+  //     email: formData.email,
+  //     phone: formData.phone,
+  //     citizen: formData.citizen,
+  //     srcCountry: formData.srcCountry.label,
+  //     dstCountry: formData.dstCountry.label,
+  //     Type: visaType.toUpperCase(),
+  //   };
+  //   axios
+  //     .post(apiUrl, payload)
+  //     .then((response) => {
+  //       setFormData({
+  //         name: "",
+  //         email: "",
+  //         phone: "",
+  //         citizen: null,
+  //         srcCountry: null,
+  //         dstCountry: null,
+  //       });
+  //       setIsChecked(false);
+  //       alert(
+  //         "Thank you for filling the form you recived the details in E-mail"
+  //       );
+  //       if(response.data){
+
+  //         window.location.href = '/about';
+  //       }
+  //     })
+  //     .catch((error) => {
+  //       console.error("Error:", error);
+  //     });
+  // };
 
   console.log("harika", formData);
-  
+  // const checkhandler = () => {
+  //   if (
+  //     !formData.name ||
+  //     !formData.email ||
+  //     !formData.phone ||
+  //     !formData.citizen ||
+  //     !formData.srcCountry ||
+  //     !formData.dstCountry
+  //   ) {
+  //     alert("Please fill in all the details");
+  //     return;
+  //   } else if (!isChecked) {
+  //     alert("Please select the checkbox");
+  //     return;
+  //   } else {
+  //     sendFormdetailsApi();
+  //   }
+  // };
+
   return (
    <div className="Moreinfo-right-flex" id="myform">
       <div className="Country-form">
@@ -94,6 +147,9 @@ const FormVisa = ({ visaType }) => {
         <input
           style={{
             textAlign: "center",
+            /*paddingLeft: "110px",
+            paddingBottom: "8px",
+            paddingTop: "8px",*/
           }}
           className="country-formdata"
           type="tel"
@@ -158,7 +214,7 @@ const FormVisa = ({ visaType }) => {
               setIsChecked(!isChecked);
             }}
           />
-          I authorize WVT/World visa travel and its representative to contact me
+          I authorize world visa travel and its representative to contact me
           with updates and notifications via Email, SMS, WhatsApp, and call.
         </label>
         <center>

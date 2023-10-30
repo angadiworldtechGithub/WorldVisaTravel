@@ -49,9 +49,11 @@ function RouterComponent() {
       <Route path="/businessvisa" element={<Businessvisa/>}/>
       {/* visas */}
       <Route path="/visas" element={<Visas />} />
+      
       <Route path="/USCitizen" element={<USCitizen/>}/>
       <Route path="/NonUsCitizen" element={<NonUsCitizen/>}/>
       <Route path="/canada" element={<Canada/>}/>
+
       <Route path="/renew" element={<Renew/>}/>
       <Route path="/reissuance" element={<Reissuance/>}/>
       <Route path="/reqdouments" element={<Reqdouments/>}/>
@@ -64,6 +66,7 @@ function RouterComponent() {
         element={<VisaRequirements />}
       />
       <Route path="/moreinfo" >
+
       <Route path="tourist" element={<Tourist/>}/>
       <Route path="Businessvisa" element={<Businessvisa/>}/>
       <Route path="e-visa" element={<Evisa/>}/>
