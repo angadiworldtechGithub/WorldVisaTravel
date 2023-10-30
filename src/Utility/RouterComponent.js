@@ -36,6 +36,7 @@ function RouterComponent() {
     <Navbar/>
     <Routes>
       <Route path="/" element={<Home />} />
+     
       <Route path="/about" element={<About />} />
       <Route path="/passports" element={<Passport />} />
       <Route path="/legalizations" element={<Legalizations />} />

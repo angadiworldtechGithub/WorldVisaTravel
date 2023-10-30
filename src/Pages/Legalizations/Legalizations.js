@@ -27,7 +27,7 @@ const Legalizations = () => {
     { name: "Call for a quote", description: "" },
   ];
   const data3 = [
-    { name: "WVT Service", description: " $80.00" },
+    { name: "WVT Service/WVT Services fee per document & per location", description: " $80.00" },
     { name: "Notary Public", description: "$5.00" },
     { name: "DC Notary", description: "$15.00" },
     { name: "U.S Department of State", description: " $20.00" },
@@ -83,7 +83,8 @@ const Legalizations = () => {
               Embassies will require a copy of photo ID for verification
               purposes.
             </p>
-            <h5>China: (Download the Legalization Form for China here.)</h5>
+            <h5>China:  <a href="assets/legalizationpdf/China-Legalization.pdf" target="_blank">
+            (Download the Legalization Form for China here.)</a></h5>
           </div>
         </div>
 
@@ -161,8 +162,7 @@ const Legalizations = () => {
             <h3 className={`${styles["legal-header"]}`}>WVT LEGALIZATION WORK ORDER</h3>
             <p>
               <h5>
-                You must fill in the WVT Work Legalization Order Form. Download
-                here
+                You must fill in the WVT Work Legalization Order Form.<a href="assets/legalizationpdf/WVTLegalizationWorkOrder.pdf">Download here</a>
               </h5>
               The order form gives WVT your name, address, shipping information
               and payment method. You only need to complete one WVT legalization
@@ -207,7 +207,7 @@ const Legalizations = () => {
               1413 K Street, N.W. <br></br>
               9th Floor<br></br>
               Washington,D.C. 20005 <br></br>
-              Telephone: (202) 289-6251M<br></br>
+              Telephone: (202) 289-6251<br></br>
             </address>
 
             <h5>
@@ -225,7 +225,7 @@ const Legalizations = () => {
 
         <div className={`${styles["legal-main-content6"]}`}>
           <h3 className={`${styles["legal-header"]}`}>RETURN SHIPPING FEES</h3>
-          <h5 className="legal-header-h4">
+          <h5 className="legal-header-h4"style={{ paddingTop:"30px"}} >
             Once your order is complete, your documents will be returned to you
             via FedEx Overnight.
           </h5>

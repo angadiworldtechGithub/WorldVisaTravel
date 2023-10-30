@@ -62,58 +62,20 @@ const FormEvisa = ({ visaType }) => {
     dstCountry: null,
   });
 
-  const sendFormdetailsApi = () => {
-    const apiUrl = "https://weak-blue-bat-tutu.cyclic.cloud/pdf-mailer";
-    let payload = {
-      name: formData.name,
-      email: formData.email,
-      phone: formData.phone,
-      citizen: formData.citizen,
-      srcCountry: formData.srcCountry.label,
-      dstCountry: formData.dstCountry.label,
-      Type: visaType.toUpperCase(),
-    };
-    axios
-      .post(apiUrl, payload)
-      .then((response) => {
-        setFormData({
-          name: "",
-          email: "",
-          phone: "",
-          citizen: null,
-          srcCountry: null,
-          dstCountry: null,
-        });
-        setIsChecked(false);
-        alert(
-          "Thank you for filling the form you recived the details in E-mail"
-        );
-        console.log("Response:", response.data);
-      })
-      .catch((error) => {
-        console.error("Error:", error);
-      });
+  const handleSubmit = () => {
+
+    console.log("Destination",formData.imagePath.label)
+
+    if(formData.citizen.value === "Non-US Citizens") {
+      console.log("NON US");
+      navigation(`/NonUsCitizen?country=${formData.imagePath.label}`)
+    } else {
+      console.log("US");
+      navigation(`/USCitizen?country=${formData.imagePath.label }`)
+    }
   };
 
   console.log("Ankit", formData);
-  const checkhandler = () => {
-    if (
-      !formData.name ||
-      !formData.email ||
-      !formData.phone ||
-      !formData.citizen ||
-      !formData.srcCountry ||
-      !formData.dstCountry
-    ) {
-      alert("Please fill in all the details");
-      return;
-    } else if (!isChecked) {
-      alert("Please select the checkbox");
-      return;
-    } else {
-      sendFormdetailsApi();
-    }
-  };
 
   return (
   
@@ -124,9 +86,6 @@ const FormEvisa = ({ visaType }) => {
         <input
           style={{
             textAlign:"center",
-           /* paddingLeft: "140px",
-            paddingBottom: "8px",
-            paddingTop: "8px",*/
           }}
           className="country-formdata"
           type="text"
@@ -208,13 +167,14 @@ const FormEvisa = ({ visaType }) => {
      
     <Select style={{marginBottom:"20px"}}
     options={options}
-    isSearchable={false} // Optional: Disable search
+    isSearchable={false} 
     placeholder="Select Destination Country"
     menuPlacement="auto"
     menuPosition="fixed"
     formatOptionLabel={({ label, imagePath }) => (
       <div style={{ display: 'flex', alignItems: 'start'}}>
-        <img src={imagePath} alt={label} style={{ marginRight: '10px', width: '20px', height: '18px' }} />
+        <img src={imagePath} alt={label} 
+        style={{ marginRight: '10px', width: '20px', height: '18px' }} />
         {label}
       </div>
     )}
@@ -234,14 +194,14 @@ const FormEvisa = ({ visaType }) => {
           with updates and notifications via Email, SMS, WhatsApp, and call.
         </label>
         <center>
-          <button
-            className="country_submit"
-            type="button"
-            onClick={checkhandler}
-          >
-            Submit
-          </button>
-        </center>
+        <button
+          className="country_submit"
+          type="button"
+          onClick={handleSubmit}
+        >
+          Submit
+        </button>
+      </center>
       </div>
 
 

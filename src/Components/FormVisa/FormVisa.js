@@ -5,6 +5,7 @@ import { countries } from "countries-list"; // Import the countries list
 import ReactCountryFlag from "react-country-flag";
 import { useNavigate } from "react-router-dom";
 
+
 const countryOptions = Object.keys(countries).map((countryCode) => ({
   value: countryCode,
   label: countries[countryCode].name,
@@ -24,8 +25,10 @@ const CustomOption = ({ innerProps, label, data }) => (
 );
 
 const FormVisa = ({ visaType }) => {
+  
+
   const [isChecked, setIsChecked] = useState(false);
-  const navigation = useNavigate();
+  const navigation = useNavigate()
 
   const [formData, setFormData] = useState({
     name: "",
@@ -34,31 +37,27 @@ const FormVisa = ({ visaType }) => {
     citizen: null,
     srcCountry: null,
     dstCountry: null,
-  })};
+  });
 
   const handleSubmit = () => {
-    if (formData?.citizen?.value === "Non-US Citizens") {
+
+    console.log("Destination",formData.dstCountry.label)
+
+    if(formData.citizen.value === "Non-US Citizens") {
       console.log("NON US");
-
-      navigation(
-        `/NonUsCitizen?country=${formData?.srcCountry?.label}&destination=${formData?.dstCountry?.label}`
-      );
-    } 
-    else {
+      navigation(`/NonUsCitizen?country=${formData.dstCountry.label}`)
+    } else {
       console.log("US");
-
-      navigation(
-        `/USCitizen?country=${formData?.srcCountry?.label}&destination=${formData?.dstCountry?.label}`
-      );
-
-    };
-
-  const handleAlert = () => {
-    alert("please fill all the details");
+      navigation(`/USCitizen?country=${formData.dstCountry.label}`)
+    }
   };
 
+ 
+
+  console.log("harika", formData);
+  
   return (
-    <div className="Moreinfo-right-flex" id="myform">
+   <div className="Moreinfo-right-flex" id="myform">
       <div className="Country-form">
         <h3 className="Country-header">{visaType}</h3>
 
@@ -145,7 +144,7 @@ const FormVisa = ({ visaType }) => {
           value={formData.dstCountry}
           components={{ Option: CustomOption }}
           onChange={(selectedOption) => {
-            setFormData({ ...formData, dstCountry: selectedOption });
+            setFormData({ ...formData, dstCountry: selectedOption  });
           }}
         />
 
@@ -163,27 +162,18 @@ const FormVisa = ({ visaType }) => {
           with updates and notifications via Email, SMS, WhatsApp, and call.
         </label>
         <center>
-          {formData.srcCountry !== null && formData.dstCountry !== null ? (
-            <button
-              className="country_submit"
-              type="button"
-              onClick={handleSubmit}
-            >
-              Submit
-            </button>
-          ) : (
-            <button
-              className="country_submit"
-              type="button"
-              onClick={handleAlert}
-            >
-              {" "}
-              submit
-            </button>
-          )}
+          <button
+            className="country_submit"
+            type="button"
+            onClick={handleSubmit}
+          >
+            Submit
+          </button>
         </center>
       </div>
+      
     </div>
-  );
-};
-export default FormVisa;
+    );
+  
+}
+  export default FormVisa;
