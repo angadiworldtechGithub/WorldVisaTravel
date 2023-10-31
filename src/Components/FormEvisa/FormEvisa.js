@@ -1,9 +1,12 @@
-import React, { useState } from "react";
 import "./FormEvisa.css";
+import React,{useState} from "react";
 import Select from "react-select";
 import { countries } from "countries-list"; // Import the countries list
 import ReactCountryFlag from "react-country-flag";
-import { useNavigation } from "react-router-dom";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
+
+
 
 const countryOptions = Object.keys(countries).map((countryCode) => ({
   value: countryCode,
@@ -12,10 +15,22 @@ const countryOptions = Object.keys(countries).map((countryCode) => ({
 }));
 
 
+
 const CustomOption = ({ innerProps, label, data }) => (
   <div {...innerProps} style={{ display: "flex", paddingLeft: "15px" }}>
     <span className="country-flag">{data.flag}</span>
     <span className="country-label">{label}</span>
+  </div>
+);
+
+const DistOption = ({ innerProps, label, imagePath }) => (
+  <div {...innerProps} style={{ display: 'flex', alignItems: 'center' }}>
+    <img
+      src={imagePath}
+      alt={label}
+      style={{ marginRight: '10px', width: '20px', height: '18px' }}
+    />
+    {label}
   </div>
 );
 
@@ -28,7 +43,7 @@ const options = [
   { value: 'Cambodia', label: 'Cambodia', imagePath: '/assets/flag/cambodia.png' },
   { value: 'Canadian', label: 'Canadian', imagePath: '/assets/flag/canada.png' },
   { value: 'Egypt', label: 'Egypt', imagePath: '/assets/flag/egypt.png' },
-  { value: 'India', label: 'india', imagePath: '/assets/flag/india.png' },
+  { value: 'India', label: 'India', imagePath: '/assets/flag/india.png' },
   { value: 'Kenyan', label: 'Kenyan', imagePath: '/assets/flag/kenya.png' },
   { value: 'Myanmar', label: 'Myanmar', imagePath: '/assets/flag/myanmar.png' },
   { value: 'New Zealand', label: 'New Zealand', imagePath: '/assets/flag/new-zealand.png' },
@@ -50,6 +65,7 @@ const citizen = [
 
 
 const FormEvisa = ({ visaType }) => {
+  const navigation = useNavigate()
   const [isChecked, setIsChecked] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
@@ -60,20 +76,24 @@ const FormEvisa = ({ visaType }) => {
     dstCountry: null,
   });
 
-  // const handleSubmit = () => {
+  const handleSubmit = () => {
 
-  //   console.log("Destination",formData.imagePath.label)
+    console.log("Destination",formData.dstCountry)
 
-  //   if(formData.citizen.value === "Non-US Citizens") {
-  //     console.log("NON US");
-  //     navigation(`/NonUsCitizen?country=${formData.imagePath.label}`)
-  //   } else {
-  //     console.log("US");
-  //     navigation(`/USCitizen?country=${formData.imagePath.label }`)
-  //   }
-  // };
+    if(formData.citizen.value === "Non-US Citizens") {
+      console.log("NON US");
+       navigation(`/NonUsCitizen?country=${formData?.srcCountry?.label}&destination=${formData?.dstCountry?.label}`)
+    } else {
+      console.log("US");
+      navigation(`/USCitizen?country=${formData?.srcCountry?.label}&destination=${formData?.dstCountry?.label}`)
+    }
+  };
 
-  console.log("Ankit", formData);
+  console.log("Harika", formData);
+
+  const handleAlert = ()=> {
+    alert("Please Fill All Details.")
+  }
 
   return (
   
@@ -89,7 +109,6 @@ const FormEvisa = ({ visaType }) => {
           type="text"
           id="name"
           name="name"
-          required
           placeholder="Name"
           onChange={(e) => {
             setFormData({ ...formData, name: e.target.value });
@@ -99,15 +118,12 @@ const FormEvisa = ({ visaType }) => {
         <input
           style={{
             textAlign:"center",
-           /* paddingLeft: "100px",
-            paddingBottom: "8px",
-            paddingTop: "8px",*/
+          
           }}
           className="country-formdata"
           type="email"
           id="email"
           name="email"
-          required
           placeholder="Email Address"
           onChange={(e) => {
             setFormData({ ...formData, email: e.target.value });
@@ -117,15 +133,12 @@ const FormEvisa = ({ visaType }) => {
         <input
           style={{
             textAlign:"center",
-            /*paddingLeft: "110px",
-            paddingBottom: "8px",
-            paddingTop: "8px",*/
+            
           }}
           className="country-formdata"
           type="tel"
           id="phoneNumber"
           name="phoneNumber"
-          required
           placeholder="Phone Number"
           onChange={(e) => {
             setFormData({ ...formData, phone: e.target.value });
@@ -134,10 +147,10 @@ const FormEvisa = ({ visaType }) => {
 
 
         <Select
+        id="citizenship"
         options={citizen}
         isSearchable={false} 
         placeholder="Select Citizenship"
-        required
         value={formData.citizen}
         onChange={(selectedOption) => {
           setFormData({ ...formData, citizen: selectedOption });
@@ -148,6 +161,8 @@ const FormEvisa = ({ visaType }) => {
           </div>
         )}
       />
+
+      
 
         <Select
         style={{
@@ -176,7 +191,11 @@ const FormEvisa = ({ visaType }) => {
         {label}
       </div>
     )}
+    onChange={(selectedOption) => {
+            setFormData({ ...formData, dstCountry: selectedOption });
+          }}
   />
+
 
   <label className="country_label">
           <input
@@ -192,13 +211,21 @@ const FormEvisa = ({ visaType }) => {
           with updates and notifications via Email, SMS, WhatsApp, and call.
         </label>
         <center>
-        <button
-          className="country_submit"
-          type="button"
-          // onClick={handleSubmit}
-        >
-          Submit
-        </button>
+        {formData.srcCountry !== null && formData.dstCountry !== null  ? 
+          <button
+            className="country_submit"
+            type="button"
+            onClick={handleSubmit}
+          >
+            Submit
+          </button> :
+           <button
+            className="country_submit"
+            type="button"
+            onClick={handleAlert}
+          > submit 
+          </button>
+          }
       </center>
       </div>
 

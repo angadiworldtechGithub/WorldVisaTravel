@@ -3,6 +3,7 @@ import "./FormVisa.css";
 import Select from "react-select";
 import { countries } from "countries-list"; // Import the countries list
 import ReactCountryFlag from "react-country-flag";
+import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 
@@ -41,7 +42,8 @@ const FormVisa = ({ visaType }) => {
 
 
   const handleSubmit = () => {
-   if(formData?.citizen?.value === "Non-US Citizens") {
+
+    if(formData?.citizen?.value === "Non-US Citizens") {
       console.log("NON US");
       navigation(`/NonUsCitizen?country=${formData?.srcCountry?.label}&destination=${formData?.dstCountry?.label}`)
       
@@ -52,9 +54,10 @@ const FormVisa = ({ visaType }) => {
    
   };
 
+  console.log("harika", formData);
  
 const handleAlert = ()=> {
-  alert("Please Enter Source And Destination Countries")
+  alert("Please Fill All Details.")
 }
   return (
    <div className="Moreinfo-right-flex" id="myform">
@@ -69,7 +72,6 @@ const handleAlert = ()=> {
           type="text"
           id="name"
           name="name"
-          required
           placeholder="Name"
           onChange={(e) => {
             setFormData({ ...formData, name: e.target.value });
@@ -94,15 +96,11 @@ const handleAlert = ()=> {
         <input
           style={{
             textAlign: "center",
-            /*paddingLeft: "110px",
-            paddingBottom: "8px",
-            paddingTop: "8px",*/
           }}
           className="country-formdata"
           type="tel"
           id="phoneNumber"
           name="phoneNumber"
-          required
           placeholder="Phone Number"
           onChange={(e) => {
             setFormData({ ...formData, phone: e.target.value });
@@ -114,7 +112,6 @@ const handleAlert = ()=> {
           options={citizen}
           isSearchable={false}
           placeholder="Select Citizenship"
-          required
           value={formData.citizen}
           onChange={(selectedOption) => {
             setFormData({ ...formData, citizen: selectedOption });
@@ -161,7 +158,7 @@ const handleAlert = ()=> {
               setIsChecked(!isChecked);
             }}
           />
-          I authorize world visa travel and its representative to contact me
+          I authorize WVT/world visa travel and its representative to contact me
           with updates and notifications via Email, SMS, WhatsApp, and call.
         </label>
         <center>
