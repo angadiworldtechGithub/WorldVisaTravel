@@ -73,11 +73,80 @@ const About = () => {
         </div>
       </div>
 
-      <h2 className={`${styles["About-Services-Heading"]}`}>
+        <h2 className={`${styles["About-Services-Heading"]}`}>
         <strong> Our Popular Services</strong>
-      </h2>
+        </h2>
 
-      <div className={`${styles["About-Services-container"]}`}>
+      <div className={`${styles["about_services_container"]}`}>
+        <div className={`${styles["about_box"]}`}>
+        <h4 className={`${styles["About-Service-Heading"]}`}>Passport</h4>
+          <img
+            src="assets/country/1.png"
+            alt="Image 1"
+            className={`${styles["About-Service-img"]}`}
+          />
+          <p className={`${styles["About-Service-content"]}`}>
+            We provide a hassle-free experience when it comes to applying for a
+            new passport, renewing an existing one, or even obtaining a second
+            passport. Our team will guide you through the requirements, assist
+            with document preparation, and ensure your application is submitted
+            correctly and promptly.
+          </p>
+        </div>
+        <div className={`${styles["about_box"]}`}>
+        <h4 className={`${styles["About-Service-Heading"]}`}>Visas</h4>
+        <img
+          src="assets/country/3.png"
+          alt="Image 2"
+          className={`${styles["About-Service-img"]}`}
+        />
+        <p className={`${styles["About-Service-content"]}`}>
+          Navigating the intricate world of visas can be a daunting task.
+          PassportVisaPro specializes in securing the appropriate visas for
+          your destination country, whether you're traveling for business,
+          leisure, or study. Our experts will help you complete the necessary
+          forms, gather supporting documents, and handle all communication
+          with consulates or embassies.
+        </p>
+        
+        </div>
+        <div className={`${styles["about_box"]}`} >
+        <h3 className={`${styles["About-Service-Heading"]}`}>E-Visas</h3>
+          <img
+            src="assets/country/2.png"
+            alt="Image 2"
+            className={`${styles["About-Service-img"]}`}
+          />
+          <p className={`${styles["About-Service-content"]}`}>
+            We offer end-to-end support for eVisa applications. Our team of
+            experienced professionals will guide you through the entire process,
+            from filling out the application to gathering the necessary
+            documents and submitting your application to the relevant
+            authorities.
+          </p>
+        </div>
+        <div className={`${styles["about_box"]}`} >
+        <h4 className={`${styles["About-Service-Heading"]}`}>Legalization</h4>
+        <img
+          src="assets/country/4.png"
+          alt="Image 2"
+          className={`${styles["About-Service-img"]}`}
+        />
+        <p className={`${styles["About-Service-content"]}`}>
+          World Visa Travel is a pioneering company dedicated to simplifying
+          the complex and often daunting process of legalizing your stay in a
+          foreign country. Our mission is to be your trusted partner, guiding
+          you through the intricate web of visas, permits, and related
+          paperwork, so you can focus on what truly matters - pursuing your
+          dreams and opportunities abroad.
+        </p>
+        
+        </div>
+      </div>
+
+    
+
+     {/* <div className={`${styles["About-Services-container"]}`}>
         <div className={`${styles["About-Service"]}`}>
           <h4 className={`${styles["About-Service-Heading"]}`}>Passport</h4>
           <img
@@ -140,7 +209,7 @@ const About = () => {
             authorities.
           </p>
         </div>
-      </div>
+  </div>*/}
 
       <div className={`${styles["About-container2"]}`}>
         <div className={`${styles["About-item"]}`}>

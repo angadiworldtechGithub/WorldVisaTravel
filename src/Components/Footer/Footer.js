@@ -83,10 +83,10 @@ const Footer = () => {
                 <div className="col-xl-4 col-lg-4 col-md-6 mb-50">
                     <div className="footer-widget">
                         <div className="footer-widget-heading">
-                            <h3>After-Hours Contact Information</h3>
+                            <h3>Emergency Contact</h3>
                         </div>
                         <div className="footer-text mb-25">
-                            <p>If you have urgent matters to address after office hours, you can leave a message at +1(240)4856673, and someone should get back to you when the office reopens.</p>
+                            <p>If you have urgent matters to address after office hours, please leave a message at +1(240)4856673, and our team will contact you.</p>
                         </div>
                         <div className="subscribe-form">
                             <form action="#">

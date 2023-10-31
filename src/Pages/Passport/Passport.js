@@ -20,7 +20,7 @@ function Passport() {
     
     <div className="row">
     <div className="column">
-    <img src="assets/passport/passport1.png" width={"300px"} height={"200px"}></img>
+    <img className="passport-service-images" src="assets/passport/passport1.png" width={"300px"} height={"200px"}></img>
     <h4 className='passport-services-heading'>APPLY FOR A NEW OR FIRST TIME U.S. PASSPORT",</h4>
     <p className='passport-services-content'> Ready to explore the world? Apply for your new U.S. passport today and let your international adventures begin.</p>
     <center> <Link to="/reqdouments">
@@ -31,7 +31,7 @@ function Passport() {
     </div>
     
     <div className="column">
-    <img src="assets/passport/passport2.png" width={"300px"} height={"200px"}></img>
+    <img  className="passport-service-images" src="assets/passport/passport2.png" width={"300px"} height={"200px"}></img>
     <h4 className='passport-services-heading'>RENEW YOUR U.S. PASSPORT</h4> 
     <p className='passport-services-content'>
     Ensure your travel plans stay on track – renew your U.S. passport hassle-free and explore the 
@@ -46,7 +46,7 @@ function Passport() {
     </div>
     
     <div className="column">
-    <img src="assets/passport/passport3.png" width={"300px"} height={"200px"}></img>
+    <img className="passport-service-images" src="assets/passport/passport3.png" width={"300px"} height={"200px"}></img>
     <h4 className='passport-services-heading'>REPLACE A MUTILATED OR DAMAGED U.S. PASSPORT</h4> 
     <p className='passport-services-content'>To replace a damaged U.S. passport, follow the official procedure for smooth travel and identification.
     </p>
@@ -60,7 +60,7 @@ function Passport() {
     </div>
     
     <div className="column">
-    <img src="assets/passport/passport4.png" width={"300px"} height={"200px"}></img>
+    <img className="passport-service-images" src="assets/passport/passport4.png" width={"300px"} height={"200px"}></img>
      <h4 className='passport-services-heading'>APPLY FOR A CHILD/MINOR U.S. PASSPORT</h4>
    <p className='passport-services-content'> To get a child/minor U.S. passport, bring required documents and apply in person at a passport acceptance facility.
     </p>
@@ -74,7 +74,7 @@ function Passport() {
     </div>
 
     <div className="column">
-    <img src="assets/passport/passport5.png" width={"300px"} height={"200px"}></img>
+    <img className="passport-service-images" src="assets/passport/passport5.png" width={"300px"} height={"200px"}></img>
     <h4 className='passport-services-heading'>APPLY FOR A SECOND VALID U.S. PASSPORT</h4>
     <p className='passport-services-content'>Experience dual travel ease: Secure your second valid U.S. passport today for unforgettable global adventures.</p>
  
@@ -86,7 +86,7 @@ function Passport() {
    </div>
   
   <div className="column">
-  <img src="assets/passport/passport7.png" width={"300px"} height={"200px"}></img>
+  <img  className="passport-service-images" src="assets/passport/passport7.png" width={"300px"} height={"200px"}></img>
   <h4 className='passport-services-heading'>RE-ISSUE A U.S. PASSPORT</h4>
    <p className='passport-services-content'>Requesting a re-issue of a U.S. passport involves renewing an existing
     passport with updated information, ensuring continued hassle-free international travel.</p>
@@ -99,7 +99,7 @@ function Passport() {
   </div>
   
   <div className="column">
-  <img src="assets/passport/passport6.png" width={"300px"} height={"200px"}></img>
+  <img className="passport-service-images" src="assets/passport/passport6.png" width={"300px"} height={"200px"}></img>
      <h4 className='passport-services-heading'>REPLACE A LOST OR STOLEN U.S. PASSPORT</h4>
     <p className='passport-services-content'>If your U.S. passport is lost or stolen, 
       Apply for a replacement to ensure seamless travel and identification.</p>
@@ -111,7 +111,7 @@ function Passport() {
   </div>
   
   <div className="column">
-  <img src="assets/passport/passport6.png" width={"300px"} height={"200px"}></img>
+  <img className="passport-service-images" src="assets/passport/passport6.png" width={"300px"} height={"200px"}></img>
   <h4 className='passport-services-heading'>U.S. PASSPORT NAME CHANGE</h4>
  <p className='passport-services-content'>If you're changing your name on your U.S. passport, ensure following steps for accurate travel and identification records.</p>
  <center><Link to="/renew">

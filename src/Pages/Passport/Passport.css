@@ -6,7 +6,10 @@
   padding-right:40px;
   color: #2C3A90;
 }
-
+.passport-service-images{
+  width: 300px;
+  height: 200px;
+}
 .passport-sub-header{
   font-weight: 500;
   padding-left:40px ;
@@ -76,6 +79,9 @@
     width: 60%; /* Set button width to 60% in mobile view */
     align-items: center;
   }
+  .passport-service-images{
+    width: 80%;
+  }
 }
 
 
@@ -100,12 +106,20 @@
   .column {
     flex: 50%;
   }
+  .passport-service-images{
+    width: 80%;
+    align-items: center;
+  }
 }
 
 /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .row {
     flex-direction: column;
+  }
+  .passport-service-images{
+    width: 80%;
+    align-items: center;
   }
 }
 .passport-services-heading{
@@ -114,10 +128,14 @@
   color: #2C3A90;
   font-size: 20px;
   font-weight: 700;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .passport-services-content{
   text-align: center;
   padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .passport-apply-button{
   justify-content: center;

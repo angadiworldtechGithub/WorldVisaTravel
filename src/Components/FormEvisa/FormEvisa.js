@@ -154,15 +154,13 @@ const FormEvisa = ({ visaType }) => {
         value={formData.citizen}
         onChange={(selectedOption) => {
           setFormData({ ...formData, citizen: selectedOption });
-        }}
+         }}
         formatOptionLabel={({ label}) => (
           <div>
             {label}
           </div>
         )}
       />
-
-      
 
         <Select
         style={{
