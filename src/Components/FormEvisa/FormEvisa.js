@@ -3,9 +3,13 @@ import "./FormEvisa.css";
 import Select from "react-select";
 import { countries } from "countries-list"; // Import the countries list
 import ReactCountryFlag from "react-country-flag";
-import axios from "axios";
+import { useNavigation } from "react-router-dom";
 
-
+const countryOptions = Object.keys(countries).map((countryCode) => ({
+  value: countryCode,
+  label: countries[countryCode].name,
+  flag: <ReactCountryFlag countryCode={countryCode} svg />,
+}));
 
 
 const CustomOption = ({ innerProps, label, data }) => (
@@ -56,18 +60,18 @@ const FormEvisa = ({ visaType }) => {
     dstCountry: null,
   });
 
-  const handleSubmit = () => {
+  // const handleSubmit = () => {
 
-    console.log("Destination",formData.imagePath.label)
+  //   console.log("Destination",formData.imagePath.label)
 
-    if(formData.citizen.value === "Non-US Citizens") {
-      console.log("NON US");
-      navigation(`/NonUsCitizen?country=${formData.imagePath.label}`)
-    } else {
-      console.log("US");
-      navigation(`/USCitizen?country=${formData.imagePath.label }`)
-    }
-  };
+  //   if(formData.citizen.value === "Non-US Citizens") {
+  //     console.log("NON US");
+  //     navigation(`/NonUsCitizen?country=${formData.imagePath.label}`)
+  //   } else {
+  //     console.log("US");
+  //     navigation(`/USCitizen?country=${formData.imagePath.label }`)
+  //   }
+  // };
 
   console.log("Ankit", formData);
 
@@ -191,7 +195,7 @@ const FormEvisa = ({ visaType }) => {
         <button
           className="country_submit"
           type="button"
-          onClick={handleSubmit}
+          // onClick={handleSubmit}
         >
           Submit
         </button>

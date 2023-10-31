@@ -41,15 +41,7 @@ const FormVisa = ({ visaType }) => {
 
 
   const handleSubmit = () => {
-
-    // console.log("Destination",formData.dstCountry.label)
-
-    // console.log("CITIZEN",formData.citizen.value);
-
-    
-
-
-    if(formData?.citizen?.value === "Non-US Citizens") {
+   if(formData?.citizen?.value === "Non-US Citizens") {
       console.log("NON US");
       navigation(`/NonUsCitizen?country=${formData?.srcCountry?.label}&destination=${formData?.dstCountry?.label}`)
       
@@ -57,78 +49,10 @@ const FormVisa = ({ visaType }) => {
       console.log("US");
       navigation(`/USCitizen?country=${formData?.srcCountry?.label}&destination=${formData?.dstCountry?.label}`)
     }
-
-    // const citizenship = document.getElementById("citizenship").value;
-    // console.log(citizenship)
-    // const destination = document.getElementById("dstcountry").value;
-
-    // switch (destination) {
-    //   case "AD":
-    //     if (citizenship === "US Citizens") {
-    //       ("/contact"); 
-    //     } else {
-    //       window.location.href = "ad.html"; 
-    //     }
-    //     break;
-    //   }
    
   };
 
-  // const sendFormdetailsApi = () => {
-
-  //   let payload = {
-  //     name: formData.name,
-  //     email: formData.email,
-  //     phone: formData.phone,
-  //     citizen: formData.citizen,
-  //     srcCountry: formData.srcCountry.label,
-  //     dstCountry: formData.dstCountry.label,
-  //     Type: visaType.toUpperCase(),
-  //   };
-  //   axios
-  //     .post(apiUrl, payload)
-  //     .then((response) => {
-  //       setFormData({
-  //         name: "",
-  //         email: "",
-  //         phone: "",
-  //         citizen: null,
-  //         srcCountry: null,
-  //         dstCountry: null,
-  //       });
-  //       setIsChecked(false);
-  //       alert(
-  //         "Thank you for filling the form you recived the details in E-mail"
-  //       );
-  //       if(response.data){
-
-  //         window.location.href = '/about';
-  //       }
-  //     })
-  //     .catch((error) => {
-  //       console.error("Error:", error);
-  //     });
-  // };
-
-  console.log("harika", formData);
-  // const checkhandler = () => {
-  //   if (
-  //     !formData.name ||
-  //     !formData.email ||
-  //     !formData.phone ||
-  //     !formData.citizen ||
-  //     !formData.srcCountry ||
-  //     !formData.dstCountry
-  //   ) {
-  //     alert("Please fill in all the details");
-  //     return;
-  //   } else if (!isChecked) {
-  //     alert("Please select the checkbox");
-  //     return;
-  //   } else {
-  //     sendFormdetailsApi();
-  //   }
-  // };
+ 
 const handleAlert = ()=> {
   alert("Please Enter Source And Destination Countries")
 }
