@@ -3,6 +3,8 @@ import { useLocation } from "react-router-dom";
 import Canada from "../../Components/Canada/Canada";
 import India from "../../Components/India/India";
 import "./USCitizen.css";
+import SriLanka from "../../Components/SriLanka/SriLanka";
+import America from "../../Components/America/America";
 
 function USCitizen() {
   const location = useLocation();
@@ -13,10 +15,10 @@ function USCitizen() {
   console.log("COuntry", country && country);
   console.log("DESTINATION", destination && destination);
 
-  if (country === "Canada") {
-    console.log("Canada");
+  if (country === "SriLanka") {
+    console.log("SriLanka");
   } else {
-    console.log("Not canada");
+    console.log("Not SriLanka");
   }
 
   return (
@@ -29,6 +31,8 @@ function USCitizen() {
       </center>
       {destination === "Canada" && <Canada />}
       {destination === "India" && <India />}
+      {destination === "Sri Lanka" && <SriLanka />}
+      {destination === "American Samoa" && <America/>}
     </div>
   );
 }

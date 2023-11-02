@@ -55,10 +55,10 @@ const Footer = () => {
                         </div>
                         <div className="footer-social-icon">
                             <span>Follow us</span>
-                            <Link to="#"><i classNameName="fa-facebook"><BsFacebook/></i></Link>
-                           <Link to="#"><i classNameName="fa-twitter"><BsTwitter/></i></Link>
-                           <Link to="#"><i classNameName="fa-instagram"><BsInstagram/></i></Link>
-                           <Link to="#"><i classNameName="fa-whatsapp"><BsWhatsapp/></i></Link>
+                            <Link to="#"><i className="fa-facebook"><BsFacebook/></i></Link>
+                           <Link to="#"><i className="fa-twitter"><BsTwitter/></i></Link>
+                           <Link to="#"><i className="fa-instagram"><BsInstagram/></i></Link>
+                           <Link to="#"><i className="fa-whatsapp"><BsWhatsapp/></i></Link>
                         </div>
                     </div>
                 </div>

@@ -28,6 +28,8 @@ import Newpassport from "../Components/Newpassport/Newpassport";
 import Secondpassport from "../Components/Secondpassport/Secondpassport";
 import Reissuance from "../Components/Reissuance/Reissuance";
 import Lostpassport from "../Components/Lostpassport/Lostpassport";
+import SriLanka from '../Components/SriLanka/SriLanka';
+import America from '../Components/America/America';
 
 
 function RouterComponent() {
@@ -35,8 +37,7 @@ function RouterComponent() {
     <div>
     <Navbar/>
     <Routes>
-      <Route path="/" element={<Home />} />
-     
+      <Route path="/" element={<Home />}/>
       <Route path="/about" element={<About />} />
       <Route path="/passports" element={<Passport />} />
       <Route path="/legalizations" element={<Legalizations />} />
@@ -49,11 +50,8 @@ function RouterComponent() {
       <Route path="/businessvisa" element={<Businessvisa/>}/>
       {/* visas */}
       <Route path="/visas" element={<Visas />} />
-      
       <Route path="/USCitizen" element={<USCitizen/>}/>
       <Route path="/NonUsCitizen" element={<NonUsCitizen/>}/>
-      <Route path="/canada" element={<Canada/>}/>
-
       <Route path="/renew" element={<Renew/>}/>
       <Route path="/reissuance" element={<Reissuance/>}/>
       <Route path="/reqdouments" element={<Reqdouments/>}/>
@@ -61,6 +59,10 @@ function RouterComponent() {
       <Route path="/newpassport" element={<Newpassport />}/>
       <Route path="/secondpassport" element={<Secondpassport />}/>
       <Route path="/lostpassport" element={<Lostpassport/>}/>
+      {/* Destination pages */}
+      <Route path="/canada" element={<Canada/>}/>
+      <Route path="/srilanka" element={<SriLanka/>}/>
+      <Route path="/america" element={<America/>}/>
       <Route
         path="/visas/:countryId/:visaType"
         element={<VisaRequirements />}
