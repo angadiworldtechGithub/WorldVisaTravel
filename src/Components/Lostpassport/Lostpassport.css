@@ -1,0 +1,36 @@
+.reqdouments{
+    margin: 40px;
+    border: 2px solid #ccc;
+  }
+  
+  .costing-Header-h5{
+   font-weight: 600;
+   color: #000;
+  }
+  
+.reqdouments-header{
+       margin: 40px 40px 40px 40px;
+}
+
+    
+.reqdocument-column1{
+      width: 20%;
+      background-color: #f0f0f0;
+}
+  
+.reqdocument-column2{
+      width: 70%;
+      background-color: #f0f0f0;
+    }
+    
+  
+  .reqdouments-passage-list{
+      padding: 30px;
+  }
+    
+  .req-table-container {
+    overflow-x: auto;
+    padding: 40px;
+  }
+ 
+  

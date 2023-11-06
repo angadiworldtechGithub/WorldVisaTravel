@@ -1,0 +1,673 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden; 
+}
+.Home-Banner-text{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+}
+.Home-Banner-button{
+  width: 30%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+  color: #fff;
+  background-color: #2C3A90;
+  border: none;
+  font-weight: 700;
+}
+.Home-Banner-Search{
+  padding-top: 10px;
+ 
+}
+.Home-Service-container {
+  display: flex;
+  flex-direction: column; /* Stacking boxes vertically on small screens */
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.Home-Service-Box1 {
+  flex: 1;
+  height: 200px;
+  margin: 10px;
+  background-color: #0067DA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+.Home-Service-Box2 {
+  flex: 1;
+  height: 200px;
+  margin: 10px;
+  background-color: #2C3A90;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+  border-radius: 10px;
+}
+.Home-Service-Box3 {
+  flex: 1;
+  height: 200px;
+  margin: 10px;
+  background-color: #90E0EF;
+  border: 1px solid #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  border-radius: 10px;
+  font-size: 18px;
+}
+.Home-Service-Box4 {
+  flex: 1;
+  height: 200px;
+  margin: 10px;
+  background-color: #FFFFFF;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  border-radius: 10px;
+  font-size: 18px;
+}
+.Home-service-Heading{
+  color: #fff;
+  text-align: center;
+  padding-top: 20px;
+}
+.Home-service-Heading1{
+  color: #000;
+  text-align: center;
+  padding-top: 20px;
+}
+.Home-service-paragraph{
+  text-align: justify;
+  text-align: center;
+  padding: 10px;
+}
+.Home-header-icon {
+  font-size: 30px;
+  padding-right: 20px;
+  color: #fff;
+}
+.Home-header-icon1 {
+  font-size: 30px;
+  padding-right: 20px;
+  color: #000;
+}
+@media (min-width: 768px) {
+  .Home-Service-container {
+      flex-direction: row; /* Reverting to horizontal layout on larger screens */
+  }
+
+}
+
+/*------------------------*/
+.home-testmonial-star {
+  flex: 1; 
+  margin: 10px;
+  padding-left: 10px;
+  color: #F9C70C;
+  align-items:center;
+}
+.home-testmonial-name{
+  flex: 1; 
+  margin: 10px;
+  padding-left: 10px;
+  color: #000;
+  align-items:center;
+}
+
+.Home {
+  background-image: url(/public/assets/Homebanner.png);
+  background-color: transparent;
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  /* width: 100%;
+  height: 900px; */
+}
+
+.Home_flex_img{
+  border-radius: 20px;
+}
+
+.Home-who-we-are-content{
+  padding: 20px;
+  color: #fff;
+}
+.Home-who-we-are-heading{
+  color: #fff;
+  font-weight: 800;
+}
+.Home-who-we-are-heading2{
+  color: #fff;
+  font-weight: 500;
+}
+.Home-who-we-are-heading1{
+  color: #fff;
+}
+.Home-top-flexbox3-heading{
+  color: #2c3a90;
+}
+.Home-who-we-are-content-paragraph{
+  text-align: center;
+  font-size: 18px;
+}
+/*Apply visa tab*/
+.Home-Apply{
+  position: sticky;
+  display: flex;
+ /* justify-content: center; */
+  align-items: center; 
+  flex-wrap: wrap;
+}
+.Home-Apply-visa{
+  width: 100%;
+  flex: 40%; 
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #fff;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+.Home-Apply-evisa{
+  width: 100%;
+  flex: 40%; 
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #fff;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+.Home-search{
+  margin: 300px;
+}
+
+/*Home page in mobile view*/
+@media (max-width: 900px) {
+
+  .Home-Banner-button{
+    width: 60%;
+  }
+}
+@media (max-width: 768px) {
+  .Home-Banner-button{
+    width: 60%;
+  }
+}
+
+.Home-search{
+  margin: 300px;
+}
+
+
+
+.Home-container {
+  display: flex;
+  position: sticky;
+  justify-content: center;
+  max-width: 1400px;
+  margin: 20px 20px 20px 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-inline: auto;
+  padding-inline: 60px;
+}
+
+@media (max-width: 900px) {
+  .Home-container {
+    position: relative;
+    bottom: 0;
+  }
+}
+@media (max-width: 768px) {
+  .Home-box {
+    margin-bottom: 10px;
+  }
+}
+
+.image1 {
+  position: relative;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  width: 60%;
+}
+.image2 {
+  position: absolute;
+  top: 70%;
+  left: 30%;
+  border: 1px solid #0067da;
+  border-radius: 10px;
+  width: 70%;
+}
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.country_img{
+  border-radius: 30px;
+ }
+ 
+#carousel-container {
+  position: relative;
+}
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  top: 3.25rem;
+  bottom: 12.25rem;
+  left: 15%;
+  padding-top: 1.25rem;
+  padding-bottom: 12.25rem;
+  color: #fff;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .carousel-caption {
+    position: absolute;
+    right: 15%;
+    top: 3.25rem;
+    bottom: 3.25rem;
+    left: 15%;
+    font-size: 10px;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+  }
+  .silder_on_text {
+    font-size: 15px;
+  }
+}
+
+
+/*flexbox2 */
+
+.Home-top-flexbox2-leftside {
+  background: #f5f8fb;
+}
+.Home-top-flexbox2-rightside {
+  background: #f5f8fb;
+}
+.Home-top-flexbox2-leftside,
+.Home-top-flexbox2-rightside {
+  color: #000;
+  padding: 2%;
+  text-align: left;
+}
+@media (max-width: 899px) {
+  .Home-top-flexbox2 {
+    margin-top: 0px;
+  }
+}
+
+@media (min-width: 900px) {
+  body {
+    background: #f5f8fb;
+  }
+  .Home-top-flexbox2 {
+    width: 100%;
+    margin: 0 auto;
+    display: -webkit-flex;
+    display: flex;
+    margin-top: 150px;
+  }
+  .Home-top-flexbox2-leftside,
+  .Home-top-flexbox2-rightside {
+    -webkit-flex: 1;
+    flex: 1;
+    background: none;
+  }
+}
+
+/*flexbox3*/
+.Home-top-flexbox3 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.Home-top-flexbox3-leftside {
+  padding-top: 40px;
+}
+.Home-top-flexbox3-rightside {
+  padding-top: 80px;
+
+}
+.Home-top-flexbox3-leftside,
+.Home-top-flexbox3-rightside {
+  color: #000;
+  padding: 2%;
+  text-align: left;
+  min-width: 300px;
+}
+
+@media (min-width: 600px) {
+  body {
+    background: #f5f8fb;
+  }
+  .Home-top-flexbox3 {
+    width: 100%;
+    margin: 0 auto;
+    display: -webkit-flex;
+    display: flex;
+  }
+  .Home-top-flexbox3-leftside,
+  .Home-top-flexbox3-rightside {
+    -webkit-flex: 1;
+    flex: 1;
+    background: none;
+    width: 100%;
+  }
+}
+@media (max-width: 709px) {
+  .Home-top-flexbox3-rightside {
+    margin-top: 60px;
+  }
+}
+
+.Home-header-3flex {
+  list-style-type: none;
+}
+.Home-header-3flex-icon {
+  font-size: 30px;
+  padding-right: 20px;
+}
+.Home-header-3flex-button {
+  background-color: #0067da;
+  border: 1px solid #0067da;
+  font-size: 20px;
+  border-radius: 5px;
+  color: #fff;
+  margin: 40px 40px 40px 40px;
+  padding-left: 20px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+}
+.Home-3flex-button-icon {
+  font-size: 30px;
+  padding-left: 20px;
+}
+
+/*flex box4*/
+
+.Home-flexbox4 {
+  background-color: #2c3a90;
+  margin: 30px;
+  border-radius: 20px;
+}
+/*
+.Home-top-flexbox4-rightside {
+  background: #f5f8fb;
+} */
+.Home-top-flexbox4-leftside,
+.Home-top-flexbox4-rightside {
+  color: #fff;
+  padding: 2%;
+  text-align: left;
+}
+
+@media (min-width: 600px) {
+  body {
+    background: #f5f8fb;
+  }
+  .Home-top-flexbox4 {
+    width: 100%;
+    margin: 0 auto;
+    display: -webkit-flex;
+    display: flex;
+  }
+  .Home-top-flexbox4-leftside,
+  .Home-top-flexbox4-rightside {
+    -webkit-flex: 1;
+    flex: 1;
+    background: none;
+  }
+}
+
+/*Home page Card Silder*/
+.Home-card{
+ 
+  position: sticky;
+  flex: 1;
+  padding: 20px;
+  margin: 10px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 20px;
+}
+.Home-card-silder{
+  width: 90%;
+  position: sticky;
+  padding-Bottom: 120px;
+  margin-Inline: auto;
+}
+.card-title{
+  text-align: center;
+  padding: 10px;
+  font-weight: 700;
+  color: #2c3a90;
+}
+.card-img-top{
+  padding: 10px;
+  border-radius: 10px;
+}
+.Home-Card-content{
+  margin: 10px;
+  text-align: center;
+  color: #000;
+}
+.under_card_img{
+  width: 100%;
+  min-Width: 250pd;
+}
+.Home-box {
+  flex: 1;
+  width: 400px;
+  text-align: center;
+}
+
+
+/* Flexbox5 Container for flexboxes */
+.flexbox5 {
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 50px;
+  background-color: #0A2472;
+  color: #fff;
+}
+
+.Home-flexbox5 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create four equal columns */
+.Home-top-flexbox5 {
+  flex: 20%;
+  margin-left: 10px;
+  text-align: center;
+}
+.Home-top-flexbox5-header {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-weight: 600;
+  text-align: center;
+  color: #2c3a90;
+}
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  .Home-top-flexbox5 {
+    flex: 50%;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .Home-flexbox5 {
+    flex-direction: column;
+  }
+}
+
+/*Home page Card Silder*/
+.Homeless-card{
+  flex: 1;
+  padding: 20px;
+  margin: 10px;
+  color: #000;
+  background-color: #2c3a90;
+  border-radius: 20px;
+}
+.Homeless-card-silder{
+  padding-Bottom: 120px;
+  width: 90%;
+  margin-Inline: auto;
+}
+.Homeless-card-title{
+  text-align: center;
+  padding: 10px;
+  font-weight: 700;
+  color: #2c3a90;
+}
+.Homeless-Card-content{
+  font-size: 18px;
+}
+.Homeless-card-img-top{
+  width: 1000;
+  padding-left: 20px;
+}
+
+.Home-testimonial-content{
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: 'Square Peg', cursive;
+  color: #2c3a90;
+}
+.testmonial-content{
+  height: 600px;
+  max-width: 300px; 
+  padding: 10px;
+  margin: 10px;
+  border-radius: 20px;
+  background-color: #fff;
+  color: #000;
+  overflow: hidden;
+}
+
+/*search bar*/
+
+
+.Home-Searchbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+}
+
+.e-visa-button {
+  background-color: #007BFF;
+  padding: 15px 30px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.Home-country-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  width: 100%;
+}
+
+.Home-country {
+  flex: 1;
+  border-radius: 20px;
+  color: #000;
+  margin: 20px;
+  width: 200px;
+  padding: 5px;
+}
+
+.Home-country-go-button{
+  border-radius: 100px;
+  padding: 12px 20px;
+  background-color: #2c3a90;
+  color: #fff;
+  border-bottom: none;
+
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .Home-Searchbar {
+    display: flex;
+    padding-right: 40px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+  }
+  .Home-country-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Home-country {
+    padding-right: 40px;
+    width: 100%;
+  }
+  .Search{
+    padding-top: 20px;
+    align-items: center;
+    padding-right: 60px;
+    width: 100%;
+   }
+   .testmonial-content{
+    /* height: 550px;
+    width: 300px; */
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #000;
+  }
+}
+
+.search-button {
+  background-color: #2c3a90;
+  border-radius: 30px;
+  color: white;
+  padding: 20px !important;
+  font-size: 16px;
+  border: none;
+  /* margin-left: 20px; */
+  cursor: pointer;
+}
+.Search{
+ padding-top: 20px;
+}
+
