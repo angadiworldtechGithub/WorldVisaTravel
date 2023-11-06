@@ -6,104 +6,83 @@ import React from 'react'
       column1: "Passport",
       column2: {
         content: ["U.S. Passport – have to be valid at least 6 months beyond intended stay and must have at least two blank visa pages.",
-        "For Additional Visa Pages and U.S. Passport Renewal."],
+    "For Additional Visa Pages and U.S. Passport Renewal."],
       },
     },
     {
       id: 2,
       column1: "Photo",
       column2: {
-        content: ["Two passport-type photographs. Quality Requirements for Passport Book & Passport Card Photographs"
+        content: [
+          "Two passport-type photographs. Quality Requirements for Passport Book & Passport Card Photographs          "
+        
+        
+        
         ],
       },
     },
 
     {
       id: 3,
-      column1: "Proof of Residence",
+      column1: "Business Letter",
       column2: {
         content: [
-         "A copy of your Driver’s License, Major Utility Bill (Water, Gas, Electric, etc.), or a copy of valid lease agreement."
+          "A business letter (sample) from the company is required.",
         ],
       },
     },
-
+   
     {
-      id: 4,
-      column1: "Minors",
-      column2: {
-        content: [
-          "Parental Authorization Form for minors travelers: Download Parental Authorization Form",
-          "One completed Form, MUST be notarized and signed. Photocopy of a Birth Certificate is required."
-        ],
+        id: 4,
+        column1: "Letter of Authorization	",
+        column2: {
+          content: [
+            "Download Authorization Letter",
+            "Complete and sign ONE Authorization Letter."
+          ],
+        },
       },
-    },
+
+
+
+
+  
 
     {
       id: 5,
-      column1: "Applicants of Indian Origin and Dependent Family Members",
+      column1: "Proof of Departure",
       column2: {
         content: [
-          "Persons of Indian origin are required to surrender Indian citizenship.",
-          "A copy of a renunciation certificate AND naturalization certificate.",
-          "Persons of Indian origin who have NOT renounced Indian citizenship or",
-          "CANNOT SHOW PROOF of renunciation must first apply for renunciation directly through CKGS:",
-          "http://www.in.ckgs.us", 
+          "A copy of your round trip airline tickets, or itinerary, or letter of confirmation from a travel agent.",
         ],
       },
     },
 
     {
       id: 6,
-      column1: "Additional Forms",
+      column1: "Application Form",
       column2: {
         content: [
-          "Religious Undertaking Letter for religious travelers: Download Religious Undertaking Letter One completed Form, MUST be signed.",
-          "Journalist Undertaking Letter for journalist travelers: Download Journalist Undertaking Letter One completed Form, MUST be signed."
+          "Download Application Form",
+          "Two completed Visa Applications, MUST be signed.          "
         ],
       },
     },
 
     {
       id: 7,
-      column1: "Proof of Departure",
+      column1: "WVT Work Order",
       column2: {
         content: [
-          "A copy of your round trip airline tickets, or itinerary, or letter of confirmation from a travel agent."
+          "Please complete WVT Work Order Form. Download here",
+          "Payment can be processed with a credit card or a company/cashier check or money order.",
+         
         ],
       },
     },
 
     {
       id: 8,
-      column1: "Application Form",
-      column2: {
-        content: [
-          "WVT can help you complete the India Visa Online Application through our White Glove Service (ONLY $50.00).",
-          "India White Glove Form",
-          "Please call for further assistance.",
-          "Online Application Form",
-          "One completed Visa Application, MUST be signed and printed in separate papers.",
-          "Note: The Embassy will not accept double-sided applications.",
-          
-          "Additional Particulars Form for ALL travelers: Download Additional Particulars Form One completed Form, MUST be signed."
-        ],
-      },
-    },
-
-    {
-      id: 9,
-      column1: "WVT Work Order",
-      column2: {
-        content: [
-         "Please complete WVT Work Order Form. Download here",
-         "Payment can be processed with a credit card or a company/cashier check or money order."
-        ],
-      },
-    },
-
-    {
-      id:10,
       column1: "Mail Your Documents",
       column2: {
         content: [
@@ -119,16 +98,16 @@ import React from 'react'
   ];
 
 const datatable1 = [
-  ['Regular',	'Single/Multiple',	'$202.90',	'10-14 Business Days','Up to 180 days','Up to 10 Years'],
-  ['Rush',	'Single/Multiple',	'$202.90',	'7-10 Business Days',	'Up to 180 days',	'Up to 10 Years'],
+  ['Regular','Single/Multiple', '$56.00/$106.00','5-15 Business Days	', 'Up to 90 days		' ,'6 Months'],
 
 ];
 
 const datatable2 = [
-  ['Regular','$90.00','10-14 Business Days'],
-  ['Rush','$140.00','7-10 Business Days'],
-];
+  ['Regular','$90.00','5-7 Business Days'],
+  ['Rush','$140.00','1-2 Business Days'],
 
+
+];
 
 
 const datatable3 = [
@@ -137,9 +116,7 @@ const datatable3 = [
   ['Saturday Delivery','$41.00'],
 ];
 
-
-
-function India() {
+function Kenya() {
   return (
    <div>
    <div>
@@ -173,9 +150,11 @@ function India() {
       <table className="costing-responsive-table">
         <thead>
           <tr>
-            <th>Type</th>
-            <th>Entry Price</th>
-            <th>Price	Processing Time</th>
+          <th>Type</th>
+
+            <th>Entry</th>
+            <th>Price</th>
+            <th>Processing Time</th>
             <th>Maximum Stay</th>
             <th>Valid</th>
           </tr>
@@ -192,7 +171,7 @@ function India() {
       </table>
 
       <div className='Detailsdata_descripition'>
-      <h6>The fees above include a $5.00 money order fee.</h6>
+       <h6>The fees above include a $5.00 check writing fee.</h6>
       <h6>Consular fees are subject to change without notice.</h6>
       <h6>If there is any uncertainty, please give us a call to verify.</h6>
       <h6>Maximum Stay and Validity of Visa is dependent on the Embassy’s discretion.</h6>
@@ -204,6 +183,7 @@ function India() {
         <thead>
           <tr>
             <th>Type</th>
+
             <th>Price</th>
             <th>Processing Time</th>
           </tr>
@@ -237,9 +217,9 @@ function India() {
         ))}
       </tbody>
     </table>
-    <p className='Detailsdata_descripition'>
-    Update: FedEx charges an additional $6.50 for residential areas. Please call for shipping to Alaska/Hawaii.
-    </p>
+    <div className='Detailsdata_descripition'>
+       <h6>Update: FedEx charges an additional $6.50 for residential areas. Please call for shipping to Alaska/Hawaii.</h6>           
+      </div>
     </div>
     
     
@@ -247,4 +227,4 @@ function India() {
   )
 }
 
-export default India;
+export default Kenya;
