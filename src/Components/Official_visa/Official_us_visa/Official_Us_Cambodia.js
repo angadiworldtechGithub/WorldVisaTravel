@@ -5,67 +5,40 @@ import React from 'react'
       id: 1,
       column1: "Passport",
       column2: {
-        content: ["U.S. Passport – have to be valid at least 6 months beyond intended stay and must have at least two blank visa pages.",
-        "For Additional Visa Pages and U.S. Passport Renewal."],
+        content: ["U.S. Official/Diplomatic Passport – have to be valid at least 6 months beyond intended stay and must have at least two blank visa pages.",
+      "For Additional Visa Pages and U.S. Passport Renewal."],
       },
     },
     {
       id: 2,
       column1: "Photo",
       column2: {
-        content: ["Two passport-type photographs. Quality Requirements for Passport Book & Passport Card Photographs"
+        content: [
+          "One passport-type photographs. Quality Requirements for Passport Book & Passport Card Photographs"
         ],
       },
     },
 
     {
       id: 3,
-      column1: "Proof of Residence",
+      column1: "Diplomatic Letter/Note",
       column2: {
         content: [
-         "A copy of your Driver’s License, Major Utility Bill (Water, Gas, Electric, etc.), or a copy of valid lease agreement."
+          "	A cover letter from the U.S. Department of State."
         ],
       },
     },
-
     {
       id: 4,
-      column1: "Minors",
+      column1: "Vaccinations",
       column2: {
         content: [
-          "Parental Authorization Form for minors travelers: Download Parental Authorization Form",
-          "One completed Form, MUST be notarized and signed. Photocopy of a Birth Certificate is required."
+          "International Certificate of Vaccination for Yellow Fever."
         ],
       },
     },
-
     {
       id: 5,
-      column1: "Applicants of Indian Origin and Dependent Family Members",
-      column2: {
-        content: [
-          "Persons of Indian origin are required to surrender Indian citizenship.",
-          "A copy of a renunciation certificate AND naturalization certificate.",
-          "Persons of Indian origin who have NOT renounced Indian citizenship or",
-          "CANNOT SHOW PROOF of renunciation must first apply for renunciation directly through CKGS:",
-          "http://www.in.ckgs.us", 
-        ],
-      },
-    },
-
-    {
-      id: 6,
-      column1: "Additional Forms",
-      column2: {
-        content: [
-          "Religious Undertaking Letter for religious travelers: Download Religious Undertaking Letter One completed Form, MUST be signed.",
-          "Journalist Undertaking Letter for journalist travelers: Download Journalist Undertaking Letter One completed Form, MUST be signed."
-        ],
-      },
-    },
-
-    {
-      id: 7,
       column1: "Proof of Departure",
       column2: {
         content: [
@@ -74,36 +47,31 @@ import React from 'react'
       },
     },
 
+  
+
     {
-      id: 8,
+      id: 6,
       column1: "Application Form",
       column2: {
         content: [
-          "WVT can help you complete the India Visa Online Application through our White Glove Service (ONLY $50.00).",
-          "India White Glove Form",
-          "Please call for further assistance.",
-          "Online Application Form",
-          "One completed Visa Application, MUST be signed and printed in separate papers.",
-          "Note: The Embassy will not accept double-sided applications.",
-          
-          "Additional Particulars Form for ALL travelers: Download Additional Particulars Form One completed Form, MUST be signed."
-        ],
+          "Download Application Form",
+          "One completed Visa Application, MUST be signed."      ],
       },
     },
 
     {
-      id: 9,
+      id: 7,
       column1: "WVT Work Order",
       column2: {
         content: [
-         "Please complete WVT Work Order Form. Download here",
-         "Payment can be processed with a credit card or a company/cashier check or money order."
+          "Please complete WVT Work Order Form. Download here",
+          "Payment can be processed with a credit card or a company/cashier check or money order.",
         ],
       },
     },
 
     {
-      id:10,
+      id: 8,
       column1: "Mail Your Documents",
       column2: {
         content: [
@@ -116,29 +84,26 @@ import React from 'react'
         ],
       },
     },
-  
   ];
 
 const datatable1 = [
-  ['Regular',	'Single/Multiple',	'$202.90',	'10-14 Business Days','Up to 180 days','Up to 10 Years'],
-  ['Rush',	'Single/Multiple',	'$202.90',	'7-10 Business Days',	'Up to 180 days',	'Up to 10 Years'],
- 
+  ['Single/Multiple', '$0', '3-4 Business Days' ,'Up to 30 days','1 Year']
+  
+
 ];
 
 const datatable2 = [
-  ['Regular','$90.00','10-14 Business Days'],
-  ['Rush','$140.00','7-10 Business Days'],
-];
 
+  ['$90.00','1-2 Business Days'],
+  
+];
 const datatable3 = [
   ['Less than 3 passports','$36.00'],
   ['4 or more passports',	'$39.00'],
   ['Saturday Delivery','$41.00'],
 ];
 
-
-
-function SriLanka() {
+function OfficialUsCambodia() {
   return (
    <div>
    <div>
@@ -172,9 +137,9 @@ function SriLanka() {
       <table className="costing-responsive-table">
         <thead>
           <tr>
-            <th>Type</th>
-            <th>Entry Price</th>
-            <th>Price	Processing Time</th>
+            <th>Entry</th>
+            <th>Price</th>
+            <th>Processing Time</th>
             <th>Maximum Stay</th>
             <th>Valid</th>
           </tr>
@@ -191,9 +156,7 @@ function SriLanka() {
       </table>
 
       <div className='Detailsdata_descripition'>
-      <h6>The fees above include a $5.00 money order fee.</h6>
-      <h6>Consular fees are subject to change without notice.</h6>
-      <h6>If there is any uncertainty, please give us a call to verify.</h6>
+       
       <h6>Maximum Stay and Validity of Visa is dependent on the Embassy’s discretion.</h6>
       
       </div>
@@ -202,7 +165,6 @@ function SriLanka() {
       <table className="costing-responsive-table">
         <thead>
           <tr>
-            <th>Type</th>
             <th>Price</th>
             <th>Processing Time</th>
           </tr>
@@ -226,19 +188,26 @@ function SriLanka() {
           <th className="reqdocument-column1">Price</th>
         </tr>
       </thead>
+     
+   
       <tbody>
-        {datatable3.map((row, rowIndex) => (
-          <tr key={rowIndex}>
-            {row.map((cell, columnIndex) => (
-              <td key={columnIndex}>{cell}</td>
-            ))}
-          </tr>
-        ))}
-      </tbody>
-    </table>
-    <p className='Detailsdata_descripition'>
-    Update: FedEx charges an additional $6.50 for residential areas. Please call for shipping to Alaska/Hawaii.
-    </p>
+      {datatable3.map((row, rowIndex) => (
+        <tr key={rowIndex}>
+          {row.map((cell, columnIndex) => (
+            <td key={columnIndex}>{cell}</td>
+          ))}
+        </tr>
+      ))}
+    </tbody>
+  </table>
+  <div className='Detailsdata_descripition'>
+  
+  <h6>Update: FedEx charges an additional $6.50 for residential areas. Please call for shipping to Alaska/Hawaii.</h6>
+  
+  </div>
+
+
+
     </div>
     
     
@@ -246,4 +215,4 @@ function SriLanka() {
   )
 }
 
-export default SriLanka;
+export default OfficialUsCambodia;

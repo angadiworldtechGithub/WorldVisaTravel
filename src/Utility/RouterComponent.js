@@ -28,8 +28,32 @@ import Newpassport from "../Components/Newpassport/Newpassport";
 import Secondpassport from "../Components/Secondpassport/Secondpassport";
 import Reissuance from "../Components/Reissuance/Reissuance";
 import Lostpassport from "../Components/Lostpassport/Lostpassport";
-import SriLanka from '../Components/SriLanka/SriLanka';
-import America from '../Components/America/America';
+import OfficialUsAfghanistan from '../Components/Official_visa/Official_us_visa/Official_Us_Afghanistan';
+import OfficialUsUnited_Arab_Emirates from '../Components/Official_visa/Official_us_visa/Official_Us_UnitedArabEmirates';
+
+
+import OfficialUsArgentina from '../Components/Official_visa/Official_us_visa/Official_Us_Argentina';
+import OfficialUsAngola from '../Components/Official_visa/Official_us_visa/Official_Us_Angola';
+import OfficialUsArmenia from '../Components/Official_visa/Official_us_visa/Official_Us_Armenia';
+import OfficialUsAzerbaijan from '../Components/Official_visa/Official_us_visa/Official_Us_Azerbaijan';
+import OfficialUsAlgeria from '../Components/Official_visa/Official_us_visa/Official_Us_Algeria';
+import OfficialUsAmericanSamoa from '../Components/Official_visa/Official_us_visa/Official_Us_AmericanSamoa';
+import OfficialUsAustralia from '../Components/Official_visa/Official_us_visa/Official_Us_Australia';
+
+import OfficialUsBelarus from '../Components/Official_visa/Official_us_visa/Official_Us_Belarus';
+
+import OfficialUsBrunei from '../Components/Official_visa/Official_us_visa/Official_Us_Brunei';
+import OfficialUsBahrain from '../Components/Official_visa/Official_us_visa/Official_Us_Bahrain';
+
+import OfficialUsBulgaria from '../Components/Official_visa/Official_us_visa/Official_Us_Bulgaria';
+import OfficialUsBangladesh from '../Components/Official_visa/Official_us_visa/Official_Us_Bangladesh';
+
+import OfficialUsBolivia from '../Components/Official_visa/Official_us_visa/Official_Us_Bolivia';
+import OfficialUsBrazil from '../Components/Official_visa/Official_us_visa/Official_Us_Brazil';
+import OfficialUsBurkinaFaso from '../Components/Official_visa/Official_us_visa/Official_Us_BurkinaFaso';
+
+import OfficialUsBenin from '../Components/Official_visa/Official_us_visa/Official_Us_Benin';
+import OfficialUsBurundi from '../Components/Official_visa/Official_us_visa/Official_Us_Burundi';
 
 
 function RouterComponent() {
@@ -61,8 +85,40 @@ function RouterComponent() {
       <Route path="/lostpassport" element={<Lostpassport/>}/>
       {/* Destination pages */}
       <Route path="/canada" element={<Canada/>}/>
-      <Route path="/srilanka" element={<SriLanka/>}/>
-      <Route path="/america" element={<America/>}/>
+     
+      <Route path="/Afghanistan" element={<OfficialUsAfghanistan/>}/>
+      <Route path="/United Arab Emirates" element={<OfficialUsUnited_Arab_Emirates/>}/>
+      
+      <Route  path = "/Argentina"  element={<OfficialUsArgentina/>}/>
+    
+      <Route  path = "/Angola"  element={<OfficialUsAngola/>}/>
+      <Route  path = "/Armenia"  element={<OfficialUsArmenia/>}/>
+      <Route  path = "/Azerbaijan"  element={<OfficialUsAzerbaijan/>}/>
+      <Route  path = "/Algeria"  element={<OfficialUsAlgeria/>}/>
+      
+      <Route  path = "/OfficialUsAmericanSamoa"  element={<OfficialUsAmericanSamoa/>}/>
+      
+      <Route  path = "/OfficialUsAustralia"  element={<OfficialUsAustralia/>}/>
+      
+      <Route  path = "/OfficialUsBelarus"  element={<OfficialUsBelarus/>}/>
+      
+    
+      <Route  path = "/OfficialUsBrunei"  element={<OfficialUsBrunei/>}/>
+      <Route  path = "/OfficialUsBahrain"  element={<OfficialUsBahrain/>}/>
+    
+    
+      <Route  path = "/OfficialUsBulgaria"  element={<OfficialUsBulgaria/>}/>
+      <Route  path = "/OfficialUsBangladesh"  element={<OfficialUsBangladesh/>}/>
+    
+      <Route  path = "/OfficialUsBolivia"  element={<OfficialUsBolivia/>}/>
+      <Route  path = "/OfficialUsBrazil"  element={<OfficialUsBrazil/>}/>
+      <Route  path = "/OfficialUsBurkinaFaso"  element={<OfficialUsBurkinaFaso/>}/>
+    
+      <Route  path = "/OfficialUsBenin"  element={<OfficialUsBenin/>}/>
+      
+  
+      <Route  path = "/OfficialUsBurundi"  element={<OfficialUsBurundi/>}/>
+       
       <Route
         path="/visas/:countryId/:visaType"
         element={<VisaRequirements />}
@@ -73,6 +129,7 @@ function RouterComponent() {
       <Route path="Businessvisa" element={<Businessvisa/>}/>
       <Route path="e-visa" element={<Evisa/>}/>
       <Route path="Officialvisa" element={<Officialvisa/>}/>
+      
 
       </Route>
 

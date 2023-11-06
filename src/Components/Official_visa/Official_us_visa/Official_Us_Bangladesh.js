@@ -5,7 +5,8 @@ import React from 'react'
       id: 1,
       column1: "Passport",
       column2: {
-        content: ["Your most recently issued valid 10 year passport."],
+        content: ["U.S. Official/Diplomatic Passport – have to be valid at least 6 months beyond intended stay and must have at least two blank visa pages.",
+      "For Additional Visa Pages and U.S. Passport Renewal."],
       },
     },
     {
@@ -13,69 +14,46 @@ import React from 'react'
       column1: "Photo",
       column2: {
         content: [
-          "Two passport-type photographs. Photograph with eye glasses will no longer be accepted by the US Passport Agency.",
-          "Quality Requirements for Passport Book & Passport Card Photographs",
+          "Three passport-type photographs. Quality Requirements for Passport Book & Passport Card Photographs"
         ],
       },
     },
 
     {
       id: 3,
-      column1: "Letter of Authorization",
+      column1: "Diplomatic Letter/Note",
       column2: {
         content: [
-          "Download Authorization Letter",
-          "One completed and signed Letter of Authorization.",
+          "	A cover letter from the U.S. Department of State."
         ],
       },
     },
 
     {
       id: 4,
-      column1: "Letter of Explanation",
+      column1: "Proof of Departure",
       column2: {
         content: [
-          "Download Explanation Letter",
-          "One completed and signed Letter of Explanation",
+          "A copy of your round trip airline tickets, or itinerary, or letter of confirmation from a travel agent."
         ],
       },
     },
 
+
+
     {
       id: 5,
-      column1: "Name Change",
+      column1: "Application Form",
       column2: {
         content: [
-          "A name change documentation by marriage or court order is required (if applicable).",
-        ],
+          "Download Visa Application",
+          "One completed Visa Application, MUST be signed.",
+          "Printable Application Form"     ],
       },
     },
 
     {
       id: 6,
-      column1: "Proof of Departure",
-      column2: {
-        content: [
-          "A copy of your round trip airline tickets, or itinerary, or letter for employer (for Same Day/Next Day processing).",
-        ],
-      },
-    },
-
-    {
-      id: 7,
-      column1: "DS-82 Application Form",
-      column2: {
-        content: [
-          "DS-82: Online Application for New Passport",
-          "Please complete application online and print ONE",
-          "completed DS-82 form.*We advise to use the most",
-          "updated version of the form provided by the link.",
-        ],
-      },
-    },
-
-    {
-      id: 8,
       column1: "WVT Work Order",
       column2: {
         content: [
@@ -86,7 +64,7 @@ import React from 'react'
     },
 
     {
-      id: 9,
+      id: 7,
       column1: "Mail Your Documents",
       column2: {
         content: [
@@ -102,24 +80,22 @@ import React from 'react'
   ];
 
 const datatable1 = [
-  ['Single', '$245.00', '4 Business Days' ,'Up to 30 days', '3 Months'],
-  ['Single', '$165.00', '10 Business Days','Up to 30 days','3 Months'],
+  ['Single/Multiple', '$0', '5 Business Days'],
+  
 
 ];
 
 const datatable2 = [
-  ['$90.00','10 Business Days'],
-  ['$140.00','4 Business Days'],
+  ['$90.00','5 Business Days'],
+  
 ];
-
-
 const datatable3 = [
   ['Less than 3 passports','$36.00'],
   ['4 or more passports',	'$39.00'],
   ['Saturday Delivery','$41.00'],
 ];
 
-function America() {
+function OfficialUsBangladesh() {
   return (
    <div>
    <div>
@@ -156,8 +132,7 @@ function America() {
             <th>Entry</th>
             <th>Price</th>
             <th>Processing Time</th>
-            <th>PMaximum Stay</th>
-            <th>Valid</th>
+            
           </tr>
         </thead>
         <tbody>
@@ -172,9 +147,7 @@ function America() {
       </table>
 
       <div className='Detailsdata_descripition'>
-       <h6>The fees above include a $5.00 check writing fee.</h6>
-      <h6>Consular fees are subject to change without notice.</h6>
-      <h6>If there is any uncertainty, please give us a call to verify.</h6>
+       
       <h6>Maximum Stay and Validity of Visa is dependent on the Embassy’s discretion.</h6>
       
       </div>
@@ -206,16 +179,23 @@ function America() {
           <th className="reqdocument-column1">Price</th>
         </tr>
       </thead>
+     
       <tbody>
-        {datatable3.map((row, rowIndex) => (
-          <tr key={rowIndex}>
-            {row.map((cell, columnIndex) => (
-              <td key={columnIndex}>{cell}</td>
-            ))}
-          </tr>
-        ))}
-      </tbody>
-    </table>
+      {datatable3.map((row, rowIndex) => (
+        <tr key={rowIndex}>
+          {row.map((cell, columnIndex) => (
+            <td key={columnIndex}>{cell}</td>
+          ))}
+        </tr>
+      ))}
+    </tbody>
+  </table>
+  <div className='Detailsdata_descripition'>
+  
+  <h6>Update: FedEx charges an additional $6.50 for residential areas. Please call for shipping to Alaska/Hawaii.</h6>
+  
+  </div>
+
 
     </div>
     
@@ -224,4 +204,4 @@ function America() {
   )
 }
 
-export default America;
+export default OfficialUsBangladesh;
