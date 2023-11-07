@@ -95,8 +95,8 @@ import React from 'react'
   ];
 
 const datatable1 = [
-  ['Regular/Rush','Multiple','	$155.00/ $205.00','	1-4 Business Days','Up to 90 days per entry','3 Months' ],
-  ['Regular/Rush','Multiple','	$205.00/$255.00','	1-4 Business Days','Up to 90 days per Entry','6-12 Months' ]
+  ['Regular/Rush','Single','$205.00','2-4 Business Days','Up to 30 days','3 Months' ],
+ 
 ]
 const datatable2 = [
     ['Regular', '$90.00', '4 Business Days' ],
@@ -110,7 +110,7 @@ const datatable4 = [
   ['Saturday Delivery','$41.00'],
 ];
 
-function Tourist_nonUs_Central_African_Republic() {
+function Tourist_nonUs_Congo() {
   return (
    <div>
    <div>
@@ -228,4 +228,4 @@ function Tourist_nonUs_Central_African_Republic() {
   )
 }
 
-export default Tourist_nonUs_Central_African_Republic;
+export default Tourist_nonUs_Congo;

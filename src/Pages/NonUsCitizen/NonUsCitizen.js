@@ -7,10 +7,10 @@ import Afghanistan from '../../Components/Tourist_visa/Tourist_non_us_visa/Afgha
 import BelarusTouristNonUs from '../../Components/Tourist_visa/Tourist_non_us_visa/BelarusTouristNonUs';
 import Tourist_nonUs_Belize from '../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_Belize';
 import Tourist_nonUs_Brunei from "../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_Brunei";
-import Tourist_nonUs_Bahamas from '../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_Bahamas';
+
 import Tourist_nonUs_Botswana from '../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_Botswana';
 import Tourist_nonUs_Bulgaria from '../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_Bulgaria';
-import Tourist_nonUs_Bangladesh from "../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_Bangladesh";
+
 import Tourist_nonUs_Bolivia from '../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_Bolivia';
 import Tourist_nonUs_Brazil from '../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_Brazil';
 import Tourist_nonUs_BurkinaFaso from '../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_BurkinaFaso';
@@ -21,6 +21,9 @@ import Tourist_nonUs_Combodia from '../../Components/Tourist_visa/Tourist_non_us
 import Tourist_nonUs_China from '../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_China';
 import Tourist_nonUs_Cameroon from '../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_Cameroon';
 import Tourist_nonUs_Central_African_Republic from '../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_Central_African_Republic';
+import Tourist_nonUs_Bangladesh from '../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_Bangladesh';
+import Tourist_nonUs_Bahamas from '../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_Bahamas';
+import Tourist_nonUs_Congo from '../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_Congo';
 
 const NonUsCitizen = () => {
     const location = useLocation();
@@ -64,8 +67,8 @@ const NonUsCitizen = () => {
     {(destination === "China" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_China/>)}
     {(destination === "Cameroon" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_Cameroon/>)}
     {(destination === "Central African Republic" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_Central_African_Republic/>)}
-    {/* {(destination === "China" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_China/>)}
-    {(destination === "Cameroon" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_Cameroon/>)} */}
+    {(destination === "Republic of the Congo" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_Congo/>)}
+    {/* {(destination === "Cameroon" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_Cameroon/>)} */}
 
 
 
