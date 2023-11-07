@@ -23,7 +23,7 @@ function Passport() {
     <img className="passport-service-images" src="assets/passport/passport1.png"></img>
     <h4 className='passport-services-heading'>APPLY FOR A NEW OR FIRST TIME U.S. PASSPORT",</h4>
     <p className='passport-services-content'> Ready to explore the world? Apply for your new U.S. passport today and let your international adventures begin.</p>
-    <center> <Link to="/reqdouments">
+    <center> <Link to="/passports/reqdouments">
      <button className='passport-apply-button'>
     Apply Now
     </button>
@@ -38,7 +38,7 @@ function Passport() {
     world with confidence, ease, and peace of mind.
      </p>
      <center>
-     <Link to="/renew">
+     <Link to="/passports/renew">
      <button className='passport-apply-button'>
     Apply Now
     </button>
@@ -52,7 +52,7 @@ function Passport() {
     the official procedure for smooth travel and identification process.
     </p>
     <center>
-     <Link to="/Replace">
+     <Link to="/passports/Replace">
      <button className='passport-apply-button'>
     Apply Now
     </button>
@@ -67,7 +67,7 @@ function Passport() {
    required documents and apply in person at a passport facility.
     </p>
     <center>
-    <Link to="/Newpassport ">
+    <Link to="/passports/Newpassport ">
      <button className='passport-apply-button'>
     Apply Now
     </button>
@@ -80,7 +80,7 @@ function Passport() {
     <h4 className='passport-services-heading'>APPLY FOR A SECOND VALID U.S. PASSPORT</h4>
     <p className='passport-services-content'>Experience dual travel ease: Secure your second valid U.S. passport today for unforgettable global adventures.</p>
  
-   <center> <Link to="/Secondpassport">
+   <center> <Link to="/passports/Secondpassport">
     <button className='passport-apply-button'>
    Apply Now
    </button>
@@ -92,7 +92,7 @@ function Passport() {
   <h4 className='passport-services-heading'>RE-ISSUE A U.S. PASSPORT</h4>
    <p className='passport-services-content'>Requesting a U.S. passport re-issue involves updating an
     existing passport for hassle-free international travel.</p>
-    <center><Link to="/Reissuance">
+    <center><Link to="/passports/Reissuance">
      <button className='passport-apply-button'>
     Apply Now
     </button>
@@ -106,7 +106,7 @@ function Passport() {
      <h4 className='passport-services-heading'>REPLACE A LOST OR STOLEN U.S. PASSPORT</h4>
     <p className='passport-services-content'>
     If your U.S. passport is lost or stolen, apply promptly for a replacement to ensure seamless international travel and identification.</p>
-   <center> <Link to="/Lostpassport">
+   <center> <Link to="/passports/Lostpassport">
     <button className='passport-apply-button'>
    Apply Now
    </button>
@@ -117,7 +117,7 @@ function Passport() {
   <img className="passport-service-images" src="assets/passport/passport8.png"></img>
   <h4 className='passport-services-heading'>U.S. PASSPORT NAME CHANGE</h4>
  <p className='passport-services-content'>If you're changing your name on your U.S. passport, ensure following steps for accurate travel and identification records.</p>
- <center><Link to="/renew">
+ <center><Link to="/passports/renew">
  <button className='passport-apply-button'>
 Apply Now
 </button>

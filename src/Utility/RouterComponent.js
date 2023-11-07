@@ -28,10 +28,7 @@ import Newpassport from "../Components/Newpassport/Newpassport";
 import Secondpassport from "../Components/Secondpassport/Secondpassport";
 import Reissuance from "../Components/Reissuance/Reissuance";
 import Lostpassport from "../Components/Lostpassport/Lostpassport";
-import Afghanistan from '../Components/Tourist_visa/Tourist_non_us_visa/Afghanistan';
-import BelarusTouristNonUs from '../Components/Tourist_visa/Tourist_non_us_visa/BelarusTouristNonUs';
-import Tourist_nonUs_Belize from '../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_Belize';
-import Tourist_nonUs_Brunei from '../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_Brunei';
+
 
 function RouterComponent() {
   return (
@@ -55,41 +52,40 @@ function RouterComponent() {
       <Route path="/:id/e-visa" element={<Evisa/>}/>
       <Route path="/:id/Official-visa" element={<Officialvisa/>}/>
 
+{/* U S Passport Services */}
 
-      <Route path="/costing" element={<Costing />} />
-      
-      
-      <Route path="/details" element={<Details/>}/>
-     
+      <Route path="/:id/renew" element={<Renew/>}/>
+      <Route path="/:id/reissuance" element={<Reissuance/>}/>
+      <Route path="/:id/reqdouments" element={<Reqdouments/>}/>
+      <Route path="/:id/replace" element={<Replace />}/>
+      <Route path="/:id/newpassport" element={<Newpassport />}/>
+      <Route path="/:id/secondpassport" element={<Secondpassport />}/>
+      <Route path="/:id/lostpassport" element={<Lostpassport/>}/>
+
+{/* Based On citizen */}
 
       <Route path="/:type/USCitizen" element={<USCitizen/>}/>
       <Route path="/:id/:id/:type/NonUsCitizen" element={<NonUsCitizen/>}/>
 
-      <Route path="/renew" element={<Renew/>}/>
-      <Route path="/reissuance" element={<Reissuance/>}/>
-      <Route path="/reqdouments" element={<Reqdouments/>}/>
-      <Route path="/replace" element={<Replace />}/>
-      <Route path="/newpassport" element={<Newpassport />}/>
-      <Route path="/secondpassport" element={<Secondpassport />}/>
-      <Route path="/lostpassport" element={<Lostpassport/>}/>
-      {/* Destination pages */}
-      <Route path="/canada" element={<Canada/>}/>
+      <Route path="*" element={<NotFoundPage />} />
+      
+      
+      {/* <Route path="/costing" element={<Costing />} />
+      <Route path="/details" element={<Details/>}/> */}
+    
+           {/* Destination pages */}
+      {/* <Route path="/canada" element={<Canada/>}/>
       <Route path="/afghanistan" element={<Afghanistan/>}/>
       <Route path="/belarus" element={<BelarusTouristNonUs/>}/>
       <Route path="/belize" element={<Tourist_nonUs_Belize/>}/>
-      <Route path='/brunei' element={<Tourist_nonUs_Brunei/>}/>
+      <Route path='/brunei' element={<Tourist_nonUs_Brunei/>}/> */}
       
-      <Route
-        path="/visas/:countryId/:visaType"
-        element={<VisaRequirements />}
+      {/* <Route path="/visas/:countryId/:visaType" element={<VisaRequirements />}
       />
-      
-
-      
-    
+       */}
 
       {/* Other routes can be defined here */}
-      <Route path="*" element={<NotFoundPage />} />
+      
    
     </Routes>
     <Footer />

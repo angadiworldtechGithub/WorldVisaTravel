@@ -4,7 +4,6 @@ import "./FormVisa.css";
 import Select from "react-select";
 import { countries } from "countries-list"; // Import the countries list
 import ReactCountryFlag from "react-country-flag";
-import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 
