@@ -119,14 +119,13 @@ import React from 'react'
   ];
 
 const datatable1 = [
-  ['Regular',	'Single/Multiple',	'$202.90',	'10-14 Business Days','Up to 180 days','Up to 10 Years'],
-  ['Rush',	'Single/Multiple',	'$202.90',	'7-10 Business Days',	'Up to 180 days',	'Up to 10 Years'],
+  ['Regular',	'Single/Multiple',	'$127.90',	'10-12 Business Days','Up to 180 days','6 Months'],
+  ['Rush',	'Single/Multiple',	'$127.90',	'7-10 Business Days',	'Up to 180 days',	'6 Months'],
 
 ];
 
 const datatable2 = [
-  ['Regular','$90.00','10-14 Business Days'],
-  ['Rush','$140.00','7-10 Business Days'],
+  ['Regular/ Rush','Single/ Multiple','$1890.90/ $511.90','up to 180 days','12 Months/ 5 Years'],
 ];
 
 
@@ -139,7 +138,7 @@ const datatable3 = [
 
 
 
-function India() {
+function Tourist_nonUs_India() {
   return (
    <div>
    <div>
@@ -174,8 +173,9 @@ function India() {
         <thead>
           <tr>
             <th>Type</th>
-            <th>Entry Price</th>
-            <th>Price	Processing Time</th>
+            <th>Entry</th>
+            <th>Price</th>
+            <th>Processing Time</th>
             <th>Maximum Stay</th>
             <th>Valid</th>
           </tr>
@@ -203,9 +203,12 @@ function India() {
       <table className="costing-responsive-table">
         <thead>
           <tr>
-            <th>Type</th>
+          <th>Type</th>
+            <th>Entry</th>
             <th>Price</th>
             <th>Processing Time</th>
+            <th>Maximum Stay</th>
+            <th>Valid</th>
           </tr>
         </thead>
         <tbody>
@@ -247,4 +250,4 @@ function India() {
   )
 }
 
-export default India;
+export default Tourist_nonUs_India;

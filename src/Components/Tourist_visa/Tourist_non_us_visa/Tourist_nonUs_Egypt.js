@@ -13,7 +13,7 @@ const tableData = [
     column1: "Photo",
     column2: {
       content: [
-        "One passport-type photograph. Quality Requirements for Passport Book & Passport Card Photographs",
+        "Two passport-type photographs. Quality Requirements for Passport Book & Passport Card Photographs",
       ],
     },
   },
@@ -27,41 +27,19 @@ const tableData = [
       ],
     },
   },
-
-  {
-    id: 4,
-    column1: "Letter of Intent",
-    column2: {
-      content: [
-        "A letter of intent addressing to the Embassy of Afghanistan outlining the applicants",
-        "purpose of travel, length of stay, name of places to be visited, contact information and accommodation information in Afghanistan",
-      ],
-    },
-  },
-
+ 
   {
     id: 5,
-    column1: "Previous Visa Copy",
-    column2: {
-      content: [
-        "	A copy of your most recent Afghanistan Visa.",
-      ],
-    },
-  },
-
-  {
-    id: 6,
     column1: "Proof of Departure",
     column2: {
       content: [
-        "A copy of your round trip airline tickets, or itinerary, or letter of confirmation from a travel agent",
+        "A copy of your round trip airline tickets, or itinerary, or letter of confirmation from a travel agent.",
       ],
     },
   },
-
   {
-    id: 7,
-    column1: "DS-82 Application Form",
+    id: 6,
+    column1: " Application Form",
     column2: {
       content: [
         "Download Visa Application",
@@ -71,7 +49,7 @@ const tableData = [
   },
 
   {
-    id: 8,
+    id: 7,
     column1: "WVT Work Order",
     column2: {
       content: [
@@ -82,7 +60,7 @@ const tableData = [
   },
 
   {
-    id: 9,
+    id: 8,
     column1: "Mail Your Documents",
     column2: {
       content: [
@@ -98,24 +76,24 @@ const tableData = [
 ];
 
 const datatable1 = [
-  ['Single', '$245.00', '4 Business Days', 'Up to 30 days', '3 Months'],
-  ['Single', '$165.00', '10 Business Days', 'Up to 30 days', '3 Months'],
+  [ 'Most Nationalities','Single/Multiple', '$25.00/$25.00', '10 Business Days', 'Up to 30 days', '3 Months'],
 
-];
-
+]
 const datatable2 = [
-  ['$90.00', '10 Business Days'],
-  ['$140.00', '4 Business Days'],
+  [ '$90.00', '10 Business Days'],
+
+
+
 ];
 
-
-const datatable3 = [
+const datatable4 = [
   ['Less than 3 passports', '$36.00'],
   ['4 or more passports', '$39.00'],
   ['Saturday Delivery', '$41.00'],
 ];
 
-function Afghanistan() {
+
+function Tourist_nonUs_Egypt() {
   return (
     <div>
       <div>
@@ -142,6 +120,7 @@ function Afghanistan() {
               ))}
             </tbody>
           </table>
+
         </div>
       </div>
       <div className="req-table-container">
@@ -149,6 +128,7 @@ function Afghanistan() {
         <table className="costing-responsive-table">
           <thead>
             <tr>
+             <th>Type</th>
               <th>Entry</th>
               <th>Price</th>
               <th>Processing Time</th>
@@ -156,7 +136,9 @@ function Afghanistan() {
               <th>Valid</th>
             </tr>
           </thead>
+
           <tbody>
+
             {datatable1.map((row, rowIndex) => (
               <tr key={rowIndex}>
                 {row.map((cell, columnIndex) => (
@@ -166,19 +148,21 @@ function Afghanistan() {
             ))}
           </tbody>
         </table>
-
         <div className='Detailsdata_descripition'>
           <h6>The fees above include a $5.00 check writing fee.</h6>
           <h6>Consular fees are subject to change without notice.</h6>
           <h6>If there is any uncertainty, please give us a call to verify.</h6>
           <h6>Maximum Stay and Validity of Visa is dependent on the Embassy’s discretion.</h6>
+          <br></br>
 
         </div>
 
-        <center><h3 className='costing-Header'> WORLD VISA TRAVEL SERVICE FEES</h3></center>
+        <center><h3 className='costing-Header'>WORLD VISA TRAVEL SERVICE FEES
+        </h3></center>
         <table className="costing-responsive-table">
           <thead>
             <tr>
+           
               <th>Price</th>
               <th>Processing Time</th>
             </tr>
@@ -203,7 +187,7 @@ function Afghanistan() {
             </tr>
           </thead>
           <tbody>
-            {datatable3.map((row, rowIndex) => (
+            {datatable4.map((row, rowIndex) => (
               <tr key={rowIndex}>
                 {row.map((cell, columnIndex) => (
                   <td key={columnIndex}>{cell}</td>
@@ -211,9 +195,9 @@ function Afghanistan() {
               </tr>
             ))}
           </tbody>
-          </table>
+       
+        </table>
         <p>Update: FedEx charges an additional $6.50 for residential areas. Please call for shipping to Alaska/Hawaii.</p>
-
       </div>
 
 
@@ -221,4 +205,4 @@ function Afghanistan() {
   )
 }
 
-export default Afghanistan;
+export default Tourist_nonUs_Egypt;

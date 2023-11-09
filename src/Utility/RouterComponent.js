@@ -64,7 +64,7 @@ function RouterComponent() {
 
 {/* Based On citizen */}
 
-      <Route path="/:type/USCitizen" element={<USCitizen/>}/>
+      <Route path="/:id/:id/:type/USCitizen" element={<USCitizen/>}/>
       <Route path="/:id/:id/:type/NonUsCitizen" element={<NonUsCitizen/>}/>
 
       <Route path="*" element={<NotFoundPage />} />

@@ -1,7 +1,6 @@
 import React from 'react'
 import { useLocation } from 'react-router-dom';
 import Canada from '../../Components/Canada/Canada';
-import India from "../../Components/India/India";
 import "./NonUsCitizen.css";
 import Afghanistan from '../../Components/Tourist_visa/Tourist_non_us_visa/Afghanistan';
 import BelarusTouristNonUs from '../../Components/Tourist_visa/Tourist_non_us_visa/BelarusTouristNonUs';
@@ -24,6 +23,22 @@ import Tourist_nonUs_Central_African_Republic from '../../Components/Tourist_vis
 import Tourist_nonUs_Bangladesh from '../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_Bangladesh';
 import Tourist_nonUs_Bahamas from '../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_Bahamas';
 import Tourist_nonUs_Congo from '../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_Congo';
+import Tourist_nonUs_CapeVarde from '../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_CapeVarde';
+import Tourist_nonUs_Djibouti from '../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_Djibouti';
+import Tourist_nonUs_Ecuador from '../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_Ecuador';
+import Tourist_nonUs_Eritrea from '../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_Eritrea';
+import Tourist_nonUs_Egypt from '../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_Egypt';
+import Tourist_nonUs_Ethiopia from '../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_Ethiopia';
+import Tourist_nonUs_Fiji from '../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_Fiji';
+import Tourist_nonUs_Gabon from '../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_Gabon';
+import Tourist_nonUs_Ghana from '../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_Ghana';
+import Tourist_nonUs_Gambia from '../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_Gambia';
+import Tourist_nonUs_Guinea from '../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_Guinea';
+import Tourist_nonUs_Georgia from '../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_Georgia';
+import Tourist_nonUs_Honduras from '../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_Honduras';
+import Tourist_nonUs_Iraq from '../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_Iraq';
+import Tourist_nonUs_IvoryCoast from '../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_IvoryCoast';
+import Tourist_nonUs_India from '../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_India';
 
 const NonUsCitizen = () => {
     const location = useLocation();
@@ -45,7 +60,7 @@ const NonUsCitizen = () => {
      <center><h2 className="NonUs-citizen-Header">Non-US Citizens</h2></center>
      <center><h3 className="NonUs-citizen-country">{destination && destination}</h3></center>
        {destination === "Canada" && <Canada />}
-       {destination === "India" && <India />}
+       
 
 {/* Tourist_visas */}
 
@@ -68,7 +83,24 @@ const NonUsCitizen = () => {
     {(destination === "Cameroon" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_Cameroon/>)}
     {(destination === "Central African Republic" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_Central_African_Republic/>)}
     {(destination === "Republic of the Congo" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_Congo/>)}
-    {/* {(destination === "Cameroon" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_Cameroon/>)} */}
+    {(destination === "Cape Verde" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_CapeVarde/>)}
+    {(destination === "Djibouti" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_Djibouti/>)}
+    {(destination === "Ecuador" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_Ecuador/>)}
+    {(destination === "Eritrea" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_Eritrea/>)}
+    {(destination === "Egypt" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_Egypt/>)}
+    {(destination === "Ethiopia" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_Ethiopia/>)}
+    {(destination === "Fiji" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_Fiji/>)}
+    {(destination === "Gabon" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_Gabon/>)}
+    {(destination === "Ghana" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_Ghana/>)}
+    {(destination === "Gambia" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_Gambia/>)}
+    {(destination === "Guinea" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_Guinea/>)}
+    {(destination === "Georgia" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_Georgia/>)}
+    {(destination === "Honduras" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_Honduras/>)}
+    {(destination === "Iraq" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_Iraq/>)}
+    {(destination === "Ivory Coast" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_IvoryCoast/>)}
+    {(destination === "India" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_India/>)}
+    {/* {(destination === "Honduras" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_Honduras/>)}
+    {(destination === "Iraq" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_Iraq/>)} */}
 
 
 
