@@ -1,13 +1,12 @@
 import React from 'react'
-import { GiCambodia } from 'react-icons/gi';
 
   const tableData = [
     {
       id: 1,
       column1: "Passport",
       column2: {
-        content: ["U.S. Passport – have to be valid at least 6 months beyond intended stay and must have at least two blank visa pages.",
-    "For Additional Visa Pages and U.S. Passport Renewal."],
+        content: ["Passport – have to be valid at least 6 months beyond intended stay and must have at least two blank visa pages.        ",
+    ],
       },
     },
     {
@@ -15,13 +14,26 @@ import { GiCambodia } from 'react-icons/gi';
       column1: "Photo",
       column2: {
         content: [
-          "Two passport-type photographs. Quality Requirements for Passport Book & Passport Card Photographs",          
+          "One passport-type photograph.          ",          
+        "Quality Requirements for Passport Book & Passport Card Photographs        "
         ],
       },
     },
 
     {
       id: 3,
+      column1: "Proof of U.S. Status	",
+      column2: {
+        content: [
+          "A copy of evidence of legal status in the U.S.          ",
+        ],
+      },
+    },
+
+
+
+    {
+      id: 4,
       column1: "Business Letter",
       column2: {
         content: [
@@ -30,19 +42,20 @@ import { GiCambodia } from 'react-icons/gi';
       },
     },
 
-    {
-        id: 4,
-        column1: "Letter of Intent	",
-        column2: {
-          content: [
-            "A letter indicating the purpose of your trip, name of hotel you will be staying in, the dates of your planned trip, and places to be visited.            ",
-          ],
-        },
-      },
-  
-
+    
     {
       id: 5,
+      column1: "Letter of Invitation	",
+      column2: {
+        content: [
+          "An original invitation from a legal entity duly registered in Ukraine.          ",
+        ],
+      },
+    },
+
+
+    {
+      id: 6,
       column1: "Proof of Departure",
       column2: {
         content: [
@@ -52,18 +65,19 @@ import { GiCambodia } from 'react-icons/gi';
     },
 
     {
-      id: 6,
+      id: 7,
       column1: "Application Form",
       column2: {
         content: [
-          "Download Application Form",
-          "Two completed Visa Applications, MUST be signed.          "
+          "Online Application Form          ",
+          "One completed Visa Application, MUST be signed.          ",
+        
         ],
       },
     },
 
     {
-      id: 7,
+      id: 8,
       column1: "WVT Work Order",
       column2: {
         content: [
@@ -75,7 +89,7 @@ import { GiCambodia } from 'react-icons/gi';
     },
 
     {
-      id: 8,
+      id: 9,
       column1: "Mail Your Documents",
       column2: {
         content: [
@@ -91,12 +105,17 @@ import { GiCambodia } from 'react-icons/gi';
   ];
 
 const datatable1 = [
-  ['Single/Multiple', '$40.00/ $75.00', '3-4 Business Days' ,'Up to 30 days', '1 Month/ 3-6 Months'],
-
+    ['Regular','	Single/ Double/ Multiple','$100.00/ $130.00/ $250.00','Up to 30 Business Days	','Up to 30 days	','	3 Months/ 3 Months/ 1 Year  '],
+    ['Rush','Single/ Double/ Multiple','$195.00/ $255.00/ $495.00','Up to 15 Business Days	','Up to 30 days	','	3 Months/ 3 Months/ 1 Year  '],
 ];
 
 const datatable2 = [
-  ['$90.00','6-8 Business Days'],
+  
+
+  ['Regular', '$90.00', 'Up to 30 Business Days' ],
+  ['Rush', '$140.00', 'Up to 15 Business Days' ],
+
+
 
 ];
 
@@ -107,7 +126,7 @@ const datatable3 = [
   ['Saturday Delivery','$41.00'],
 ];
 
-function Lebanon() {
+function Ukraine() {
   return (
    <div>
    <div>
@@ -141,7 +160,8 @@ function Lebanon() {
       <table className="costing-responsive-table">
         <thead>
           <tr>
-            <th>Type</th>
+          <th>Type</th>
+
             <th>Entry</th>
             <th>Price</th>
             <th>Processing Time</th>
@@ -172,7 +192,8 @@ function Lebanon() {
       <table className="costing-responsive-table">
         <thead>
           <tr>
-            <th>Type</th>
+          <th>Type</th>
+
             <th>Price</th>
             <th>Processing Time</th>
           </tr>
@@ -207,8 +228,11 @@ function Lebanon() {
       </tbody>
     </table>
     <div className='Detailsdata_descripition'>
-       <h6>Update: FedEx charges an additional $6.50 for residential areas. Please call for shipping to Alaska/Hawaii.</h6>           
+       <h6>Update: FedEx charges an additional $6.50 for residential areas. Please call for shipping to Alaska/Hawaii.</h6>
+     
+      
       </div>
+
     </div>
     
     
@@ -216,4 +240,4 @@ function Lebanon() {
   )
 }
 
-export default Lebanon;
+export default Ukraine;

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
+import { useLocation } from 'react-router-dom';
 import "./FormVisa.css";
 import Select from "react-select";
 import { countries } from "countries-list"; // Import the countries list
 import ReactCountryFlag from "react-country-flag";
-import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 
@@ -27,6 +27,11 @@ const CustomOption = ({ innerProps, label, data }) => (
 
 const FormVisa = ({ visaType }) => {
   
+  const location = useLocation();
+
+  // Access the current path
+  const currentPath = location.pathname;
+  console.log(currentPath)
 
   const [isChecked, setIsChecked] = useState(false);
   const navigation = useNavigate()
@@ -43,16 +48,41 @@ const FormVisa = ({ visaType }) => {
 
   const handleSubmit = () => {
 
-    if(formData?.citizen?.value === "Non-US Citizens") {
+    if(formData?.citizen?.value === "Non-US Citizens" && currentPath === '/visas/tourist-visa' ) {
       console.log("NON US");
-      navigation(`/NonUsCitizen?country=${formData?.srcCountry?.label}&destination=${formData?.dstCountry?.label}`)
-      
-    } else {
-      console.log("US");
-      navigation(`/USCitizen?country=${formData?.srcCountry?.label}&destination=${formData?.dstCountry?.label}`)
+      navigation(`/visas/tourist-visa/${formData?.citizen.value.split(" ").join("")}/NonUsCitizen?country=${formData?.srcCountry?.label}&destination=${formData?.dstCountry?.label}`)
+    } 
+    else if(formData?.citizen?.value === "Non-US Citizens" && currentPath === '/visas/business-visa' ) {
+      console.log("NON US");
+      navigation(`/visas/business-visa/${formData?.citizen.value.split(" ").join("")}/NonUSCitizen?country=${formData?.srcCountry?.label}&destination=${formData?.dstCountry?.label}`)
     }
-   
+    else if(formData?.citizen?.value === "Non-US Citizens" && currentPath === '/visas/official-visa' ) {
+      console.log("NONUS");
+      navigation(`/visas/official-visa/${formData?.citizen.value.split(" ").join("")}/NonUSCitizen?country=${formData?.srcCountry?.label}&destination=${formData?.dstCountry?.label}`)
+    }
+    else if(formData?.citizen?.value === "Non-US Citizens" && currentPath === '/visas/e-visa' ) {
+      console.log("NON US");
+      navigation(`/visas/e-visa/${formData?.citizen.value.split(" ").join("")}/NonUSCitizen?country=${formData?.srcCountry?.label}&destination=${formData?.dstCountry?.label}`)
+    }
+    else if(formData?.citizen?.value === "US Citizens" && currentPath === '/visas/tourist-visa' ) {
+      console.log("US");
+      navigation(`/visas/tourist-visa/${formData?.citizen.value.split(" ").join("")}/USCitizen?country=${formData?.srcCountry?.label}&destination=${formData?.dstCountry?.label}`)
+    }
+    else if(formData?.citizen?.value === "US Citizens" && currentPath === '/visas/business-visa' ) {
+      console.log("US");
+      navigation(`/visas/business-visa/${formData?.citizen.value.split(" ").join("")}/USCitizen?country=${formData?.srcCountry?.label}&destination=${formData?.dstCountry?.label}`)
+    }
+    else if(formData?.citizen?.value === "US Citizens" && currentPath === '/visas/official-visa' ) {
+      console.log("US");
+      navigation(`/visas/official-visa/${formData?.citizen.value.split(" ").join("")}/USCitizen?country=${formData?.srcCountry?.label}&destination=${formData?.dstCountry?.label}`)
+    }
+    else if(formData?.citizen?.value === "US Citizens" && currentPath === '/visas/e-visa' ) {
+      console.log("US");
+      navigation(`/visas/e-visa/${formData?.citizen.value.split(" ").join("")}/USCitizen?country=${formData?.srcCountry?.label}&destination=${formData?.dstCountry?.label}`)
+    }
+    
   };
+
 
   console.log("harika", formData);
  

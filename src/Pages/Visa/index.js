@@ -10,28 +10,28 @@ function index() {
       name: 'Tourist Visa',
       image: '/assets/visa/visa1.png',
       paragraph: 'A Tourist Visa allows travelers to explore and experience foreign destinations for leisure and tourism purposes.',
-      link:'/moreinfo/Tourist'
+      link:'/visas/tourist-visa'
     },
     {
       id: 2,
       name: 'Business Visa',
       image: '/assets/visa/visa2.png',
       paragraph: 'A Business Visa enables individuals to engage in commercial activities, attend meetings, and conduct business in foreign countries.',
-      link:'/moreinfo/businessvisa'
+      link:'/visas/business-visa'
     },
     {
       id: 3,
       name: 'Official/Diplomatic Visa',
       image: '/assets/visa/visa3.png',
       paragraph: 'An Official Visa is granted to government representatives for official diplomatic interactions between nations.',
-      link:'/moreinfo/officialvisa'
+      link:'/visas/official-visa'
     },
     {
       id: 4,
       name: 'E-Visa',
       image: '/assets/visa/visa4.png',
       paragraph: 'An eVisa streamlines visa applications, allowing travelers to obtain international travel authorization conveniently online.',
-      link:'/moreinfo/e-visa'
+      link:'/visas/e-visa'
     },
   ];
   return (

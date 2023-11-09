@@ -1,5 +1,4 @@
 import React from 'react'
-import { GiCambodia } from 'react-icons/gi';
 
   const tableData = [
     {
@@ -10,12 +9,13 @@ import { GiCambodia } from 'react-icons/gi';
     "For Additional Visa Pages and U.S. Passport Renewal."],
       },
     },
+
     {
       id: 2,
       column1: "Photo",
       column2: {
         content: [
-          "Three passport-type photographs. Quality Requirements for Passport Book & Passport Card Photographs",          
+          "Two passport-type photographs. Quality Requirements for Passport Book & Passport Card Photographs",          
         ],
       },
     },
@@ -29,18 +29,17 @@ import { GiCambodia } from 'react-icons/gi';
         ],
       },
     },
+
     {
         id: 4,
-        column1: "Letter of Approval	",
+        column1: "Letter of Invitation	",
         column2: {
           content: [
-            "A letter of approval from the Immigration Department in Vientiane, to be sent to the Embassy of Laos in Washington DC.            ",
+            "A letter of invitation from host organization in Oman.            ",
           ],
         },
       },
-
-
-  
+    
 
     {
       id: 5,
@@ -58,8 +57,9 @@ import { GiCambodia } from 'react-icons/gi';
       column2: {
         content: [
           "Download Application Form",
-          "Two completed Visa Applications, MUST be signed.          "
-        ],
+          "One completed Visa Application, MUST be printed and signed for each copy.          ",
+          "Note: “Sponsor Details” must be filled in to complete this form. If you do not have a sponsor, or do not know the details,          ",
+        "please fill in the applicant’s information and enter “Myself” for the sponsor relationship.        "],
       },
     },
 
@@ -92,13 +92,12 @@ import { GiCambodia } from 'react-icons/gi';
   ];
 
 const datatable1 = [
-  ['Regular/Rush','Single', '$55.00/$75.00', '1-7 Business Days' ,'Up to 30 days', '2 Months  '],
+    ['Multiple', '$155.00', '3-5 Business Days		' ,'	Up to 30 days', '1 Year    '],
 
 ];
 
 const datatable2 = [
-  ['Regular','$90.00','5-7 Business Days'],
-  ['Rush','$140.00','1-2 Business Days'],
+  ['$90.00','3-5 Business Days  '],
 
 ];
 
@@ -109,7 +108,7 @@ const datatable3 = [
   ['Saturday Delivery','$41.00'],
 ];
 
-function Laos() {
+function Oman() {
   return (
    <div>
    <div>
@@ -143,7 +142,7 @@ function Laos() {
       <table className="costing-responsive-table">
         <thead>
           <tr>
-            <th>Type</th>
+
             <th>Entry</th>
             <th>Price</th>
             <th>Processing Time</th>
@@ -174,7 +173,6 @@ function Laos() {
       <table className="costing-responsive-table">
         <thead>
           <tr>
-            <th>Type</th>
             <th>Price</th>
             <th>Processing Time</th>
           </tr>
@@ -213,9 +211,8 @@ function Laos() {
       </div>
     </div>
     
-    
    </div>
   )
 }
 
-export default Laos;
+export default Oman;

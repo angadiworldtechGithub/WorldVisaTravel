@@ -30,14 +30,15 @@ import React from 'react'
     },
 
     {
-      id: 4,
-      column1: "Letter of Invitation",
-      column2: {
-        content: [
-          "An official invitation provided by the host, obtained from the Consular Department of the Ministry of Foreign Affairs of Azerbaijan or",
-             "letter of invitation from the host along with a copy of the charter and state registration certificate of the host company/organization.          "   ],
+        id: 4,
+        column1: "Letter of Invitation		",
+        column2: {
+          content: [
+            "A letter of invitation from host organization in Nigeria.            ",
+          ],
+        },
       },
-    },
+    
 
     {
       id: 5,
@@ -54,8 +55,13 @@ import React from 'react'
       column1: "Application Form",
       column2: {
         content: [
-          "Download Visa Application.",
-          "One completed Visa Application, MUST be notarized and signed. "
+          "WVT can help you complete the Nigeria Visa Online Application through our White Glove Service (ONLY $50.00).          ",
+          "Nigeria White Glove Form        ",
+          "Please call for further assistance.Online Application Form",
+          "One completed Visa Application, MUST be printed and signed.",
+          "One Visa Acknowledgement Slip.",
+          "One Visa Payment Slip/Receipt.",
+          "Select Washington, DC as the processing location in the Online Application Form."
         ],
       },
     },
@@ -89,13 +95,13 @@ import React from 'react'
   ];
 
 const datatable1 = [
-  ['Single', '$25.00', '10 Business Days' ,'Up to 30 days', '3 Months'],
-  ['Multiple', '$355.00', '10 Business Days','Up to 6 Months','1 Year'],
+    ['Online Application',"$180.00    "],
 
 ];
 
 const datatable2 = [
-  ['$90.00','10 Business Days'],
+  ['Regular	','$195.00','8-10 Business Days  '],
+
 ];
 
 
@@ -105,7 +111,12 @@ const datatable3 = [
   ['Saturday Delivery','$41.00'],
 ];
 
-function Azerbaijan() {
+const datatable4 = [
+    ['Regular','Single/Multiple', 'Call for quote	', ' 8-10 Business Days		' ,'	Up to 90 days', '6-24 Months    '],
+
+];
+
+function Nigeria() {
   return (
    <div>
    <div>
@@ -135,19 +146,44 @@ function Azerbaijan() {
    </div>
     </div>
     <div className="req-table-container">
-    <center><h3 className='costing-Header'>CONSULAR FEES</h3></center>
+    <center><h3 className='costing-Header'>CONSULAR FEES(ONLINE APPLICATION)</h3></center>
       <table className="costing-responsive-table">
         <thead>
           <tr>
-            <th>Entry</th>
+          <th>Type</th>
+
             <th>Price</th>
-            <th>Processing Time</th>
-            <th>PMaximum Stay</th>
-            <th>Valid</th>
           </tr>
         </thead>
         <tbody>
           {datatable1.map((row, rowIndex) => (
+            <tr key={rowIndex}>
+              {row.map((cell, columnIndex) => (
+                <td key={columnIndex}>{cell}</td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <div className='Detailsdata_descripition'>
+       <h6>The fees above has to be paid online to the Embassy of Nigeria.</h6>           
+      </div>
+
+      <center><h3 className='costing-Header'>CONSULAR FEES(PROCESSING TIME)</h3></center>
+      <table className="costing-responsive-table">
+        <thead>
+          <tr>
+          <th>Type</th>
+
+            <th>Entry</th>
+            <th>Price</th>
+            <th>Processing Time</th>
+            <th>Maximum Stay</th>
+            <th>Valid</th>
+          </tr>
+        </thead>
+        <tbody>
+          {datatable4.map((row, rowIndex) => (
             <tr key={rowIndex}>
               {row.map((cell, columnIndex) => (
                 <td key={columnIndex}>{cell}</td>
@@ -162,13 +198,18 @@ function Azerbaijan() {
       <h6>Consular fees are subject to change without notice.</h6>
       <h6>If there is any uncertainty, please give us a call to verify.</h6>
       <h6>Maximum Stay and Validity of Visa is dependent on the Embassy’s discretion.</h6>
+      <h6>**The Nigerian Embassy opens from Monday to Thursday. Please keep in mind that Friday does not count as a Business Day.</h6>
       
       </div>
+
+
+
       
      <center><h3 className='costing-Header'> WORLD VISA TRAVEL SERVICE FEES</h3></center>
       <table className="costing-responsive-table">
         <thead>
           <tr>
+          <th>Type</th>
             <th>Price</th>
             <th>Processing Time</th>
           </tr>
@@ -212,4 +253,4 @@ function Azerbaijan() {
   )
 }
 
-export default Azerbaijan;
+export default Nigeria;

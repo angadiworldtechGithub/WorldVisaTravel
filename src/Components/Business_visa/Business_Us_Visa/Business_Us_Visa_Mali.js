@@ -1,5 +1,4 @@
 import React from 'react'
-import { GiCambodia } from 'react-icons/gi';
 
   const tableData = [
     {
@@ -30,21 +29,16 @@ import { GiCambodia } from 'react-icons/gi';
       },
     },
 
-    {
+    
+      {
         id: 4,
-        column1: "Letter of Invitation	",
+        column1: "Vaccinations	",
         column2: {
           content: [
-            "A letter of invitation from host organization in Cambodia.            ",
+            "International Certificate of Vaccination for Yellow Fever.            ",
           ],
         },
       },
-  
-
-
-
-
-  
 
     {
       id: 5,
@@ -96,14 +90,16 @@ import { GiCambodia } from 'react-icons/gi';
   ];
 
 const datatable1 = [
-  ['Regular/Rush/Next Day','Single', '$50.00/ $80.00/ $100.00', '1-14 Business Days' ,'Up to 30 days', '3 Months'],
+    ['Regular','Multiple', '$165.00', '5-7 Business Days' ,'Up to 365 days', '1-5 Years    '],
+    ['Rush','Multiple', '$185.00', '2-3 Business Days' ,'Up to 365 days', '1-5 Years    '],
+    ['Emergency','Multiple', '$215.00', 'Same/Next Day' ,'Up to 365 days', '1-5 Years    '],
 
 ];
 
 const datatable2 = [
-  ['Regular','$90.00','10-14 Business Days'],
-  ['Rush','$140.00','1-2 Business Days'],
-  ['Next Day','$190.00','Next Day'],
+  ['Regular','$90.00','7-10 Business Days'],
+  ['Rush','$140.00','3 Business Days'],
+  ['Emergency','$190.00','Same/Next Day'],
 
 ];
 
@@ -114,7 +110,7 @@ const datatable3 = [
   ['Saturday Delivery','$41.00'],
 ];
 
-function Cambodia() {
+function Mali() {
   return (
    <div>
    <div>
@@ -223,4 +219,4 @@ function Cambodia() {
   )
 }
 
-export default Cambodia;
+export default Mali;
