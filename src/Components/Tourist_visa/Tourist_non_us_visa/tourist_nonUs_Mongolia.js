@@ -5,132 +5,88 @@ const tableData = [
         id: 1,
         column1: "Passport",
         column2: {
-            content: ["U.S. Passport – have to be valid at least 6 months beyond intended stay and must have at least two blank visa pages.",
-                "For Additional Visa Pages and U.S. Passport Renewal."],
+            content: ["Passport – have to be valid at least 6 months beyond intended stay and must have at least two blank visa pages."],
         },
     },
     {
         id: 2,
         column1: "Photo",
         column2: {
-            content: ["Two passport-type photographs. Quality Requirements for Passport Book & Passport Card Photographs"
+            content: [
+                "Two passport-type photographs. Quality Requirements for Passport Book & Passport Card Photographs",
             ],
         },
     },
 
     {
         id: 3,
-        column1: "Proof of Residence",
+        column1: "Proof of U.S. Status",
         column2: {
             content: [
-                "A copy of your Driver’s License, Major Utility Bill (Water, Gas, Electric, etc.), or a copy of valid lease agreement."
+                "A copy of evidence of legal status in the U.S.",
             ],
         },
     },
 
-    {
-        id: 4,
-        column1: "Minors",
-        column2: {
-            content: [
-                "Parental Authorization Form for minors travelers: Download Parental Authorization Form",
-                "One completed Form, MUST be notarized and signed. Photocopy of a Birth Certificate is required."
-            ],
-        },
-    },
 
     {
         id: 5,
-        column1: "Applicants of Indian Origin and Dependent Family Members",
+        column1: "Proof of Departure",
         column2: {
             content: [
-                "Persons of Indian origin are required to surrender Indian citizenship.",
-                "A copy of a renunciation certificate AND naturalization certificate.",
-                "Persons of Indian origin who have NOT renounced Indian citizenship or",
-                "CANNOT SHOW PROOF of renunciation must first apply for renunciation directly through CKGS:",
-                "http://www.in.ckgs.us",
+                "A copy of your round trip airline tickets, or itinerary, or letter of confirmation from a travel agent.",
             ],
         },
     },
-
     {
         id: 6,
-        column1: "Additional Forms",
+        column1: " Application Form",
         column2: {
             content: [
-                "Religious Undertaking Letter for religious travelers: Download Religious Undertaking Letter One completed Form, MUST be signed.",
-                "Journalist Undertaking Letter for journalist travelers: Download Journalist Undertaking Letter One completed Form, MUST be signed."
+                "Download Regular Application Form",
+                "One completed Visa Application, MUST be signed.",
+              
             ],
         },
     },
 
     {
         id: 7,
-        column1: "Proof of Departure",
+        column1: "WVT Work Order",
         column2: {
             content: [
-                "A copy of your round trip airline tickets, or itinerary, or letter of confirmation from a travel agent."
+                "Please complete WVT Work Order Form. Download here",
+                "Payment can be processed with a credit card or a company/cashier check or money order.",
             ],
         },
     },
 
     {
         id: 8,
-        column1: "Application Form",
-        column2: {
-            content: [
-                "WVT can help you complete the India Visa Online Application through our White Glove Service (ONLY $50.00).",
-                "India White Glove Form",
-                "Please call for further assistance.",
-                "Online Application Form",
-                "One completed Visa Application, MUST be signed and printed in separate papers.",
-                "Note: The Embassy will not accept double-sided applications.",
-
-                "Additional Particulars Form for ALL travelers: Download Additional Particulars Form One completed Form, MUST be signed."
-            ],
-        },
-    },
-
-    {
-        id: 9,
-        column1: "WVT Work Order",
-        column2: {
-            content: [
-                "Please complete WVT Work Order Form. Download here",
-                "Payment can be processed with a credit card or a company/cashier check or money order."
-            ],
-        },
-    },
-
-    {
-        id: 10,
         column1: "Mail Your Documents",
         column2: {
             content: [
                 "Please mail the completed required documents to:",
-                "World Visa Travel, Inc.",
-                "1413 K Street, N.W.",
-                "9th Floor",
-                "Washington, D.C. 20005",
-                "Telephone: (202) 289-6251",
+                "World Visa Travel, Inc,",
+                "1413 K Street, N.W,",
+                "9th Floor,",
+                "Washington, D.C. 20005,",
+                "Telephone: (202) 289-6251,",
             ],
         },
     },
 ];
 
 const datatable1 = [
-    ['Regular', 'Single/Multiple', '$127.90', '10-12 Business Days', 'Up to 180 days', '6 Months'],
-    ['Rush', 'Single/Multiple', '$127.90', '7-10 Business Days', 'Up to 180 days', '6 Months'],
-
-];
-
+    ['Single/Double/Multiple/Multiple', 'B$50.00/$65.00/$70.00/$200.00', '5 Business Days', '30 days/ 90 days', '3 Months/3 Months/ 6 Months/1 Year'],
+   
+]
 const datatable2 = [
-    ['Regular/ Rush', 'Single/ Multiple', '$1890.90/ $511.90', '10-12 Business Days','up to 180 days', '12 Months/ 5 Years'],
+    ['Single', '$60.00', '5 Business Days', 'Up to 30 days','3 Months'],
+   
 ];
-
 const datatable3 = [
-    ['Regular',  '$90.00', '10-14 Business days'],
-    ['Rush',  '$140.00', '7-10 Business days'],
+    [ '$90.00', '5 Business Days']
    
 ];
 const datatable4 = [
@@ -140,9 +96,7 @@ const datatable4 = [
 ];
 
 
-
-
-function Tourist_nonUs_India() {
+function Tourist_nonUs_Mongolia() {
     return (
         <div>
             <div>
@@ -169,15 +123,15 @@ function Tourist_nonUs_India() {
                             ))}
                         </tbody>
                     </table>
+
                 </div>
             </div>
             <div className="req-table-container">
-                <center><h3 className='costing-Header'>CONSULAR FEES (OTHER NATIONALITIES)
-                </h3></center>
+                <center><h3 className='costing-Header'>CONSULAR FEES (OTHER NATIONALITIES)</h3></center>
                 <table className="costing-responsive-table">
                     <thead>
                         <tr>
-                            <th>Type</th>
+                       
                             <th>Entry</th>
                             <th>Price</th>
                             <th>Processing Time</th>
@@ -185,7 +139,9 @@ function Tourist_nonUs_India() {
                             <th>Valid</th>
                         </tr>
                     </thead>
+
                     <tbody>
+
                         {datatable1.map((row, rowIndex) => (
                             <tr key={rowIndex}>
                                 {row.map((cell, columnIndex) => (
@@ -195,20 +151,20 @@ function Tourist_nonUs_India() {
                         ))}
                     </tbody>
                 </table>
-
                 <div className='Detailsdata_descripition'>
-                    <h6>The fees above include a $5.00 money order fee.</h6>
+                    <h6>The fees above include a $5.00 check writing fee.</h6>
                     <h6>Consular fees are subject to change without notice.</h6>
                     <h6>If there is any uncertainty, please give us a call to verify.</h6>
                     <h6>Maximum Stay and Validity of Visa is dependent on the Embassy’s discretion.</h6>
+                    <br></br>
 
                 </div>
-
-                <center><h3 className='costing-Header'> CONSULAR FEES (UK NATIONALITIES)</h3></center>
+            
+                <center><h3 className='costing-Header'>CONSULAR FEES (UK AND CANADIAN NATIONALITIES)</h3></center>
                 <table className="costing-responsive-table">
                     <thead>
                         <tr>
-                        <th>Type</th>
+                       
                             <th>Entry</th>
                             <th>Price</th>
                             <th>Processing Time</th>
@@ -216,7 +172,9 @@ function Tourist_nonUs_India() {
                             <th>Valid</th>
                         </tr>
                     </thead>
+
                     <tbody>
+
                         {datatable2.map((row, rowIndex) => (
                             <tr key={rowIndex}>
                                 {row.map((cell, columnIndex) => (
@@ -227,17 +185,19 @@ function Tourist_nonUs_India() {
                     </tbody>
                 </table>
                 <div className='Detailsdata_descripition'>
-                    <h6>The fees above include a $5.00 money order fee.</h6>
+                    <h6>The fees above include a $5.00 check writing fee.</h6>
                     <h6>Consular fees are subject to change without notice.</h6>
                     <h6>If there is any uncertainty, please give us a call to verify.</h6>
                     <h6>Maximum Stay and Validity of Visa is dependent on the Embassy’s discretion.</h6>
+                    <br></br>
 
-                </div>
-                <center><h3 className='costing-Header'> WORLD VISA TRAVEL SERVICE FEES</h3></center>
+                </div>               
+                <center><h3 className='costing-Header'>WORLD VISA TRAVEL SERVICE FEES
+                </h3></center>
                 <table className="costing-responsive-table">
                     <thead>
                         <tr>
-                            <th>Type</th>
+                          
                             <th>Price</th>
                             <th>Processing Time</th>
                         </tr>
@@ -252,7 +212,6 @@ function Tourist_nonUs_India() {
                         ))}
                     </tbody>
                 </table>
-
 
                 <center><h3 className='costing-Header'>RETURN SHIPPING FEES</h3></center>
                 <table className="costing-responsive-table">
@@ -271,10 +230,9 @@ function Tourist_nonUs_India() {
                             </tr>
                         ))}
                     </tbody>
+
                 </table>
-                <p className='Detailsdata_descripition'>
-                    Update: FedEx charges an additional $6.50 for residential areas. Please call for shipping to Alaska/Hawaii.
-                </p>
+                <p>Update: FedEx charges an additional $6.50 for residential areas. Please call for shipping to Alaska/Hawaii.</p>
             </div>
 
 
@@ -282,4 +240,4 @@ function Tourist_nonUs_India() {
     )
 }
 
-export default Tourist_nonUs_India;
+export default Tourist_nonUs_Mongolia;

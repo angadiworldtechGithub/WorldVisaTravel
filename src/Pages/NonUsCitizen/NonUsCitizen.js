@@ -39,6 +39,27 @@ import Tourist_nonUs_Honduras from '../../Components/Tourist_visa/Tourist_non_us
 import Tourist_nonUs_Iraq from '../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_Iraq';
 import Tourist_nonUs_IvoryCoast from '../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_IvoryCoast';
 import Tourist_nonUs_India from '../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_India';
+import Tourist_nonUs_Indonesia from '../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_Indonesia';
+import Tourist_nonUs_Iran from '../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_Iran';
+import Tourist_nonUs_Jamaica from '../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_Jamaica';
+import Tourist_nonUs_Jordan from '../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_Jordan';
+import Tourist_nonUs_Kazakhatan from '../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_Kazakhstan';
+import Tourist_nonUs_SouthKorea from '../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_SouthKorea';
+import Tourist_nonUs_kyrgyzstan from '../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_kyrgyzstan';
+import Tourist_nonUs_Laos from '../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_Laos';
+import Tourist_nonUs_Liberia from '../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_Liberia';
+import Tourist_nonUs_Libya from '../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_Libya';
+import Tourist_nonUs_Lebanon from '../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_Lebanon';
+import Tourist_nonUs_Lesotho from '../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_Lesotho';
+import Tourist_nonUs_Malaysia from '../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_Malaysia';
+import Tourist_nonUs_Moldova from '../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_Moldova';
+import Tourist_nonUs_Morocco from '../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_Morocco';
+import Tourist_nonUs_Madagascar from '../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_Madagascar';
+import Tourist_nonUs_Mongolia from '../../Components/Tourist_visa/Tourist_non_us_visa/tourist_nonUs_Mongolia';
+import Tourist_nonUs_Mozambique from '../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_Mozambique';
+import Tourist_nonUs_Malawi from '../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_Malawi';
+import Tourist_nonUs_Myanmar from '../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_Myanmar';
+import Tourist_nonUs_Nambia from '../../Components/Tourist_visa/Tourist_non_us_visa/Tourist_nonUs_Nambia';
 
 const NonUsCitizen = () => {
     const location = useLocation();
@@ -99,8 +120,30 @@ const NonUsCitizen = () => {
     {(destination === "Iraq" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_Iraq/>)}
     {(destination === "Ivory Coast" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_IvoryCoast/>)}
     {(destination === "India" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_India/>)}
-    {/* {(destination === "Honduras" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_Honduras/>)}
-    {(destination === "Iraq" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_Iraq/>)} */}
+    {(destination === "Indonesia" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_Indonesia/>)}
+    {(destination === "Iran" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_Iran/>)}
+    {(destination === "Jamaica" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_Jamaica/>)}
+    {(destination === "Jordan" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_Jordan/>)}
+    {(destination === "Kazakhstan" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_Kazakhatan/>)}
+    {(destination === "South Korea" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_SouthKorea/>)}
+    {(destination === "Kyrgyzstan" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_kyrgyzstan/>)}
+    {(destination === "Laos" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_Laos/>)}
+    {(destination === "Liberia" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_Liberia/>)}
+    {(destination === "Libya" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_Libya/>)}
+    {(destination === "Lebanon" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_Lebanon/>)}
+    {(destination === "Lesotho" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_Lesotho/>)}
+    {(destination === "Malaysia" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_Malaysia/>)}
+    {(destination === "Moldova" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_Moldova/>)}
+    {(destination === "Morocco" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_Morocco/>)}
+    {(destination === "Madagascar" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_Madagascar/>)}
+    {(destination === "Mongolia" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_Mongolia/>)}
+    {(destination === "Mozambique" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_Mozambique/>)}
+    {(destination === "Malawi" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_Malawi/>)}
+    {(destination === "Myanmar [Burma]" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_Myanmar/>)}
+    {(destination === "Namibia" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_Nambia/>)}
+    {/* {(destination === "Mongolia" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_Mongolia/>)}
+    {(destination === "Mozambique" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_Mozambique/>)}
+    {(destination === "Malawi" && currentPathlocation === "/visas/tourist-visa/Non-USCitizens/NonUsCitizen") &&  (<Tourist_nonUs_Malawi/>)} */}
 
 
 
