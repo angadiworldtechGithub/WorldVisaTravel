@@ -16,7 +16,7 @@ const tableData = [
     column1: "Photo",
     column2: {
       content: [
-        "One passport-type photograph. Quality Requirements for Passport Book & Passport Card Photographs",
+        "Four passport-type photographs. Quality Requirements for Passport Book & Passport Card Photographs",
       ],
     },
   },
@@ -25,12 +25,20 @@ const tableData = [
     id: 3,
     column1: "Diplomatic Letter/Note",
     column2: {
-      content: ["	A cover letter from the U.S. Department of State."],
+      content: ["	A cover letter from the government agency."],
+    },
+  },
+  {
+    id: 4,
+    column1: "Vaccinations",
+    column2: {
+      content: ["International Certificate of Vaccination for Yellow Fever."],
     },
   },
 
+
   {
-    id: 4,
+    id: 5,
     column1: "Proof of Departure",
     column2: {
       content: [
@@ -40,22 +48,12 @@ const tableData = [
   },
 
   {
-    id: 5,
-    column1: "Name Change",
-    column2: {
-      content: [
-        "A name change documentation by marriage or court order is required (if applicable).",
-      ],
-    },
-  },
-
-  {
     id: 6,
     column1: "Application Form",
     column2: {
       content: [
-        "Download Visa Application",
-        "One completed Visa Application, MUST be notarized and signed.",
+        "Download Application Form",
+        "Two completed Visa Applications, MUST be signed in BLUE INK.",
       ],
     },
   },
@@ -87,22 +85,21 @@ const tableData = [
   },
 ];
 
-const datatable1 = [["Single", "$0", "At Least 3 Weeks", "Up to 30 days"]];
+const datatable1 = [
+  ["Single", "$0", "5-7 Business Days", "Up to 30 Days","3 Months"],
+];
 
-const datatable2 = [["$90.00", "4-10 Business Days"]];
+const datatable2 = [
+  ["$90.00", "5-7 Business Days"],
+ 
+];
 const datatable3 = [
-  ["Next Business Day – up to 3 passports", "$36.00"],
-  ["Next Business Day – 4 or more passports", "$39.00"],
-  ["Saturday Delivery", "$41.00"],
-  ["Saturday Delivery", "$41.00"],
+  ["Less than 3 passports", "$36.00"],
+  ["4 or more passports", "$39.00"],
   ["Saturday Delivery", "$41.00"],
 ];
-const datatable4 = [["Next Day Letter (No Saturday Delivery)", "$39.00"],
 
-["International", "Price"],
-["Call for a Quote",'']];
-
-function OfficialUsAfghanistan() {
+function OfficialUsMauritania() {
   return (
     <div>
       <div>
@@ -138,10 +135,12 @@ function OfficialUsAfghanistan() {
         <table className="costing-responsive-table">
           <thead>
             <tr>
+            
               <th>Entry</th>
               <th>Price</th>
               <th>Processing Time</th>
-              <th>PMaximum Stay</th>
+              <th>Maximum Stay</th>
+              <th>Valid</th>
             </tr>
           </thead>
           <tbody>
@@ -182,18 +181,23 @@ function OfficialUsAfghanistan() {
             ))}
           </tbody>
         </table>
+        <div className="Detailsdata_descripition">
+          <h6>
+            *Depends on availability. Please contact us for more information.
+          </h6>
+        </div>
 
         <center>
           <h3 className="costing-Header">RETURN SHIPPING FEES</h3>
         </center>
-
         <table className="costing-responsive-table">
           <thead>
             <tr>
-              <th className="reqdocument-column1">Continental USA Only</th>
+              <th className="reqdocument-column1">FedEx Overnight</th>
               <th className="reqdocument-column1">Price</th>
             </tr>
           </thead>
+
           <tbody>
             {datatable3.map((row, rowIndex) => (
               <tr key={rowIndex}>
@@ -203,29 +207,11 @@ function OfficialUsAfghanistan() {
               </tr>
             ))}
           </tbody>
-          
-          <thead>
-            <tr>
-              <th className="reqdocument-column1">
-                Alaska, Puerto Rico, Hawaii, USVI
-              </th>
-              <th className="reqdocument-column1">Price</th>
-            </tr>
-          </thead>
-          <tbody>
-            {datatable4.map((row, rowIndex) => (
-              <tr key={rowIndex}>
-                {row.map((cell, columnIndex) => (
-                  <td key={columnIndex}>{cell}</td>
-                ))}
-              </tr>
-            ))}
-          </tbody>
-          
         </table>
         <div className="Detailsdata_descripition">
           <h6>
-          Update: FedEx charges an additional $6.50 for residential areas. Please call for shipping to Alaska/Hawaii.
+            Update: FedEx charges an additional $6.50 for residential areas.
+            Please call for shipping to Alaska/Hawaii.
           </h6>
         </div>
       </div>
@@ -233,4 +219,4 @@ function OfficialUsAfghanistan() {
   );
 }
 
-export default OfficialUsAfghanistan;
+export default OfficialUsMauritania;

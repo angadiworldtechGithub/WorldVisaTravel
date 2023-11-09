@@ -6,31 +6,23 @@ const tableData = [
     column1: "Passport",
     column2: {
       content: [
-        "U.S. Official/Diplomatic Passport – have to be valid at least 6 months beyond intended stay and must have at least two blank visa pages.",
-        "For Additional Visa Pages and U.S. Passport Renewal.",
+        "	Passport – have to be valid at least 6 months beyond intended stay and must have at least two blank visa pages.",
       ],
     },
   },
+ 
   {
     id: 2,
-    column1: "Photo",
+    column1: "Proof of U.S. Status",
     column2: {
-      content: [
-        "One passport-type photograph. Quality Requirements for Passport Book & Passport Card Photographs",
-      ],
+      content: ["A copy of evidence of legal status in the U.S."],
     },
   },
+
+ 
 
   {
     id: 3,
-    column1: "Diplomatic Letter/Note",
-    column2: {
-      content: ["	A cover letter from the U.S. Department of State."],
-    },
-  },
-
-  {
-    id: 4,
     column1: "Proof of Departure",
     column2: {
       content: [
@@ -38,19 +30,8 @@ const tableData = [
       ],
     },
   },
-
   {
-    id: 5,
-    column1: "Name Change",
-    column2: {
-      content: [
-        "A name change documentation by marriage or court order is required (if applicable).",
-      ],
-    },
-  },
-
-  {
-    id: 6,
+    id: 4,
     column1: "Application Form",
     column2: {
       content: [
@@ -61,7 +42,7 @@ const tableData = [
   },
 
   {
-    id: 7,
+    id: 5,
     column1: "WVT Work Order",
     column2: {
       content: [
@@ -72,7 +53,7 @@ const tableData = [
   },
 
   {
-    id: 8,
+    id: 6,
     column1: "Mail Your Documents",
     column2: {
       content: [
@@ -87,22 +68,22 @@ const tableData = [
   },
 ];
 
-const datatable1 = [["Single", "$0", "At Least 3 Weeks", "Up to 30 days"]];
+const datatable1 = [
+  ["Multiple", "Determined by Nationalities", "-", "Determined by Nationalities", "Determined by Nationalities"],
+];
 
-const datatable2 = [["$90.00", "4-10 Business Days"]];
+const datatable2 = [
+  ["Regular","$90.00", "2-3 Business Days"],
+  ["Rush","$125`.00", "24 Hours"]
+ 
+];
 const datatable3 = [
-  ["Next Business Day – up to 3 passports", "$36.00"],
-  ["Next Business Day – 4 or more passports", "$39.00"],
-  ["Saturday Delivery", "$41.00"],
-  ["Saturday Delivery", "$41.00"],
+  ["Less than 3 passports", "$36.00"],
+  ["4 or more passports", "$39.00"],
   ["Saturday Delivery", "$41.00"],
 ];
-const datatable4 = [["Next Day Letter (No Saturday Delivery)", "$39.00"],
 
-["International", "Price"],
-["Call for a Quote",'']];
-
-function OfficialUsAfghanistan() {
+function BusinessNonUsAustralia() {
   return (
     <div>
       <div>
@@ -141,7 +122,8 @@ function OfficialUsAfghanistan() {
               <th>Entry</th>
               <th>Price</th>
               <th>Processing Time</th>
-              <th>PMaximum Stay</th>
+              <th>Maximum Stay</th>
+              <th>Valid</th>
             </tr>
           </thead>
           <tbody>
@@ -156,6 +138,9 @@ function OfficialUsAfghanistan() {
         </table>
 
         <div className="Detailsdata_descripition">
+          <h6>The fees above include a $5.00 check writing fee.</h6>
+          <h6>Consular fees are subject to change without notice.</h6>
+          <h6>If there is any uncertainty, please give us a call to verify.</h6>
           <h6>
             Maximum Stay and Validity of Visa is dependent on the Embassy’s
             discretion.
@@ -168,6 +153,7 @@ function OfficialUsAfghanistan() {
         <table className="costing-responsive-table">
           <thead>
             <tr>
+            <th>Type</th>
               <th>Price</th>
               <th>Processing Time</th>
             </tr>
@@ -182,18 +168,19 @@ function OfficialUsAfghanistan() {
             ))}
           </tbody>
         </table>
+      
 
         <center>
           <h3 className="costing-Header">RETURN SHIPPING FEES</h3>
         </center>
-
         <table className="costing-responsive-table">
           <thead>
             <tr>
-              <th className="reqdocument-column1">Continental USA Only</th>
+              <th className="reqdocument-column1">FedEx Overnight</th>
               <th className="reqdocument-column1">Price</th>
             </tr>
           </thead>
+
           <tbody>
             {datatable3.map((row, rowIndex) => (
               <tr key={rowIndex}>
@@ -203,29 +190,11 @@ function OfficialUsAfghanistan() {
               </tr>
             ))}
           </tbody>
-          
-          <thead>
-            <tr>
-              <th className="reqdocument-column1">
-                Alaska, Puerto Rico, Hawaii, USVI
-              </th>
-              <th className="reqdocument-column1">Price</th>
-            </tr>
-          </thead>
-          <tbody>
-            {datatable4.map((row, rowIndex) => (
-              <tr key={rowIndex}>
-                {row.map((cell, columnIndex) => (
-                  <td key={columnIndex}>{cell}</td>
-                ))}
-              </tr>
-            ))}
-          </tbody>
-          
         </table>
         <div className="Detailsdata_descripition">
           <h6>
-          Update: FedEx charges an additional $6.50 for residential areas. Please call for shipping to Alaska/Hawaii.
+            Update: FedEx charges an additional $6.50 for residential areas.
+            Please call for shipping to Alaska/Hawaii.
           </h6>
         </div>
       </div>
@@ -233,4 +202,4 @@ function OfficialUsAfghanistan() {
   );
 }
 
-export default OfficialUsAfghanistan;
+export default BusinessNonUsAustralia;

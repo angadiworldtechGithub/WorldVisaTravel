@@ -6,31 +6,42 @@ const tableData = [
     column1: "Passport",
     column2: {
       content: [
-        "U.S. Official/Diplomatic Passport – have to be valid at least 6 months beyond intended stay and must have at least two blank visa pages.",
-        "For Additional Visa Pages and U.S. Passport Renewal.",
+        "	Passport – have to be valid at least 6 months beyond intended stay and must have at least two blank visa pages.",
       ],
     },
   },
+ 
   {
     id: 2,
     column1: "Photo",
     column2: {
-      content: [
-        "One passport-type photograph. Quality Requirements for Passport Book & Passport Card Photographs",
-      ],
+      content: ["Two passport-type photographs. Quality Requirements for Passport Book & Passport Card Photographs"],
     },
   },
-
   {
     id: 3,
-    column1: "Diplomatic Letter/Note",
+    column1: "Proof of U.S. Status",
     column2: {
-      content: ["	A cover letter from the U.S. Department of State."],
+      content: ["A copy of evidence of legal status in the U.S."],
+    },
+  },
+  {
+    id: 4,
+    column1: "Business Letter",
+    column2: {
+      content: ["	A business letter (sample) from the company is required."],
     },
   },
 
   {
-    id: 4,
+    id: 5,
+    column1: "Vaccinations",
+    column2: {
+      content: ["	International Certificate of Vaccination for Yellow Fever."],
+    },
+  },
+  {
+    id: 6,
     column1: "Proof of Departure",
     column2: {
       content: [
@@ -38,30 +49,20 @@ const tableData = [
       ],
     },
   },
-
   {
-    id: 5,
-    column1: "Name Change",
-    column2: {
-      content: [
-        "A name change documentation by marriage or court order is required (if applicable).",
-      ],
-    },
-  },
-
-  {
-    id: 6,
+    id: 7,
     column1: "Application Form",
     column2: {
       content: [
         "Download Visa Application",
-        "One completed Visa Application, MUST be notarized and signed.",
-      ],
+        "Two completed Visa Applications, MUST be signed.",
+        "WVT can help you complete the Guinea Visa Online Application through our White Glove Service. Please call for further assistance.",
+         "Guinea White Glove Form"],
     },
   },
 
   {
-    id: 7,
+    id: 8,
     column1: "WVT Work Order",
     column2: {
       content: [
@@ -72,7 +73,7 @@ const tableData = [
   },
 
   {
-    id: 8,
+    id: 9,
     column1: "Mail Your Documents",
     column2: {
       content: [
@@ -87,22 +88,23 @@ const tableData = [
   },
 ];
 
-const datatable1 = [["Single", "$0", "At Least 3 Weeks", "Up to 30 days"]];
+const datatable1 = [
+  ["Regular","Multiple","$165.00", "3-4 Business Days", "Up to 30 days", "	Up to 3 Years"],
+];
 
-const datatable2 = [["$90.00", "4-10 Business Days"]];
+const datatable2 = [
+  ["Regular","$120.00", "3-4 Business Days"],
+ 
+  
+  
+];
 const datatable3 = [
-  ["Next Business Day – up to 3 passports", "$36.00"],
-  ["Next Business Day – 4 or more passports", "$39.00"],
-  ["Saturday Delivery", "$41.00"],
-  ["Saturday Delivery", "$41.00"],
+  ["Less than 3 passports", "$36.00"],
+  ["4 or more passports", "$39.00"],
   ["Saturday Delivery", "$41.00"],
 ];
-const datatable4 = [["Next Day Letter (No Saturday Delivery)", "$39.00"],
 
-["International", "Price"],
-["Call for a Quote",'']];
-
-function OfficialUsAfghanistan() {
+function BusinessNonUsGuinea() {
   return (
     <div>
       <div>
@@ -138,10 +140,12 @@ function OfficialUsAfghanistan() {
         <table className="costing-responsive-table">
           <thead>
             <tr>
+              <th>Type</th>
               <th>Entry</th>
               <th>Price</th>
               <th>Processing Time</th>
-              <th>PMaximum Stay</th>
+              <th>Maximum Stay</th>
+              <th>Valid</th>
             </tr>
           </thead>
           <tbody>
@@ -156,6 +160,9 @@ function OfficialUsAfghanistan() {
         </table>
 
         <div className="Detailsdata_descripition">
+          <h6>The fees above include a $5.00 check writing fee.</h6>
+          <h6>Consular fees are subject to change without notice.</h6>
+          <h6>If there is any uncertainty, please give us a call to verify.</h6>
           <h6>
             Maximum Stay and Validity of Visa is dependent on the Embassy’s
             discretion.
@@ -168,6 +175,7 @@ function OfficialUsAfghanistan() {
         <table className="costing-responsive-table">
           <thead>
             <tr>
+              <th>Type</th>
               <th>Price</th>
               <th>Processing Time</th>
             </tr>
@@ -182,18 +190,19 @@ function OfficialUsAfghanistan() {
             ))}
           </tbody>
         </table>
+      
 
         <center>
           <h3 className="costing-Header">RETURN SHIPPING FEES</h3>
         </center>
-
         <table className="costing-responsive-table">
           <thead>
             <tr>
-              <th className="reqdocument-column1">Continental USA Only</th>
+              <th className="reqdocument-column1">FedEx Overnight</th>
               <th className="reqdocument-column1">Price</th>
             </tr>
           </thead>
+
           <tbody>
             {datatable3.map((row, rowIndex) => (
               <tr key={rowIndex}>
@@ -203,29 +212,11 @@ function OfficialUsAfghanistan() {
               </tr>
             ))}
           </tbody>
-          
-          <thead>
-            <tr>
-              <th className="reqdocument-column1">
-                Alaska, Puerto Rico, Hawaii, USVI
-              </th>
-              <th className="reqdocument-column1">Price</th>
-            </tr>
-          </thead>
-          <tbody>
-            {datatable4.map((row, rowIndex) => (
-              <tr key={rowIndex}>
-                {row.map((cell, columnIndex) => (
-                  <td key={columnIndex}>{cell}</td>
-                ))}
-              </tr>
-            ))}
-          </tbody>
-          
         </table>
         <div className="Detailsdata_descripition">
           <h6>
-          Update: FedEx charges an additional $6.50 for residential areas. Please call for shipping to Alaska/Hawaii.
+            Update: FedEx charges an additional $6.50 for residential areas.
+            Please call for shipping to Alaska/Hawaii.
           </h6>
         </div>
       </div>
@@ -233,4 +224,4 @@ function OfficialUsAfghanistan() {
   );
 }
 
-export default OfficialUsAfghanistan;
+export default BusinessNonUsGuinea;

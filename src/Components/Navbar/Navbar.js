@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import { NavLink, useLocation } from "react-router-dom";
+import {useLocation } from "react-router-dom";
 import BurgerIcon from "../icons/BurgerIcon";
+import { FaLink } from "react-icons/fa";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -38,64 +39,64 @@ function Navbar() {
             className={`menu ${menuOpen ? "open" : "close"}`}
           >
             <li>
-              <NavLink
+              <Link
                 className="navbar-link"
                 style={{ color: "#2c3A90" }}
                 to={"/"}
                 onClick={()=>setMenuOpen(false)}
               >
                 HOME
-              </NavLink>
+              </Link>
             </li>
             <li>
-              <NavLink
+              <Link
                 className="navbar-link"
                 style={{ color: "#2c3A90" }}
                 to={"/about"}
                 onClick={()=>setMenuOpen(false)}
               >
                 ABOUT US
-              </NavLink>
+              </Link>
             </li>
             <li>
-              <NavLink
+              <Link
                 className="navbar-link"
                 style={{ color: "#2c3A90" }}
                 to={"/passports"}
                 onClick={()=>setMenuOpen(false)}
               >
                 PASSPORT
-              </NavLink>
+              </Link>
             </li>
             <li>
-              <NavLink
+              <Link
                 className="navbar-link"
                 style={{ color: "#2c3A90" }}
                 to={"/visas"}
                 onClick={()=>setMenuOpen(false)}
               >
                 VISAS
-              </NavLink>
+              </Link>
             </li>
             <li>
-              <NavLink
+              <Link
                 className="navbar-link"
                 style={{ color: "#2c3A90" }}
                 to={"/legalizations"}
                 onClick={()=>setMenuOpen(false)}
               >
                 LEGALIZATIONS
-              </NavLink>
+              </Link>
             </li>
             <li>
-              <NavLink
+              <Link
                 className="navbar-link"
                 style={{ color: "#2c3A90" }}
                 to="/contact"
                 onClick={()=>setMenuOpen(false)}
               >
                 CONTACT US
-              </NavLink>
+              </Link>
             </li>
           </ul>
         
