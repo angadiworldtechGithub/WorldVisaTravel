@@ -1,4 +1,5 @@
 import React from "react";
+import pdf from "../../../Pages/Legalizations/WVT-Work-Order.pdf";
 
 const tableData = [
   {
@@ -15,9 +16,9 @@ const tableData = [
     id: 2,
     column1: "Photo",
     column2: {
-      content: ["One recent professional passport-type photograph. Do NOT staple or glue the photo to the application.","Photos of Muslim age 9 and up must be Islamic cover head (hejab), and Islamic dress code.Write your name lightly at the back of the photo and use paperclip with the application.",
-    "Quality Requirements for Passport Book & Passport Card Photographs"],
-    },
+      content: ["One recent professional passport-type photograph. Do NOT staple or glue the photo to the application.","Photos of Muslim age 9 and up must be Islamic cover head (hejab), and Islamic dress code.Write your name lightly at the back of the photo and use paperclip with the application.", <a href='https://travel.state.gov/content/travel/en/passports/how-apply/photos.html'>Quality Requirements for Passport Book & Passport Card Photographs</a>
+    ],
+  },
   },
   {
     id: 3,
@@ -75,7 +76,8 @@ const tableData = [
     column1: "WVT Work Order",
     column2: {
       content: [
-        "Please complete WVT Work Order Form. Download here",
+        "Please complete WVT Work Order Form. ",
+        <a download={true} target='_blank' href={pdf}>Download here</a>,
         "Payment can be processed with a credit card or a company/cashier check or money order.",
       ],
     },

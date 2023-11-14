@@ -1,5 +1,6 @@
 import React from "react";
-import { GiAngola } from "react-icons/gi";
+import pdf from "../../../Pages/Legalizations/WVT-Work-Order.pdf";
+
 
 const tableData = [
   {
@@ -18,8 +19,8 @@ const tableData = [
     column2: {
       content: [
         "Two passport-type photographs.",
-        "Quality Requirements for Passport Book & Passport Card Photographs",
-      ],
+        <a href='https://travel.state.gov/content/travel/en/passports/how-apply/photos.html'>Quality Requirements for Passport Book & Passport Card Photographs</a>
+        ],
     },
   },
 

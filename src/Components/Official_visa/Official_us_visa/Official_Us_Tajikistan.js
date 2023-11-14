@@ -1,4 +1,5 @@
 import React from "react";
+import pdf from "../../../Pages/Legalizations/WVT-Work-Order.pdf";
 
 const tableData = [
   {
@@ -16,7 +17,7 @@ const tableData = [
     column1: "Photo",
     column2: {
       content: [
-        "Three passport-type photographs. Quality Requirements for Passport Book & Passport Card Photographs",
+        "Three passport-type photographs.", <a href='https://travel.state.gov/content/travel/en/passports/how-apply/photos.html'>Quality Requirements for Passport Book & Passport Card Photographs</a>
       ],
     },
   },
@@ -56,7 +57,8 @@ const tableData = [
     column1: "WVT Work Order",
     column2: {
       content: [
-        "Please complete WVT Work Order Form. Download here",
+        "Please complete WVT Work Order Form. ",
+        <a download={true} target='_blank' href={pdf}>Download here</a>,
         "Payment can be processed with a credit card or a company/cashier check or money order.",
       ],
     },

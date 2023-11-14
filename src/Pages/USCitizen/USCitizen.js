@@ -3,104 +3,104 @@ import { useLocation } from "react-router-dom";
 
 import "./USCitizen.css";
 
-import OfficialUsAfghanistan from "../../Components/Official_visa/Official_us_visa/Official_Us_Afghanistan";
-import OfficialUsUnitedArabEmirates from "../../Components/Official_visa/Official_us_visa/Official_Us_UnitedArabEmirates";
+import Official_Us_Afghanistan from "../../Components/Official_visa/Official_us_visa/Official_Us_Afghanistan";
+import Official_Us_UnitedArabEmirates from "../../Components/Official_visa/Official_us_visa/Official_Us_UnitedArabEmirates";
 
-import OfficialUsArgentina from "../../Components/Official_visa/Official_us_visa/Official_Us_Argentina";
-import OfficialUsAngola from "../../Components/Official_visa/Official_us_visa/Official_Us_Angola";
-import OfficialUsArmenia from "../../Components/Official_visa/Official_us_visa/Official_Us_Armenia";
-import OfficialUsAzerbaijan from "../../Components/Official_visa/Official_us_visa/Official_Us_Azerbaijan";
-import OfficialUsAlgeria from "../../Components/Official_visa/Official_us_visa/Official_Us_Algeria";
-import OfficialUsAmericanSamoa from "../../Components/Official_visa/Official_us_visa/Official_Us_AmericanSamoa";
-import OfficialUsAustralia from "../../Components/Official_visa/Official_us_visa/Official_Us_Australia";
-import OfficialUsBelarus from "../../Components/Official_visa/Official_us_visa/Official_Us_Belarus";
-import OfficialUsBrunei from "../../Components/Official_visa/Official_us_visa/Official_Us_Brunei";
-import OfficialUsBahrain from "../../Components/Official_visa/Official_us_visa/Official_Us_Bahrain";
-import OfficialUsBulgaria from "../../Components/Official_visa/Official_us_visa/Official_Us_Bulgaria";
-import OfficialUsBangladesh from "../../Components/Official_visa/Official_us_visa/Official_Us_Bangladesh";
-import OfficialUsBolivia from "../../Components/Official_visa/Official_us_visa/Official_Us_Bolivia";
-import OfficialUsBrazil from "../../Components/Official_visa/Official_us_visa/Official_Us_Brazil";
-import OfficialUsBurkinaFaso from "../../Components/Official_visa/Official_us_visa/Official_Us_BurkinaFaso";
-import OfficialUsBenin from "../../Components/Official_visa/Official_us_visa/Official_Us_Benin";
-import OfficialUsBurundi from "../../Components/Official_visa/Official_us_visa/Official_Us_Burundi";
-import OfficialUsChina from "../../Components/Official_visa/Official_us_visa/Official_Us_China";
-import OfficialUsCambodia from "../../Components/Official_visa/Official_us_visa/Official_Us_Cambodia";
-import OfficialUsChile from "../../Components/Official_visa/Official_us_visa/Official_Us_Chile";
-import OfficialUsCapeVerde from "../../Components/Official_visa/Official_us_visa/Official_Us_CapeVerde";
-import OfficialUsDemocraticRepCongo from "../../Components/Official_visa/Official_us_visa/Official_Us_DemocraticRepCongo";
-import OfficialUsIvoryCoast from "../../Components/Official_visa/Official_us_visa/Official_Us_IvoryCoast";
-import OfficialUsCongo from "../../Components/Official_visa/Official_us_visa/Official_Us_Congo";
-import OfficialUsCentralAfricanRepublic from "../../Components/Official_visa/Official_us_visa/Official_Us_CentralAfricanRepublic";
-import OfficialUsCameroon from "../../Components/Official_visa/Official_us_visa/Official_Us_Cameroon";
-import OfficialUsDjibouti from "../../Components/Official_visa/Official_us_visa/Official_Us_Djibouti";
-import OfficialUsDominicanRepublic from "../../Components/Official_visa/Official_us_visa/Official_Us_DominicanRepublic";
-import OfficialUsEcuador from "../../Components/Official_visa/Official_us_visa/Official_Us_Ecuador";
-import OfficialUsEritrea from "../../Components/Official_visa/Official_us_visa/Official_Us_Eritrea";
-import OfficialUsEgypt from "../../Components/Official_visa/Official_us_visa/Official_Us_Egypt";
-import OfficialUsEthiopia from "../../Components/Official_visa/Official_us_visa/Official_Us_Ethiopia";
-import OfficialUsFrance from "../../Components/Official_visa/Official_us_visa/Official_Us_France";
-import OfficialUsGabon from "../../Components/Official_visa/Official_us_visa/Official_Us_Gabon";
-import OfficialUsGhana from "../../Components/Official_visa/Official_us_visa/Official_Us_Ghana";
-import OfficialUsGambia from "../../Components/Official_visa/Official_us_visa/Official_Us_Gambia";
-import OfficialUsGuinea from "../../Components/Official_visa/Official_us_visa/Official_Us_Guinea";
-import OfficialUsGreece from "../../Components/Official_visa/Official_us_visa/Official_Us_Greece";
-import OfficialUsGuineaBissau from "../../Components/Official_visa/Official_us_visa/Official_Us_GuineaBissau";
-import OfficialUsHaiti from "../../Components/Official_visa/Official_us_visa/Official_Us_Haiti";
-import OfficialUsIsrael from "../../Components/Official_visa/Official_us_visa/Official_Us_Israel";
-import OfficialUsIndia from "../../Components/Official_visa/Official_us_visa/Official_Us_India";
-import OfficialUsIndonesia from "../../Components/Official_visa/Official_us_visa/Official_Us_Indonesia";
-import OfficialUsIraq from "../../Components/Official_visa/Official_us_visa/Official_Us_Iraq";
-import OfficialUsJapan from "../../Components/Official_visa/Official_us_visa/Official_Us_Japan";
-import OfficialUsJordon from "../../Components/Official_visa/Official_us_visa/Official_Us_Jordon";
-import OfficialUsJamaica from "../../Components/Official_visa/Official_us_visa/Official_Us_Jamaica";
-import OfficialUsKazakhstan from "../../Components/Official_visa/Official_us_visa/Official_Us_Kazakhstan";
-import OfficialUsKenya from "../../Components/Official_visa/Official_us_visa/Official_Us_Kenya";
-import OfficialUsKoreaSouth from "../../Components/Official_visa/Official_us_visa/Official_Us_KoreaSouth";
-import OfficialUsKuwait from "../../Components/Official_visa/Official_us_visa/Official_Us_Kuwait";
-import OfficialUsKyrgyzstan from "../../Components/Official_visa/Official_us_visa/Official_Us_Kyrgyzstan";
-import OfficialUsLaos from "../../Components/Official_visa/Official_us_visa/Official_Us_Laos";
-import OfficialUsLiberia from "../../Components/Official_visa/Official_us_visa/Official_Us_Liberia";
-import OfficialUsLibya from "../../Components/Official_visa/Official_us_visa/Official_Us_Libya";
-import OfficialUsLebanon from "../../Components/Official_visa/Official_us_visa/Official_Us_Lebanon";
-import OfficialUsMadagascar from "../../Components/Official_visa/Official_us_visa/Official_Us_Madagascar";
-import OfficialUsMalawi from "../../Components/Official_visa/Official_us_visa/Official_Us_Malawi";
-import OfficialUsMali from "../../Components/Official_visa/Official_us_visa/Official_Us_Mali";
-import OfficialUsMauritania from "../../Components/Official_visa/Official_us_visa/Official_Us_Mauritania";
-import OfficialUsMongolia from "../../Components/Official_visa/Official_us_visa/Official_Us_Mongolia";
-import OfficialUsMozambique from "../../Components/Official_visa/Official_us_visa/Official_Us_Mozambique";
-import OfficialUsMyanmar from "../../Components/Official_visa/Official_us_visa/Official_Us_Myanmar";
-import OfficialUsNigeria from "../../Components/Official_visa/Official_us_visa/Official_Us_Nigeria";
-import OfficialUsNamibia from "../../Components/Official_visa/Official_us_visa/Official_Us_Namibia";
-import OfficialUsNepal from "../../Components/Official_visa/Official_us_visa/Official_Us_Nepal";
-import OfficialUsNiger from "../../Components/Official_visa/Official_us_visa/Official_Us_Niger";
-import OfficialUsOman from "../../Components/Official_visa/Official_us_visa/Official_Us_Oman";
-import OfficialUsPhilippines from "../../Components/Official_visa/Official_us_visa/Official_Us_Philippines";
-import OfficialUsPeru from "../../Components/Official_visa/Official_us_visa/Official_Us_Peru";
-import OfficialUsParaguay from "../../Components/Official_visa/Official_us_visa/Official_Us_Paraguay";
-import OfficialUsPakistan from "../../Components/Official_visa/Official_us_visa/Official_Us_Pakistan";
-import OfficialUsSpain from "../../Components/Official_visa/Official_us_visa/Official_Us_Spain";
-import OfficialUsSuriname from "../../Components/Official_visa/Official_us_visa/Official_Us_Suriname";
-import OfficialUsSouthSudan from "../../Components/Official_visa/Official_us_visa/Official_Us_SouthSudan";
-import OfficialUsSierraLeone from "../../Components/Official_visa/Official_us_visa/Official_Us_SierraLeone";
-import OfficialUsSudan from "../../Components/Official_visa/Official_us_visa/Official_Us_Sudan";
-import OfficialUsSouthAfrica from "../../Components/Official_visa/Official_us_visa/Official_Us_SouthAfrica";
-import OfficialUsSaudiArabia from "../../Components/Official_visa/Official_us_visa/Official_Us_SaudiArabia";
-import OfficialUsQatar from "../../Components/Official_visa/Official_us_visa/Official_Us_Qatar";
-import OfficialUsRussia from "../../Components/Official_visa/Official_us_visa/Official_Us_Russia";
-import OfficialUsSriLanka from "../../Components/Official_visa/Official_us_visa/Official_Us_SriLanka";
-import OfficialUsTajikistan from "../../Components/Official_visa/Official_us_visa/Official_Us_Tajikistan";
-import OfficialUsTanzania from "../../Components/Official_visa/Official_us_visa/Official_Us_Tanzania";
-import OfficialUsThailand from "../../Components/Official_visa/Official_us_visa/Official_Us_Thailand";
-import OfficialUsTurkey from "../../Components/Official_visa/Official_us_visa/Official_Us_Turkey";
-import OfficialUsTurkmenistan from "../../Components/Official_visa/Official_us_visa/Official_Us_Turkmenistan";
-import OfficialUsTogo from "../../Components/Official_visa/Official_us_visa/Official_Us_Togo";
-import OfficialUsTrinidadAndTobago from "../../Components/Official_visa/Official_us_visa/Official_Us_TrinidadAndTobago";
-import OfficialUsUruguay from "../../Components/Official_visa/Official_us_visa/Official_Us_Uruguay";
-import OfficialUsUzbekistan from "../../Components/Official_visa/Official_us_visa/Official_Us_Uzbekistan";
-import OfficialUsVietnam from "../../Components/Official_visa/Official_us_visa/Official_Us_Vietnam";
-import OfficialUsYemen from "../../Components/Official_visa/Official_us_visa/Official_Us_Yemen";
-import OfficialUsZambia from "../../Components/Official_visa/Official_us_visa/Official_Us_Zambia";
-import OfficialUsZimbabwe from "../../Components/Official_visa/Official_us_visa/Official_Us_Zimbabwe";
+import Official_Us_Argentina from "../../Components/Official_visa/Official_us_visa/Official_Us_Argentina";
+import Official_Us_Angola from "../../Components/Official_visa/Official_us_visa/Official_Us_Angola";
+import Official_Us_Armenia from "../../Components/Official_visa/Official_us_visa/Official_Us_Armenia";
+import Official_Us_Azerbaijan from "../../Components/Official_visa/Official_us_visa/Official_Us_Azerbaijan";
+import Official_Us_Algeria from "../../Components/Official_visa/Official_us_visa/Official_Us_Algeria";
+import Official_Us_AmericanSamoa from "../../Components/Official_visa/Official_us_visa/Official_Us_AmericanSamoa";
+import Official_Us_Australia from "../../Components/Official_visa/Official_us_visa/Official_Us_Australia";
+import Official_Us_Belarus from "../../Components/Official_visa/Official_us_visa/Official_Us_Belarus";
+import Official_Us_Brunei from "../../Components/Official_visa/Official_us_visa/Official_Us_Brunei";
+import Official_Us_Bahrain from "../../Components/Official_visa/Official_us_visa/Official_Us_Bahrain";
+import Official_Us_Bulgaria from "../../Components/Official_visa/Official_us_visa/Official_Us_Bulgaria";
+import Official_Us_Bangladesh from "../../Components/Official_visa/Official_us_visa/Official_Us_Bangladesh";
+import Official_Us_Bolivia from "../../Components/Official_visa/Official_us_visa/Official_Us_Bolivia";
+import Official_Us_Brazil from "../../Components/Official_visa/Official_us_visa/Official_Us_Brazil";
+import Official_Us_BurkinaFaso from "../../Components/Official_visa/Official_us_visa/Official_Us_BurkinaFaso";
+import Official_Us_Benin from "../../Components/Official_visa/Official_us_visa/Official_Us_Benin";
+import Official_Us_Burundi from "../../Components/Official_visa/Official_us_visa/Official_Us_Burundi";
+import Official_Us_China from "../../Components/Official_visa/Official_us_visa/Official_Us_China";
+import Official_Us_Cambodia from "../../Components/Official_visa/Official_us_visa/Official_Us_Cambodia";
+import Official_Us_Chile from "../../Components/Official_visa/Official_us_visa/Official_Us_Chile";
+import Official_Us_CapeVerde from "../../Components/Official_visa/Official_us_visa/Official_Us_CapeVerde";
+import Official_Us_DemocraticRepCongo from "../../Components/Official_visa/Official_us_visa/Official_Us_DemocraticRepCongo";
+import Official_Us_IvoryCoast from "../../Components/Official_visa/Official_us_visa/Official_Us_IvoryCoast";
+import Official_Us_Congo from "../../Components/Official_visa/Official_us_visa/Official_Us_Congo";
+import Official_Us_CentralAfricanRepublic from "../../Components/Official_visa/Official_us_visa/Official_Us_CentralAfricanRepublic";
+import Official_Us_Cameroon from "../../Components/Official_visa/Official_us_visa/Official_Us_Cameroon";
+import Official_Us_Djibouti from "../../Components/Official_visa/Official_us_visa/Official_Us_Djibouti";
+import Official_Us_DominicanRepublic from "../../Components/Official_visa/Official_us_visa/Official_Us_DominicanRepublic";
+import Official_Us_Ecuador from "../../Components/Official_visa/Official_us_visa/Official_Us_Ecuador";
+import Official_Us_Eritrea from "../../Components/Official_visa/Official_us_visa/Official_Us_Eritrea";
+import Official_Us_Egypt from "../../Components/Official_visa/Official_us_visa/Official_Us_Egypt";
+import Official_Us_Ethiopia from "../../Components/Official_visa/Official_us_visa/Official_Us_Ethiopia";
+import Official_Us_France from "../../Components/Official_visa/Official_us_visa/Official_Us_France";
+import Official_Us_Gabon from "../../Components/Official_visa/Official_us_visa/Official_Us_Gabon";
+import Official_Us_Ghana from "../../Components/Official_visa/Official_us_visa/Official_Us_Ghana";
+import Official_Us_Gambia from "../../Components/Official_visa/Official_us_visa/Official_Us_Gambia";
+import Official_Us_Guinea from "../../Components/Official_visa/Official_us_visa/Official_Us_Guinea";
+import Official_Us_Greece from "../../Components/Official_visa/Official_us_visa/Official_Us_Greece";
+import Official_Us_GuineaBissau from "../../Components/Official_visa/Official_us_visa/Official_Us_GuineaBissau";
+import Official_Us_Haiti from "../../Components/Official_visa/Official_us_visa/Official_Us_Haiti";
+import Official_Us_Israel from "../../Components/Official_visa/Official_us_visa/Official_Us_Israel";
+import Official_Us_India from "../../Components/Official_visa/Official_us_visa/Official_Us_India";
+import Official_Us_Indonesia from "../../Components/Official_visa/Official_us_visa/Official_Us_Indonesia";
+import Official_Us_Iraq from "../../Components/Official_visa/Official_us_visa/Official_Us_Iraq";
+import Official_Us_Japan from "../../Components/Official_visa/Official_us_visa/Official_Us_Japan";
+import Official_Us_Jordon from "../../Components/Official_visa/Official_us_visa/Official_Us_Jordon";
+import Official_Us_Jamaica from "../../Components/Official_visa/Official_us_visa/Official_Us_Jamaica";
+import Official_Us_Kazakhstan from "../../Components/Official_visa/Official_us_visa/Official_Us_Kazakhstan";
+import Official_Us_Kenya from "../../Components/Official_visa/Official_us_visa/Official_Us_Kenya";
+import Official_Us_KoreaSouth from "../../Components/Official_visa/Official_us_visa/Official_Us_KoreaSouth";
+import Official_Us_Kuwait from "../../Components/Official_visa/Official_us_visa/Official_Us_Kuwait";
+import Official_Us_Kyrgyzstan from "../../Components/Official_visa/Official_us_visa/Official_Us_Kyrgyzstan";
+import Official_Us_Laos from "../../Components/Official_visa/Official_us_visa/Official_Us_Laos";
+import Official_Us_Liberia from "../../Components/Official_visa/Official_us_visa/Official_Us_Liberia";
+import Official_Us_Libya from "../../Components/Official_visa/Official_us_visa/Official_Us_Libya";
+import Official_Us_Lebanon from "../../Components/Official_visa/Official_us_visa/Official_Us_Lebanon";
+import Official_Us_Madagascar from "../../Components/Official_visa/Official_us_visa/Official_Us_Madagascar";
+import Official_Us_Malawi from "../../Components/Official_visa/Official_us_visa/Official_Us_Malawi";
+import Official_Us_Mali from "../../Components/Official_visa/Official_us_visa/Official_Us_Mali";
+import Official_Us_Mauritania from "../../Components/Official_visa/Official_us_visa/Official_Us_Mauritania";
+import Official_Us_Mongolia from "../../Components/Official_visa/Official_us_visa/Official_Us_Mongolia";
+import Official_Us_Mozambique from "../../Components/Official_visa/Official_us_visa/Official_Us_Mozambique";
+import Official_Us_Myanmar from "../../Components/Official_visa/Official_us_visa/Official_Us_Myanmar";
+import Official_Us_Nigeria from "../../Components/Official_visa/Official_us_visa/Official_Us_Nigeria";
+import Official_Us_Namibia from "../../Components/Official_visa/Official_us_visa/Official_Us_Namibia";
+import Official_Us_Nepal from "../../Components/Official_visa/Official_us_visa/Official_Us_Nepal";
+import Official_Us_Niger from "../../Components/Official_visa/Official_us_visa/Official_Us_Niger";
+import Official_Us_Oman from "../../Components/Official_visa/Official_us_visa/Official_Us_Oman";
+import Official_Us_Philippines from "../../Components/Official_visa/Official_us_visa/Official_Us_Philippines";
+import Official_Us_Peru from "../../Components/Official_visa/Official_us_visa/Official_Us_Peru";
+import Official_Us_Paraguay from "../../Components/Official_visa/Official_us_visa/Official_Us_Paraguay";
+import Official_Us_Pakistan from "../../Components/Official_visa/Official_us_visa/Official_Us_Pakistan";
+import Official_Us_Spain from "../../Components/Official_visa/Official_us_visa/Official_Us_Spain";
+import Official_Us_Suriname from "../../Components/Official_visa/Official_us_visa/Official_Us_Suriname";
+import Official_Us_SouthSudan from "../../Components/Official_visa/Official_us_visa/Official_Us_SouthSudan";
+import Official_Us_SierraLeone from "../../Components/Official_visa/Official_us_visa/Official_Us_SierraLeone";
+import Official_Us_Sudan from "../../Components/Official_visa/Official_us_visa/Official_Us_Sudan";
+import Official_Us_SouthAfrica from "../../Components/Official_visa/Official_us_visa/Official_Us_SouthAfrica";
+import Official_Us_SaudiArabia from "../../Components/Official_visa/Official_us_visa/Official_Us_SaudiArabia";
+import Official_Us_Qatar from "../../Components/Official_visa/Official_us_visa/Official_Us_Qatar";
+import Official_Us_Russia from "../../Components/Official_visa/Official_us_visa/Official_Us_Russia";
+import Official_Us_SriLanka from "../../Components/Official_visa/Official_us_visa/Official_Us_SriLanka";
+import Official_Us_Tajikistan from "../../Components/Official_visa/Official_us_visa/Official_Us_Tajikistan";
+import Official_Us_Tanzania from "../../Components/Official_visa/Official_us_visa/Official_Us_Tanzania";
+import Official_Us_Thailand from "../../Components/Official_visa/Official_us_visa/Official_Us_Thailand";
+import Official_Us_Turkey from "../../Components/Official_visa/Official_us_visa/Official_Us_Turkey";
+import Official_Us_Turkmenistan from "../../Components/Official_visa/Official_us_visa/Official_Us_Turkmenistan";
+import Official_Us_Togo from "../../Components/Official_visa/Official_us_visa/Official_Us_Togo";
+import Official_Us_TrinidadAndTobago from "../../Components/Official_visa/Official_us_visa/Official_Us_TrinidadAndTobago";
+import Official_Us_Uruguay from "../../Components/Official_visa/Official_us_visa/Official_Us_Uruguay";
+import Official_Us_Uzbekistan from "../../Components/Official_visa/Official_us_visa/Official_Us_Uzbekistan";
+import Official_Us_Vietnam from "../../Components/Official_visa/Official_us_visa/Official_Us_Vietnam";
+import Official_Us_Yemen from "../../Components/Official_visa/Official_us_visa/Official_Us_Yemen";
+import Official_Us_Zambia from "../../Components/Official_visa/Official_us_visa/Official_Us_Zambia";
+import Official_Us_Zimbabwe from "../../Components/Official_visa/Official_us_visa/Official_Us_Zimbabwe";
 
 function USCitizen() {
   const location = useLocation();
@@ -131,116 +131,116 @@ function USCitizen() {
      
 
 {/* Official Visas */}
-      {(destination === "Afghanistan"  && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsAfghanistan />) }
-      {(destination === "United Arab Emirates"  && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsUnitedArabEmirates />)}
-      {(destination === "American Samoa" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen")&&  (<OfficialUsAmericanSamoa />)}
-      {(destination === "Argentina" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsArgentina />)}
-      {(destination === "Angola" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") &&  (<OfficialUsAngola />)}
-      {(destination === "Armenia" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen")&& (<OfficialUsArmenia />)}
-      {(destination === "Azerbaijan" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") &(<OfficialUsAzerbaijan />)}
-      {(destination === "Algeria" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") &&  (<OfficialUsAlgeria />)}
-      {(destination === "Australia" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen")&&  (<OfficialUsAustralia />)}
-      {(destination === "Belarus" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") &&  (<OfficialUsBelarus />)}
-      {(destination === "Brunei" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") &&  (<OfficialUsBrunei />)}
-      {(destination === "Bahrain" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen")&&  (<OfficialUsBahrain />)}
-      {(destination === "Bulgaria" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") &&  (<OfficialUsBulgaria />)}
-      {(destination === "Bangladesh" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen")&&  (<OfficialUsBangladesh />)}
-      {(destination === "Bolivia" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen")&&  (<OfficialUsBolivia />)}
-      {(destination === "Brazil" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") &&  (<OfficialUsBrazil />)}
-      {(destination === "Burkina Faso" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen")&&  (<OfficialUsBurkinaFaso />)}
-      {(destination === "Benin" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") &&  (<OfficialUsBenin />)}
-      {(destination === "Burundi" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen")&&  (<OfficialUsBurundi />)}
-      {(destination === "Cambodia" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen")&&  (<OfficialUsCambodia />)}
-      {(destination === "China" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") &&  (<OfficialUsChina />)}
-      {(destination === "Chile" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") &&  (<OfficialUsChile />)}
-      {(destination === "Cape Verde" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen")&&  (<OfficialUsCapeVerde />)}
-      {(destination === "Democratic Republic of the Congo" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && ( (<OfficialUsDemocraticRepCongo />) )}
-      {(destination === "Ivory Coast" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen")&&  (<OfficialUsIvoryCoast />)}
-      {(destination === "Republic of the Congo" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen")&&  (<OfficialUsCongo />)}
-      {(destination === "Central African Republic" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen")&& (  (<OfficialUsCentralAfricanRepublic />))}
-      {(destination === "Cameroon" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") &&  (<OfficialUsCameroon />)}
-      {(destination === "Djibouti" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") &&  (<OfficialUsDjibouti />)}
-      {(destination === "Dominican Republic" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen")&&  (<OfficialUsDominicanRepublic />)}
-      {(destination === "Ecuador" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen")&&  (<OfficialUsEcuador />)}
-      {(destination === "Eritrea" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") &&  (<OfficialUsEritrea />)}
-      {(destination === "Egypt" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") &&  (<OfficialUsEgypt />)}
-      {(destination === "Ethiopia" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") &&  (<OfficialUsEthiopia />)}
-      {(destination === "France" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") &&  (<OfficialUsFrance />)}
-      {(destination === "Gabon" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen")&&  (<OfficialUsGabon />)}
-      {(destination === "Ghana" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") &&  (<OfficialUsGhana />)}
-      {(destination === "Gambia" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen")&&  (<OfficialUsGambia />)}
-      {(destination === "Guinea" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen")&&  (<OfficialUsGuinea />)}
-      {(destination === "Greece" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen")&&  (<OfficialUsGreece />)}
-      {(destination === "Guinea-Bissau" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen")&&  (<OfficialUsGuineaBissau />)}
+      {(destination === "Afghanistan"  && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_Afghanistan />) }
+      {(destination === "United Arab Emirates"  && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_UnitedArabEmirates />)}
+      {(destination === "American Samoa" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen")&&  (<Official_Us_AmericanSamoa />)}
+      {(destination === "Argentina" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_Argentina />)}
+      {(destination === "Angola" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") &&  (<Official_Us_Angola />)}
+      {(destination === "Armenia" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen")&& (<Official_Us_Armenia />)}
+      {(destination === "Azerbaijan" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") &(<Official_Us_Azerbaijan />)}
+      {(destination === "Algeria" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") &&  (<Official_Us_Algeria />)}
+      {(destination === "Australia" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen")&&  (<Official_Us_Australia />)}
+      {(destination === "Belarus" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") &&  (<Official_Us_Belarus />)}
+      {(destination === "Brunei" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") &&  (<Official_Us_Brunei />)}
+      {(destination === "Bahrain" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen")&&  (<Official_Us_Bahrain />)}
+      {(destination === "Bulgaria" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") &&  (<Official_Us_Bulgaria />)}
+      {(destination === "Bangladesh" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen")&&  (<Official_Us_Bangladesh />)}
+      {(destination === "Bolivia" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen")&&  (<Official_Us_Bolivia />)}
+      {(destination === "Brazil" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") &&  (<Official_Us_Brazil />)}
+      {(destination === "Burkina Faso" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen")&&  (<Official_Us_BurkinaFaso />)}
+      {(destination === "Benin" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") &&  (<Official_Us_Benin />)}
+      {(destination === "Burundi" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen")&&  (<Official_Us_Burundi />)}
+      {(destination === "Cambodia" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen")&&  (<Official_Us_Cambodia />)}
+      {(destination === "China" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") &&  (<Official_Us_China />)}
+      {(destination === "Chile" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") &&  (<Official_Us_Chile />)}
+      {(destination === "Cape Verde" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen")&&  (<Official_Us_CapeVerde />)}
+      {(destination === "Democratic Republic of the Congo" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && ( (<Official_Us_DemocraticRepCongo />) )}
+      {(destination === "Ivory Coast" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen")&&  (<Official_Us_IvoryCoast />)}
+      {(destination === "Republic of the Congo" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen")&&  (<Official_Us_Congo />)}
+      {(destination === "Central African Republic" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen")&& (  (<Official_Us_CentralAfricanRepublic />))}
+      {(destination === "Cameroon" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") &&  (<Official_Us_Cameroon />)}
+      {(destination === "Djibouti" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") &&  (<Official_Us_Djibouti />)}
+      {(destination === "Dominican Republic" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen")&&  (<Official_Us_DominicanRepublic />)}
+      {(destination === "Ecuador" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen")&&  (<Official_Us_Ecuador />)}
+      {(destination === "Eritrea" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") &&  (<Official_Us_Eritrea />)}
+      {(destination === "Egypt" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") &&  (<Official_Us_Egypt />)}
+      {(destination === "Ethiopia" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") &&  (<Official_Us_Ethiopia />)}
+      {(destination === "France" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") &&  (<Official_Us_France />)}
+      {(destination === "Gabon" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen")&&  (<Official_Us_Gabon />)}
+      {(destination === "Ghana" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") &&  (<Official_Us_Ghana />)}
+      {(destination === "Gambia" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen")&&  (<Official_Us_Gambia />)}
+      {(destination === "Guinea" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen")&&  (<Official_Us_Guinea />)}
+      {(destination === "Greece" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen")&&  (<Official_Us_Greece />)}
+      {(destination === "Guinea-Bissau" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen")&&  (<Official_Us_GuineaBissau />)}
 
-      {(destination === "Haiti" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsHaiti />)}
+      {(destination === "Haiti" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_Haiti />)}
 
-      {(destination === "Israel" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsIsrael />)}
-      {(destination === "India" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsIndia />)}
-      {(destination === "Indonesia" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsIndonesia />)}
-      {(destination === "Iraq" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsIraq />)}
+      {(destination === "Israel" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_Israel />)}
+      {(destination === "India" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_India />)}
+      {(destination === "Indonesia" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_Indonesia />)}
+      {(destination === "Iraq" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_Iraq />)}
 
-      {(destination === "Japan" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsJapan />)}
-      {(destination === "Jamaica" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsJamaica />)}
-      {(destination === "Jordon" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsJordon />)}
+      {(destination === "Japan" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_Japan />)}
+      {(destination === "Jamaica" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_Jamaica />)}
+      {(destination === "Jordon" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_Jordon />)}
 
-      {(destination === "Kazakhstan" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsKazakhstan />)}
-      {(destination === "Kenya" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsKenya />)}
-      {(destination === "South Korea" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsKoreaSouth />)}
-      {(destination === "Kuwait" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsKuwait />)}
-      {(destination === "Kyrgyzstan" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsKyrgyzstan />)}
+      {(destination === "Kazakhstan" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_Kazakhstan />)}
+      {(destination === "Kenya" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_Kenya />)}
+      {(destination === "South Korea" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_KoreaSouth />)}
+      {(destination === "Kuwait" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_Kuwait />)}
+      {(destination === "Kyrgyzstan" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_Kyrgyzstan />)}
 
-      {(destination === "Laos" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsLaos />)}
-      {(destination === "Liberia" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsLiberia />)}
-      {(destination === "Libya" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsLibya />)}
-      {(destination === "Lebanon" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsLebanon />)}
+      {(destination === "Laos" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_Laos />)}
+      {(destination === "Liberia" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_Liberia />)}
+      {(destination === "Libya" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_Libya />)}
+      {(destination === "Lebanon" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_Lebanon />)}
 
-      {(destination === "Madagascar" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsMadagascar />)}
-      {(destination === "Malawi" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsMalawi />)}
-      {(destination === "Mali" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsMali />)}
-      {(destination === "Mauritania" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsMauritania />)}
-      {(destination === "Mongolia" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsMongolia />)}
-      {(destination === "Mozambique" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsMozambique />)}
-      {(destination === "Myanmar" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsMyanmar />)}
+      {(destination === "Madagascar" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_Madagascar />)}
+      {(destination === "Malawi" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_Malawi />)}
+      {(destination === "Mali" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_Mali />)}
+      {(destination === "Mauritania" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_Mauritania />)}
+      {(destination === "Mongolia" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_Mongolia />)}
+      {(destination === "Mozambique" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_Mozambique />)}
+      {(destination === "Myanmar" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_Myanmar />)}
 
-      {(destination === "Nigeria" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsNigeria />)}
-      {(destination === "Namibia" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsNamibia />)}
-      {(destination === "Nepal" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsNepal />)}
-      {(destination === "Niger" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsNiger />)}
+      {(destination === "Nigeria" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_Nigeria />)}
+      {(destination === "Namibia" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_Namibia />)}
+      {(destination === "Nepal" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_Nepal />)}
+      {(destination === "Niger" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_Niger />)}
 
-      {(destination === "Oman" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsOman />)}
+      {(destination === "Oman" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_Oman />)}
 
-      {(destination === "Philippines" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsPhilippines />)}
-      {(destination === "Peru" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsPeru />)}
-      {(destination === "Paraguay" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsParaguay />)}
-      {(destination === "Pakistan" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsPakistan />)}
-      {(destination === "Qatar" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsQatar />)}
+      {(destination === "Philippines" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_Philippines />)}
+      {(destination === "Peru" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_Peru />)}
+      {(destination === "Paraguay" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_Paraguay />)}
+      {(destination === "Pakistan" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_Pakistan />)}
+      {(destination === "Qatar" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_Qatar />)}
 
-      {(destination === "Russia" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsRussia />)}
+      {(destination === "Russia" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_Russia />)}
 
-      {(destination === "Sri Lanka" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsSriLanka />)}
-      {(destination === "Spain" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsSpain />)}
-      {(destination === "Suriname" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsSuriname />)}
-      {(destination === "South Sudan" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsSouthSudan />)}
-      {(destination === "Sierra Leone" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsSierraLeone />)}
-      {(destination === "Sudan" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsSudan />)}
-      {(destination === "South Africa" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsSouthAfrica />)}
-      {(destination === "Saudi Arabia" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsSaudiArabia />)}
+      {(destination === "Sri Lanka" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_SriLanka />)}
+      {(destination === "Spain" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_Spain />)}
+      {(destination === "Suriname" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_Suriname />)}
+      {(destination === "South Sudan" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_SouthSudan />)}
+      {(destination === "Sierra Leone" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_SierraLeone />)}
+      {(destination === "Sudan" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_Sudan />)}
+      {(destination === "South Africa" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_SouthAfrica />)}
+      {(destination === "Saudi Arabia" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_SaudiArabia />)}
 
-      {(destination === "Tajikistan" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsTajikistan />)}
-      {(destination === "Tanzania" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsTanzania />)}
-      {(destination === "Thailand" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsThailand />)}
-      {(destination === "Turkey" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsTurkey />)}
-      {(destination === "Turkmenistan" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsTurkmenistan />)}
-      {(destination === "Togo" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsTogo />)}
-      {(destination === "Trinidad and Tobago" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsTrinidadAndTobago />)}
+      {(destination === "Tajikistan" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_Tajikistan />)}
+      {(destination === "Tanzania" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_Tanzania />)}
+      {(destination === "Thailand" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_Thailand />)}
+      {(destination === "Turkey" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_Turkey />)}
+      {(destination === "Turkmenistan" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_Turkmenistan />)}
+      {(destination === "Togo" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_Togo />)}
+      {(destination === "Trinidad and Tobago" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_TrinidadAndTobago />)}
 
-      {(destination === "Uruguay" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsUruguay />)}
-      {(destination === "Uzbekistan" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsUzbekistan />)}
-      {(destination === "Vietnam" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsVietnam />)}
-      {(destination === "Yemen" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsYemen />)}
-      {(destination === "Zambia" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsZambia />)}
-      {(destination === "Zimbabwe" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<OfficialUsZimbabwe />)}
+      {(destination === "Uruguay" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_Uruguay />)}
+      {(destination === "Uzbekistan" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_Uzbekistan />)}
+      {(destination === "Vietnam" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_Vietnam />)}
+      {(destination === "Yemen" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_Yemen />)}
+      {(destination === "Zambia" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_Zambia />)}
+      {(destination === "Zimbabwe" && currentPathlocations ==="/visas/official-visa/USCitizens/USCitizen") && (<Official_Us_Zimbabwe />)}
     </div>
   );
 }
