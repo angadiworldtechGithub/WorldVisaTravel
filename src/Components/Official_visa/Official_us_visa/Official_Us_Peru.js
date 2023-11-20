@@ -50,7 +50,7 @@ const tableData = [
       content: [
         <a download={true} target='_blank' href={PeruOfficialUs}>Download Application Form</a>,
         "One completed Visa Application, MUST be signed.",
-        "Download Additional Form",
+        <a href="https://worldvisatravel.com/wp-content/uploads/2016/05/PeruAdditionalForm.jpg" target="_blank">Download Additional Form</a>,
         "One completed Additional Form.",
       ],
     },

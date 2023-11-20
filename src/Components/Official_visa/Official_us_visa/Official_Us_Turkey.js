@@ -49,7 +49,7 @@ const tableData = [
       content: [
         "WVT can help you complete the Turkey Visa Online Application through our White Glove Service (ONLY $50.00).",
         "Turkey White Glove Application Form",
-        "Online Application Form",
+        <a href="https://www.konsolosluk.gov.tr/">One Application Form</a>,
         "One completed Visa Application, MUST be signed."
        
       ],

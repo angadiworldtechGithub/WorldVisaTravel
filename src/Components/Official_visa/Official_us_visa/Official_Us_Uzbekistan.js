@@ -46,7 +46,7 @@ const tableData = [
     column1: "Application Form",
     column2: {
       content: [
-       "Online Application Form",
+        <a href="http://evisa.mfa.uz/evisa_en/">One Application Form</a>,
         "One completed Visa Application, MUST be signed."
        
       ],

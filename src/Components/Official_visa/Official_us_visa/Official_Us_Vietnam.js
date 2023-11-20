@@ -46,7 +46,7 @@ const tableData = [
     column1: "Application Form",
     column2: {
       content: [
-       "Online Application Form",
+       <a href="//visa.mofa.gov.vn/_layouts/registration/ApplicationForm.aspx">One Application Form</a>,
         "One completed Visa Application, MUST be signed.",
         "Change Language to English at top right hand corner of the page."
       ],

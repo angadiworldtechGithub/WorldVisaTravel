@@ -16,7 +16,7 @@ const tableData = [
     column1: "Photo",
     column2: {
       content: [
-        "Two passport-type photographs.", <a href='https://travel.state.gov/content/travel/en/passports/how-apply/photos.html'>Quality Requirements for Passport Book & Passport Card Photographs</a>
+        "Two passport-type photographs.Do NOT glue or staple the photo to the application.", <a href='https://travel.state.gov/content/travel/en/passports/how-apply/photos.html'>Quality Requirements for Passport Book & Passport Card Photographs</a>
       ],
     },
   },
@@ -27,11 +27,19 @@ const tableData = [
     column2: {
       content: [
         "	A cover letter from the government agency.",
-        "IN ADDITION",
-        "A letter from the host company where the applicant has been assigned during his/her trip.",
-      ],
+              ],
     },
   },
+  {
+    id: 4,
+    column1: "Letter of Invitation",
+    column2: {
+      content: [
+        "	An official letter of invitation from hosting organization registered with the Russian Ministry of the Interior.",
+              ],
+    },
+  },
+
 
   {
     id: 4,
@@ -48,8 +56,15 @@ const tableData = [
     column1: "Application Form",
     column2: {
       content: [
-        "Download Application Form",
-        "One completed Visa Application, MUST be signed.",
+        "The Russia Visa Online Application is known to be a long and tedious process.",
+        "Almost all of our customers requested our White Glove Service to process Russia Visa Application.WVT can help you complete the Russia Visa Online Application through our White Glove Service (ONLY $55.00).",
+        "Russia White Glove Form",
+        "Please call for further assistance.",
+        <a href="https://visa.kdmid.ru/PetitionChoice.aspx" target="_blank">Online Application Form</a>,
+        "One completed Visa application, MUST be printed and signed.",
+        "Note: The application has to be printed in separate papers, not back-to-back.",
+        "If you are filling out the application by yourself, please remember to take down the Application ID and Password, and include them when you mail the documents to us.",
+        "At the end of the application, you will be asked for the Visa Issuing Office location. Please select “Visa Application Center ILS (Washington)”.",
       ],
     },
   },

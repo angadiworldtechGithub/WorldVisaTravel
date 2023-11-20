@@ -48,7 +48,7 @@ const tableData = [
         "WVT can help you complete the Nigeria Visa Online Application through our White Glove Service (ONLY $50.00).",
         "Nigeria White Glove Form",
         "Please call for further assistance.",
-        "Online Application Form",
+        <a href="https://portal.immigration.gov.ng/visa/freshVisa" target="_blank">Online Application Form</a>,
          "One completed Visa Application, MUST be printed and signed.",
          "One Visa Acknowledgement Slip.",
          "One Visa Payment Slip/Receipt.",
