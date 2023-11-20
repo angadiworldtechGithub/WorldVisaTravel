@@ -1,5 +1,6 @@
 import React from 'react';
 import pdf from "../../../Pages/Legalizations/WVT-Work-Order.pdf";
+import BurundiOfficialUs from "../../../Pages/Legalizations/OfficialUs/BurundiVisaOfficialUs.pdf";
 
   const tableData = [
     {
@@ -57,7 +58,7 @@ import pdf from "../../../Pages/Legalizations/WVT-Work-Order.pdf";
       column1: "Application Form",
       column2: {
         content: [
-          "Download Application Form",
+          <a download={true} target='_blank' href={BurundiOfficialUs}>Download Application Form</a>,
           "Two completed Visa Application, MUST be signed."      ],
       },
     },

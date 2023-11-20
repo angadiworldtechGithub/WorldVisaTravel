@@ -55,8 +55,7 @@ import pdf from "../../../Pages/Legalizations/WVT-Work-Order.pdf";
       column1: "Application Form",
       column2: {
         content: [
-          "Download Application Form",
-          "One completed Visa Application, MUST be signed."      ],
+          "No Application Form is required."      ],
       },
     },
 

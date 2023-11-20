@@ -1,5 +1,6 @@
 import React from 'react';
 import pdf from "../../../Pages/Legalizations/WVT-Work-Order.pdf";
+import BangladeshOfficialUs  from "../../../Pages/Legalizations/OfficialUs/Bangladesh-Application-PrintableOfficialUs.pdf";
 
   const tableData = [
     {
@@ -48,9 +49,9 @@ import pdf from "../../../Pages/Legalizations/WVT-Work-Order.pdf";
       column1: "Application Form",
       column2: {
         content: [
-          "Download Visa Application",
+          <a href='https://www.visa.gov.bd/'>Online Application Form</a>,
           "One completed Visa Application, MUST be signed.",
-          "Printable Application Form"     ],
+          <a download={true} target='_blank' href={BangladeshOfficialUs }>Printable Application Form</a>,   ],
       },
     },
 

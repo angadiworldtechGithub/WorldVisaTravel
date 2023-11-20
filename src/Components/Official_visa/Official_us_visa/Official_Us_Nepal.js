@@ -1,5 +1,10 @@
 import React from "react";
 import pdf from "../../../Pages/Legalizations/WVT-Work-Order.pdf";
+import NepalOfficialUs from "../../../Pages/Legalizations/OfficialUs/NepalOfficialApps.pdf";
+import NepalDiplomaticUs from "../../../Pages/Legalizations/OfficialUs/NepalDiplomaticApps.pdf";
+
+
+
 const tableData = [
   {
     id: 1,
@@ -45,8 +50,8 @@ const tableData = [
     column1: "Application Form",
     column2: {
       content: [
-        "Download Official Application Form",
-        "Download Diplomatic Application Form",
+        <a download={true} target='_blank' href={NepalOfficialUs}>Download Official Application Form</a>,
+        <a download={true} target='_blank' href={NepalDiplomaticUs}>Download Diplomatic Application Form</a>,
         "One completed Visa Application, MUST be signed in BLUE INK.",
       ],
     },

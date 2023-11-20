@@ -1,5 +1,6 @@
 import React from "react";
 import pdf from "../../../Pages/Legalizations/WVT-Work-Order.pdf";
+import GambiaOfficialUs from "../../../Pages/Legalizations/OfficialUs/GambiaVisaApp.pdf";
 
 
 const tableData = [
@@ -61,7 +62,7 @@ const tableData = [
     column1: "Application Form",
     column2: {
       content: [
-        "Download Application Form",
+        <a download={true} target='_blank' href={GambiaOfficialUs}>Download Application Form</a>,
         "Two completed Visa Application, MUST be signed. Application can be filled electronically or with Black INK only, in BLOCK / CAPITAL letters.",
        ],
     },

@@ -1,5 +1,8 @@
 import React from 'react';
 import pdf from "../../../Pages/Legalizations/WVT-Work-Order.pdf";
+import AustraliaDiplomatVisaOfficialUs from "../../../Pages/Legalizations/OfficialUs/AustraliaDiplomatVisaOfficialUs.pdf";
+import AustraliaForm956AOfficialUs from "../../../Pages/Legalizations/OfficialUs/AustraliaForm956AOfficialUs.pdf";
+import AustraliaForm1190OfficialUs from "../../../Pages/Legalizations/OfficialUs/AustraliaForm1190OfficialUs.pdf";
 
   const tableData = [
     {
@@ -47,11 +50,11 @@ import pdf from "../../../Pages/Legalizations/WVT-Work-Order.pdf";
       column1: "Application Form",
       column2: {
         content: [
-          "Download Application Form",
+          <a download={true} target='_blank' href={AustraliaDiplomatVisaOfficialUs}>Download Application Form</a>,
           "One completed Visa Application, MUST be signed",
-          "Download Authorization Form 956A",
+          <a download={true} target='_blank' href={AustraliaForm956AOfficialUs}>Download Authorization Form 956A</a>,
           "One completed Authorization Form.",
-          "Download Form 1190 for Additional Character ",
+          <a download={true} target='_blank' href={AustraliaForm1190OfficialUs}>Download Form 1190 for Additional Character</a>,
           "Declaration:One completed Additional Character Declaration Form."
         ],
       },

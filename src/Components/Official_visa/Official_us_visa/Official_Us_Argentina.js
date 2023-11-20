@@ -1,5 +1,7 @@
 import React from 'react';
 import pdf from "../../../Pages/Legalizations/WVT-Work-Order.pdf";
+import ArgentinaOfficialApplicationOfficialUs from "../../../Pages/Legalizations/OfficialUs/ArgentinaOfficialApplicationOfficialUs.pdf";
+import ArgentinaDiplomaticApplicationOfficialUs from "../../../Pages/Legalizations/OfficialUs/ArgentinaDiplomaticApplicationOfficialUs.pdf";
 
   const tableData = [
     {
@@ -36,8 +38,8 @@ import pdf from "../../../Pages/Legalizations/WVT-Work-Order.pdf";
       column1: "Proof of Departure",
       column2: {
         content: [
-          "Download Diplomatic Visa Application",
-          "Download Official Visa Application",
+          <a download={true} target='_blank' href={ArgentinaDiplomaticApplicationOfficialUs}>Download Diplomatic Visa Application</a>,
+          <a download={true} target='_blank' href={ArgentinaOfficialApplicationOfficialUs}>Download Official Visa Application</a>,
           "One completed Diplomatic or Official Visa Application, MUST be typed and signed."
         ],
       },

@@ -1,6 +1,8 @@
 import React from "react";
-
 import pdf from "../../../Pages/Legalizations/WVT-Work-Order.pdf";
+import MadagascarOfficialUs from "../../../Pages/Legalizations/OfficialUs/MadagascarVisa.pdf";
+
+
 const tableData = [
   {
     id: 1,
@@ -45,7 +47,7 @@ const tableData = [
     column1: "Application Form",
     column2: {
       content: [
-        "Download Application Form",
+        <a download={true} target='_blank' href={MadagascarOfficialUs}>Download Application Form</a>,
         "One completed Visa Application, MUST be signed in BLUE INK.",
       ],
     },

@@ -1,5 +1,10 @@
 import React from "react";
 import pdf from "../../../Pages/Legalizations/WVT-Work-Order.pdf";
+import SAOfficialUs from "../../../Pages/Legalizations/OfficialUs/SouthAfricaVisa1.pdf";
+
+
+
+
 const tableData = [
   {
     id: 1,
@@ -51,7 +56,7 @@ const tableData = [
     column1: "Application Form",
     column2: {
       content: [
-        "Download Application Form",
+        <a download={true} target='_blank' href={SAOfficialUs}>Download Application Form</a>,
         "One completed Visa Application, MUST be signed.",
         
       ],
@@ -130,58 +135,21 @@ function OfficialUsSouthAfrica() {
         <center>
           <h3 className="costing-Header">CONSULAR FEES</h3>
         </center>
-        <table className="costing-responsive-table">
-          <thead>
-            <tr>
-              <th>Entry</th>
-              <th>Price</th>
-              <th>Processing Time</th>
-              <th>Maximum Stay</th>
-              <th>Valid</th>
-            </tr>
-          </thead>
-          <tbody>
-            {datatable1.map((row, rowIndex) => (
-              <tr key={rowIndex}>
-                {row.map((cell, columnIndex) => (
-                  <td key={columnIndex}>{cell}</td>
-                ))}
-              </tr>
-            ))}
-          </tbody>
-        </table>
-
+        
         <div className="Detailsdata_descripition">
-          <h6>
-            Maximum Stay and Validity of Visa is dependent on the Embassy’s
-            discretion.
-          </h6>
+          <strong>
+            Please contact our office for more assistance.
+          </strong>
         </div>
 
         <center>
           <h3 className="costing-Header"> WORLD VISA TRAVEL SERVICE FEES</h3>
         </center>
-        <table className="costing-responsive-table">
-          <thead>
-            <tr>
-              <th>Price</th>
-              <th>Processing Time</th>
-            </tr>
-          </thead>
-          <tbody>
-            {datatable2.map((row, rowIndex) => (
-              <tr key={rowIndex}>
-                {row.map((cell, columnIndex) => (
-                  <td key={columnIndex}>{cell}</td>
-                ))}
-              </tr>
-            ))}
-          </tbody>
-        </table>
+       
         <div className="Detailsdata_descripition">
-          <h6>
-            *Depends on availability. Please contact us for more information.
-          </h6>
+          <strong>
+           Please contact our office for more assistance.
+        </strong>
         </div>
 
         <center>

@@ -1,5 +1,6 @@
 import React from "react";
 import pdf from "../../../Pages/Legalizations/WVT-Work-Order.pdf";
+import TnTOfficialUs from "../../../Pages/Legalizations/OfficialUs/TnTVisa.pdf";
 
 const tableData = [
   {
@@ -46,7 +47,7 @@ const tableData = [
     column1: "Application Form",
     column2: {
       content: [
-        "Download Application Form",
+        <a download={true} target='_blank' href={TnTOfficialUs}>Download Application Form</a>,
         "One completed Visa Application, MUST be signed.",
        
       ],

@@ -1,5 +1,6 @@
 import React from "react";
 import pdf from "../../../Pages/Legalizations/WVT-Work-Order.pdf";
+import ChadOfficialUs from "../../../Pages/Legalizations/OfficialUs/ChadVisaOfficialUs.pdf";
 
 const tableData = [
   {
@@ -45,7 +46,7 @@ const tableData = [
     column1: "Application Form",
     column2: {
       content: [
-        "Download Visa Application",
+        <a download={true} target='_blank' href={ChadOfficialUs}>Download Visa Application</a>,
         "One completed Visa Application, MUST be typed and signed. If questions not applicable, type N/A.",
         "**UPDATE as of February 2023, Visa applicants need to log on to the website “China Online Visa Application (COVA)” to fill in the online visa application, and make appointments for on-site submission at the Visa Office by the website “Appointment for Visa Application Submission (AVAS)”.",
         "Please contact us for further assistance.",
@@ -97,7 +98,7 @@ const datatable3 = [
   ["Saturday Delivery", "$41.00"],
 ];
 
-function OfficialUsIvoryChad() {
+function OfficialUsChad() {
   return (
     <div>
       <div>

@@ -1,5 +1,6 @@
 import React from "react";
 import pdf from "../../../Pages/Legalizations/WVT-Work-Order.pdf";
+import LiberiaOfficialUs from "../../../Pages/Legalizations/OfficialUs/Liberia-Application.pdf";
 
 const tableData = [
   {
@@ -51,7 +52,7 @@ const tableData = [
     column1: "Application Form",
     column2: {
       content: [
-        "Download Application Form",
+        <a download={true} target='_blank' href={LiberiaOfficialUs}>Download Application Form</a>,
         "Two completed Visa Applications, MUST be signed in BLUE INK.",
       ],
     },

@@ -1,5 +1,6 @@
 import React from 'react';
 import pdf from "../../../Pages/Legalizations/WVT-Work-Order.pdf";
+import BulgariaOfficialUs from "../../../Pages/Legalizations/OfficialUs/BulgariaVisaOfficialUs.pdf";
 
   const tableData = [
     {
@@ -47,7 +48,7 @@ import pdf from "../../../Pages/Legalizations/WVT-Work-Order.pdf";
       column1: "Application Form",
       column2: {
         content: [
-          "Online Application Form",
+          <a download={true} target='_blank' href={BulgariaOfficialUs}>Online Application Form</a>,
           "One completed confirmation page, MUST be signed.",
           "WVT can help you complete the Brazilian Visa Online Application through our White Glove Service (ONLY $50.00).",
           "Brazil White Glove Application Form"      ],

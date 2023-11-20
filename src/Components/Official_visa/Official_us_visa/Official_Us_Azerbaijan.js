@@ -1,5 +1,6 @@
 import React from 'react';
 import pdf from "../../../Pages/Legalizations/WVT-Work-Order.pdf";
+import AzerbaijanOfficialUs  from "../../../Pages/Legalizations/OfficialUs/azerbaijan-Visa_Application_FormOfficialUs.pdf";
 
   const tableData = [
     {
@@ -40,29 +41,21 @@ import pdf from "../../../Pages/Legalizations/WVT-Work-Order.pdf";
       },
     },
 
-    {
-      id: 5,
-      column1: "Proof of Departure",
-      column2: {
-        content: [
-          "A copy of your round trip airline tickets, or itinerary, or letter for employer (for Same Day/Next Day processing).",
-        ],
-      },
-    },
+   
 
     {
-      id: 6,
+      id: 5,
       column1: "Application Form",
       column2: {
         content: [
-          "Download Visa Application",
+          <a download={true} target='_blank' href={AzerbaijanOfficialUs}>Download Visa Application</a>,
           "One completed Visa Application, MUST be typed and signed.",
         ],
       },
     },
 
     {
-      id: 7,
+      id: 6,
       column1: "WVT Work Order",
       column2: {
         content: [
@@ -74,7 +67,7 @@ import pdf from "../../../Pages/Legalizations/WVT-Work-Order.pdf";
     },
 
     {
-      id: 8,
+      id: 7,
       column1: "Mail Your Documents",
       column2: {
         content: [

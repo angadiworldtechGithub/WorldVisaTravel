@@ -1,5 +1,6 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
+import Support from "../../Support/Support";
 
 
 import "./NonUsCitizen.css";
@@ -131,7 +132,36 @@ const NonUsCitizen = () => {
 
 
 
+          {/* Empty Components for Business visa */}
 
+      {((destination === "Andorra" || "Antigua and Barbuda" || "Anguilla"||"Albania"||"Antarctica"||
+      "Austria"||"Aruba"||"Aland"||"American Samoa"||"Angola"||"Argentina"||"Armenia"||
+      "Bahrain"||"Bosnia and Herzegovina"||"Belgium"||"Bermuda"||"Bonaire"||"Bhutan"||"Bouvet Island"||
+      "Botswana"||"British India Ocean Territory"||"British Virgin Islands"||"Canada"||"Cocos Island" 
+      ||"Cook Islands" ||"Chile" ||"Colombia" ||"Costa Rica" ||"Cuba" ||"Cape Verde" ||"Curacao" 
+      ||"Christmas Island" ||"Cyprus" ||"Czech Republic" ||"Croatia" ||"Comoros" ||"Cayman Islands" 
+      ||"Denmark" ||"Dominican Republic" ||"Dominica" ||"El Salvador" ||"Estonia" ||"Finland" 
+      ||"Falkland Islands" ||"Faroe Islands" ||"France"|"French Guinea"||"French Polynesia" ||"French Southern Territories" 
+      ||"Germany" ||"Grenada" ||"Guernsey" ||"Gibraltar" ||"Greenland" ||"Greece" ||"Guatemala" ||"Guam" 
+      ||"Guinea-Bissau" ||"Guyana" ||"Hong Kong" ||"Heard Island and McDonald Islands" ||"Haiti"||"Hungary"
+      ||"Ireland"||"Israel"||"Isle of Man"||"Iceland"||"Italy"||"Jersey"||"Japan"||"Kenya"||"Kribati"||"Kuwait"
+      ||"Kosovo"||"Liechtenstein"||"Lithuania"||"Luxemberg"||"Latvia"||"Micronesia"||"Monaco"||"Montenegro"
+      ||"Marshall Islands"||"Macao"||"Martinique"||"Mauritania"||"Montserrat"||"Malta"||"Mauritius"||"Maldives"
+      ||"Mexico"||"Mayotte"|| "Samoa" || "Wallis and Futuna" || "Vanuatu" || "Venezuela" || "Saint Vincent and the Grenadines" 
+      || "Uruguay" || "Tuvalu"|| "Tonga" || "Tokelau" || "Turks and Caicos" || "Syria" || "Sint Maarten" || "El Salvador" 
+      || "Sao Tome and Principe" || "Somalia" || "Senegal" || "San Marino"|| "Slovakia" || "Slovenia" || "Sweden"
+       || "Seychelles" || "Solomon Islands" || "Serbia" || "Romania" || "Reunion Island" || "Paraguay" || "Palau Islands" 
+       || "Portugal" || "Puerto Rico" || "Saint Pierre and Miquelon" || "Poland" || "French Polynesia" || "Panama" 
+       || "New Zealand" || "Niue" || "Nauru" || "Norway" || "Netherlands" || "Norfolk Island" || "New Caledonia" 
+       || "Kosovo" || "US Virgin Islands" || "British Virgin Islands" || "Vatican City" || "United States"
+        || "US Minor Outlying Islands" || "East Timor" || "French Southern Territories" || "Svalbard and Jan Mayen" 
+        || "Saint Helena" || "Palestine" || "Pitcairn Islands") && 
+      (currentPathlocation==="/visas/business-visa/Non-USCitizens/NonUSCitizen" )) && <Support/>}
+
+      {/* Empty Components for Tourist Visa */}
+
+      {((destination === "" || "" || "") && 
+      (currentPathlocation==="/visas/tourist-visa/Non-USCitizens/NonUsCitizen" )) && <Support/>}
 
 
       

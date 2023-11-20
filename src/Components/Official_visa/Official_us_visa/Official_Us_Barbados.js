@@ -1,5 +1,6 @@
 import React from 'react';
 import pdf from "../../../Pages/Legalizations/WVT-Work-Order.pdf";
+import BarbadosOfficialUs from "../../../Pages/Legalizations/OfficialUs/BarbadosVisaOfficialUs.pdf";
 
   const tableData = [
     {
@@ -47,7 +48,7 @@ import pdf from "../../../Pages/Legalizations/WVT-Work-Order.pdf";
       column1: "Application Form",
       column2: {
         content: [
-          "Download Visa Application",
+          <a download={true} target='_blank' href={BarbadosOfficialUs }>Download Visa Application</a>,
           "One completed Visa Application, MUST be signed."      ],
       },
     },
