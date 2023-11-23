@@ -1,0 +1,55 @@
+.Evisa-full-page{
+    margin: 20px;
+}
+.Evisa-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .Evisa-item-left {
+    background-color: #2c3a90;
+    color: #fff;
+    margin: 20px;
+    padding: 20px;
+    flex: 50%;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .Evisa-item-right {
+    background-color: #2c3a90;
+    color: #fff;
+    margin: 20px;
+    padding: 20px;
+    flex: 50%;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .Evisa-heading{
+    text-align: center;
+    color: #2c3a90;
+    font-weight: 700;
+  }
+  .Evisa-paragraph{
+    text-align: center;
+    font-size: 18px;
+  }
+  .Evisa-button{
+    margin: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 30px;
+    border: 1px solid #fff;
+    color: #2c3a90;
+    font-weight: 700;
+  }
+  /* Responsive layout - makes a one column-layout instead of two-column layout */
+  @media (max-width: 800px) {
+    .Evisa-container {
+      flex-direction: column;
+    }
+  }

@@ -1,0 +1,126 @@
+.contact-container {
+  background-image: url(/public/assets/banners/contactus-bg.jpg);
+  background-color: transparent;
+  background-position: right bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  height: 300px;
+}
+
+.contact-container > .container > h3 {
+  color: white;
+  vertical-align: middle;
+  margin-top: auto;
+}
+
+.section-lg {
+  padding-top: 90px;
+  padding-bottom: 70px;
+}
+
+.contact-info-card {
+  text-align: center;
+  border: 1px solid #e7e9eb;
+  border-radius: 6px;
+  background: #e7e9eb;
+  padding: 40px 15px;
+  height: 100%;
+}
+
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background-color: #0067da;
+}
+
+.info-text {
+  color: #5d6975;
+}
+
+/* contact us section */
+.contact-us-section {
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 9px 35px 0 rgba(0, 0, 0, 0.07);
+  margin-bottom: 90px;
+}
+
+/* contact form */
+
+.contact-form-subtitle {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 25px;
+  letter-spacing: 3px;
+  font-weight: 500;
+  color: #b2b8bf;
+  text-transform: uppercase;
+  font-style: normal;
+  margin-bottom: 0;
+}
+
+.contact-form-title {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  /* font-weight: 300; */
+  font-size: 38px;
+  line-height: 50px;
+  letter-spacing: 1px;
+  padding: 20px;
+  color: #2C3A90;
+  text-transform: none;
+  font-style: normal;
+}
+
+.contact-form-title span {
+  font-weight: bolder;
+  font-size: 42 px;
+}
+
+/* form */
+.form-control {
+  color: #9faebe;
+  padding: 16px 20px;
+  font-weight: 400;
+  background-color: #fff;
+  border: 1px solid rgba(119, 119, 119, 0.2);
+  font-size: 14px;
+  outline: none;
+  line-height: 24px;
+  text-transform: none;
+  letter-spacing: 0;
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+  transition: border linear 0.2s, box-shadow linear 0.2s;
+  border-radius: 4px;
+  vertical-align: middle;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form-submit-btn {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 17px 30px;
+  text-transform: none;
+  background-color: #0067da;
+  border: none;
+  color: #fff;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+  outline: none !important;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
