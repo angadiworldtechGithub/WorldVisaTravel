@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.search-container {
+  /* position: absolute; */
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  /* left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); */
+}
+
+/* @media screen and(max-width:320px) {
+  .search-container {
+    position: relative;
+    margin-top: 20px;
+  }
+} */
+.select-box {
+  width: 250px;
+  /* height: 30px;
+  border-radius: 10px;
+  margin-left: 20px; */
+}
+
+.search-button {
+  background-color: #2c3a90;
+  border-radius: 30px;
+  color: white;
+  padding: 20px;
+  font-size: 16px;
+  border: none;
+  /* margin-left: 20px; */
+  cursor: pointer;
+}
+
+.country-flag {
+  margin-right: 5px;
+}
+
+.country-label {
+  vertical-align: Left;
+}
+
+@media (max-width: 768px) {
+  .search-container {
+    /* flex-direction: column; */
+    position: relative;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 629px) {
+  .search-container {
+    /* flex-direction: column; */
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    /* margin-top: 20px; */
+  }
+}
+
+@media (min-width: 901px) {
+  .search-container {
+    /* flex-direction: column; */
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    /* margin-top: 20px; */
+  }
+}
+.css-1nmdiq5-menu {
+  max-height: 250px;
+  overflow: hidden;
+  z-index: 1000 !important;
+}
+
+.css-1nmdiq5-menu > div > div {
+  padding-block: 5px;
+}
+.css-1nmdiq5-menu > div > div:hover {
+  background-color: #2d3845;
+  color: azure;
+}
+
+.more-info-btn {
+  width: 100%;
+  max-width: 250px;
+  margin: auto;
+  padding: 15px 15px;
+  /* font-size: 13px; */
+  display: inline-block;
+  border-radius: 6px;
+  line-height: normal;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.more-info-btn-label {
+  position: relative;
+  /* padding-right: 52px; */
+  display: inline-block;
+  line-height: normal;
+  font-size: 20px;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}

@@ -1,0 +1,13 @@
+.Businesssample_Container{
+    padding: 20px;
+     border: 2px solid #2C3A90;
+      margin: 20px;
+      text-Align:center;
+}
+.Businesssample_heading{
+    font-weight: 700;
+    color: #2C3A90;
+}
+.Businesssample_paragraph{
+    font-size: 18px;
+}
