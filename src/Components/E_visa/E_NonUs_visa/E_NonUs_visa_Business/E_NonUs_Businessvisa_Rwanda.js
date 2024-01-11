@@ -1,0 +1,12 @@
+import React from 'react'
+
+function E_NonUs_Businessvisa_Rwanda() {
+  return (
+    <div style={{textAlign:"center",border:"1px solid #fff",backgroundColor:"#2B3990",color:"#fff",margin:"20px"}}>
+      <h5 style={{padding:"20px"}}>Not Available for Business E-Visa Rwanda</h5>
+      <p style={{fontSize:"18px"}} >Please reach out to <b>support@worldvisatravel.com</b> or call  <b>(202) 289-6251</b> for more details.</p>
+    </div>
+  )
+}
+
+export default E_NonUs_Businessvisa_Rwanda
