@@ -139,6 +139,7 @@ const handleAlert = ()=> {
 
         <Select
           id="citizenship"
+          className="country-formdata"
           options={citizen}
           isSearchable={false}
           placeholder="Select Citizenship"

@@ -165,8 +165,10 @@ const FormEvisa = ({ visaType }) => {
           }}
         />
 
+<div className="input_container">
 
         <Select
+        className="country-formdata"
         id="citizenship"
         options={citizen}
         isSearchable={false} 
@@ -195,6 +197,7 @@ const FormEvisa = ({ visaType }) => {
             setFormData({ ...formData, srcCountry: selectedOption });
           }}
         />
+        </div>
      
     <Select style={{marginBottom:"20px"}}
     options={options}

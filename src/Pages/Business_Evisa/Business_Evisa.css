@@ -43,7 +43,7 @@
     @media (min-width: 768px) {
       /* On screens with a minimum width of 768px, change to a row layout */
       .Moreinfo-container {
-        flex-direction: row;
+        flex-direction: column;
       }
     
       .Moreinfo-left-flex {
